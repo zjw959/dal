@@ -1,0 +1,484 @@
+ID	分类	对应看板娘	对应精灵	配音路径	备注（策划看）
+id	type	role	hero	voice	des
+number	string	number	number	json	string
+int	string	int	int	map	string
+101001	hero_get		110101	["sound/role/shixiang/TOUKA_24.mp3"]	获得角色1
+101002	button_dating	101		["sound/role/shixiang/TOUKA_16.mp3"]	点击约会按钮
+101003	dating_complete	101		["sound/role/shixiang/TOUKA_53.mp3"]	约会结束-成功
+101004	hidden_end	101		["sound/role/shixiang/TOUKA_54.mp3"]	约会结束-hidden end
+101005	good_end	101		["sound/role/shixiang/TOUKA_55.mp3"]	约会结束-happy、good
+101006	bad_end	101		["sound/role/shixiang/TOUKA_56.mp3"]	约会结束-normal、bad
+101007	dating_invite_yes	101		["sound/role/shixiang/TOUKA_57.mp3"]	预定约会-接受邀请
+101008	dating_invite_no	101		["sound/role/shixiang/TOUKA_58.mp3"]	预定约会-拒绝邀请
+101009	button_dress	101		["sound/role/shixiang/TOUKA_59.mp3"]	进入换装
+101010	dress_low	101		["sound/role/shixiang/TOUKA_23.mp3"]	换上服装-一般
+101011	dress_high	101		["sound/role/shixiang/TOUKA_61.mp3"]	换上服装-高级
+101012	button_gift	101		["sound/role/shixiang/TOUKA_62.mp3"]	进入送礼
+101013	gifts_wait	101		["sound/role/shixiang/TOUKA_63.mp3"]	等待送礼
+101014	food_high	101		["sound/role/shixiang/TOUKA_19.mp3"]	喜爱食物
+101015	food_low	101		["sound/role/shixiang/TOUKA_20.mp3"]	一般食物
+101016	gift_high	101		["sound/role/shixiang/TOUKA_21.mp3"]	喜爱礼物
+101017	gift_low	101		["sound/role/shixiang/TOUKA_22.mp3"]	一般礼物
+101018	favor_up	101		["sound/role/shixiang/TOUKA_17.mp3"]	好感度等级提升
+101019	ability_up		110101	["sound/role/shixiang/TOUKA_64.mp3"]	等级/星级提升
+101020	change_kanban	101		["sound/role/shixiang/TOUKA_65.mp3"]	切换看板娘
+101021	change_hero		110101	["sound/role/shixiang/TOUKA_66.mp3"]	切换精灵
+101022	change_equip	101		["sound/role/shixiang/TOUKA_67.mp3"]	更换灵装
+101023	battle_play		110101	["sound/role/shixiang/TOUKA_68.mp3"]	上阵
+101024	mood_sad	101		["sound/role/shixiang/TOUKA_13.mp3"]	看板娘处于无聊、生气、饥饿状态
+101025	mood_normal	101		["sound/role/shixiang/TOUKA_14.mp3"]	在城市点击看板娘模型1
+101026	mian_morning	101		["sound/role/shixiang/TOUKA_88.mp3"]	进入主界面-早上
+101027	mian_afternoon	101		["sound/role/shixiang/TOUKA_89.mp3"]	进入主界面-下午
+101028	mian_night	101		["sound/role/shixiang/TOUKA_90.mp3"]	进入主界面-晚上
+101029	mian_dawn	101		["sound/role/shixiang/TOUKA_91.mp3"]	进入主界面-凌晨
+101030	spring	101		["sound/role/shixiang/TOUKA_114.mp3"]	温泉功能
+101031	hero_get		110102	["sound/role/shixiang/TOUKA_25.mp3"]	获得角色1
+101032	button_dating				点击约会按钮
+101033	dating_complete				约会结束-成功
+101034	hidden_end				约会结束-hidden end
+101035	good_end				约会结束-happy、good
+101036	bad_end				约会结束-normal、bad
+101037	dating_invite_yes				预定约会-接受邀请
+101038	dating_invite_no				预定约会-拒绝邀请
+101039	button_dress				进入换装
+101040	dress_low				换上服装-一般
+101041	dress_high				换上服装-高级
+101042	button_gift				进入送礼
+101043	gifts_wait				等待送礼
+101044	food_high				喜爱食物
+101045	food_low				一般食物
+101046	gift_high				喜爱礼物
+101047	gift_low				一般礼物
+101048	favor_up				好感度等级提升
+101049	ability_up		110102	["sound/role/shixiang/TOUKA_221.mp3"]	等级/星级提升
+101050	change_kanban				切换看板娘
+101051	change_hero		110102	["sound/role/shixiang/TOUKA_222.mp3"]	切换精灵
+101052	change_equip				更换灵装
+101053	battle_play		110102	["sound/role/shixiang/TOUKA_223.mp3"]	上阵
+101054	mood_sad				看板娘处于无聊、生气、饥饿状态
+101055	mood_normal				在城市点击看板娘模型1
+101056	mian_morning				进入主界面-早上
+101057	mian_afternoon				进入主界面-下午
+101058	mian_night				进入主界面-晚上
+101059	mian_dawn				进入主界面-凌晨
+101060	spring				温泉功能
+101061	hero_get		110103	["sound/role/shixiang/TOUKA_HENTEN_01.mp3"]	获得角色1
+101062	button_dating				点击约会按钮
+101063	dating_complete				约会结束-成功
+101064	hidden_end				约会结束-hidden end
+101065	good_end				约会结束-happy、good
+101066	bad_end				约会结束-normal、bad
+101067	dating_invite_yes				预定约会-接受邀请
+101068	dating_invite_no				预定约会-拒绝邀请
+101069	button_dress				进入换装
+101070	dress_low				换上服装-一般
+101071	dress_high				换上服装-高级
+101072	button_gift				进入送礼
+101073	gifts_wait				等待送礼
+101074	food_high				喜爱食物
+101075	food_low				一般食物
+101076	gift_high				喜爱礼物
+101077	gift_low				一般礼物
+101078	favor_up				好感度等级提升
+101079	ability_up		110103	["sound/role/shixiang/TOUKA_239.mp3"]	等级/星级提升
+101080	change_kanban				切换看板娘
+101081	change_hero		110103	["sound/role/shixiang/TOUKA_240.mp3"]	切换精灵
+101082	change_equip				更换灵装
+101083	battle_play		110103	["sound/role/shixiang/TOUKA_241.mp3"]	上阵
+101084	mood_sad				看板娘处于无聊、生气、饥饿状态
+101085	mood_normal				在城市点击看板娘模型1
+101086	mian_morning				进入主界面-早上
+101087	mian_afternoon				进入主界面-下午
+101088	mian_night				进入主界面-晚上
+101089	mian_dawn				进入主界面-凌晨
+101090	spring				温泉功能
+102001	hero_get		110201	["sound/role/zhezhi/ORIGAMI_AST_02.mp3"]	获得角色1
+102002	button_dating	102		["sound/role/zhezhi/ORIGAMI_24.mp3"]	点击约会按钮
+102003	dating_complete	102		["sound/role/zhezhi/ORIGAMI_36.mp3"]	约会结束-成功
+102004	hidden_end	102		["sound/role/zhezhi/ORIGAMI_38.mp3"]	约会结束-hidden end
+102005	good_end	102		["sound/role/zhezhi/ORIGAMI_39.mp3"]	约会结束-happy、good
+102006	bad_end	102		["sound/role/zhezhi/ORIGAMI_40.mp3"]	约会结束-normal、bad
+102007	dating_invite_yes	102		["sound/role/zhezhi/ORIGAMI_41.mp3"]	预定约会-接受邀请
+102008	dating_invite_no	102		["sound/role/zhezhi/ORIGAMI_42.mp3"]	预定约会-拒绝邀请
+102009	button_dress	102		["sound/role/zhezhi/ORIGAMI_43.mp3"]	进入换装
+102010	dress_low	102		["sound/role/zhezhi/ORIGAMI_31.mp3"]	换上服装-一般
+102011	dress_high	102		["sound/role/zhezhi/ORIGAMI_44.mp3"]	换上服装-高级
+102012	button_gift	102		["sound/role/zhezhi/ORIGAMI_45.mp3"]	进入送礼
+102013	gifts_wait	102		["sound/role/zhezhi/ORIGAMI_46.mp3"]	等待送礼
+102014	food_high	102		["sound/role/zhezhi/ORIGAMI_27.mp3"]	喜爱食物
+102015	food_low	102		["sound/role/zhezhi/ORIGAMI_28.mp3"]	一般食物
+102016	gift_high	102		["sound/role/zhezhi/ORIGAMI_29.mp3"]	喜爱礼物
+102017	gift_low	102		["sound/role/zhezhi/ORIGAMI_30.mp3"]	一般礼物
+102018	favor_up	102		["sound/role/zhezhi/ORIGAMI_25.mp3"]	好感度等级提升
+102019	ability_up		110201	["sound/role/zhezhi/ORIGAMI_AST_01.mp3"]	等级/星级提升
+102020	change_kanban	102		["sound/role/zhezhi/ORIGAMI_47.mp3"]	切换看板娘
+102021	change_hero		110201	["sound/role/zhezhi/ORIGAMI_48.mp3"]	切换精灵
+102022	change_equip	102		["sound/role/zhezhi/ORIGAMI_49.mp3"]	更换灵装
+102023	battle_play		110201	["sound/role/zhezhi/ORIGAMI_50.mp3"]	上阵
+102024	mood_sad	102		["sound/role/zhezhi/ORIGAMI_21.mp3"]	看板娘处于无聊、生气、饥饿状态
+102025	mood_normal	102		["sound/role/zhezhi/ORIGAMI_22.mp3"]	在城市点击看板娘模型1
+102026	mian_morning	102		["sound/role/zhezhi/ORIGAMI_68.mp3"]	进入主界面-早上
+102027	mian_afternoon	102		["sound/role/zhezhi/ORIGAMI_69.mp3"]	进入主界面-下午
+102028	mian_night	102		["sound/role/zhezhi/ORIGAMI_26.mp3"]	进入主界面-晚上
+102029	mian_dawn	102		["sound/role/zhezhi/ORIGAMI_26.mp3"]	进入主界面-凌晨
+102030	spring	102		["sound/role/zhezhi/ORIGAMI_187.mp3"]	温泉功能
+103001	hero_get		110301	["sound/role/sisinai/YOSHINO_29.mp3"]	获得角色1
+103002	button_dating	103		["sound/role/sisinai/YOSHINO_20.mp3"]	点击约会按钮
+103003	dating_complete	103		["sound/role/sisinai/YOSHINO_50.mp3"]	约会结束-成功
+103004	hidden_end	103		["sound/role/sisinai/YOSHINO_200.mp3"]	约会结束-hidden end
+103005	good_end	103		["sound/role/sisinai/YOSHINO_52.mp3"]	约会结束-happy、good
+103006	bad_end	103		["sound/role/sisinai/YOSHINO_201.mp3"]	约会结束-normal、bad
+103007	dating_invite_yes	103		["sound/role/sisinai/YOSHINO_53.mp3"]	预定约会-接受邀请
+103008	dating_invite_no	103		["sound/role/sisinai/YOSHINO_51.mp3"]	预定约会-拒绝邀请
+103009	button_dress	103		["sound/role/sisinai/YOSHINO_54.mp3"]	进入换装
+103010	dress_low	103		["sound/role/sisinai/YOSHINO_27.mp3"]	换上服装-一般
+103011	dress_high	103		["sound/role/sisinai/YOSHINO_55.mp3"]	换上服装-高级
+103012	button_gift	103		["sound/role/sisinai/YOSHINO_56.mp3"]	进入送礼
+103013	gifts_wait	103		["sound/role/sisinai/YOSHINO_203.mp3"]	等待送礼
+103014	food_high	103		["sound/role/sisinai/YOSHINO_23.mp3"]	喜爱食物
+103015	food_low	103		["sound/role/sisinai/YOSHINO_24.mp3"]	一般食物
+103016	gift_high	103		["sound/role/sisinai/YOSHINO_25.mp3"]	喜爱礼物
+103017	gift_low	103		["sound/role/sisinai/YOSHINO_26.mp3"]	一般礼物
+103018	favor_up	103		["sound/role/sisinai/YOSHINO_21.mp3"]	好感度等级提升
+103019	ability_up		110301	["sound/role/sisinai/YOSHINO_28.mp3"]	等级/星级提升
+103020	change_kanban	103		["sound/role/sisinai/YOSHINO_57.mp3"]	切换看板娘
+103021	change_hero		110301	["sound/role/sisinai/YOSHINO_58.mp3"]	切换精灵
+103022	change_equip	103		["sound/role/sisinai/YOSHINO_59.mp3"]	更换灵装
+103023	battle_play		110301	["sound/role/sisinai/YOSHINO_60.mp3"]	上阵
+103024	mood_sad	103		["sound/role/sisinai/YOSHINON_05.mp3"]	看板娘处于无聊、生气、饥饿状态
+103025	mood_normal	103		["sound/role/sisinai/YOSHINO_18.mp3"]	在城市点击看板娘模型1
+103026	mian_morning	103		["sound/role/sisinai/YOSHINO_22.mp3"]	进入主界面-早上
+103027	mian_afternoon	103		["sound/role/sisinai/YOSHINO_22.mp3"]	进入主界面-下午
+103028	mian_night	103		["sound/role/sisinai/YOSHINO_195.mp3"]	进入主界面-晚上
+103029	mian_dawn	103		["sound/role/sisinai/YOSHINO_79.mp3"]	进入主界面-凌晨
+103030	spring	103		["sound/role/sisinai/YOSHINO_98.mp3"]	温泉功能
+104001	hero_get		110401	["sound/role/kuangsan/KURUMI_35.mp3"]	获得角色1
+104002	button_dating	104		["sound/role/kuangsan/KURUMI_26.mp3"]	点击约会按钮
+104003	dating_complete	104		["sound/role/kuangsan/KURUMI_61.mp3"]	约会结束-成功
+104004	hidden_end	104		["sound/role/kuangsan/KURUMI_63.mp3"]	约会结束-hidden end
+104005	good_end	104		["sound/role/kuangsan/KURUMI_64.mp3"]	约会结束-happy、good
+104006	bad_end	104		["sound/role/kuangsan/KURUMI_65.mp3"]	约会结束-normal、bad
+104007	dating_invite_yes	104		["sound/role/kuangsan/KURUMI_103.mp3"]	预定约会-接受邀请
+104008	dating_invite_no	104		["sound/role/kuangsan/KURUMI_115.mp3"]	预定约会-拒绝邀请
+104009	button_dress	104		["sound/role/kuangsan/KURUMI_66.mp3"]	进入换装
+104010	dress_low	104		["sound/role/kuangsan/KURUMI_33.mp3"]	换上服装-一般
+104011	dress_high	104		["sound/role/kuangsan/KURUMI_68.mp3"]	换上服装-高级
+104012	button_gift	104		["sound/role/kuangsan/KURUMI_69.mp3"]	进入送礼
+104013	gifts_wait	104		["sound/role/kuangsan/KURUMI_70.mp3"]	等待送礼
+104014	food_high	104		["sound/role/kuangsan/KURUMI_29.mp3"]	喜爱食物
+104015	food_low	104		["sound/role/kuangsan/KURUMI_30.mp3"]	一般食物
+104016	gift_high	104		["sound/role/kuangsan/KURUMI_31.mp3"]	喜爱礼物
+104017	gift_low	104		["sound/role/kuangsan/KURUMI_32.mp3"]	一般礼物
+104018	favor_up	104		["sound/role/kuangsan/KURUMI_27.mp3"]	好感度等级提升
+104019	ability_up		110401	["sound/role/kuangsan/KURUMI_34.mp3"]	等级/星级提升
+104020	change_kanban	104		["sound/role/kuangsan/KURUMI_71.mp3"]	切换看板娘
+104021	change_hero		110401	["sound/role/kuangsan/KURUMI_72.mp3"]	切换精灵
+104022	change_equip	104		["sound/role/kuangsan/KURUMI_73.mp3"]	更换灵装
+104023	battle_play		110401	["sound/role/kuangsan/KURUMI_74.mp3"]	上阵
+104024	mood_sad	104		["sound/role/kuangsan/KURUMI_23.mp3"]	看板娘处于无聊、生气、饥饿状态
+104025	mood_normal	104		["sound/role/kuangsan/KURUMI_24.mp3"]	在城市点击看板娘模型1
+104026	mian_morning	104		["sound/role/kuangsan/KURUMI_92.mp3"]	进入主界面-早上
+104027	mian_afternoon	104		["sound/role/kuangsan/KURUMI_28.mp3"]	进入主界面-下午
+104028	mian_night	104		["sound/role/kuangsan/KURUMI_94.mp3"]	进入主界面-晚上
+104029	mian_dawn	104		["sound/role/kuangsan/KURUMI_94.mp3"]	进入主界面-凌晨
+104030	spring	104		["sound/role/kuangsan/KURUMI_116.mp3"]	温泉功能
+105001	hero_get		110501	["sound/role/qinli/KOTORI_25.mp3"]	获得角色1
+105002	button_dating	105		["sound/role/qinli/KOTORI_17.mp3"]	点击约会按钮
+105003	dating_complete	105		["sound/role/qinli/KOTORI_50.mp3"]	约会结束-成功
+105004	hidden_end	105		["sound/role/qinli/KOTORI_52.mp3"]	约会结束-hidden end
+105005	good_end	105		["sound/role/qinli/KOTORI_53.mp3"]	约会结束-happy、good
+105006	bad_end	105		["sound/role/qinli/KOTORI_54.mp3"]	约会结束-normal、bad
+105007	dating_invite_yes	105		["sound/role/qinli/KOTORI_55.mp3"]	预定约会-接受邀请
+105008	dating_invite_no	105		["sound/role/qinli/KOTORI_56.mp3"]	预定约会-拒绝邀请
+105009	button_dress	105		["sound/role/qinli/KOTORI_57.mp3"]	进入换装
+105010	dress_low	105		["sound/role/qinli/KOTORI_23.mp3"]	换上服装-一般
+105011	dress_high	105		["sound/role/qinli/KOTORI_59.mp3"]	换上服装-高级
+105012	button_gift	105		["sound/role/qinli/KOTORI_60.mp3"]	进入送礼
+105013	gifts_wait	105		["sound/role/qinli/KOTORI_61.mp3"]	等待送礼
+105014	food_high	105		["sound/role/qinli/KOTORI_19.mp3"]	喜爱食物
+105015	food_low	105		["sound/role/qinli/KOTORI_20.mp3"]	一般食物
+105016	gift_high	105		["sound/role/qinli/KOTORI_21.mp3"]	喜爱礼物
+105017	gift_low	105		["sound/role/qinli/KOTORI_22.mp3"]	一般礼物
+105018	favor_up	105		["sound/role/qinli/KOTORI_62.mp3"]	好感度等级提升
+105019	ability_up		110501	["sound/role/qinli/KOTORI_24.mp3"]	等级/星级提升
+105020	change_kanban	105		["sound/role/qinli/KOTORI_63.mp3"]	切换看板娘
+105021	change_hero		110501	["sound/role/qinli/KOTORI_64.mp3"]	切换精灵
+105022	change_equip	105		["sound/role/qinli/KOTORI_65.mp3"]	更换灵装
+105023	battle_play		110501	["sound/role/qinli/KOTORI_66.mp3"]	上阵
+105024	mood_sad	105		["sound/role/qinli/KOTORI_14.mp3"]	看板娘处于无聊、生气、饥饿状态
+105025	mood_normal	105		["sound/role/qinli/KOTORI_15.mp3"]	在城市点击看板娘模型1
+105026	mian_morning	105		["sound/role/qinli/KOTORI_85.mp3"]	进入主界面-早上
+105027	mian_afternoon	105		["sound/role/qinli/KOTORI_86.mp3"]	进入主界面-下午
+105028	mian_night	105		["sound/role/qinli/KOTORI_87.mp3"]	进入主界面-晚上
+105029	mian_dawn	105		["sound/role/qinli/KOTORI_88.mp3"]	进入主界面-凌晨
+105030	spring	105		["sound/role/qinli/KOTORI_111.mp3"]	温泉功能
+105031	hero_get				获得角色1
+105032	button_dating	1051		["sound/role/qinli/KOTORI_SHIRO_08.mp3"]	点击约会按钮
+105033	dating_complete	1051		["sound/role/qinli/KOTORI_198.mp3"]	约会结束-成功
+105034	hidden_end	1051		["sound/role/qinli/KOTORI_200.mp3"]	约会结束-hidden end
+105035	good_end	1051		["sound/role/qinli/KOTORI_201.mp3"]	约会结束-happy、good
+105036	bad_end	1051		["sound/role/qinli/KOTORI_202.mp3"]	约会结束-normal、bad
+105037	dating_invite_yes	1051		["sound/role/qinli/KOTORI_203.mp3"]	预定约会-接受邀请
+105038	dating_invite_no	1051		["sound/role/qinli/KOTORI_204.mp3"]	预定约会-拒绝邀请
+105039	button_dress	1051		["sound/role/qinli/KOTORI_205.mp3"]	进入换装
+105040	dress_low	1051		["sound/role/qinli/KOTORI_207.mp3"]	换上服装-一般
+105041	dress_high	1051		["sound/role/qinli/KOTORI_208.mp3"]	换上服装-高级
+105042	button_gift	1051		["sound/role/qinli/KOTORI_209.mp3"]	进入送礼
+105043	gifts_wait	1051		["sound/role/qinli/KOTORI_SHIRO_11.mp3"]	等待送礼
+105044	food_high	1051		["sound/role/qinli/KOTORI_SHIRO_12.mp3"]	喜爱食物
+105045	food_low	1051		["sound/role/qinli/KOTORI_SHIRO_13.mp3"]	一般食物
+105046	gift_high	1051		["sound/role/qinli/KOTORI_SHIRO_14.mp3"]	喜爱礼物
+105047	gift_low	1051		["sound/role/qinli/KOTORI_SHIRO_15.mp3"]	一般礼物
+105048	favor_up	1051		["sound/role/qinli/KOTORI_SHIRO_09.mp3"]	好感度等级提升
+105049	ability_up				等级/星级提升
+105050	change_kanban	1051		["sound/role/qinli/KOTORI_210.mp3"]	切换看板娘
+105051	change_hero				切换精灵
+105052	change_equip	1051		["sound/role/qinli/KOTORI_211.mp3"]	更换灵装
+105053	battle_play				上阵
+105054	mood_sad				看板娘处于无聊、生气、饥饿状态
+105055	mood_normal				在城市点击看板娘模型1
+105056	mian_morning				进入主界面-早上
+105057	mian_afternoon				进入主界面-下午
+105058	mian_night				进入主界面-晚上
+105059	mian_dawn				进入主界面-凌晨
+105060	spring				温泉功能
+106001	hero_get		110601	["sound/role/zhenna/MANA_28.mp3"]	获得角色1
+106002	button_dating	106		["sound/role/zhenna/MANA_07.mp3"]	点击约会按钮
+106003	dating_complete	106		["sound/role/zhenna/MANA_30.mp3"]	约会结束-成功
+106004	hidden_end	106		["sound/role/zhenna/MANA_32.mp3"]	约会结束-hidden end
+106005	good_end	106		["sound/role/zhenna/MANA_33.mp3"]	约会结束-happy、good
+106006	bad_end	106		["sound/role/zhenna/MANA_31.mp3"]	约会结束-normal、bad
+106007	dating_invite_yes	106		["sound/role/zhenna/MANA_34.mp3"]	预定约会-接受邀请
+106008	dating_invite_no	106		["sound/role/zhenna/MANA_35.mp3"]	预定约会-拒绝邀请
+106009	button_dress	106		["sound/role/zhenna/MANA_36.mp3"]	进入换装
+106010	dress_low	106		["sound/role/zhenna/MANA_14.mp3"]	换上服装-一般
+106011	dress_high	106		["sound/role/zhenna/MANA_38.mp3"]	换上服装-高级
+106012	button_gift	106		["sound/role/zhenna/MANA_39.mp3"]	进入送礼
+106013	gifts_wait	106		["sound/role/zhenna/MANA_40.mp3"]	等待送礼
+106014	food_high	106		["sound/role/zhenna/MANA_10.mp3"]	喜爱食物
+106015	food_low	106		["sound/role/zhenna/MANA_11.mp3"]	一般食物
+106016	gift_high	106		["sound/role/zhenna/MANA_12.mp3"]	喜爱礼物
+106017	gift_low	106		["sound/role/zhenna/MANA_13.mp3"]	一般礼物
+106018	favor_up	106		["sound/role/zhenna/MANA_08.mp3"]	好感度等级提升
+106019	ability_up		110601	["sound/role/zhenna/MANA_41.mp3"]	等级/星级提升
+106020	change_kanban	106		["sound/role/zhenna/MANA_42.mp3"]	切换看板娘
+106021	change_hero		110601	["sound/role/zhenna/MANA_43.mp3"]	切换精灵
+106022	change_equip	106		["sound/role/zhenna/MANA_44.mp3"]	更换灵装
+106023	battle_play		110601	["sound/role/zhenna/MANA_45.mp3"]	上阵
+106024	mood_sad	106		["sound/role/zhenna/MANA_04.mp3"]	看板娘处于无聊、生气、饥饿状态
+106025	mood_normal	106		["sound/role/zhenna/MANA_05.mp3"]	在城市点击看板娘模型1
+106026	mian_morning	106		["sound/role/zhenna/MANA_75.mp3"]	进入主界面-早上
+106027	mian_afternoon	106		["sound/role/zhenna/MANA_77.mp3"]	进入主界面-下午
+106028	mian_night	106		["sound/role/zhenna/MANA_09.mp3"]	进入主界面-晚上
+106029	mian_dawn	106		["sound/role/zhenna/MANA_78.mp3"]	进入主界面-凌晨
+106030	spring	106		["sound/role/zhenna/MANA_120.mp3"]	温泉功能
+106031	hero_get		110602	["sound/role/zhenna/MANA_83.mp3"]	获得角色1
+106032	button_dating				点击约会按钮
+106033	dating_complete				约会结束-成功
+106034	hidden_end				约会结束-hidden end
+106035	good_end				约会结束-happy、good
+106036	bad_end				约会结束-normal、bad
+106037	dating_invite_yes				预定约会-接受邀请
+106038	dating_invite_no				预定约会-拒绝邀请
+106039	button_dress				进入换装
+106040	dress_low				换上服装-一般
+106041	dress_high				换上服装-高级
+106042	button_gift				进入送礼
+106043	gifts_wait				等待送礼
+106044	food_high				喜爱食物
+106045	food_low				一般食物
+106046	gift_high				喜爱礼物
+106047	gift_low				一般礼物
+106048	favor_up				好感度等级提升
+106049	ability_up		110602	["sound/role/zhenna/MANA_84.mp3"]	等级/星级提升
+106050	change_kanban				切换看板娘
+106051	change_hero		110602	["sound/role/zhenna/MANA_85.mp3"]	切换精灵
+106052	change_equip				更换灵装
+106053	battle_play		110602	["sound/role/zhenna/MANA_86.mp3"]	上阵
+106054	mood_sad				看板娘处于无聊、生气、饥饿状态
+106055	mood_normal				在城市点击看板娘模型1
+106056	mian_morning				进入主界面-早上
+106057	mian_afternoon				进入主界面-下午
+106058	mian_night				进入主界面-晚上
+106059	mian_dawn				进入主界面-凌晨
+106060	spring				温泉功能
+107001	hero_get		110701	["sound/role/yejushi/KAGUYA_13.mp3"]	获得角色1
+107002	button_dating	107		["sound/role/yejushi/KAGUYA_04.mp3"]	点击约会按钮
+107003	dating_complete	107		["sound/role/yejushi/KAGUYA_33.mp3"]	约会结束-成功
+107004	hidden_end	107		["sound/role/yejushi/KAGUYA_35.mp3"]	约会结束-hidden end
+107005	good_end	107		["sound/role/yejushi/KAGUYA_36.mp3"]	约会结束-happy、good
+107006	bad_end	107		["sound/role/yejushi/KAGUYA_37.mp3"]	约会结束-normal、bad
+107007	dating_invite_yes	107		["sound/role/yejushi/KAGUYA_38.mp3"]	预定约会-接受邀请
+107008	dating_invite_no	107		["sound/role/yejushi/KAGUYA_39.mp3"]	预定约会-拒绝邀请
+107009	button_dress	107		["sound/role/yejushi/KAGUYA_40.mp3"]	进入换装
+107010	dress_low	107		["sound/role/yejushi/KAGUYA_11.mp3"]	换上服装-一般
+107011	dress_high	107		["sound/role/yejushi/KAGUYA_42.mp3"]	换上服装-高级
+107012	button_gift	107		["sound/role/yejushi/KAGUYA_43.mp3"]	进入送礼
+107013	gifts_wait	107		["sound/role/yejushi/KAGUYA_44.mp3"]	等待送礼
+107014	food_high	107		["sound/role/yejushi/KAGUYA_07.mp3"]	喜爱食物
+107015	food_low	107		["sound/role/yejushi/KAGUYA_08.mp3"]	一般食物
+107016	gift_high	107		["sound/role/yejushi/KAGUYA_09.mp3"]	喜爱礼物
+107017	gift_low	107		["sound/role/yejushi/KAGUYA_10.mp3"]	一般礼物
+107018	favor_up	107		["sound/role/yejushi/KAGUYA_05.mp3"]	好感度等级提升
+107019	ability_up		110701	["sound/role/yejushi/KAGUYA_12.mp3"]	等级/星级提升
+107020	change_kanban	107		["sound/role/yejushi/KAGUYA_45.mp3"]	切换看板娘
+107021	change_hero		110701	["sound/role/yejushi/KAGUYA_46.mp3"]	切换精灵
+107022	change_equip	107		["sound/role/yejushi/KAGUYA_47.mp3"]	更换灵装
+107023	battle_play		110701	["sound/role/yejushi/KAGUYA_48.mp3"]	上阵
+107024	mood_sad	107		["sound/role/yejushi/KAGUYA_01.mp3"]	看板娘处于无聊、生气、饥饿状态
+107025	mood_normal	107		["sound/role/yejushi/KAGUYA_02.mp3"]	在城市点击看板娘模型1
+107026	mian_morning	107		["sound/role/yejushi/KAGUYA_71.mp3"]	进入主界面-早上
+107027	mian_afternoon	107		["sound/role/yejushi/KAGUYA_06.mp3"]	进入主界面-下午
+107028	mian_night	107		["sound/role/yejushi/KAGUYA_73.mp3"]	进入主界面-晚上
+107029	mian_dawn	107		["sound/role/yejushi/KAGUYA_74.mp3"]	进入主界面-凌晨
+107030	spring	107		["sound/role/yejushi/KAGUYA_84.mp3"]	温泉功能
+108001	hero_get		110801	["sound/role/xixian/YUZURU_91.mp3"]	获得角色1
+108002	button_dating	108		["sound/role/xixian/YUZURU_33.mp3"]	点击约会按钮
+108003	dating_complete	108		["sound/role/xixian/YUZURU_34.mp3"]	约会结束-成功
+108004	hidden_end	108		["sound/role/xixian/YUZURU_36.mp3"]	约会结束-hidden end
+108005	good_end	108		["sound/role/xixian/YUZURU_37.mp3"]	约会结束-happy、good
+108006	bad_end	108		["sound/role/xixian/YUZURU_38.mp3"]	约会结束-normal、bad
+108007	dating_invite_yes	108		["sound/role/xixian/YUZURU_39.mp3"]	预定约会-接受邀请
+108008	dating_invite_no	108		["sound/role/xixian/YUZURU_40.mp3"]	预定约会-拒绝邀请
+108009	button_dress	108		["sound/role/xixian/YUZURU_41.mp3"]	进入换装
+108010	dress_low	108		["sound/role/xixian/YUZURU_10.mp3"]	换上服装-一般
+108011	dress_high	108		["sound/role/xixian/YUZURU_43.mp3"]	换上服装-高级
+108012	button_gift	108		["sound/role/xixian/YUZURU_44.mp3"]	进入送礼
+108013	gifts_wait	108		["sound/role/xixian/YUZURU_45.mp3"]	等待送礼
+108014	food_high	108		["sound/role/xixian/YUZURU_06.mp3"]	喜爱食物
+108015	food_low	108		["sound/role/xixian/YUZURU_07.mp3"]	一般食物
+108016	gift_high	108		["sound/role/xixian/YUZURU_08.mp3"]	喜爱礼物
+108017	gift_low	108		["sound/role/xixian/YUZURU_09.mp3"]	一般礼物
+108018	favor_up	108		["sound/role/xixian/YUZURU_04.mp3"]	好感度等级提升
+108019	ability_up		110801	["sound/role/xixian/YUZURU_11.mp3"]	等级/星级提升
+108020	change_kanban	108		["sound/role/xixian/YUZURU_05.mp3"]	切换看板娘
+108021	change_hero		110801	["sound/role/xixian/YUZURU_46.mp3"]	切换精灵
+108022	change_equip	108		["sound/role/xixian/YUZURU_47.mp3"]	更换灵装
+108023	battle_play		110801	["sound/role/xixian/YUZURU_48.mp3"]	上阵
+108024	mood_sad	108		["sound/role/xixian/YUZURU_01.mp3"]	看板娘处于无聊、生气、饥饿状态
+108025	mood_normal	108		["sound/role/xixian/YUZURU_02.mp3"]	在城市点击看板娘模型1
+108026	mian_morning	108		["sound/role/xixian/YUZURU_71.mp3"]	进入主界面-早上
+108027	mian_afternoon	108		["sound/role/xixian/YUZURU_72.mp3"]	进入主界面-下午
+108028	mian_night	108		["sound/role/xixian/YUZURU_73.mp3"]	进入主界面-晚上
+108029	mian_dawn	108		["sound/role/xixian/YUZURU_74.mp3"]	进入主界面-凌晨
+108030	spring	108		["sound/role/xixian/YUZURU_96.mp3"]	温泉功能
+109001	hero_get		110901	["sound/role/ailun/EREN_13.mp3"]	获得角色1
+109002	button_dating	109		["sound/role/ailun/EREN_04.mp3"]	点击约会按钮
+109003	dating_complete	109		["sound/role/ailun/EREN_33.mp3"]	约会结束-成功
+109004	hidden_end	109		["sound/role/ailun/EREN_35.mp3"]	约会结束-hidden end
+109005	good_end	109		["sound/role/ailun/EREN_36.mp3"]	约会结束-happy、good
+109006	bad_end	109		["sound/role/ailun/EREN_37.mp3"]	约会结束-normal、bad
+109007	dating_invite_yes	109		["sound/role/ailun/EREN_38.mp3"]	预定约会-接受邀请
+109008	dating_invite_no	109		["sound/role/ailun/EREN_39.mp3"]	预定约会-拒绝邀请
+109009	button_dress	109		["sound/role/ailun/EREN_40.mp3"]	进入换装
+109010	dress_low	109		["sound/role/ailun/EREN_11.mp3"]	换上服装-一般
+109011	dress_high	109		["sound/role/ailun/EREN_42.mp3"]	换上服装-高级
+109012	button_gift	109		["sound/role/ailun/EREN_43.mp3"]	进入送礼
+109013	gifts_wait	109		["sound/role/ailun/EREN_44.mp3"]	等待送礼
+109014	food_high	109		["sound/role/ailun/EREN_07.mp3"]	喜爱食物
+109015	food_low	109		["sound/role/ailun/EREN_08.mp3"]	一般食物
+109016	gift_high	109		["sound/role/ailun/EREN_09.mp3"]	喜爱礼物
+109017	gift_low	109		["sound/role/ailun/EREN_10.mp3"]	一般礼物
+109018	favor_up	109		["sound/role/ailun/EREN_05.mp3"]	好感度等级提升
+109019	ability_up		110901	["sound/role/ailun/EREN_12.mp3"]	等级/星级提升
+109020	change_kanban	109		["sound/role/ailun/EREN_45.mp3"]	切换看板娘
+109021	change_hero		110901	["sound/role/ailun/EREN_46.mp3"]	切换精灵
+109022	change_equip	109		["sound/role/ailun/EREN_47.mp3"]	更换灵装
+109023	battle_play		110901	["sound/role/ailun/EREN_48.mp3"]	上阵
+109024	mood_sad	109		["sound/role/ailun/EREN_01.mp3"]	看板娘处于无聊、生气、饥饿状态
+109025	mood_normal	109		["sound/role/ailun/EREN_02.mp3"]	在城市点击看板娘模型1
+109026	mian_morning	109		["sound/role/ailun/EREN_72.mp3"]	进入主界面-早上
+109027	mian_afternoon	109		["sound/role/ailun/EREN_74.mp3"]	进入主界面-下午
+109028	mian_night	109		["sound/role/ailun/EREN_75.mp3"]	进入主界面-晚上
+109029	mian_dawn	109		["sound/role/ailun/EREN_76.mp3"]	进入主界面-凌晨
+109030	spring	109		["sound/role/ailun/EREN_98.mp3"]	温泉功能
+110001	hero_get		111001	["sound/role/meijiu/MIKU_33.mp3"]	获得角色1
+110002	button_dating	110		["sound/role/meijiu/MIKU_24.mp3"]	点击约会按钮
+110003	dating_complete	110		["sound/role/meijiu/MIKU_58.mp3"]	约会结束-成功
+110004	hidden_end	110		["sound/role/meijiu/MIKU_60.mp3"]	约会结束-hidden end
+110005	good_end	110		["sound/role/meijiu/MIKU_100.mp3"]	约会结束-happy、good
+110006	bad_end	110		["sound/role/meijiu/MIKU_61.mp3"]	约会结束-normal、bad
+110007	dating_invite_yes	110		["sound/role/meijiu/MIKU_62.mp3"]	预定约会-接受邀请
+110008	dating_invite_no	110		["sound/role/meijiu/MIKU_63.mp3"]	预定约会-拒绝邀请
+110009	button_dress	110		["sound/role/meijiu/MIKU_64.mp3"]	进入换装
+110010	dress_low	110		["sound/role/meijiu/MIKU_31.mp3"]	换上服装-一般
+110011	dress_high	110		["sound/role/meijiu/MIKU_66.mp3"]	换上服装-高级
+110012	button_gift	110		["sound/role/meijiu/MIKU_102.mp3"]	进入送礼
+110013	gifts_wait	110		["sound/role/meijiu/MIKU_67.mp3"]	等待送礼
+110014	food_high	110		["sound/role/meijiu/MIKU_27.mp3"]	喜爱食物
+110015	food_low	110		["sound/role/meijiu/MIKU_28.mp3"]	一般食物
+110016	gift_high	110		["sound/role/meijiu/MIKU_29.mp3"]	喜爱礼物
+110017	gift_low	110		["sound/role/meijiu/MIKU_30.mp3"]	一般礼物
+110018	favor_up	110		["sound/role/meijiu/MIKU_25.mp3"]	好感度等级提升
+110019	ability_up		111001	["sound/role/meijiu/MIKU_32.mp3"]	等级/星级提升
+110020	change_kanban	110		["sound/role/meijiu/MIKU_68.mp3"]	切换看板娘
+110021	change_hero		111001	["sound/role/meijiu/MIKU_69.mp3"]	切换精灵
+110022	change_equip	110		["sound/role/meijiu/MIKU_70.mp3"]	更换灵装
+110023	battle_play		111001	["sound/role/meijiu/MIKU_71.mp3"]	上阵
+110024	mood_sad	110		["sound/role/meijiu/MIKU_21.mp3"]	看板娘处于无聊、生气、饥饿状态
+110025	mood_normal	110		["sound/role/meijiu/MIKU_22.mp3"]	在城市点击看板娘模型1
+110026	mian_morning	110		["sound/role/meijiu/MIKU_93.mp3"]	进入主界面-早上
+110027	mian_afternoon	110		["sound/role/meijiu/MIKU_95.mp3"]	进入主界面-下午
+110028	mian_night	110		["sound/role/meijiu/MIKU_26.mp3"]	进入主界面-晚上
+110029	mian_dawn	110		["sound/role/meijiu/MIKU_96.mp3"]	进入主界面-凌晨
+110030	spring	110		["sound/role/meijiu/MIKU_116.mp3"]	温泉功能
+111001	hero_get		111101	["sound/role/shizhi/SHIORI_08.mp3"]	获得角色1
+111002	button_dating	111		["sound/role/shizhi/SHIORI_09.mp3"]	点击约会按钮
+111003	dating_complete	111		["sound/role/shizhi/SHIORI_12.mp3"]	约会结束-成功
+111004	hidden_end	111		["sound/role/shizhi/SHIORI_14.mp3"]	约会结束-hidden end
+111005	good_end	111		["sound/role/shizhi/SHIORI_15.mp3"]	约会结束-happy、good
+111006	bad_end	111		["sound/role/shizhi/SHIORI_16.mp3"]	约会结束-normal、bad
+111007	dating_invite_yes	111		["sound/role/shizhi/SHIORI_17.mp3"]	预定约会-接受邀请
+111008	dating_invite_no	111		["sound/role/shizhi/SHIORI_18.mp3"]	预定约会-拒绝邀请
+111009	button_dress	111		["sound/role/shizhi/SHIORI_SHIDOU_04.mp3"]	进入换装
+111010	dress_low	111		["sound/role/shizhi/SHIORI_SHIDOU_04.mp3"]	换上服装-一般
+111011	dress_high	111		["sound/role/shizhi/SHIORI_SHIDOU_07.mp3"]	换上服装-高级
+111012	button_gift	111		["sound/role/shizhi/SHIORI_19.mp3"]	进入送礼
+111013	gifts_wait	111		["sound/role/shizhi/SHIORI_20.mp3"]	等待送礼
+111014	food_high	111		["sound/role/shizhi/SHIORI_21.mp3"]	喜爱食物
+111015	food_low	111		["sound/role/shizhi/SHIORI_22.mp3"]	一般食物
+111016	gift_high	111		["sound/role/shizhi/SHIORI_23.mp3"]	喜爱礼物
+111017	gift_low	111		["sound/role/shizhi/SHIORI_24.mp3"]	一般礼物
+111018	favor_up	111		["sound/role/shizhi/SHIORI_25.mp3"]	好感度等级提升
+111019	ability_up				等级/星级提升
+111020	change_kanban	111		["sound/role/shizhi/SHIORI_26.mp3"]	切换看板娘
+111021	change_hero				切换精灵
+111022	change_equip	111		["sound/role/shizhi/SHIORI_SHIDOU_05.mp3"]	更换灵装
+111023	battle_play	111	111101	["sound/role/shizhi/SHIORI_27.mp3"]	上阵
+111024	mood_sad				看板娘处于无聊、生气、饥饿状态
+111025	mood_normal				在城市点击看板娘模型1
+111026	mian_morning				进入主界面-早上
+111027	mian_afternoon				进入主界面-下午
+111028	mian_night				进入主界面-晚上
+111029	mian_dawn				进入主界面-凌晨
+111030	spring				温泉功能
+112001	hero_get		111201	["sound/role/wanyouli/MAYURI_30.mp3"]	获得角色1
+112002	button_dating	112		["sound/role/wanyouli/MAYURI_21.mp3"]	点击约会按钮
+112003	dating_complete	112		["sound/role/wanyouli/MAYURI_54.mp3"]	约会结束-成功
+112004	hidden_end	112		["sound/role/wanyouli/MAYURI_56.mp3"]	约会结束-hidden end
+112005	good_end	112		["sound/role/wanyouli/MAYURI_97.mp3"]	约会结束-happy、good
+112006	bad_end	112		["sound/role/wanyouli/MAYURI_57.mp3"]	约会结束-normal、bad
+112007	dating_invite_yes	112		["sound/role/wanyouli/MAYURI_58.mp3"]	预定约会-接受邀请
+112008	dating_invite_no	112		["sound/role/wanyouli/MAYURI_55.mp3"]	预定约会-拒绝邀请
+112009	button_dress	112		["sound/role/wanyouli/MAYURI_59.mp3"]	进入换装
+112010	dress_low	112		["sound/role/wanyouli/MAYURI_28.mp3"]	换上服装-一般
+112011	dress_high	112		["sound/role/wanyouli/MAYURI_61.mp3"]	换上服装-高级
+112012	button_gift	112		["sound/role/wanyouli/MAYURI_62.mp3"]	进入送礼
+112013	gifts_wait	112		["sound/role/wanyouli/MAYURI_96.mp3"]	等待送礼
+112014	food_high	112		["sound/role/wanyouli/MAYURI_24.mp3"]	喜爱食物
+112015	food_low	112		["sound/role/wanyouli/MAYURI_25.mp3"]	一般食物
+112016	gift_high	112		["sound/role/wanyouli/MAYURI_26.mp3"]	喜爱礼物
+112017	gift_low	112		["sound/role/wanyouli/MAYURI_27.mp3"]	一般礼物
+112018	favor_up	112		["sound/role/wanyouli/MAYURI_22.mp3"]	好感度等级提升
+112019	ability_up		111201	["sound/role/wanyouli/MAYURI_29.mp3"]	等级/星级提升
+112020	change_kanban	112		["sound/role/wanyouli/MAYURI_63.mp3"]	切换看板娘
+112021	change_hero		111201	["sound/role/wanyouli/MAYURI_64.mp3"]	切换精灵
+112022	change_equip	112		["sound/role/wanyouli/MAYURI_65.mp3"]	更换灵装
+112023	battle_play		111201	["sound/role/wanyouli/MAYURI_66.mp3"]	上阵
+112024	mood_sad	112		["sound/role/wanyouli/MAYURI_18.mp3"]	看板娘处于无聊、生气、饥饿状态
+112025	mood_normal	112		["sound/role/wanyouli/MAYURI_19.mp3"]	在城市点击看板娘模型1
+112026	mian_morning	112		["sound/role/wanyouli/MAYURI_85.mp3"]	进入主界面-早上
+112027	mian_afternoon	112		["sound/role/wanyouli/MAYURI_87.mp3"]	进入主界面-下午
+112028	mian_night	112		["sound/role/wanyouli/MAYURI_23.mp3"]	进入主界面-晚上
+112029	mian_dawn	112		["sound/role/wanyouli/MAYURI_88.mp3"]	进入主界面-凌晨
+112030	spring	112		["sound/role/wanyouli/MAYURI_111.mp3"]	温泉功能

@@ -1,0 +1,52 @@
+看板娘ID	名字	路径	人物展示	模型类型（0为2.0   1为3.0）	注释
+id	name	rolePath	roleName	type	comment
+number	string	string	string	number	comment
+int	string	string	string	int	
+10001	黑影	modle/bust/bust_101_luomo	bust_101_luomo.model.json	0	
+10101	十香-灵装	modle/bust/bust_10101	bust_10101.model.json	0	目录有问题！
+10104	十香-校服	modle/bust/bust_10104	bust_10104.model.json	0	
+10105	十香-女仆装	modle/bust/bust_10105	bust_10105.model.json	0	
+10106	十香-泳装	modle/bust/bust_10106	bust_10106.model.json	0	
+10107	十香-休闲装	modle/bust/bust_10107	bust_10107.model.json	0	
+10201	鸢一折纸-AST1	modle/bust/bust_10201	bust_10201.model.json	0	
+10203	鸢一折纸-女仆装	modle/bust/bust_10203	bust_10203.model.json	0	
+10204	鸢一折纸-校服	modle/bust/bust_10204	bust_10204.model.json	0	
+10205	鸢一折纸-休闲装	modle/bust/bust_10205	Bust_10205.model.json	0	
+10206	鸢一折纸-泳装	modle/bust/bust_10206	bust_10206.model.json	0	
+10207	鸢一折纸-休闲装2	modle/bust/bust_10207	bust_10207.model.json	0	
+10301	四糸乃-灵装	modle/bust/bust_10301	bust_10301.model.json	0	
+10303	四糸乃-休闲装	modle/bust/bust_10303	bust_10303.model.json	0	
+10304	四糸乃-泳装	modle/bust/bust_10304	bust_10304.model.json	0	
+10401	时崎狂三-灵装	modle/bust/bust_10401	bust_10401.model.json	0	
+10403	时崎狂三-哥特装	modle/bust/bust_10403	bust_10403.model.json	0	
+10404	时崎狂三-校服	modle/bust/bust_10404	bust_10404.model.json	0	
+10501	五河琴里-灵装 	modle/bust/bust_10501	bust_10501.model.json	0	
+10503	五河琴里-休闲装（白发带）	modle/bust/bust_10503	bust_10503.model.json	0	
+10504	五河琴里-休闲装	modle/bust/bust_10504	bust_10504.model.json	0	
+10505	五河琴里-指挥官 	modle/bust/bust_10505	bust_10505.model.json	0	
+10506	琴里-泳装	modle/bust/bust_10506	bust_10506.model.json	0	
+10601	崇宫真那-DEM	modle/bust/bust_10601	bust_10601.model.json	0	
+10602	崇宫真那-DEM	modle/bust/bust_10602	bust_10602.model.json	0	
+10603	崇宫真那-休闲装	modle/bust/bust_10603	bust_10603.model.json	0	
+10604	崇宫真那-休闲装	modle/bust/bust_10604_new	bust_10604.model.json	0	新建模
+10701	八舞耶俱矢-灵装	modle/bust/bust_10701	bust_10701.model.json	0	
+10703	八舞耶俱矢-泳装	modle/bust/bust_10703	bust_10703.model.json	0	
+10801	八舞夕弦-灵装	modle/bust/bust_10801	bust_10801.model.json	0	
+10803	八舞夕弦-泳装	modle/bust/bust_10803	bust_10803.model.json	0	
+10805	八舞夕弦-校服	modle/bust/bust_10805	bust_10805.model.json	0	
+10901	艾伦-DEM1	modle/bust/bust_10901	bust_10901.model.json	0	
+10902	艾伦	modle/bust/bust_10902	bust_10902.model.json	0	
+30101	令音-白大褂	modle/bust/bust_30101	bust_30101.model.json	0	
+30901	小珠老师	modle/bust/bust_30901	bust_30901.model.json	0	
+101101	101表情包	modle/bust/bust_101_eff	bust_101_eff.model.json	0	
+101103	十香表情103	modle/bust/bust_103_eff	bust_eff.model.json	0	
+210101	十香-灵装（3.0）	modle/bust/bust_10101_kanban	bust_10101.model3.json	1	
+210104	十香-校服（3.0）	modle/bust/bust_10104_kanban	bust_10104.model3.json	1	
+210204	鸢一折纸-校服(3.0)	modle/bust/bust_10204_kanban	bust_10204.model3.json	1	
+210301	四糸乃-灵装(3.0)	modle/bust/bust_10301_kanban	bust_10301.model3.json	1	
+210303	四糸乃-休闲装(3.0)	modle/bust/bust_10303_kanban	bust_10303.model3.json	1	
+210401	狂三-灵装(3.0)	modle/bust/bust_10401_kanban	bust_10401.model3.json	1	
+210501	琴里-灵装(3.0)	modle/bust/bust_10501_kanban	bust_10501.model3.json	1	
+310101	夜刀神十香-灵装?	modle/bust/bust_10101_old	bust_10101.model.json	0	4月文件
+310104	夜刀神十香-校服?	modle/bust/bust_10104_old	bust_10104.model.json	0	4月文件
+410505	琴里-指挥官(剧情用)	modle/bust/bust_10505_new	bust_10505_new.model.json	0	

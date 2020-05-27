@@ -1,0 +1,26 @@
+id	组合名称	icon1	icon2	组合类型	组合需要质点	组合技能
+id	name	icon1	icon2	type	needParticle	skill
+number	comment	string	string	number	numbers	numbers
+int				int	int[]	int[]
+1	愚者	icon/equipment/combination/yuzhe0.png	icon/equipment/combination/yuzhe.png	1	1-2	29-30-31-32-33
+2	魔术师	icon/equipment/combination/moshushi0.png	icon/equipment/combination/moshushi.png	2	1-3	34-35-36-37-38
+3	女祭司	icon/equipment/combination/nvjisi0.png	icon/equipment/combination/nvjisi.png	3	1-6	39-40-41-42-43
+4	女皇	icon/equipment/combination/huanghou0.png	icon/equipment/combination/huanghou.png	4	2-3	44-45-46-47-48
+5	教皇	icon/equipment/combination/jiaohuang0.png	icon/equipment/combination/jiaohuang.png	5	2-4	49-50-51-52-53
+6	皇帝	icon/equipment/combination/huangdi0.png	icon/equipment/combination/huangdi.png	6	2-6	54-55-56-57-58
+7	战车	icon/equipment/combination/zhanche0.png	icon/equipment/combination/zhanche.png	7	3-5	59-60-61-62-63
+8	恋人	icon/equipment/combination/lianren0.png	icon/equipment/combination/lianren.png	8	3-6	64-65-66-67-68
+9	力量	icon/equipment/combination/liliang0.png	icon/equipment/combination/liliang.png	9	4-5	69-70-71-72-73
+10	隐士	icon/equipment/combination/yinzhe0.png	icon/equipment/combination/yinzhe.png	10	4-6	74-75-76-77-78
+11	命运	icon/equipment/combination/mingyun0.png	icon/equipment/combination/mingyun.png	11	4-7	79-80-81-82-83
+12	正义	icon/equipment/combination/zhengyi0.png	icon/equipment/combination/zhengyi.png	12	5-6	84-85-86-87-88
+13	倒悬者	icon/equipment/combination/daoxuanzhe0.png	icon/equipment/combination/daoxuanzhe.png	13	5-8	89-90-91-92-93
+14	死神	icon/equipment/combination/sishen0.png	icon/equipment/combination/sishen.png	14	6-7	94-95-96-97-98
+15	恶魔	icon/equipment/combination/emo0.png	icon/equipment/combination/emo.png	15	6-8	99-100-101-102-103
+16	节制	icon/equipment/combination/jiezhi0.png	icon/equipment/combination/jiezhi.png	16	6-9	104-105-106-107-108
+17	塔楼	icon/equipment/combination/ta0.png	icon/equipment/combination/ta.png	17	7-8	109-110-111-112-113
+18	星	icon/equipment/combination/xingxing0.png	icon/equipment/combination/xingxing.png	18	7-9	114-115-116-117-118
+19	月亮	icon/equipment/combination/yueliang0.png	icon/equipment/combination/yueliang.png	19	7-10	119-120-121-122-123
+20	太阳	icon/equipment/combination/taiyang0.png	icon/equipment/combination/taiyang.png	20	8-9	124-125-126-127-128
+21	审判	icon/equipment/combination/shenpan0.png	icon/equipment/combination/shenpan.png	21	8-10	129-130-131-132-133
+22	世界	icon/equipment/combination/shijie0.png	icon/equipment/combination/shijie.png	22	9-10	134-135-136-137-138

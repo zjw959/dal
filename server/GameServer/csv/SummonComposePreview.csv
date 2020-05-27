@@ -1,0 +1,124 @@
+id	所属配方（1.低级 2.中级 3.高级）	所属质点（1.王冠 2.智慧 3.理解……）	质点icon 	质点英文名图片	质点中文名	文本（描述-概率）	排序	备注
+id	zPointType	subType	icon	enNameLightIcon	pointName	name	order	comment
+number	number	number	string	string	string	numbers	number	comment
+int	int	int	string	string	string	int[]	int	comment
+1	1	1	icon/equipment/type/Kether.png	artFont/equipTypeName/Kether.png	1230001	1270001-65	1	1星王冠质点
+2	1	1				1270011-30	2	2星王冠质点
+3	1	1				1270021-5	3	3星王冠质点
+4	1	2	icon/equipment/type/Chokhmah.png	artFont/equipTypeName/Chokhmah.png	1230003	1270002-65	4	1星智慧质点
+5	1	2				1270012-30	5	2星智慧质点
+6	1	2				1270022-5	6	3星智慧质点
+7	1	3	icon/equipment/type/Binah.png	artFont/equipTypeName/Binah.png	1230005	1270003-65	7	1星理解质点
+8	1	3				1270013-30	8	2星理解质点
+9	1	3				1270023-5	9	3星理解质点
+10	1	4	icon/equipment/type/Chesed.png	artFont/equipTypeName/Chesed.png	1230007	1270004-65	10	1星仁爱质点
+11	1	4				1270014-30	11	2星仁爱质点
+12	1	4				1270024-5	12	3星仁爱质点
+13	1	5	icon/equipment/type/Geburah.png	artFont/equipTypeName/Geburah.png	1230009	1270005-65	13	1星严格质点
+14	1	5				1270015-30	14	2星严格质点
+15	1	5				1270025-5	15	3星严格质点
+16	1	6	icon/equipment/type/Tiphareth.png	artFont/equipTypeName/Tiphareth.png	1230011	1270006-65	16	1星美丽质点
+17	1	6				1270016-30	17	2星美丽质点
+18	1	6				1270026-5	18	3星美丽质点
+19	1	7	icon/equipment/type/Netzach.png	artFont/equipTypeName/Netzach.png	1230013	1270007-65	19	1星胜利质点
+20	1	7				1270017-30	20	2星胜利质点
+21	1	7				1270027-5	21	3星胜利质点
+22	1	8	icon/equipment/type/Hod.png	artFont/equipTypeName/Hod.png	1230015	1270008-65	22	1星光辉质点
+23	1	8				1270018-30	23	2星光辉质点
+24	1	8				1270028-5	24	3星光辉质点
+25	1	9	icon/equipment/type/Yesod.png	artFont/equipTypeName/Yesod.png	1230017	1270009-65	25	1星基础质点
+26	1	9				1270019-30	26	2星基础质点
+27	1	9				1270029-5	27	3星基础质点
+28	1	10	icon/equipment/type/Malkuth.png	artFont/equipTypeName/Malkuth.png	1230019	1270010-65	28	1星王国质点
+29	1	10				1270020-30	29	2星王国质点
+30	1	10				1270030-5	30	3星王国质点
+31	2	1	icon/equipment/type/Kether.png	artFont/equipTypeName/Kether.png	1230001	1270001-50	1	1星王冠质点
+32	2	1				1270011-38	2	2星王冠质点
+33	2	1				1270021-10	3	3星王冠质点
+34	2	1				1270031-2	4	4星王冠质点
+35	2	2	icon/equipment/type/Chokhmah.png	artFont/equipTypeName/Chokhmah.png	1230003	1270002-50	5	1星智慧质点
+36	2	2				1270012-38	6	2星智慧质点
+37	2	2				1270022-10	7	3星智慧质点
+38	2	2				1270032-2	8	4星智慧质点
+39	2	3	icon/equipment/type/Binah.png	artFont/equipTypeName/Binah.png	1230005	1270003-50	9	1星理解质点
+40	2	3				1270013-38	10	2星理解质点
+41	2	3				1270023-10	11	3星理解质点
+42	2	3				1270033-2	12	4星理解质点
+43	2	4	icon/equipment/type/Chesed.png	artFont/equipTypeName/Chesed.png	1230007	1270004-50	13	1星仁爱质点
+44	2	4				1270014-38	14	2星仁爱质点
+45	2	4				1270024-10	15	3星仁爱质点
+46	2	4				1270034-2	16	4星仁爱质点
+47	2	5	icon/equipment/type/Geburah.png	artFont/equipTypeName/Geburah.png	1230009	1270005-50	17	1星严格质点
+48	2	5				1270015-38	18	2星严格质点
+49	2	5				1270025-10	19	3星严格质点
+50	2	5				1270035-2	20	4星严格质点
+51	2	6	icon/equipment/type/Tiphareth.png	artFont/equipTypeName/Tiphareth.png	1230011	1270006-50	21	1星美丽质点
+52	2	6				1270016-38	22	2星美丽质点
+53	2	6				1270026-10	23	3星美丽质点
+54	2	6				1270036-2	24	4星美丽质点
+55	2	7	icon/equipment/type/Netzach.png	artFont/equipTypeName/Netzach.png	1230013	1270007-50	25	1星胜利质点
+56	2	7				1270017-38	26	2星胜利质点
+57	2	7				1270027-10	27	3星胜利质点
+58	2	7				1270037-2	28	4星胜利质点
+59	2	8	icon/equipment/type/Hod.png	artFont/equipTypeName/Hod.png	1230015	1270008-50	29	1星光辉质点
+60	2	8				1270018-38	30	2星光辉质点
+61	2	8				1270028-10	31	3星光辉质点
+62	2	8				1270038-2	32	4星光辉质点
+63	2	9	icon/equipment/type/Yesod.png	artFont/equipTypeName/Yesod.png	1230017	1270009-50	33	1星基础质点
+64	2	9				1270019-38	34	2星基础质点
+65	2	9				1270029-10	35	3星基础质点
+66	2	9				1270039-2	36	4星基础质点
+67	2	10	icon/equipment/type/Malkuth.png	artFont/equipTypeName/Malkuth.png	1230019	1270010-50	37	1星王国质点
+68	2	10				1270020-38	38	2星王国质点
+69	2	10				1270030-10	39	3星王国质点
+70	2	10				1270040-2	40	4星王国质点
+71	3	1	icon/equipment/type/Kether.png	artFont/equipTypeName/Kether.png	1230001	1270001-42	1	1星王冠质点
+72	3	1				1270011-38	2	2星王冠质点
+73	3	1				1270021-16	3	3星王冠质点
+74	3	1				1270031-3	4	4星王冠质点
+75	3	1				1270041-1	5	5星王冠质点
+76	3	2	icon/equipment/type/Chokhmah.png	artFont/equipTypeName/Chokhmah.png	1230003	1270002-42	6	1星智慧质点
+77	3	2				1270012-38	7	2星智慧质点
+78	3	2				1270022-16	8	3星智慧质点
+79	3	2				1270032-3	9	4星智慧质点
+80	3	2				1270042-1	10	5星智慧质点
+81	3	3	icon/equipment/type/Binah.png	artFont/equipTypeName/Binah.png	1230005	1270003-42	11	1星理解质点
+82	3	3				1270013-38	12	2星理解质点
+83	3	3				1270023-16	13	3星理解质点
+84	3	3				1270033-3	14	4星理解质点
+85	3	3				1270043-1	15	5星理解质点
+86	3	4	icon/equipment/type/Chesed.png	artFont/equipTypeName/Chesed.png	1230007	1270004-42	16	1星仁爱质点
+87	3	4				1270014-38	17	2星仁爱质点
+88	3	4				1270024-16	18	3星仁爱质点
+89	3	4				1270034-3	19	4星仁爱质点
+90	3	4				1270044-1	20	5星仁爱质点
+91	3	5	icon/equipment/type/Geburah.png	artFont/equipTypeName/Geburah.png	1230009	1270005-42	21	1星严格质点
+92	3	5				1270015-38	22	2星严格质点
+93	3	5				1270025-16	23	3星严格质点
+94	3	5				1270035-3	24	4星严格质点
+95	3	5				1270045-1	25	5星严格质点
+96	3	6	icon/equipment/type/Tiphareth.png	artFont/equipTypeName/Tiphareth.png	1230011	1270006-42	26	1星美丽质点
+97	3	6				1270016-38	27	2星美丽质点
+98	3	6				1270026-16	28	3星美丽质点
+99	3	6				1270036-3	29	4星美丽质点
+100	3	6				1270046-1	30	5星美丽质点
+101	3	7	icon/equipment/type/Netzach.png	artFont/equipTypeName/Netzach.png	1230013	1270007-42	31	1星胜利质点
+102	3	7				1270017-38	32	2星胜利质点
+103	3	7				1270027-16	33	3星胜利质点
+104	3	7				1270037-3	34	4星胜利质点
+105	3	7				1270047-1	35	5星胜利质点
+106	3	8	icon/equipment/type/Hod.png	artFont/equipTypeName/Hod.png	1230015	1270008-42	36	1星光辉质点
+107	3	8				1270018-38	37	2星光辉质点
+108	3	8				1270028-16	38	3星光辉质点
+109	3	8				1270038-3	39	4星光辉质点
+110	3	8				1270048-1	40	5星光辉质点
+111	3	9	icon/equipment/type/Yesod.png	artFont/equipTypeName/Yesod.png	1230017	1270009-42	41	1星基础质点
+112	3	9				1270019-38	42	2星基础质点
+113	3	9				1270029-16	43	3星基础质点
+114	3	9				1270039-3	44	4星基础质点
+115	3	9				1270049-1	45	5星基础质点
+116	3	10	icon/equipment/type/Malkuth.png	artFont/equipTypeName/Malkuth.png	1230019	1270010-42	46	1星王国质点
+117	3	10				1270020-38	47	2星王国质点
+118	3	10				1270030-16	48	3星王国质点
+119	3	10				1270040-3	49	4星王国质点
+120	3	10				1270050-1	50	5星王国质点

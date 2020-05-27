@@ -1,0 +1,9 @@
+ID	角色ID	需要位置刷新的动作
+id	resources	animations
+number	string	strings
+long	string	strings
+1	fight_10101	skillC-skillC_1-skillC_2-skillC_3-skillC_4-skillC_5-fall
+2	fight_10601	skillA_2-skillA_3-skillA_5-skillA_6
+3	fight_10401	skillA_3-skillA_4-skillB
+4	fight_10501	skillA_1-skillA_4-skillA_5-skillA_s1-skillC_3-skillC_4
+5	fight_10603	skillA_2-skillA_3-skillA_5-skillA_6-skillB_1

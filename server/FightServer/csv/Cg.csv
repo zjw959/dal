@@ -1,0 +1,47 @@
+id	cg类型（1脚本2视频3图片）	cg	cg脚本	背景	视频	备注
+id	type	cgId	cg	backGround	video	note
+number	number	number	string	string	string	string
+int	int	int	string	string	string	string
+1	1	540001	date_cg_3	scene/cg/date_cg_2.png		十香主线CG1
+2	1	540002	date_cg_4	scene/cg/date_cg_4.png		十香主线CG2
+3	1	540003	date_cg_2	scene/cg/date_cg_3.png		十香面包店CG1
+4	1	540004	date_cg_8			十香面包店CG2
+5	1	540005	date_cg_7			十香玩偶店CG1
+6	1	540006	date_cg_5			十香玩偶店CG2
+7	1	540019	date_cg_6			十香玩偶店CG3
+8	1	540007	date_cg_14			四糸乃主线CG1
+9	1	540008	date_cg_10			四糸乃主线CG2
+10	1	540009	date_cg_16			四糸乃面包店CG1
+11	1	540010	date_cg_11			四糸乃面包店CG2
+12	1	540011	date_cg_9			四糸乃玩偶店CG1
+13	1	540012	date_cg_13			四糸乃玩偶店CG2
+14	1	540013	date_cg_15			狂三主线CG1
+15	1	540014	date_cg_12			狂三面包店CG1
+16	1	540020	date_cg_17			琴里
+17	1	540021	date_cg_18			琴里
+18	1	540022	date_cg_19			琴里
+19	1	540023	date_cg_20			琴里
+20	1	540024	date_cg_21			琴里
+21	1	540025	date_cg_22			折纸
+22	1	540026	date_cg_23			折纸
+23	1	540027	date_cg_24			四糸乃
+24	1	540028	date_cg_25			四糸乃
+25	1	540029	date_cg_26			折纸
+26	1	540030	date_cg_27			折纸
+27	1	540031	date_cg_28			狂三
+28	1	540032	date_cg_29			狂三
+29	1	540033	date_cg_30			狂三
+30	1	540034	date_cg_31			狂三
+31	1	540035	date_cg_32			折纸
+32	1	540036	date_cg_33			琴里
+33	1	540037	date_cg_34			琴里
+34	1	540038	date_cg_35			琴里
+35	1	540039	date_cg_36			琴里
+36	1	540040	date_cg_37			十香
+37	1	540041	date_cg_38			折纸
+38	1	540042	date_cg_39			狂三
+39	1	540043	date_cg_40			折纸
+40	1	540044	date_cg_41			琴里
+41	1	540045	date_cg_42			十香外传1
+42	1	540046	date_cg_43			十香外传2
+43	1	540047	date_cg_44			十香外传3

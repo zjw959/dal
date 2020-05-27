@@ -1,0 +1,7 @@
+排序	怪物ID(填写monster.csv表中怪物ID)	关卡ID(填写dungeonLevel.csv表中关卡ID)	怪物等级	怪物出现时间(从关卡第0秒开始计时，直到关卡结束，单位毫秒)	怪物出现坐标(以1屏尺寸为基础，坐标可出屏，场景左下角为(0,0))	怪物掉落奖励
+id	fixedMonster	levelID	level	timing	createCoordinate	ItemAward
+number	number	number	number	number	json	json
+int	int	int	int	int	map	map
+1	1010	2002	1	1000	{"x":1386, "y":320}	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}
+2	1010	2002	1	2000	{"x":1386, "y":0}	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}
+3	1010	2002	1	2000	{"x":1386, "y":640}	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}

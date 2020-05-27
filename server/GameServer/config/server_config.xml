@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--服务器配置 -->
+<server>
+	<client_listen_port value="10086" desc="监听客服端的端口" />
+	<http_listen_port value="8181" desc="监听GM后台HTTP的端口" />
+	<client_channel_idle_time value="900" desc="客服端空闲检测时间间隔" />
+	<!-- 服务器初始化信息地址(用户中心地址) -->
+	<init_server_url value="http://192.168.20.182:8081" desc="获取服务器初始化信息地址" />
+</server>

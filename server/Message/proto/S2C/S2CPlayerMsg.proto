@@ -1,0 +1,166 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CPlayerMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CHeroMsg.proto";
+import "S2C/S2CItemMsg.proto";
+
+enum Language {
+	ZH_CN = 0;	// 简体中文
+	ZH_HK = 1;	// 繁体香港
+	ZH_TW = 2;	// 繁体台湾
+}
+
+// 修改玩家名称
+// code = 260
+message setPlayerInfo {
+	enum MsgID{eMsgID = 260;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 玩家信息
+// code = 267
+message PlayerInfo {
+	optional int32 pid = 1;	// 玩家ID
+	optional string name = 2; // 玩家名称
+	optional int32 lvl = 3; // 玩家等级
+	optional int64 exp = 4; // 玩家经验
+	optional int32 vip_lvl = 5; // VIP等级
+	optional int64 vip_exp = 6; // VIP经验
+	optional Language language = 7; // 语言
+	optional string remark = 8;				// 宣言
+	optional int32 helpFightHeroCid = 9;		// 助战英雄ID
+	repeated PlayerAttr attr = 10;//玩家属性
+	optional bool isFirstLogin = 11;//是否初次登录
+	optional string clientDiscreteData = 12; //客户端离散数据
+	optional string settings = 13;			// 设置信息
+	optional int32 absorbed = 14;			// 专注
+	optional int32 glamour = 15;			// 魅力
+	optional int32 tender = 16;			// 温柔
+	optional int32 knowledge = 17;			// 知识
+	optional int32 fortune = 18;			// 气运
+	enum MsgID{eMsgID = 267;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+enum PlayerAttrKey {
+	FREE_RESET_ANGEL_COUNT = 1;	// 免费天使重置次数
+}
+
+// 玩家属性
+message PlayerAttr{
+	required PlayerAttrKey attrKey = 1;	// 属性KEY
+	required int32 attrVal = 2;	// 属性值
+}
+
+// 阵型信息
+// code = 264
+message FormationInfo {
+	required ChangeType ct = 1;	// 操作类型
+	required int32 type = 2;		// 阵型类型
+	required int32 status = 3;		// 阵型状态 0 未启用 1 启用
+	repeated string stance = 4;	// 阵型英雄
+	enum MsgID{eMsgID = 264;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 阵型列表
+// code = 265
+message FormationInfoList{
+	repeated FormationInfo formations = 1;
+	enum MsgID{eMsgID = 265;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// code = 266
+message ReturnTestMsg{
+	repeated int32 x1 = 1 [packed=true];
+	required int32 x2 = 2;
+	required int32 x3 = 3;
+	enum MsgID{eMsgID = 266;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改助战
+// code = 269
+message HelpFightHero{
+	enum MsgID{eMsgID = 269;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求目标玩家信息
+// code = 271
+message RespTargetPlayerInfo{
+	required PlayerInfo playerInfo = 1;
+	required FormationInfoList formationInfo = 2;//阵型
+	repeated HeroInfo heros = 3;
+	repeated EquipmentInfo equipments = 4; //灵装
+	enum MsgID{eMsgID = 271;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 切换阵型
+// code = 272
+message RepsSwitchFormation{
+	enum MsgID{eMsgID = 272;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得帮助战斗玩家(路人)
+// code = 273
+message RepsHelpFightPlayers{
+	repeated PlayerSynopsis players = 1;
+	enum MsgID{eMsgID = 273;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 购买资源
+// code = 275
+message RespBuyResources{
+	required int32 cid = 1;
+	required int32 count = 2;
+	enum MsgID{eMsgID = 275;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求资源购买记录
+// code = 276
+message RespBuyResourcesLog{
+	repeated BuyResourcesLog logs = 1;
+	enum MsgID{eMsgID = 276;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message BuyResourcesLog{
+	required ChangeType ct = 1;	// 操作类型
+	required int32 cid = 2;
+	required int32 count = 3;
+}
+
+// 新手引导
+// code = 278
+message RespNewPlayerGuide{
+	required string data = 1;//数据
+	enum MsgID{eMsgID = 278;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 客户端异常
+// code = 279
+message RecordClientErr{
+	enum MsgID{eMsgID = 279;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 服务器提示信息（通用）
+// code = 282
+message ResTipInfo{
+	required int32 status = 1;//状态值：0-默认（无需确认） 1-确认后消失 2-确认后返回登录 3-确认后关闭游戏
+	required string content = 2;//提示内容
+	enum MsgID{eMsgID = 282;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 防沉迷信息
+// code = 283
+message ResAntiAddictionInfo{
+	required int32 status = 1;//状态值： 0-未认证 1-认证未成年 2-认证已成年
+	required int32 time = 2;//累积在线时长（小时）
+	enum MsgID{eMsgID = 283;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改防沉迷状态
+// code = 284
+message ResChangeAntiAddiction{
+	required int32 anti = 1;//当前防沉迷状态
+	enum MsgID{eMsgID = 284;}; //注意：消息id放最后,以免客户端解析异常
+}
+

@@ -1,0 +1,9 @@
+ID	策划备注	持续类型（0随技能时间，1固定时间）	持续参数（持续类型为1时生效，配置时间数值）	减速效率（配置万份比，10000时完全静止）	作用范围（0仅对敌人生效）
+id	dsc	continueType	continueData	slowScale	range
+number	string	number	number	number	number
+int		int	int	int	int
+1	完全静止，随技能首动作时间。测试	0		10000	0
+2	觉醒技能使用时，减速0.8秒	1	800	8000	0
+3	爱莲：觉醒技能使用时减速	0		4000	0
+4	爱莲：招架一闪时减速	1	500	8000	1
+5	反转十香：觉醒技能使用时减速	1	3400	8000	1

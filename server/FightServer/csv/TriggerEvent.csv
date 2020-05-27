@@ -1,0 +1,16 @@
+id	事件条件ID	参数	事件结果	备注
+id	event_condition_id	params	result	remark
+number	number	json	json	string
+int	int	map	map	string
+13	12004	{"roleId":101,"giftId":531001,"maxCount":1}	{"type":3,"data":{"roleId":101,"scriptId":3101001}}	赠送十香道具531001，道具约会-三色团子
+18	8001	{"roleId":101,"dressId":410107,"first":true}	{"type":3,"data":{"roleId":101,"scriptId":4101002}}	十香获得时装410107，时装约会
+19	8001	{"roleId":103,"dressId":410303,"first":true}	{"type":3,"data":{"roleId":103,"scriptId":4103001}}	四糸乃获得时装410303，时装约会
+20	8001	{"roleId":104,"dressId":410404,"first":true}	{"type":3,"data":{"roleId":104,"scriptId":4104001}}	狂三获得时装410404，时装约会
+21	8001	{"roleId":105,"dressId":410504,"first":true}	{"type":3,"data":{"roleId":105,"scriptId":4105001}}	琴里获得410504（休闲装）
+22	8001	{"roleId":105,"dressId":410505,"first":true}	{"type":3,"data":{"roleId":105,"scriptId":4105002}}	琴里获得410505（指挥官服）
+47	12004	{"roleId":101,"giftId":531031,"maxCount":1}	{"type":3,"data":{"roleId":101,"scriptId":3101002}}	赠送十香道具531001，道具约会-面包抱枕
+48	12004	{"roleId":102,"giftId":531033,"maxCount":1}	{"type":3,"data":{"roleId":102,"scriptId":3102001}}	赠送折纸道具531001，道具约会-猫耳发夹
+49	12004	{"roleId":103,"giftId":531005,"maxCount":1}	{"type":3,"data":{"roleId":103,"scriptId":3103001}}	赠送四糸乃道具531005，道具约会-熊猫吐司
+50	12004	{"roleId":103,"giftId":531035,"maxCount":1}	{"type":3,"data":{"roleId":103,"scriptId":3103002}}	赠送四糸乃道具531035，道具约会-乐高积木
+51	12004	{"roleId":103,"giftId":531007,"maxCount":1}	{"type":3,"data":{"roleId":103,"scriptId":3104001}}	赠送狂三道具531007，道具约会-巧克力礼盒
+52	12004	{"roleId":103,"giftId":531037,"maxCount":1}	{"type":3,"data":{"roleId":103,"scriptId":3104002}}	赠送狂三道具531037，道具约会-猫咪玩具

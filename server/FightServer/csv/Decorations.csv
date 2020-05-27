@@ -1,0 +1,8 @@
+顺序ID	装饰功能Id	装饰UI名称
+id	effectIdList	decUIName
+number	numbers	string
+int	int[]	string
+1001	10002	Image_deco1
+1002	10002	Image_deco2
+1003	10002	Image_deco3
+1004	10002	Image_deco4

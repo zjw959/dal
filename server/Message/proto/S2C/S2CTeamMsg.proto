@@ -1,0 +1,82 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CTeamMsg";
+
+// 队伍信息
+// code = 5898
+message TeamInfo {
+	required string teamId = 1;		// 队伍ID
+	required int32 leaderPid = 2;		// 队长PID
+	repeated TeamMember members = 3;	// 队伍人员
+	required int32 status = 4;			// 队伍状态 1:关闭自动匹配 2:开启自动匹配
+	enum MsgID{eMsgID = 5898;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 队员信息
+message TeamMember{
+	required int32 pid = 1;		// 队员PID
+	required int32 status = 2;		// 队员状态	  1:空闲 2:准备中
+	required int32 heroCid = 3;	// 英雄
+	required string name = 4;		// 昵称
+	required int32 plv = 5;		// 玩家等级
+	required int32 skinCid = 6;	// 英雄皮肤
+}
+
+
+// 创建队伍
+// code = 5889
+message RespCreateTeam{
+	optional TeamInfo team = 1;	// 队伍信息
+	enum MsgID{eMsgID = 5889;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改队伍状态
+// code = 5890
+message RespChangeTeamStatus{
+	enum MsgID{eMsgID = 5890;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求处理队员
+// code = 5891
+message RespTreatMember{
+	enum MsgID{eMsgID = 5891;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 匹配队伍
+// code = 5892
+message RespMatchTeam{
+	enum MsgID{eMsgID = 5892;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 离开队伍
+// code = 5893
+message RespLeaveTeam{
+	required int32 type = 1;				// 1:主动退出 2:队长踢出 3队伍超时
+	enum MsgID{eMsgID = 5893;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 加入队伍
+// code = 5894
+message RespJoinTeam{
+	required TeamInfo team = 1;
+	enum MsgID{eMsgID = 5894;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取消匹配
+// code = 5895
+message RespCancelMatch{
+	required int32 type = 1;				// 1:主动取消 2:匹配超时
+	enum MsgID{eMsgID = 5895;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 切换英雄
+// code = 5896
+message RespChangeHero{
+	enum MsgID{eMsgID = 5896;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改成员状态
+// code = 5897
+message RespChangeMenberStatus{
+	enum MsgID{eMsgID = 5897;}; //注意：消息id放最后,以免客户端解析异常
+}

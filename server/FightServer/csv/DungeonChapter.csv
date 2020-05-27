@@ -1,0 +1,15 @@
+id	章节类型（1剧情章节，2日常副本）	顺序	开放等级	章节编号名	章节名	章节名英文部分	关卡类型简名（获取系统用）	章节小图	章节描述(显示在作战中心)	章节完成展示角色	章节完成文字	章节完成报幕背景图	章节完成奖励精灵(同样以道具形式配置)
+id	type	order	unlockLevel	orderName	name	nameEn	simpleName	pictureIcon	chapterDescribe	endShowRole	endWord	finishPicture	unlockHero
+number	number	number	number	number	string	string	string	string	number	numbers	string	string	number
+int	int	int	int	int			string			int[]	string	string	int
+1	1	1	0	1	300221	300241		icon/fuben/mainline_1.png	300401	110101	r3001		110501
+2	1	2	5	2	300222	300242		icon/fuben/mainline_2.png	300403	110301	r3001		
+3	1	3	10	3	300223	300243		icon/fuben/mainline_3.png	300405	110401	r3001		
+4	1	4	15	4	300224	300244		icon/fuben/mainline_4.png	300407	110501	r3001		
+5	1	5	20	5	300225	300245		icon/fuben/mainline_5.png	300409	110701-110801	r3001		
+6	1	6	25	6	300226	300246		icon/fuben/mainline_6.png	300411	111001	r3001		
+7	1	7	30	7	300227	300247		icon/fuben/mainline_7.png	300412	110103	r3001		
+101	2	1	35	0									
+401	4	1	25	0	300261			icon/fuben/Dungeon_Endless.png	300431				
+402	4	2	25	0	300262			icon/fuben/Dungeon_Matchmaking.png	300432				
+403	100	3	50	0	300263			icon/fuben/Dungeon_Cabala.png	300433				

@@ -1,0 +1,53 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CEquipmentMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CItemMsg.proto";
+import "S2C/S2CHeroMsg.proto";
+
+//装备灵装
+//code = 2817
+message EquipMsg {
+	required EquipmentInfo equipment = 1;
+	optional EquipmentInfo oldEquipment = 2;
+	enum MsgID{eMsgID = 2817;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//卸下灵装
+//code = 2818
+message TakeOffMsg {
+	required bool success = 1;
+	enum MsgID{eMsgID = 2818;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//洗炼
+//code = 2819
+message ChangeSpecialAttrMsg {
+	required bool success = 1;
+	enum MsgID{eMsgID = 2819;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//强化
+//code = 2820
+message UpgradeMsg {
+	required bool success = 1;
+	enum MsgID{eMsgID = 2820;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//替换特殊属性
+//code = 2821
+message ReplaceSpecialAttrMsg {
+	required bool success  = 1;//操作是否成功
+	enum MsgID{eMsgID = 2821;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//锁定
+//code = 2823
+message LockMsg {
+	required bool success  = 1;//操作是否成功
+	required bool isLock = 2;	//锁定/解锁，ture/false;
+	enum MsgID{eMsgID = 2823;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+

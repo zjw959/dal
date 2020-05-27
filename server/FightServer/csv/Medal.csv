@@ -1,0 +1,9 @@
+id	策划备注	名称	勋章描述	描述策划备注	星级	品质	图鉴排序	icon	展示图（详情界面展示图）	有效时间（单位：S）	携带属性({属性号：属性值，属性号：属性值})	技能title	携带技能({技能ID：属性})	获取途径（途径ID，值）[1参与删档测试，2通关指定关卡]	获取描述	策划备注
+id	name2	name	desTextId	des2	star	quality	order	icon	exposedview	effectivetime	baseAttribute	skilltitle	baseskill	accessway	accessdes	name3
+number	comment	string	number	comment	number	number	number	string	string	number	json	string	json	json	string	comment
+int					int	int				int	map		map	map		
+1200001	测试纪念勋章	2450000	2460000	为参与测试的你们定制了这枚纪念勋章,感谢日日夜夜陪伴的你们	1	1	1	icon/item/goods/1200001.png	icon/item/goods/1200001.png	-1					2470000	参与第一次删档测试获得
+1200002	沉睡银狼勋章	2450001	2460001	为参与测试的你们定制了这枚纪念勋章,感谢日日夜夜陪伴的你们	2	2	2	icon/item/goods/1200002.png	icon/item/goods/1200002.png	-1					2470001	参与第一次删档测试获得
+1200003	梦魇挑战勋章	2450002	2460002	为参与测试的你们定制了这枚纪念勋章,感谢日日夜夜陪伴的你们	3	3	3	icon/item/goods/1200003.png	icon/item/goods/1200003.png	-1					2470002	参与第一次删档测试获得
+1200004	无限公爵勋章	2450003	2460003	为参与测试的你们定制了这枚纪念勋章,感谢日日夜夜陪伴的你们	4	4	4	icon/item/goods/1200004.png	icon/item/goods/1200004.png	-1					2470003	参与第一次删档测试获得
+1200005	苦痛伯爵勋章	2450004	2460004	为参与测试的你们定制了这枚纪念勋章,感谢日日夜夜陪伴的你们	5	5	5	icon/item/goods/1200005.png	icon/item/goods/1200005.png	600					2470004	通关关卡3-1

@@ -1,0 +1,52 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SLoginMsg";
+
+// 进入游戏
+// code = 257
+message EnterGame {
+	required string token = 1; // 信息
+	optional int32 anti = 2; // 防沉迷状态: 1-认证已成年 2-认证未成年 3-未认证
+	enum MsgID{eMsgID = 257;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 断线重连
+// code = 261
+message ReqReconnect {
+	required string token = 1; // 信息
+	optional int32 anti = 2; // 防沉迷状态: 1-认证已成年 2-认证未成年 3-未认证
+	enum MsgID{eMsgID = 261;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 心跳
+// code = 262
+message Ping {
+	enum MsgID{eMsgID = 262;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 获取服务器时间
+// code = 268
+message ReqServerTime {
+	enum MsgID{eMsgID = 268;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 礼包码
+// code = 270
+message GiftCode{
+	required string giftCode = 1;
+	enum MsgID{eMsgID = 270;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 测试
+// code = 274
+message ReqTestMsg{
+	required int32 xx = 1;
+	enum MsgID{eMsgID = 274;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得服务器开关
+// code = 280
+message ReqFunctionSwitch{
+	enum MsgID{eMsgID = 280;}; //注意：消息id放最后,以免客户端解析异常
+}

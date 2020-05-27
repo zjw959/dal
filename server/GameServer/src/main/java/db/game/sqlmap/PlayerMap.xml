@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_player">
+	<resultMap id="bean" type="db.game.bean.PlayerDBBean">
+		<result column="playerid" property="playerid" jdbcType="INTEGER" />
+		<result column="playername" property="playername" jdbcType="VARCHAR" />
+		<result column="username" property="username" jdbcType="VARCHAR" />
+		<result column="channelid" property="channelid" jdbcType="VARCHAR" />
+		<result column="channelappid" property="channelappid" jdbcType="VARCHAR" />
+		<result column="currentserver" property="currentserver"
+			jdbcType="INTEGER" />
+		<result column="createtime" property="createtime" jdbcType="BIGINT" />
+		<result column="isforbid" property="isForbid" jdbcType="INTEGER" />
+		<result column="ip" property="ip" jdbcType="VARCHAR" />
+		<result column="level" property="level" jdbcType="INTEGER" />
+		<result column="viplevel" property="viplevel" jdbcType="INTEGER" />
+		<result column="exp" property="exp" jdbcType="BIGINT" />
+		<result column="gmlevel" property="gmlevel" jdbcType="INTEGER" />
+		<result column="data" property="data" jdbcType="LONGVARCHAR" />
+		<result column="logintime" property="logintime" jdbcType="BIGINT" />
+		<result column="offlinetime" property="offlinetime" jdbcType="BIGINT" />
+		<result column="onlinetime" property="onlinetime" jdbcType="BIGINT" />
+		<result column="lastlogintime" property="lastlogintime"
+			jdbcType="BIGINT" />
+		<result column="gold" property="gold" jdbcType="BIGINT" />
+		<result column="systemdiamond" property="systemdiamond" jdbcType="BIGINT" />
+		<result column="rechargediamond" property="rechargediamond" jdbcType="BIGINT" />
+		<result column="fightpower" property="fightpower" jdbcType="BIGINT" />
+	</resultMap>
+
+	<resultMap id="mbean" type="db.game.bean.PlayerIdBean">
+		<result column="maxid" property="maxid" jdbcType="INTEGER" />
+		<result column="minid" property="minid" jdbcType="INTEGER" />
+	</resultMap>
+	
+	<select id="selectAll" resultMap="bean">
+		select * from t_player
+	</select>
+
+	<insert id="insertOne" useGeneratedKeys="true" keyProperty="playerid" parameterType="db.game.bean.PlayerDBBean">
+		insert into t_player(
+		playerid,
+		playername,
+		username,
+		channelid,
+		channelappid,
+		currentserver,
+		createtime,
+		isforbid,
+		ip,
+		level,
+		viplevel,
+		exp,
+		gmlevel,
+		data,
+		logintime,
+		offlinetime,
+		onlinetime,
+		lastlogintime,
+		gold,
+		systemdiamond,
+		rechargediamond,
+		fightpower
+		)values(
+		#{playerid,
+		jdbcType=BIGINT},
+		#{playername, jdbcType=VARCHAR},
+		#{username,
+		jdbcType=VARCHAR},
+		#{channelid, jdbcType=VARCHAR},
+		#{channelappid, jdbcType=VARCHAR},
+		#{currentserver,
+		jdbcType=INTEGER},
+		#{createtime,
+		jdbcType=BIGINT},
+		#{isForbid, jdbcType=INTEGER},
+		#{ip,
+		jdbcType=VARCHAR},
+		#{level, jdbcType=INTEGER},
+		#{viplevel,
+		jdbcType=INTEGER},
+		#{exp, jdbcType=BIGINT},
+		#{gmlevel,
+		jdbcType=INTEGER},
+		#{data, jdbcType=LONGVARCHAR},
+		#{logintime,
+		jdbcType=BIGINT},
+		#{offlinetime, jdbcType=BIGINT},
+		#{onlinetime,
+		jdbcType=BIGINT},
+		#{lastlogintime, jdbcType=BIGINT},
+		#{gold,
+		jdbcType=BIGINT},
+		#{systemdiamond, jdbcType=BIGINT},
+		#{rechargediamond, 
+		jdbcType=BIGINT},
+		#{fightpower,jdbcType=INTEGER}
+		)
+	</insert>
+	
+	<select id="selectPlayer" resultMap="bean"
+		parameterType="HashMap">
+		SELECT
+		playerid,
+		playername,
+		username,
+		channelid,
+		channelappid,
+		currentserver,
+		createtime,
+		isforbid,
+		ip,
+		level,
+		viplevel,
+		exp,
+		gmlevel,
+		logintime,
+		offlinetime,
+		onlinetime,
+		lastlogintime,
+		gold,
+		systemdiamond,
+		rechargediamond,
+		data,
+		fightpower
+		FROM t_player
+		order by playerid limit
+		#{m,jdbcType=INTEGER},#{n,jdbcType=INTEGER};
+	</select>
+	
+	<select id="selectPlayerExclusiveData" resultMap="bean"
+		parameterType="HashMap">
+		SELECT
+		playerid,
+		playername,
+		username,
+		channelid,
+		channelappid,
+		currentserver,
+		createtime,
+		isforbid,
+		ip,
+		level,
+		viplevel,
+		exp,
+		gmlevel,
+		logintime,
+		offlinetime,
+		onlinetime,
+		lastlogintime,
+		gold,
+		systemdiamond,
+		rechargediamond,
+		fightpower
+		FROM t_player
+		order by playerid limit
+		#{m,jdbcType=INTEGER},#{n,jdbcType=INTEGER};
+	</select>
+	
+	<select id="selectPlayerViewByNum" resultMap="bean"
+		parameterType="HashMap">
+		SELECT
+		playerid,
+		playername,
+		username,
+		channelid,
+		channelappid,
+		currentserver,
+		createtime,
+		isforbid,
+		ip,
+		level,
+		viplevel,
+		exp,
+		gmlevel,
+		logintime,
+		offlinetime,
+		onlinetime,
+		lastlogintime,
+		gold,
+		systemdiamond,
+		rechargediamond,
+		fightpower,
+		 CONCAT(
+		&quot;{&quot;,
+		<foreach collection="keys" item="key" index="i" separator="," open="" close="">  
+			<if test="i != 0">
+            		&quot;,&quot;,
+        		</if>
+			#{key,jdbcType=VARCHAR},&quot;:&quot;, json_extract(data,CONCAT(&quot;$.&quot;,#{key,jdbcType=VARCHAR})),&quot;&quot;
+        </foreach>
+        ,
+        &quot;}&quot;
+		) as data
+		FROM t_player
+		<if test="playerId != null">
+			where playerid = #{playerId,jdbcType=INTEGER}	
+        	</if>
+        	<if test="playerId == null">
+        	 where level = #{level,jdbcType=INTEGER} limit
+			#{m,jdbcType=INTEGER},#{n,jdbcType=INTEGER};
+        	</if>
+	</select>
+	<select id="selectPlayerId" resultMap="mbean"
+		parameterType="HashMap">
+		SELECT
+		max(playerid) maxid,
+		min(playerid) minid 
+		FROM t_player
+       	where level = #{level,jdbcType=INTEGER};
+	</select>
+	
+	<select id="selectPlayerView" resultMap="bean"
+		parameterType="HashMap">
+		SELECT
+		playerid,
+		playername,
+		username,
+		channelid,
+		channelappid,
+		currentserver,
+		createtime,
+		isforbid,
+		ip,
+		level,
+		viplevel,
+		exp,
+		gmlevel,
+		logintime,
+		offlinetime,
+		onlinetime,
+		lastlogintime,
+		gold,
+		systemdiamond,
+		rechargediamond,
+		fightpower,
+		 CONCAT(
+		&quot;{&quot;,
+		<foreach collection="keys" item="key" index="i" separator="," open="" close="">  
+			<if test="i != 0">
+            		&quot;,&quot;,
+        		</if>
+			#{key,jdbcType=VARCHAR},&quot;:&quot;, json_extract(data,CONCAT(&quot;$.&quot;,#{key,jdbcType=VARCHAR})),&quot;&quot;
+        </foreach>
+        ,
+        &quot;}&quot;
+		) as data
+		FROM t_player
+		<if test="playerId != null">
+			where playerid = #{playerId,jdbcType=INTEGER}	
+        	</if>
+        	<if test="playerId == null">
+        		where playerid between #{m,jdbcType=INTEGER} and #{n,jdbcType=INTEGER} 
+        	</if>
+	</select>
+
+	<update id="updateOne" parameterType="db.game.bean.PlayerDBBean">
+		update t_player set
+		playername =
+		#{playername, jdbcType=VARCHAR},
+		username = #{username,
+		jdbcType=VARCHAR},
+		channelid = #{channelid, jdbcType=VARCHAR},
+		channelappid = #{channelappid, jdbcType=VARCHAR},
+		currentserver = #{currentserver, jdbcType=INTEGER},
+		createtime =
+		#{createtime, jdbcType=BIGINT},
+		isforbid = #{isForbid, jdbcType=INTEGER},
+		ip = #{ip, jdbcType=VARCHAR},
+		level = #{level, jdbcType=INTEGER},
+		viplevel = #{viplevel, jdbcType=INTEGER},
+		exp = #{exp,
+		jdbcType=BIGINT},
+		gmlevel = #{gmlevel, jdbcType=INTEGER},
+		data = #{data,
+		jdbcType=LONGVARCHAR},
+		logintime = #{logintime, jdbcType=BIGINT},
+		offlinetime = #{offlinetime, jdbcType=BIGINT},
+		onlinetime =
+		#{onlinetime, jdbcType=BIGINT},
+		lastlogintime = #{lastlogintime,
+		jdbcType=BIGINT},
+		gold = #{gold, jdbcType=BIGINT},
+		systemdiamond = #{systemdiamond,
+		jdbcType=BIGINT},
+		rechargediamond = #{rechargediamond,
+		jdbcType=BIGINT},
+		fightpower = #{fightpower, jdbcType=INTEGER}
+		where
+		playerid = #{playerid, jdbcType=BIGINT}
+	</update>
+
+
+	<select id="selectAllByPlayerId" parameterType="HashMap"
+		resultType="db.game.bean.PlayerDBBean">
+		select * from t_player where
+		playerid = #{playerId,
+		jdbcType=BIGINT}
+	</select>
+
+
+	<select id="selectCount" resultType="int">
+		select count(*) from t_player;
+	</select>
+
+	<select id="selectCountByPlayerId" parameterType="HashMap" resultType="int">
+		select count(*) from
+		t_player where playerid = #{playerId, jdbcType=BIGINT};
+	</select>
+	
+	<select id="selectAllByUserName" parameterType="HashMap"
+		resultType="db.game.bean.PlayerDBBean">
+		select * from t_player where
+		username = #{userName,jdbcType=VARCHAR}
+	</select>
+	
+</mapper>

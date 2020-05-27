@@ -1,0 +1,22 @@
+id	名字	名称文字ID	道具类型	子类型	小类型	图标	时装图片	精灵模型	背包类型	排序索引	星级	品质	总上限	是否支持叠加	单格上限	达总上限转换	出售收益	交易收益	描述	描述文字ID	价值(策划查看)
+id	name	nameTextId	superType	subType	smallType	icon	dressImg	roleModel	bagType	order	star	quality	totalMax	pileUp	gridMax	convertMax	sellProfit	dealProfit	des	desTextId	cost
+number	string	number	number	number	number	string	string	number	number	number	number	number	number	boolean	number	json	json	json	string	number	string
+int	string	int	int	int	int	string	string	int	int	int	int	int	int	boolean	int	map	map	map	string	int	string
+410101	十香-灵装	20001	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	210101	4	1		1	1	0	1	{500001:10000}			十香-灵装	20002	0
+410104	十香-校服	20003	4	0	0	icon/role/dress/10104.png	icon/role/dress/10104.png	210104	4	1		1	1	0	1	{500001:10000}			十香-校服	20004	0
+410201	鸢一折纸-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			鸢一折纸-灵装	20010	0
+410204	鸢一折纸-校服	20015	4	0	0	icon/role/dress/10104.png	icon/role/dress/10104.png	210204	4	1		1	1	0	1	{500001:10000}			鸢一折纸-校服	20016	0
+410301	四糸乃-灵装	20011	4	0	0	icon/role/dress/10301.png	icon/role/dress/10301.png	210301	4	1		1	1	0	1	{500001:10000}			四糸乃-灵装	20012	0
+410303	四糸乃-休闲装	20013	4	0	0	icon/role/dress/10303.png	icon/role/dress/10303.png	210303	4	1		1	1	0	1	{500001:10000}			四糸乃-灵装	20014	0
+410401	时崎狂三-灵装	20017	4	0	0	icon/role/dress/10401.png	icon/role/dress/10401.png	210401	4	1		1	1	0	1	{500001:10000}			时崎狂三-灵装	20018	0
+410404	时崎狂三-校服	20019	4	0	0	icon/role/dress/10104.png	icon/role/dress/10104.png	10404	4	1		1	1	0	1	{500001:10000}			时崎狂三-校服	20020	0
+410501	五河琴里-灵装	900318	4	0	0	icon/role/dress/10501.png	icon/role/dress/10501.png	210501	4	1		1	1	0	1	{500001:10000}			五河琴里-灵装	900319	0
+410504	五河琴里-休闲装	900320	4	0	0	icon/role/dress/10504.png	icon/role/dress/10504.png	10504	4	1		1	1	0	1	{500001:10000}			五河琴里-休闲装	900321	0
+410505	五河琴里-指挥官 	900322	4	0	0	icon/role/dress/10505.png	icon/role/dress/10505.png	10505	4	1		1	1	0	1	{500001:10000}			五河琴里-指挥官 	900323	0
+410601	崇宫真那-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			崇宫真那-灵装	20010	0
+410701	八舞耶俱矢-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			八舞耶俱矢-灵装	20010	0
+410801	八舞夕弦-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			八舞夕弦-灵装	20010	0
+410901	艾伦-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			艾伦-灵装	20010	0
+411001	诱宵美九-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			诱宵美九-灵装	20010	0
+411101	五河士织-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			五河士织-灵装	20010	0
+411201	万由里-灵装	20011	4	0	0	icon/role/dress/10101.png	icon/role/dress/10101.png	10101	4	1		1	1	0	1	{500001:10000}			万由里-灵装	20010	0

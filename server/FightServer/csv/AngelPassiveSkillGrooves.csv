@@ -1,0 +1,8 @@
+id	名称（策划用）	效果描述（策划用）	英雄等级要求
+id	name	name2	needHeroLvl
+number	comment	comment	number
+int			int
+1	被动技能装备槽1	被动技能装备槽1	5
+2	被动技能装备槽2	被动技能装备槽2	8
+3	被动技能装备槽3	被动技能装备槽3	12
+4	被动技能装备槽4	被动技能装备槽4	15

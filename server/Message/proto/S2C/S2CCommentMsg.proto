@@ -1,0 +1,38 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CCommentMsg";
+
+// 评价信息
+message CommentInfo{
+	required int32 playerId = 1;	//玩家id
+	required string name = 2;		//玩家名字
+	required int32 heroId = 3;		//英雄id,头像
+	required string comment = 4;		//评论内容
+	required int32 prise = 5;		//点赞数量
+	required int32 commentDate = 6; //评论日期
+	required int32 itemId = 7; //对象(装备/英雄)id
+}
+
+
+// 获取评论信息
+// code = 4001
+message RespComment{
+	repeated CommentInfo newInfo = 1;	//最新的
+	repeated CommentInfo hotInfo = 2;	//热门的
+	enum MsgID{eMsgID = 4001;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 评论
+// code = 4002
+message RespSingleComment{
+	required bool success = 1; //成功:true
+	enum MsgID{eMsgID = 4002;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 点赞
+// code = 4003
+message RespPrise{
+	required bool success = 1; //成功:true
+	enum MsgID{eMsgID = 4003;}; //注意：消息id放最后,以免客户端解析异常
+}
+

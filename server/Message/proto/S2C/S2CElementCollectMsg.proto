@@ -1,0 +1,26 @@
+package org.game.protobuf.s2c;
+
+
+//新增图鉴
+//code = 4866
+message AddNewElement {
+	required Element elment =1 ;
+	enum MsgID{eMsgID = 4866;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取所有图鉴
+//code = 4865
+message GetAllElement {
+	repeated Elements elment =1 ;
+	enum MsgID{eMsgID = 4865;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message Element{
+	required int32 type = 1; //类型
+	required int32 cid = 2; //cid
+}
+
+message Elements{
+	required int32 type = 1; //类型
+	repeated int32 cids = 2; //cid
+}

@@ -1,0 +1,11 @@
+音乐id	房间名称	界面	BGM	切换时间
+id	name	nameId	bgm	changeTime
+number	comment	string	string	number
+int				
+1	切换约会	NewCityMainLayer	sound/bgm/city_001.mp3	1
+2	切换战斗	FubenChapterView	sound/bgm/battle_004.mp3	1
+3	切换商店	StoreMainView	sound/bgm/shop_001.mp3	1
+4	切换手札	DatingLetterView	sound/bgm/city_001.mp3	1
+5	切换战斗2	FubenLevelView	sound/bgm/battle_004.mp3	1
+6	切换战斗3	FubenFlightSquadView	sound/bgm/battle_004.mp3	1
+7	切换战斗4	FubenSquadView	sound/bgm/battle_004.mp3	1

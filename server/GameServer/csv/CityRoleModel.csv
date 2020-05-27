@@ -1,0 +1,28 @@
+id	角色名称	头像	对应看板娘ID	类型（1：精灵，2：npc）	角色模型路径	角色模型	临时模型路径	图标状态坐标	是否对称
+id	nameDes	modeHead	modelId	roleType	rolePath	role	rolePath2	iconPos	flip
+number	comment	string	number	number	string	string	string	json	boolean
+int			int	int					
+410101	十香（灵装）	icon/role/mood/101/3.png	101	1	modle/citymodle/city_10101/city_10101		modle/citymodle/city_410101	{"x":70,"y":230}	1
+410104	十香（校服）	icon/role/mood/101/3.png	101	1	modle/citymodle/city_10104/city_10104		modle/citymodle/city_410104	{"x":70,"y":230}	1
+410204	折纸（校服）	icon/role/mood/102/3.png	102	1	modle/citymodle/city_10204/city_10204		modle/citymodle/city_410204	{"x":70,"y":230}	1
+410205	折纸（休闲装）	icon/role/mood/102/3.png	102	1	modle/citymodle/city_10205/city_10205		modle/citymodle/city_410205	{"x":70,"y":230}	1
+410301	四糸乃（灵装）	icon/role/mood/103/3.png	103	1	modle/citymodle/city_10301/city_10301		modle/citymodle/city_410301	{"x":70,"y":230}	1
+410303	四糸乃（休闲装）	icon/role/mood/103/3.png	103	1	modle/citymodle/city_10303/city_10303		modle/citymodle/city_410303	{"x":70,"y":230}	1
+410401	狂三（灵装）	icon/role/mood/104/3.png	104	1	modle/citymodle/city_10401/city_10401		modle/citymodle/city_410401	{"x":70,"y":230}	0
+410404	狂三（校服）	icon/role/mood/104/3.png	104	1	modle/citymodle/city_10404/city_10404		modle/citymodle/city_410404	{"x":70,"y":230}	0
+410501	琴里（灵装）	icon/role/mood/105/3.png	105	1	modle/citymodle/city_10501/city_10501		modle/citymodle/city_410501	{"x":70,"y":230}	1
+410505	琴里（指挥官）	icon/role/mood/105/3.png	105	1	modle/citymodle/city_10505/city_10505		modle/citymodle/city_410505	{"x":70,"y":230}	1
+420101	神无月	icon/role/mood/peijue/city_420101.png		2	modle/citymodle/city_420101/city_420101		modle/citymodle/city_420101	{"x":70,"y":230}	1
+420102	令音	icon/role/mood/peijue/city_420102.png		2	modle/citymodle/city_420102/city_420102		modle/citymodle/city_420102	{"x":70,"y":230}	1
+420103	殿町宏人	icon/role/mood/peijue/city_420103.png		2	modle/citymodle/city_420103/city_420103		modle/citymodle/city_420103	{"x":70,"y":230}	1
+420104	冈峰珠惠	icon/role/mood/peijue/city_420104.png		2	modle/citymodle/city_420104/city_420104		modle/citymodle/city_420104	{"x":70,"y":230}	1
+420105	山吹亚衣	icon/role/mood/peijue/city_420105.png		2	modle/citymodle/city_420105/city_420105		modle/citymodle/city_420105	{"x":70,"y":230}	1
+420106	叶樱麻衣	icon/role/mood/peijue/city_420106.png		2	modle/citymodle/city_420106/city_420106		modle/citymodle/city_420106	{"x":70,"y":230}	1
+420107	藤袴美衣	icon/role/mood/peijue/city_420107.png		2	modle/citymodle/city_420107/city_420107		modle/citymodle/city_420107	{"x":70,"y":230}	1
+420108	日下部燎子	icon/role/mood/peijue/city_420108.png		2	modle/citymodle/city_420108/city_420108		modle/citymodle/city_420108	{"x":70,"y":230}	1
+430101	上班族-男			2	modle/citymodle/city_420103/city_420103		modle/citymodle/city_430101	{"x":70,"y":230}	1
+430102	上班族-女			2	modle/citymodle/city_420107/city_420107		modle/citymodle/city_430102	{"x":70,"y":230}	1
+430103	高中生-男			2	modle/citymodle/city_420103/city_420103		modle/citymodle/city_430103	{"x":70,"y":230}	1
+430104	高中生-女			2	modle/citymodle/city_420107/city_420107		modle/citymodle/city_430104	{"x":70,"y":230}	1
+430105	服务员-男			2	modle/citymodle/city_420103/city_420103		modle/citymodle/city_430105	{"x":70,"y":230}	1
+430106	服务员-女			2	modle/citymodle/city_420107/city_420107		modle/citymodle/city_430106	{"x":70,"y":230}	1

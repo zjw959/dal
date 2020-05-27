@@ -1,0 +1,28 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CTaskMsg";
+import "S2C/S2CShareMsg.proto";
+// 取得所有任务信息
+// code = 4097
+message RespTasks {
+    repeated TaskInfo taks = 1;
+//    repeated int32 finishTaskId = 2;
+	enum MsgID{eMsgID = 4097;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 提交任务
+// code = 4098
+message ResultSubmitTask {
+    required string taskDbId = 1;
+    required int32 taskCid = 2;
+    repeated RewardsMsg rewards = 3;
+	enum MsgID{eMsgID = 4098;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message TaskInfo {
+    required ChangeType ct = 1;
+    required string id = 2;
+    required int32 cid = 3;
+    required int32 progress = 4; //当前进度
+    required int32 status = 5; // 任务状态 0:进行中 1:可提交 2:已提交
+}

@@ -1,0 +1,34 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CMedalMsg";
+import "S2C/S2CShareMsg.proto";
+
+// 获取已激活的勋章
+// code = 3001
+message RespActivateMedals {
+    repeated MedalInfo medal = 1;
+	enum MsgID{eMsgID = 3001;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 装备勋章
+// code = 3002
+message RespEquipMedal{
+	required bool success = 1;
+	enum MsgID{eMsgID = 3002;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 卸下勋章
+// code = 3003
+message RespTakeOffMedal{
+	required bool success = 1;
+	enum MsgID{eMsgID = 3003;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message MedalInfo {
+    required ChangeType ct = 1;
+    required int32 cid = 2;
+    required int32 star = 3; //星级
+    required int32 quality = 4; // 品质
+    required int32 effectTime = 5;//过期时间
+    required bool isEquip = 6;	//是否已装备
+}

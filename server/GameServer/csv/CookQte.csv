@@ -1,0 +1,13 @@
+ID	QTE类型（1重合点击、2长按、3连续点击）	注释（策划用）	持续时间	判定标准（出现后时间）	获得分值（需与判定标准一一对应）	展示美术字	每秒最大允许点击次数（配置前请和后端核对）
+id	type	des	time	judge	point	showimg	max
+number	number	string	number	numbers	numbers	strings	number
+int	int	string	int	int[]	int[]	string[]	int
+1	1	简单料理_重合时点击	3	1-2-3	1-3-3	food_tx3-food_tx2-food_tx2	0
+2	2	简单料理_长按按钮	3	30-50-95	1-2-3	food_tx3-food_tx2-food_tx2	0
+3	3	简单料理_连续点击	5		1	food_tx4	20
+4	1	中等料理_重合时点击	3	1-2-3	1-2-4	food_tx3-food_tx2-food_tx2	0
+5	2	中等料理_长按按钮	3	30-50-95	1-2-4	food_tx3-food_tx1-food_tx2	0
+6	3	中等料理_连续点击	5		1	food_tx4	20
+7	1	困难料理_重合时点击	3	1-2-3	1-3-5	food_tx3-food_tx2-food_tx2	0
+8	2	困难料理_长按按钮	3	30-50-95	1-2-4	food_tx3-food_tx1-food_tx2	0
+9	3	困难料理_连续点击	5		1	food_tx4	20

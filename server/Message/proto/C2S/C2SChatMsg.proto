@@ -1,0 +1,25 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SChatMsg";
+// 发送聊天
+// code = 2305
+message ChatMsg{
+	required int32 channel = 1;		//	聊天类型:1.公共 2.私聊；3.帮派 4.系统 5.队伍
+	required int32 fun = 2;			// 	功能类型:1.聊天 2.深渊组队邀请
+	required string content = 3;		//  内容;
+	optional int32 playerId=4;			//  私聊玩家编号
+	enum MsgID{eMsgID = 2305;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 随机房间
+// code = 2307
+message ReqChangeRoom{
+	optional int32 roomId = 1;		//房间号  < 0 则随机，否则转到指定房间
+	enum MsgID{eMsgID = 2307;}; //注意：消息id放最后,以免客户端解析异常
+}
+// 请求历史聊天消息
+// code = 2311
+message ReqInitChatInfo{
+	enum MsgID{eMsgID = 2311;}; //注意：消息id放最后,以免客户端解析异常
+}
+

@@ -1,0 +1,34 @@
+id	备注	显示名字	属性加成BUFF	技能效果BUFF	词缀特效资源名	动画名称
+id	name	affixName	attributeBuffers	effectBuffers	resource	action
+number		string	numbers	numbers	string	string
+int						
+1	减速力场	2120001	2045-2225	9001	effects_extra_one	effects_extra_one_02
+2	导弹	2120002	2045-2225	9002	effects_extra_common	effects_extra_common
+3	激光陷阱	2120003	2045-2225	9003	effects_extra_common	effects_extra_common
+4	决斗！！暂无	2120004	2045-2225		effects_extra_common	effects_extra_common
+5	电磁陷阱！！暂无	2120005	2045-2225	9004	effects_extra_common	effects_extra_common
+6	电球！！暂无	2120006	2045-2225	9005	effects_extra_common	effects_extra_common
+7	监禁	2120007	2045-2225	9006	effects_extra_common	effects_extra_common
+8	筑墙！！暂无	2120008	2045-2225	9007	effects_extra_common	effects_extra_common
+9	伤害反弹	2120009	2045-2225	9008	effects_extra_nine	effects_extra_nine_1
+10	护盾	2120010	2045-2225	9009	effects_extra_common	effects_extra_common
+11	引力！！暂无	2120011	2045-2225	9010	effects_extra_common	effects_extra_common
+12	消除！！暂无	2120012	2045-2225	9011	effects_extra_common	effects_extra_common
+13	幻象！！暂无	2120013	2045-2225	9012	effects_extra_common	effects_extra_common
+14	霸体光环	2120014	2045-2225	9013	effects_extra_common	effects_extra_common
+15	烈焰附体	2120015	2045-2225	9014-9015	effects_extra_common	effects_extra_common
+16	熔火	2120016	2045-2225	9016	effects_extra_common	effects_extra_common
+17	带电！！暂无	2120017	2045-2225	9017	effects_extra_common	effects_extra_common
+18	暴怒	2120018	2045-2225	9018	effects_extra_common	effects_extra_common
+19	激励	2120019	2045-2225	9019	effects_extra_common	effects_extra_common
+20	战斗续行！！暂无	2120020	2045-2225	9020	effects_extra_common	effects_extra_common
+21	快速	2120021	2045-2225	9021	effects_extra_common	effects_extra_common
+22	能量吸取！！暂无	2120022	2045-2225	9022	effects_extra_common	effects_extra_common
+23	吸血	2120023	2045-2225	9023	effects_extra_common	effects_extra_common
+24	保护	2120024	2045-2225	9024	effects_extra_common	effects_extra_common
+25	灵魂链接！！暂无	2120025	2045-2225	9025	effects_extra_common	effects_extra_common
+26	流血！！暂无	2120026	2045-2225	9026	effects_extra_common	effects_extra_common
+27	底力	2120027	2045-2225	9027	effects_extra_common	effects_extra_common
+28	增强	2120028	2045-2225	9028	effects_extra_common	effects_extra_common
+29	反击！！暂无	2120029	2045-2225	9029	effects_extra_common	effects_extra_common
+30	自爆！！暂无	2120030	2045-2225	9029	effects_extra_common	effects_extra_common

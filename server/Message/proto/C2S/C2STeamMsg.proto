@@ -1,0 +1,74 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2STeamMsg";
+
+
+// 队伍特征
+message TeamFeature{
+	required int32 teamType = 1;			// 队伍类型
+	optional int32 dungeonCid = 2;			// 副本ID
+}
+
+// 创建队伍
+// code = 5889
+message ReqCreateTeam{
+	required TeamFeature feature = 1;		// 队伍特征
+	enum MsgID{eMsgID = 5889;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改队伍状态
+// code = 5890
+message ReqChangeTeamStatus{
+	required int32 status = 1;				// 1:关闭自动匹配 2:开启自动匹配
+	enum MsgID{eMsgID = 5890;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求处理队员
+// code = 5891
+message ReqTreatMember{
+	required int32 targetPid = 1;
+	required int32 type = 2;				// 1:任命队长 2:踢出队伍
+	enum MsgID{eMsgID = 5891;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 匹配队伍
+// code = 5892
+message ReqMatchTeam{
+	required TeamFeature feature = 1;		// 队伍特征
+	enum MsgID{eMsgID = 5892;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 离开队伍
+// code = 5893
+message ReqLeaveTeam{
+	enum MsgID{eMsgID = 5893;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 加入队伍
+// code = 5894
+message ReqJoinTeam{
+	required string teamId = 1;			// 队伍ID
+	enum MsgID{eMsgID = 5894;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取消匹配
+// code = 5895
+message ReqCancelMatch{
+	enum MsgID{eMsgID = 5895;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 切换英雄
+// code = 5896
+message ReqChangeHero{
+	required int32 heroCid = 1;
+	enum MsgID{eMsgID = 5896;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改成员状态
+// code = 5897
+message ReqChangeMemberStatus{
+	required int32 status = 1;				// 1:空闲 2:准备中
+	enum MsgID{eMsgID = 5897;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+

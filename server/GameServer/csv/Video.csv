@@ -1,0 +1,231 @@
+编号	视频	尺寸	注释	注释2
+id	path 	size	comment	comment
+number	string	numbers	comment	comment
+int	string	int[]		
+1	video/cg_shijieguan2_1.mp4	1280-720		
+2	video/cg_zhuxian1.mp4	1280-720		
+3	video/CG2_shixiangchidao.mp4	1386-640		
+4	video/cg_zhezhichuchang2.mp4	1920-1080		
+5	video/cg_shixiangvszhezhi.mp4	1386-640		
+6	video/cg3_qinlichuxian.mp4	1386-640		
+7	video/cg_shixianghuanghun.mp4	1386-640		
+8	video/cg_sisinaishenmiao.mp4	1386-640		
+9	video/cg_shixiangmuyu.mp4	1386-640		
+10	video/cg_sisinaifushen.mp4	1386-640		
+11	video/cg_bingjie.mp4	1386-640		
+12	video/cg_zhezhifushen.mp4	1386-640		
+13	video/cg_sisinaifengyin.mp4	1386-640		
+14	video/cg_ziwojieshao.mp4	1386-640		
+15	video/cg_qinlizhenna.mp4	1386-640		
+16	video/cg_kuangsanzhennaduizhan.mp4	1386-640		
+17	video/cg_qinlijuexing.mp4	1386-640		
+18	video/cg_qinlikuqi.mp4	1386-640		
+19	video/cg_sisinhuanyi.mp4	1386-640		
+20	video/cg_shuangziduizhan.mp4	1386-640		
+21	video/cg_shuangziyongzhuang.mp4	1386-640		
+22	video/cg_bawuduizhan2.mp4	1386-640		
+23	video/cg_main_demjiandui.mp4	1386-640		
+24	video/cg_rjiandui.mp4	1386-640		
+26	video/cg_kuangsanzhezhi.mp4	1280-720		
+27	video/cg1_shijiguanjieshao.mp4	1386-640		
+28	video/xuexiao.mp4	1280-720		
+29	video/cg_qinlizhennachaojia.mp4	1386-640		
+30	video/cg_common.mp4	1280-720		
+31	video/openpv.mp4	1920-1080		
+32	video/cg_01kaichang.mp4	1386-640		
+33	video/cg_02qinlichuchang.mp4	1386-640		
+34	video/cg_03xiaomanhua.mp4	1386-640		
+35	video/cg_04main_juqqinghuishuo.mp4	1386-640		
+36	video/cg_baiqinlihuiyi.mp4	1386-640		
+37	video/cg_fengyinshixiang.mp4	1386-640		
+38	video/cg_jinrujiejie.mp4	1386-640		
+39	video/cg_qinlichuchang.mp4	1386-640		
+40	video/cg_xunzhaosisinai.mp4	1386-640		
+41	video/cg_zhezhichuchang.mp4	1386-640		
+42	video/cg_shidaozhongqiang.mp4	1386-640		
+43	video/cg_sisinaibaozou.mp4	1386-640		
+44	video/cg_kongjianzhenjieshao.mp4	1386-640		
+45	video/cg_main_baiqinlichuchang.mp4	1386-640	白琴里出场	
+46	video/cg_main_heiqinlichuchang.mp4	1386-640	黑琴里出场	
+47	video/cg_main_kaichangdonghua.mp4	1386-640	开场动画十香持刀	
+48	video/cg_main_kongjianzhenjieshao.mp4	1386-640	空间震介绍	
+49	video/cg_main_qinlixiaomanhua.mp4	1386-640	剧情回溯小漫画	
+50	video/cg_main_shidaofuhuo.mp4	1386-640	士道复活	
+51	video/cg_main_shixianghuanghunjiaoshi.mp4	1386-640	十香取名约会展开保护罩	
+52	video/cg_main_shidaozhongqiang.mp4	1386-640	士道被杀	
+53	video/cg_main_sisinaishenmiao.mp4	1386-640	四糸乃神社踩水	
+54	video/cg_main_sisinaibaozou.mp4	1386-640	四糸乃暴走	
+55	video/cg_main_xunzhaosisin.mp4	1386-640	寻找四糸奈	
+56	video/cg_main_zhuishasisinai.mp4	1386-640	四糸乃被ast追杀	
+57	video/cg_main_jinrujiejie.mp4	1386-640	进入四糸乃结界	
+58	video/cg_main_fengyinsisinai.mp4	1386-640	封印十香	
+59	video/cg_main_shixiangzhezhipindao.mp4	1386-640	十香折纸拼刀	
+60	video/cg_main_sisinaifushen.mp4	1386-640	四糸乃商场	
+61	video/cg_main_zhezhifushen.mp4	1386-640	折纸家	
+62	video/flight_preview.mp4	670-396	飞行关预览	
+63	video/ssn_1_0.mp4	1350-520	四糸乃技能视频	
+64	video/ssn_1_1.mp4	1350-520	四糸乃技能视频	
+65	video/ssn_1_2.mp4	1350-520	四糸乃技能视频	
+66	video/ssn_1_3.mp4	1350-520	四糸乃技能视频	
+67	video/ssn_2_0.mp4	1350-520	四糸乃技能视频	
+68	video/ssn_2_1.mp4	1350-520	四糸乃技能视频	
+69	video/ssn_2_2.mp4	1350-520	四糸乃技能视频	
+70	video/ssn_2_3.mp4	1350-520	四糸乃技能视频	
+71	video/ssn_3_0.mp4	1350-520	四糸乃技能视频	
+72	video/ssn_3_1.mp4	1350-520	四糸乃技能视频	
+73	video/ssn_3_2.mp4	1350-520	四糸乃技能视频	
+74	video/ssn_3_3.mp4	1350-520	四糸乃技能视频	
+75	video/ssn_4_0.mp4	1350-520	四糸乃技能视频	
+76	video/ssn_4_1.mp4	1350-520	四糸乃技能视频	
+77	video/ssn_4_2.mp4	1350-520	四糸乃技能视频	
+78	video/ssn_4_3.mp4	1350-520	四糸乃技能视频	
+79	video/ssn_5_0.mp4	1350-520	四糸乃技能视频	
+80	video/sx_1_0.mp4	1350-520	十香技能视频	
+81	video/sx_1_1.mp4	1350-520	十香技能视频	
+82	video/sx_1_2.mp4	1350-520	十香技能视频	
+83	video/sx_1_3.mp4	1350-520	十香技能视频	
+84	video/sx_2_0.mp4	1350-520	十香技能视频	
+85	video/sx_2_1.mp4	1350-520	十香技能视频	
+86	video/sx_2_2.mp4	1350-520	十香技能视频	
+87	video/sx_2_3.mp4	1350-520	十香技能视频	
+88	video/sx_3_0.mp4	1350-520	十香技能视频	
+89	video/sx_3_1.mp4	1350-520	十香技能视频	
+90	video/sx_3_2.mp4	1350-520	十香技能视频	
+91	video/sx_3_3.mp4	1350-520	十香技能视频	
+92	video/sx_4_0.mp4	1350-520	十香技能视频	
+93	video/sx_4_1.mp4	1350-520	十香技能视频	
+94	video/sx_4_2.mp4	1350-520	十香技能视频	
+95	video/sx_4_3.mp4	1350-520	十香技能视频	
+96	video/sx_5_0.mp4	1350-520	十香技能视频	
+97	video/zn_1_0.mp4	1350-520	真那技能视频	
+98	video/zn_1_1.mp4	1350-520	真那技能视频	
+99	video/zn_1_2.mp4	1350-520	真那技能视频	
+100	video/zn_1_3.mp4	1350-520	真那技能视频	
+101	video/zn_2_0.mp4	1350-520	真那技能视频	
+102	video/zn_2_1.mp4	1350-520	真那技能视频	
+103	video/zn_2_2.mp4	1350-520	真那技能视频	
+104	video/zn_2_3.mp4	1350-520	真那技能视频	
+105	video/zn_3_0.mp4	1350-520	真那技能视频	
+106	video/zn_3_1.mp4	1350-520	真那技能视频	
+107	video/zn_3_2.mp4	1350-520	真那技能视频	
+108	video/zn_3_3.mp4	1350-520	真那技能视频	
+109	video/zn_4_0.mp4	1350-520	真那技能视频	
+110	video/zn_4_1.mp4	1350-520	真那技能视频	
+111	video/zn_4_2.mp4	1350-520	真那技能视频	
+112	video/zn_4_3.mp4	1350-520	真那技能视频	
+113	video/zn_5_0.mp4	1350-520	真那技能视频	
+114	video/zz_1_0.mp4	1350-520	折纸技能视频	
+115	video/zz_1_1.mp4	1350-520	折纸技能视频	
+116	video/zz_1_2.mp4	1350-520	折纸技能视频	
+117	video/zz_1_3.mp4	1350-520	折纸技能视频	
+118	video/zz_2_0.mp4	1350-520	折纸技能视频	
+119	video/zz_2_1.mp4	1350-520	折纸技能视频	
+120	video/zz_2_2.mp4	1350-520	折纸技能视频	
+121	video/zz_2_3.mp4	1350-520	折纸技能视频	
+122	video/zz_3_0.mp4	1350-520	折纸技能视频	
+123	video/zz_3_1.mp4	1350-520	折纸技能视频	
+124	video/zz_3_2.mp4	1350-520	折纸技能视频	
+125	video/zz_3_3.mp4	1350-520	折纸技能视频	
+126	video/zz_4_0.mp4	1350-520	折纸技能视频	
+127	video/zz_4_1.mp4	1350-520	折纸技能视频	
+128	video/zz_4_2.mp4	1350-520	折纸技能视频	
+129	video/zz_4_3.mp4	1350-520	折纸技能视频	
+130	video/zz_5_0.mp4	1350-520	折纸技能视频	
+1001	video/summon.mp4	1386-640	召唤视频	UI相关视频从1001开始
+2001	video/flight_preview_sixinai.mp4	670-396	四系乃飞行关预览	飞行撞击关预览视频从2001开始
+2002	video/flight_preview_shixiang.mp4	670-396	十香飞行关预览	
+2003	video/flight_preview_bingjingkuilei.mp4	670-396	四系乃撞击预览	
+131	video/cg_main_shixiangzhezhishuaidao.mp4	1386-640	主线视频	
+132	video/cg_kuangsanbeisha.mp4	1386-640	主线视频	
+133	video/cg_main_qinlilingzhuangchuchang.mp4	1386-640	主线视频	
+134	video/cg_main_qinlihuiyi.mp4	1386-640	主线视频	
+135	video/cg_main_kuangsangongyuan.mp4	1386-640	主线视频	
+136	video/cg_main_kuangsanvszhenna.mp4	1386-640	主线视频	
+137	video/cg_main_kuangsanxiaoxiangzi.mp4	1386-640	主线视频	
+138	video/cg_main_qinlifengyin.mp4	1386-640	主线视频	
+140	video/cg_main_zhezhivsqinli.mp4	1386-640	主线视频	
+141	video/cg_main_fenyinbawu.mp4	1386-640	主线视频	
+142	video/al_1_1.mp4	1350-520	艾伦技能视频	
+143	video/al_1_2.mp4	1350-520	艾伦技能视频	
+144	video/al_1_3.mp4	1350-520	艾伦技能视频	
+145	video/al_2_1.mp4	1350-520	艾伦技能视频	
+146	video/al_2_2.mp4	1350-520	艾伦技能视频	
+147	video/al_2_3.mp4	1350-520	艾伦技能视频	
+148	video/al_3_1.mp4	1350-520	艾伦技能视频	
+149	video/al_3_2.mp4	1350-520	艾伦技能视频	
+150	video/al_3_3.mp4	1350-520	艾伦技能视频	
+151	video/al_4_1.mp4	1350-520	艾伦技能视频	
+152	video/al_4_2.mp4	1350-520	艾伦技能视频	
+153	video/al_4_3.mp4	1350-520	艾伦技能视频	
+154	video/fs_1_1.mp4	1350-520	反十技能视频	
+155	video/fs_1_2.mp4	1350-520	反十技能视频	
+156	video/fs_1_3.mp4	1350-520	反十技能视频	
+157	video/fs_2_1.mp4	1350-520	反十技能视频	
+158	video/fs_2_2.mp4	1350-520	反十技能视频	
+159	video/fs_2_3.mp4	1350-520	反十技能视频	
+160	video/fs_3_1.mp4	1350-520	反十技能视频	
+161	video/fs_3_2.mp4	1350-520	反十技能视频	
+162	video/fs_3_3.mp4	1350-520	反十技能视频	
+163	video/fs_4_1.mp4	1350-520	反十技能视频	
+164	video/fs_4_2.mp4	1350-520	反十技能视频	
+165	video/fs_4_3.mp4	1350-520	反十技能视频	
+166	video/ks_1_1.mp4	1350-520	狂三技能视频	
+167	video/ks_1_2.mp4	1350-520	狂三技能视频	
+168	video/ks_1_3.mp4	1350-520	狂三技能视频	
+169	video/ks_2_1.mp4	1350-520	狂三技能视频	
+170	video/ks_2_2.mp4	1350-520	狂三技能视频	
+171	video/ks_2_3.mp4	1350-520	狂三技能视频	
+172	video/ks_3_1.mp4	1350-520	狂三技能视频	
+173	video/ks_3_2.mp4	1350-520	狂三技能视频	
+174	video/ks_3_3.mp4	1350-520	狂三技能视频	
+175	video/ks_4_1.mp4	1350-520	狂三技能视频	
+176	video/ks_4_2.mp4	1350-520	狂三技能视频	
+177	video/ks_4_3.mp4	1350-520	狂三技能视频	
+178	video/mj_1_1.mp4	1350-520	美九技能视频	
+179	video/mj_1_2.mp4	1350-520	美九技能视频	
+180	video/mj_1_3.mp4	1350-520	美九技能视频	
+181	video/mj_2_1.mp4	1350-520	美九技能视频	
+182	video/mj_2_2.mp4	1350-520	美九技能视频	
+183	video/mj_2_3.mp4	1350-520	美九技能视频	
+184	video/mj_3_1.mp4	1350-520	美九技能视频	
+185	video/mj_3_2.mp4	1350-520	美九技能视频	
+186	video/mj_3_3.mp4	1350-520	美九技能视频	
+187	video/mj_4_1.mp4	1350-520	美九技能视频	
+188	video/mj_4_2.mp4	1350-520	美九技能视频	
+189	video/mj_4_3.mp4	1350-520	美九技能视频	
+190	video/ql_1_1.mp4	1350-520	琴里技能视频	
+191	video/ql_1_2.mp4	1350-520	琴里技能视频	
+192	video/ql_1_3.mp4	1350-520	琴里技能视频	
+193	video/ql_2_1.mp4	1350-520	琴里技能视频	
+194	video/ql_2_2.mp4	1350-520	琴里技能视频	
+195	video/ql_2_3.mp4	1350-520	琴里技能视频	
+196	video/ql_3_1.mp4	1350-520	琴里技能视频	
+197	video/ql_3_2.mp4	1350-520	琴里技能视频	
+198	video/ql_3_3.mp4	1350-520	琴里技能视频	
+199	video/ql_4_1.mp4	1350-520	琴里技能视频	
+200	video/ql_4_2.mp4	1350-520	琴里技能视频	
+201	video/ql_4_3.mp4	1350-520	琴里技能视频	
+202	video/xx_1_1.mp4	1350-520	夕玄技能视频	
+203	video/xx_1_2.mp4	1350-520	夕玄技能视频	
+204	video/xx_1_3.mp4	1350-520	夕玄技能视频	
+205	video/xx_2_1.mp4	1350-520	夕玄技能视频	
+206	video/xx_2_2.mp4	1350-520	夕玄技能视频	
+207	video/xx_2_3.mp4	1350-520	夕玄技能视频	
+208	video/xx_3_1.mp4	1350-520	夕玄技能视频	
+209	video/xx_3_2.mp4	1350-520	夕玄技能视频	
+210	video/xx_3_3.mp4	1350-520	夕玄技能视频	
+211	video/xx_4_1.mp4	1350-520	夕玄技能视频	
+212	video/xx_4_2.mp4	1350-520	夕玄技能视频	
+213	video/xx_4_3.mp4	1350-520	夕玄技能视频	
+214	video/yjs_1_1.mp4	1350-520	耶俱矢技能视频	
+215	video/yjs_1_2.mp4	1350-520	耶俱矢技能视频	
+216	video/yjs_1_3.mp4	1350-520	耶俱矢技能视频	
+217	video/yjs_2_1.mp4	1350-520	耶俱矢技能视频	
+218	video/yjs_2_2.mp4	1350-520	耶俱矢技能视频	
+219	video/yjs_2_3.mp4	1350-520	耶俱矢技能视频	
+220	video/yjs_3_1.mp4	1350-520	耶俱矢技能视频	
+221	video/yjs_3_2.mp4	1350-520	耶俱矢技能视频	
+222	video/yjs_3_3.mp4	1350-520	耶俱矢技能视频	
+223	video/yjs_4_1.mp4	1350-520	耶俱矢技能视频	
+224	video/yjs_4_2.mp4	1350-520	耶俱矢技能视频	
+225	video/yjs_4_3.mp4	1350-520	耶俱矢技能视频	

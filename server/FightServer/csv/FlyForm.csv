@@ -1,0 +1,9 @@
+精灵/僚机ID	名称(策划)	形态类型(1-精灵，2-僚机)	僚机伤害系数(取精灵攻击属性百分比)	战斗模型	模型大小	模型是否转向	发射点特效{"effectName":"特效名","scale":缩放(默认1),"normalActionName":"常态动画名，不填则播放默认动画", "launchActionName":"发射动画名", "launchPointName":"发射点名(不填默认取特效原点)", "offset":不填默认0,0}	主动技能	弹幕技能(填弹幕表中ID)
+id	name	formType	damagePercent	model	modelSize	turnBack	launchEffect	skills	flySkills
+number	comment	number	number	string	number	boolean	json	numbers	json
+int		int	int		int[]		map	int[]	list
+1001010	十香	1		fight_10101_1	0.36	0	{"effectName":"shixiangfeixing","scale":0.36,"normalActionName":"renwufasheqi", "launchActionName":"renwufashe", "launchPointName":"renwufashedian", "offset":{"x":0,"y":0}}		[[1001001,1001002,1001003,1001004,1001005]]
+1001011	十香僚机	2	20	shixiangfeixing	0.36	0	{"effectName":"shixiangfeixing","scale":0.36,"normalActionName":"liaoji", "launchActionName":"liaojisheji", "launchPointName":"renwufashedian", "offset":{"x":0,"y":0}}		[[1001101,1001102,1001103,1001104],[1001201,1001202,1001203,1001204],[1001301,1001302,1001303,1001304]]
+1002010	四系乃	1		fight_10301F	0.36	1	{"effectName":"effects_10301F_feixingtexiao","scale":0.36,"normalActionName":"renwufasheqi", "launchActionName":"renwufashe", "launchPointName":"renwufashedian", "offset":{"x":0,"y":0}}		[[1003001,1003002,1003003]]
+1002011	四系乃僚机	2	20	effects_10301F_feixingtexiao	0.36	1	{"effectName":"effects_10301F_feixingtexiao","scale":0.36,"normalActionName":"liaoji", "launchActionName":"liaojishji", "launchPointName":"renwufashedian", "offset":{"x":0,"y":0}}		
+1003010	四系奈（兔子）	1		battle_story7_02	0.6	0	{"effectName":"shixiangfeixing","scale":0.36,"normalActionName":"liaoji", "launchActionName":"liaojisheji", "launchPointName":"renwufashedian", "offset":{"x":0,"y":0}}		

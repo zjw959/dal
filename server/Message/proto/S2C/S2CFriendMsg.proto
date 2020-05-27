@@ -1,0 +1,53 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CFriendMsg";
+import "S2C/S2CShareMsg.proto";
+
+// 好友信息
+message FriendInfo{
+	required ChangeType ct = 11;		// 类型
+	required int32 pid = 1;			// 玩家ID
+	required int32 leaderCid = 9;		// 英雄CID(队长)
+	required string name = 2;			// 名字
+	required int32 fightPower = 3;		// 战力
+	required int32 lvl = 4;			// 等级
+	required int32 lastLoginTime = 5; // 最后登录时间
+	optional int32 lastHandselTime = 6;// 最后送礼时间
+	optional bool receive = 7;			// 是否能够领取
+	optional int32 status = 8;			// 状态:1:好友,2:屏蔽,3:申请
+	required bool online = 10;			// 是否在线
+	optional int32 time = 12;         // 申请时间/加入黑名单时间等
+	optional int32 helpCDtime = 13;         // 助战cd结束时间（秒）
+}
+
+
+// 取得好友信息
+// code = 3073
+message RespFriends{
+	repeated FriendInfo friends = 1;
+	required int32 receiveCount = 2;		// 已领取次数
+	required int32 lastReceiveTime = 3;	// 最后领取时间
+	enum MsgID{eMsgID = 3073;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得推荐好友
+// code = 3075
+message RespRecommendFriends{
+	repeated FriendInfo friends = 1;
+	enum MsgID{eMsgID = 3075;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 查询玩家
+// code = 3076
+message RespQueryPlayer{
+	repeated FriendInfo friends = 1;
+	enum MsgID{eMsgID = 3076;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求操作
+// code = 3074
+message RespOperate{
+	required int32 type = 1;	// 操作类型
+	repeated int32 targets = 2 [packed=true];	// 目标ID
+	enum MsgID{eMsgID = 3074;}; //注意：消息id放最后,以免客户端解析异常
+}

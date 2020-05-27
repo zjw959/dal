@@ -1,0 +1,64 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CItemMsg";
+import "S2C/S2CShareMsg.proto";
+
+// 使用物品
+// code = 514
+message UseItemResult{
+	repeated RewardsMsg items = 1;
+	enum MsgID{eMsgID = 514;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 道具列表
+// code = 515
+message ItemList {
+	repeated ItemInfo items = 1; //道具
+	repeated EquipmentInfo equipments = 2; //灵装
+	repeated DressInfo dresss = 3; //时装
+	enum MsgID{eMsgID = 515;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 道具信息
+message ItemInfo {
+	required ChangeType ct = 1;
+	required string id = 2; // 实例ID
+	required int32 cid = 3; // 配置ID
+	required int64 num = 4; // 数量
+	optional int32 outTime = 5;		//过期时间
+}
+
+// 时装
+message DressInfo {
+	required ChangeType ct = 1;
+	required string id = 2; // 实例ID
+	required int32 cid = 3; // 配置ID
+	required string roleId = 4; // 装备精灵ID
+	optional int32 outTime = 5;		//过期时间
+}
+
+//灵装
+//code = 2822
+message EquipmentInfo {
+	required ChangeType ct = 1;
+	required string id = 2; //灵装id
+	optional int32 cid = 3; //灵装cid
+	optional int32 level = 4; //灵装等级
+	optional int32 exp = 5; //灵装经验值
+	optional string heroId = 6; //英雄id
+	optional int32 position = 7; //装备位置
+	repeated SpecialAttr attrs = 8; //特殊属性
+	optional int32 oldAttrIndex = 9;//临时特殊属性：属性位置
+	optional int32 newAttrType = 10;//临时特殊属性：新属性类型
+	optional int32 newAttrValue = 11;//临时特殊属性：新属性值
+	optional int32 outTime = 12;		//过期时间
+	optional bool isLock = 13;		//是否已经锁定，false:否,ture:是
+	enum MsgID{eMsgID = 2822;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//装备特殊属性
+message SpecialAttr {
+    required int32 cid = 1; //配置id
+    required int32 value = 2; //属性值
+    required int32 index = 3; //属性服务器顺序
+}

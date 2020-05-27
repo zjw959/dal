@@ -1,0 +1,26 @@
+ID	策划看	模型大小	模型类型	初始状态模型资源	受击是否抖动	总共状态数（最多4个）	初始状态的受击特效	受击特效的动作组	到状态1需要攻击次数（填-1无限次数）	状态1	到达状态1时播放特效	特效的动作组	状态1的受击特效	特效的动作组	到达状态2需要攻击次数	状态2	到达状态2时播放特效	特效的动作组	状态2的受击特效	特效的动作组	到达破坏状态需要攻击次数	破坏特效资源名	动画名称	障碍物掉落
+id	foo	scale	resType	resource1	isShock	resourceMumber	behitEffect1	behitAction1	hitNumber1	resource2	effect2	action2	behitEffect2	behitAction2	hitNumber2	resource3	effect3	action3	behitEffect3	behitAction3	hitNumber3	breakResource	breakAction	drop
+number	comment	number	number	string	boolean	number	string	string	number	string	string	string	string	string	number	string	string	string	string	string	number	string	string	numbers
+int	comment	int	int	string	boolean	int	string	string	int	string	string	string	string	string	int	string	string	string	string	string	int	string	string	int[]
+1		1	1	fightmap/mapbarrier/qiulan.png	true	1																effects_zhangaiwu	effects_zhangaiwu	1-2-3-4-5
+2		1	1	fightmap/mapbarrier/qiulan.png	true	1																effects_zhangaiwu	effects_zhangaiwu	1-2-3-4-5
+3		1	1	fightmap/mapbarrier/zuqiu.png	true	1																effects_zhangaiwu	effects_zhangaiwu	1-2-3-4-5
+4		1	1	fightmap/mapbarrier/zhangaiban.png	true	1																effects_zhangaiwu	effects_zhangaiwu	1-2-3-4-5
+5		1	1	fightmap/mapbarrier/huanbaoxiang.png	true	1																effects_zhangaiwu	effects_zhangaiwu	4-5-1-2
+6		1	1	fightmap/mapbarrier/zhixiang2.png	true	1																effects_zhangaiwu	effects_zhangaiwu	4-5-1-2
+7		1	1	fightmap/mapbarrier/zuqiu.png	true	1																effects_zhangaiwu	effects_zhangaiwu	
+8		1	1	fightmap/mapbarrier/lajixiang.png	true	1																effects_zhangaiwu	effects_zhangaiwu	4-5-1-2
+1001	无尽模式传送点	1	1	fightmap/mapbarrier/lajixiang.png	true	1																		
+9	DEMboss	1	1	fightmap/mapbarrier/barrier1.png	true	1																effects_zhangaiwu	effects_zhangaiwu	2-3-4-5
+10	test	1	1	fightmap/mapbarrier/barrier1.png	true	3	effects_10301_skillB	effects_10301_skillB	5	fightmap/mapbarrier/zhixiang.png	effects_10301_skillB	effects_10301_skillB	effects_10301_skillB	effects_10301_skillB	4	fightmap/mapbarrier/langan.png	effects_10301_skillB	effects_10301_skillB	effects_10301_skillB	effects_10301_skillB	3	effects_zhangaiwu	effects_zhangaiwu	4-5-1-2
+																								
+																								
+11	2-1障碍物	1	1	fightmap/mapbarrier/barrier1.png	true	1																effects_zhangaiwu	effects_zhangaiwu	6-6-6
+12	2-1障碍物	1	1	fightmap/mapbarrier/barrier1.png	true	1																effects_zhangaiwu	effects_zhangaiwu	2-3-4-5
+13	2-1障碍物	1	1	fightmap/mapbarrier/qiulan.png	true	1																effects_zhangaiwu	effects_zhangaiwu	1-2-3-4-5
+																								
+14	2-2障碍物	1	1	fightmap/mapbarrier/barrier1.png	true	1																effects_zhangaiwu	effects_zhangaiwu	1-2-3-4-5
+15	2-2障碍物	1	1	fightmap/mapbarrier/barrier1.png	true	1																effects_zhangaiwu	effects_zhangaiwu	1-2-3-4-5
+																								
+																								
+16	2-2障碍物	1	1	fightmap/mapbarrier/tiaoma.png	true	1																effects_zhangaiwu	effects_zhangaiwu	2

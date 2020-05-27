@@ -1,0 +1,25 @@
+id	价格	类型（1：月卡 2：钻石和礼包）	商品id(对应RechargeGiftBag和MonthCard中的id)	商品内容备注	平台商品id	平台id	平台appid
+id	price	type	goodsId	nameComment	channelGoodsId	channelId	channelAppId
+number	number	number	number	comment	number	number	number
+int	float	int	int		int	int	int
+1	30	1	1001	月卡			
+2	30	1	1002	季卡			
+3	30	1	1003	年卡			
+4	6	2	2001	6￥60钻			
+5	30	2	2002	30￥330钻			
+6	88	2	2003	88￥1012钻			
+7	168	2	2004	168￥2016钻			
+8	328	2	2005	328￥4100钻			
+9	648	2	2006	648￥8424钻			
+10	1	2	3001	10钻礼包			
+11	3	2	3002	30钻礼包			
+12	6	2	3003	60钻礼包			
+13	8	2	3004	80钻礼包			
+14	12	2	3005	120钻礼包			
+15	18	2	3006	180钻礼包			
+16	28	2	3007	280钻礼包			
+17	50	2	3008	500钻礼包			
+18	88	2	3009	880钻礼包			
+19	168	2	3010	1680钻礼包			
+20	328	2	3011	3280钻礼包			
+21	648	2	3012	6480钻礼包			

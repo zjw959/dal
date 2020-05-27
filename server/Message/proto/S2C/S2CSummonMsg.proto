@@ -1,0 +1,66 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CSummonMsg";
+import "S2C/S2CShareMsg.proto";
+
+//召唤
+//code = 3329
+message Summon {
+    repeated RewardsMsg item = 1 ; //物品Map
+	enum MsgID{eMsgID = 3329;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//合成
+//code = 3330
+message ComposeSummon {
+    required ComposeInfo composeInfo = 1; //合成信息
+	enum MsgID{eMsgID = 3330;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//合成完成
+//code = 3331
+message ComposeFinish {
+    repeated RewardsMsg item = 1 ; //物品Map
+    required int32 zPointType =2; //质点类型
+	optional int32 score = 3;     //祈愿分数
+	enum MsgID{eMsgID = 3331;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取合成信息
+//code = 3333
+message GetComposeInfo {
+    repeated ComposeInfo composeInfos = 1 ; //合成信息
+	optional int32 score = 2;     //祈愿分数
+	enum MsgID{eMsgID = 3333;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//通知合成时间结束
+//code = 3334
+message NoticeComposeFinish {
+    repeated int32 cid = 1 [packed = true];
+	enum MsgID{eMsgID = 3334;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//合成信息
+message ComposeInfo {
+    required int32 cid = 1; //合成配置id
+    required int32 finishTime = 2; //完成时间
+}
+
+//历史记录
+//code = 3335
+message ResHistoryRecord {
+	repeated HistoryRecord historyRecords = 1;
+	enum MsgID{eMsgID = 3335;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message HistoryRecord {
+	required int32 type = 1;	// 1 钻石召唤 2 友情召唤 3 指定召唤
+	repeated Record records = 2;
+}
+
+message Record {
+	required int64 time = 1;
+	required int32 itemId = 2;
+	required int32 itemNum = 3;
+}

@@ -1,0 +1,8 @@
+id	名字	名称文字ID	房间UI名称	装饰名称	道具类型	子类型	小类型	房间图片	房间背景图	背包类型	排序索引	星级	品质	总上限	是否支持叠加	单格上限	达总上限转换	出售收益	交易收益	描述	描述文字ID	价值(策划查看)	解锁消耗	影响	效果描述Id	属于指定精灵，精灵id
+id	name	nameTextId	roomUIName	decorationsList	superType	subType	smallType	roomIcon	roomBg	bagType	order	star	quality	totalMax	pileUp	gridMax	convertMax	sellProfit	dealProfit	des	desTextId	cost	unlockCost	effect	effectTextId	belongToRole
+number	string	number	string	numbers	number	number	number	string	string	number	number	number	number	number	boolean	number	json	json	json	string	number	string	json	json	numbers	number
+int	string	int			int	int	int			int	int	int	int	int	boolean	int	map	map	map	string	int	string	Map	List		int
+710001	精灵公寓	2000001	room01		13	0	0	scene/bg/bg_fangjian1.png	scene/bg/bg_fangjian1.png	0	1	1	1	1	1	1				房间1	900388					
+710008	梦游仙境	900382	room02		13	0	0	scene/bg/bg_wanoudian1.png	scene/bg/bg_wanoudian1.png	0	2	2	2	1	1	1				梦游仙境	900384		{500001:1,500002:1,500003:1} 	[{"type":1,"value":30}]	900386	
+710009	春雨阁	900383	room03		13	0	0	scene/bg/cg_jiudianfangjian.png	scene/bg/cg_jiudianfangjian.png	0	3	3	3	1	1	1				春雨阁	900385		{500001:1,500002:1,500003:1} 	[{"type":5,"value":10}]	900387	
+710010	生日派对「十香」	900390	room04	1001-1002-1003-1004	13	0	0	scene/bg/bg_shixiangshengri.png	scene/bg/bg_shixiangshengri.png	0	4	5	5	1	1	1				生日派对「十香」	900391		{500001:1,500002:1,500003:1} 	[{"type":5,"value":10}]	900387	

@@ -1,0 +1,77 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CStoreMsg";
+import "S2C/S2CShareMsg.proto";
+
+// 商店数据信息
+// code = 2561
+message StoreDataInfo{
+	repeated StoreInfo stores = 1;
+	enum MsgID{eMsgID = 2561;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 购买道具
+// code = 2562
+message BuyGoods{
+	required int32 cid = 1;		// 商品ID
+	required int32 num = 2;		// 购买数量
+	enum MsgID{eMsgID = 2562;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 刷新商店
+// code = 2563
+message RefreshStore{
+	repeated StoreInfo stores = 1;
+	enum MsgID{eMsgID = 2563;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 玩家商城信息
+message StoreInfo {
+	required int32 cid = 1;			// 商城id
+	required int32 todayRefreshCount = 2;	// 今天刷新次数
+	required int32 totalRefreshCount = 3;	// 总刷新次数
+	required int32 nextRefreshTime = 4;	// 下次自动刷新时间
+	repeated int32 commoditys = 5 [packed=true];	// 商品ID
+}
+
+
+
+
+// 商品购买记录
+// code = 2564
+message CommodityBuyLogs {
+	repeated StoreCommodityBuyInfo buyLogs = 1;
+	enum MsgID{eMsgID = 2564;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 商城商品购买信息
+message StoreCommodityBuyInfo{
+	required int32 type = 1;					// 记录类型 1：个人 2：全服
+	required int32 cid = 2;					// 商品id
+	required int32 nowBuyCount = 3;			// 当前阶段购买次数
+	required int32 totalBuyCount = 4;		// 总购买次数
+}
+
+
+// 请求动态商品配置
+// code = 2566
+message RespDynamicCommodity{
+	repeated DynamicCommodity datas = 1;
+	enum MsgID{eMsgID = 2566;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 动态商品
+message DynamicCommodity{
+	required ChangeType ct = 1;
+	required string data = 2; //json格式
+}
+
+
+// 出售道具
+// code = 2565
+message SellInfo{
+	required bool success = 1;
+	repeated RewardsMsg rewards = 2;
+	enum MsgID{eMsgID = 2565;}; //注意：消息id放最后,以免客户端解析异常
+}

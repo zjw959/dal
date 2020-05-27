@@ -1,0 +1,135 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SNewBuildingMsg";
+
+//请求获取建筑数据
+// code = 2071
+message ReqGetAllBuildingInfo{
+	enum MsgID{eMsgID = 2071;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+//请求提醒事件已经完成
+// code = 2073
+message ReqRemindSuccess{
+	required int32 eventType = 1; //提醒类型
+	enum MsgID{eMsgID = 2073;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取兼职任务
+// code = 2076
+message ReqPartTimeJobList{
+	enum MsgID{eMsgID = 2076;};
+}
+
+
+//请求兼职任务
+// code = 2077
+message ReqDoPartTimeJob{
+	required int32 buildingId = 1; //建筑ID
+	required int32 jobId = 2; //兼职id
+	enum MsgID{eMsgID = 2077;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求获取兼职奖励
+// code = 2078
+message ReqPartTimeJobAward{
+	required int32 buildingId = 1; //建筑ID
+	required int32 jobId = 2; //兼职id
+	enum MsgID{eMsgID = 2078;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//放弃兼职
+// code = 2079
+message ReqGiveUpJob{
+	required int32 buildingId = 1; //建筑ID
+	required int32 jobId = 2; //兼职id
+	enum MsgID{eMsgID = 2079;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取抓娃娃信息
+// code = 2062
+message ReqGetGashaponInfo{
+	enum MsgID{eMsgID = 2062;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求开始抓娃娃
+// code = 2063
+message ReqStartGashapon{
+	enum MsgID{eMsgID = 2063;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求抓娃娃结果验证
+// code = 2064
+message ReqCheckGashaponResult{
+	repeated int32 cids = 1; //抓到的娃娃id（可能一次抓到多个）
+	enum MsgID{eMsgID = 2064;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求刷新娃娃蛋池
+// code = 2065
+message ReqRefreshGashaponPool{
+	enum MsgID{eMsgID = 2065;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求料理数据
+// code = 2066
+message ReqgetFoodbaseInfo{
+    required bool needSave = 1; //默认为true，从约会进的传递false
+	enum MsgID{eMsgID = 2066;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求制作料理
+// code = 2067
+message ReqCookFoodbase{
+	required int32 foodId = 1;
+	enum MsgID{eMsgID = 2067;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求QTE完成上传积分
+// code = 2068
+message ReqUploadQteIntegral{
+	required int32 foodId = 1;
+	required int32 qteId = 2;
+	required int32 integral = 3;
+	enum MsgID{eMsgID = 2068;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求料理奖励
+// code = 2069
+message ReqGetFoodBaseAward{
+	required int32 foodId = 1;
+	enum MsgID{eMsgID = 2069;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求制作手工
+// code = 2081
+message ReqDoHandWork{
+	required int32 manualId = 1; //要制作手工id
+	enum MsgID{eMsgID = 2081;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求手工数据
+// code = 2080
+message ReqGetHandWorkInfo{
+    required bool needSave = 1; //默认为true，从约会进的传递false
+	enum MsgID{eMsgID = 2080;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求手工操作完成上传积分
+// code = 2082
+message ReqUploadHandIntegral{
+	required int32 manualId = 1; //要制作手工id
+	required int32 integral = 2; //积分
+	required int32 stime = 3; //开始时间
+	required int32 etime = 4;//结束时间
+	enum MsgID{eMsgID = 2082;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求制作的手工奖励
+// code = 2083
+message ReqGetHandWorkAward{
+	required int32 manualId = 1;
+	enum MsgID{eMsgID = 2083;}; //注意：消息id放最后,以免客户端解析异常
+}
+

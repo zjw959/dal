@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_mail">
+    <resultMap id="PlayerMailDBBean" type="gm.db.mail.bean.PlayerMailDBBean">
+        <result column="id" property="id" jdbcType="BIGINT"/>
+        <result column="sender_id" property="sender_id" jdbcType="INTEGER"/>
+        <result column="receiver_id" property="receiver_id" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="body" property="body" jdbcType="VARCHAR"/>
+        <result column="items" property="items" jdbcType="LONGVARCHAR"/>
+        <result column="status" property="status" jdbcType="VARCHAR"/>
+        <result column="info" property="info" jdbcType="VARCHAR"/>
+        <result column="create_date" property="create_date" jdbcType="TIMESTAMP"/>
+        <result column="modify_date" property="modify_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <resultMap id="ServerMailDBBean" type="gm.db.mail.bean.ServerMailDBBean">
+        <result column="id" property="id" jdbcType="BIGINT"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="body" property="body" jdbcType="VARCHAR"/>
+        <result column="items" property="items" jdbcType="LONGVARCHAR"/>
+        <result column="create_date" property="create_date" jdbcType="TIMESTAMP"/>
+        <result column="modify_date" property="modify_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    
+    <select id="selectPlayerMailsByReceiverId" parameterType="Long" resultMap="PlayerMailDBBean">
+        SELECT * 
+        FROM t_player_mail
+        WHERE receiver_id = #{receiver_id};
+    </select>
+    
+  	<select id="selectMaxPlayerMailId" resultType="Long">
+        SELECT MAX(id) 
+        FROM t_player_mail;
+    </select>
+    
+    <select id="selectPlayerMailsByTime" parameterType="HashMap" resultMap="PlayerMailDBBean">
+        SELECT * 
+        FROM t_player_mail
+        WHERE create_date between #{startTime,jdbcType=TIMESTAMP} and #{endTime,jdbcType=TIMESTAMP};
+    </select>
+    
+    <select id="selectServerMailsByTime" parameterType="HashMap" resultMap="ServerMailDBBean">
+        SELECT * 
+        FROM t_server_mail
+        WHERE create_date between #{startTime,jdbcType=TIMESTAMP} and #{endTime,jdbcType=TIMESTAMP};
+    </select>
+    
+    <select id="selectPlayerMailsBeyondId" parameterType="Long" resultMap="PlayerMailDBBean">
+        SELECT * 
+        FROM t_player_mail
+        WHERE id &gt; #{id,jdbcType=BIGINT};
+    </select>
+    
+    <select id="selectServerMailsBeyondId" parameterType="Long" resultMap="ServerMailDBBean">
+        SELECT * 
+        FROM t_server_mail
+        WHERE id &gt; #{id,jdbcType=BIGINT};
+    </select>
+
+    <select id="selectAllServerMails" resultMap="ServerMailDBBean">
+        SELECT * 
+        FROM t_server_mail;
+    </select>
+
+    <insert id="insertServerMail" parameterType="gm.db.mail.bean.ServerMailDBBean">
+		insert into t_server_mail(
+		id,
+		title,
+		body,
+		items,
+		create_date,
+		modify_date
+		)values(
+		#{id, jdbcType=BIGINT},
+		#{title, jdbcType=VARCHAR},
+		#{body, jdbcType=VARCHAR},
+		#{items, jdbcType=LONGVARCHAR},
+		#{create_date, jdbcType=TIMESTAMP},
+		#{modify_date, jdbcType=TIMESTAMP}
+		)
+    </insert>
+    
+    <insert id="insertPlayerMail" parameterType="gm.db.mail.bean.PlayerMailDBBean">
+		insert into t_player_mail(
+		id,
+		sender_id,
+		receiver_id,
+		title,
+		body,
+		items,
+		status,
+		info,
+		create_date,
+		modify_date
+		)values(
+		#{id, jdbcType=BIGINT},
+		#{sender_id, jdbcType=INTEGER},
+		#{receiver_id, jdbcType=INTEGER},
+		#{title, jdbcType=VARCHAR},
+		#{body, jdbcType=VARCHAR},
+		#{items, jdbcType=LONGVARCHAR},
+		#{status, jdbcType=INTEGER},
+		#{info, jdbcType=VARCHAR},
+		#{create_date, jdbcType=TIMESTAMP},
+		#{modify_date, jdbcType=TIMESTAMP}
+		)
+    </insert>
+    <insert id="updatePlayerMails" parameterType="java.util.List">
+    	insert into t_player_mail(
+		id,
+		sender_id,
+		receiver_id,
+		title,
+		body,
+		items,
+		status,
+		info,
+		create_date,
+		modify_date
+		)
+		values
+		<foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.id, jdbcType=BIGINT},
+			#{item.sender_id, jdbcType=INTEGER},
+			#{item.receiver_id, jdbcType=INTEGER},
+			#{item.title, jdbcType=VARCHAR},
+			#{item.body, jdbcType=VARCHAR},
+			#{item.items, jdbcType=LONGVARCHAR},
+			#{item.status, jdbcType=INTEGER},
+			#{item.info, jdbcType=VARCHAR},
+			#{item.create_date, jdbcType=TIMESTAMP},
+			#{item.modify_date, jdbcType=TIMESTAMP}
+			)
+        </foreach>
+        ON DUPLICATE KEY UPDATE
+        status = VALUES(status),
+        modify_date = VALUES(modify_date)
+    </insert>
+    
+    <delete id="deletePlayerMails" parameterType="java.util.List">
+    	delete from t_player_mail where id  IN
+		<foreach collection="list" item="mailId" index="index" open="(" separator="," close=")">
+		    #{mailId,jdbcType=BIGINT}
+		</foreach>
+    </delete>
+    
+   	<delete id="deleteServerMails" parameterType="java.util.List">
+    	delete from t_server_mail where id  IN
+		<foreach collection="list" item="mailId" index="index" open="(" separator="," close=")">
+		    #{mailId,jdbcType=BIGINT}
+		</foreach>
+    </delete>
+    
+    <delete id="deletePlayerMailsByTime" parameterType="HashMap">
+        delete from t_player_mail
+        WHERE create_date between #{startTime,jdbcType=TIMESTAMP} and #{endTime,jdbcType=TIMESTAMP};
+    </delete>
+    
+    <delete id="deleteServerMailsByTime" parameterType="HashMap">
+        delete from t_server_mail
+        WHERE create_date between #{startTime,jdbcType=TIMESTAMP} and #{endTime,jdbcType=TIMESTAMP};
+    </delete>
+</mapper>

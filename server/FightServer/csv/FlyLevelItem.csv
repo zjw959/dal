@@ -1,0 +1,11 @@
+道具ID	名称(策划)	道具资源	道具资源类型(1-图片, 2-动画)	待机特效资源名	动画名称	拾取特效资源名	动画名称	持续时间(结束后离开场景)	道具类型(和Item表类型无关，1-精灵弹幕提升道具，2-僚机弹幕提升/形态切换道具，3-怒气点恢复道具，4-积分道具)	道具参数(根据不同道具类型填不同参数)	道具美术资源尺寸缩放
+id	name	resource	resType	standResource	standAction	getResource	getAction	existTime	type	param	scale
+number	comment	string	number	string	string	string	string	number	number	number	number
+int		string	int	string	string	string	string	int	int	int	int
+101001	十香弹幕等级提升道具		2	battleitem_F	power			15	1	1	0.33
+102001	十香僚机等级提升/形态切换道具1		2	battleitem_F	form_1			15	2	1	0.33
+102002	十香僚机等级提升/形态切换道具2								2	2	
+102003	十香僚机等级提升/形态切换道具3								2	3	
+103001	怒气恢复道具							15	3	10	0.33
+104001		icon/system/001.png	1					15	4	10	0.33
+104002		icon/system/005.png	1					15	4	30	0.33

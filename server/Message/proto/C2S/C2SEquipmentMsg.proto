@@ -1,0 +1,55 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SEquipmentMsg";
+
+//装备灵装
+//code = 2817
+message EquipMsg {
+	required string heroId = 1;//英雄id
+	required string equipmentId = 2;//灵装id
+	required int32 position = 3;//位置
+	enum MsgID{eMsgID = 2817;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//卸下灵装
+//code = 2818
+message TakeOffEquipmentMsg {
+	required string heroId = 1;//英雄id
+	required string equipmentId = 2;//灵装id
+	required int32 position = 3;//位置
+	enum MsgID{eMsgID = 2818;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//洗炼
+//code = 2819
+message ChangeSpecialAttrMsg {
+	required string sourceEquipmentId = 1; //洗练灵装id
+	repeated int32 oldAttrIndex = 2;//被洗练属性索引
+	required string costEquipmentId = 3; //被消耗灵装id
+	repeated int32 costAttrIndex = 4;	//被消耗灵装的属性索引
+	enum MsgID{eMsgID = 2819;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//强化
+//code = 2820
+message UpgradeMsg {
+	required string equipmentId = 1;//升级灵装id
+	repeated string costEquipmentId = 2;//消耗灵装id列表
+	enum MsgID{eMsgID = 2820;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//替换特殊属性
+//code = 2821
+message ReplaceSpecialAttrMsg {
+	required string equipmentId = 1;//灵装id
+	required bool replace = 2;//是否替换
+	enum MsgID{eMsgID = 2821;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//锁定灵装
+//code = 2823
+message LockMsg {
+	required string equipmentId = 1;//灵装id
+	enum MsgID{eMsgID = 2823;}; //注意：消息id放最后,以免客户端解析异常
+}
+

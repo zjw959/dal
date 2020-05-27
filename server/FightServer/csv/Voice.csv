@@ -1,0 +1,154 @@
+ID	分类	对应看板娘	配音路径	备注（策划看）
+id	type	role	voice	des
+number	string	number	json	string
+int	string	int	map	string
+101	hero_get	101	["sound/role/shixiang/TOUKA_25.mp3"]	获得角色
+102	hero_get	102	["sound/role/zhezhi/ORIGAMI_AST_02.mp3"]	
+103	hero_get	103	["sound/role/sisinai/YOSHINO_29.mp3"]	
+104	hero_get	104	["sound/role/kuangsan/KURUMI_35.mp3"]	
+105	hero_get	105	["sound/role/qinli/KOTORI_25.mp3"]	
+201	button_dating	101	["sound/role/shixiang/TOUKA_15.mp3"]	点击约会按钮
+202	button_dating	102	["sound/role/zhezhi/ORIGAMI_04.mp3"]	
+203	button_dating	103	["sound/role/sisinai/YOSHINO_19.mp3"]	
+204	button_dating	104	["sound/role/kuangsan/KURUMI_26.mp3"]	
+205	button_dating	105	["sound/role/qinli/KOTORI_17.mp3"]	
+301	dating_enter	101	["sound/role/shixiang/TOUKA_16.mp3","sound/role/shixiang/TOUKA_29.mp3"]	进入约会（暂时不用）
+302	dating_enter	102	["sound/role/zhezhi/ORIGAMI_22.mp3","sound/role/zhezhi/ORIGAMI_08.mp3"]	（暂时不用）
+303	dating_enter	103	["sound/role/sisinai/YOSHINO_20.mp3","sound/role/sisinai/YOSHINO_10.mp3"]	（暂时不用）
+304	dating_enter	104	["sound/role/kuangsan/KURUMI_06.mp3","sound/role/kuangsan/KURUMI_S_08.mp3"]	（暂时不用）
+305	dating_enter	105	["sound/role/qinli/KOTORI_25.mp3","sound/role/qinli/KOTORI_S_18.mp3"]	（暂时不用）
+401	dating_complete	101	["sound/role/shixiang/TOUKA_29.mp3"]	约会结束-成功
+402	dating_complete	102	["sound/role/zhezhi/ORIGAMI_14.mp3"]	
+403	dating_complete	103	["sound/role/sisinai/YOSHINON_01.mp3"]	
+404	dating_complete	104	["sound/role/kuangsan/KURUMI_04.mp3"]	
+405	dating_complete	105	["sound/role/qinli/KOTORI_13.mp3"]	
+501	dating_lose	101	["sound/role/shixiang/TOUKA_13.mp3"]	约会结束-失败
+502	dating_lose	102	["sound/role/zhezhi/ORIGAMI_17.mp3"]	
+503	dating_lose	103	["sound/role/sisinai/YOSHINO_06.mp3"]	
+504	dating_lose	104	["sound/role/kuangsan/KURUMI_S_13.mp3"]	
+505	dating_lose	105	["sound/role/qinli/KOTORI_S_12.mp3"]	
+601	hidden_end	101	["sound/role/shixiang/TOUKA_S_19.mp3"]	约会结束-hidden end
+602	hidden_end	102	["sound/role/zhezhi/ORIGAMI_12.mp3"]	
+603	hidden_end	103	["sound/role/sisinai/YOSHINO_21.mp3"]	
+604	hidden_end	104	["sound/role/kuangsan/KURUMI_09.mp3"]	
+605	hidden_end	105	["sound/role/qinli/KOTORI_12.mp3"]	
+701	good_end	101	["sound/role/shixiang/TOUKA_S_02.mp3"]	约会结束-happy、good
+702	good_end	102	["sound/role/zhezhi/ORIGAMI_05.mp3"]	
+703	good_end	103	["sound/role/sisinai/YOSHINO_26.mp3"]	
+704	good_end	104	["sound/role/kuangsan/KURUMI_01.mp3"]	
+705	good_end	105	["sound/role/qinli/KOTORI_13.mp3"]	
+801	bad_end	101	["sound/role/shixiang/TOUKA_S_16.mp3"]	约会结束-normal、bad
+802	bad_end	102	["sound/role/zhezhi/ORIGAMI_11.mp3"]	
+803	bad_end	103	["sound/role/sisinai/YOSHINO_11.mp3"]	
+804	bad_end	104	["sound/role/kuangsan/KURUMI_15.mp3"]	
+805	bad_end	105	["sound/role/qinli/KOTORI_S_15.mp3"]	
+901	dating_invite_wait	101	["sound/role/shixiang/TOUKA_S_04.mp3"]	预定约会-邀请过程
+902	dating_invite_wait	102	["sound/role/zhezhi/ORIGAMI_05.mp3"]	
+903	dating_invite_wait	103	["sound/role/sisinai/YOSHINO_S_08.mp3"]	
+904	dating_invite_wait	104	["sound/role/kuangsan/KURUMI_S_15.mp3"]	
+905	dating_invite_wait	105	["sound/role/qinli/KOTORI_S_20.mp3"]	
+1001	dating_invite_yes	101	["sound/role/shixiang/TOUKA_S_12.mp3"]	预定约会-接受邀请
+1002	dating_invite_yes	102	["sound/role/zhezhi/ORIGAMI_14.mp3"]	
+1003	dating_invite_yes	103	["sound/role/sisinai/YOSHINO_26.mp3"]	
+1004	dating_invite_yes	104	["sound/role/kuangsan/KURUMI_27.mp3"]	
+1005	dating_invite_yes	105	["sound/role/qinli/KOTORI_S_12.mp3"]	
+1101	dating_invite_no	101	["sound/role/shixiang/TOUKA_S_06.mp3"]	预定约会-拒绝邀请
+1102	dating_invite_no	102	["sound/role/zhezhi/ORIGAMI_11.mp3"]	
+1103	dating_invite_no	103	["sound/role/sisinai/YOSHINO_18.mp3"]	
+1104	dating_invite_no	104	["sound/role/kuangsan/KURUMI_24.mp3"]	
+1105	dating_invite_no	105	["sound/role/qinli/KOTORI_S_14.mp3"]	
+1201	button_dress	101	["sound/role/shixiang/TOUKA_S_10.mp3"]	进入换装
+1202	button_dress	102	["sound/role/zhezhi/ORIGAMI_31.mp3"]	
+1203	button_dress	103	["sound/role/sisinai/YOSHINO_S_08.mp3"]	
+1204	button_dress	104	["sound/role/kuangsan/KURUMI_26.mp3"]	
+1205	button_dress	105	["sound/role/qinli/KOTORI_S_24.mp3"]	
+1301	dress_wait	101	["sound/role/shixiang/TOUKA_S_20.mp3"]	换装中
+1302	dress_wait	102	["sound/role/zhezhi/ORIGAMI_15.mp3"]	
+1303	dress_wait	103	["sound/role/sisinai/YOSHINON_01.mp3"]	
+1304	dress_wait	104	["sound/role/kuangsan/KURUMI_S_15.mp3"]	
+1305	dress_wait	105	["sound/role/qinli/KOTORI_S_25.mp3"]	
+1401	dress_low	101	["sound/role/shixiang/TOUKA_23.mp3"]	换上服装-一般
+1402	dress_low	102	["sound/role/zhezhi/ORIGAMI_32.mp3"]	
+1403	dress_low	103	["sound/role/sisinai/YOSHINO_27.mp3"]	
+1404	dress_low	104	["sound/role/kuangsan/KURUMI_33.mp3"]	
+1405	dress_low	105	["sound/role/qinli/KOTORI_23.mp3"]	
+1501	dress_high	101	["sound/role/shixiang/TOUKA_S_19.mp3"]	换上服装-高级
+1502	dress_high	102	["sound/role/zhezhi/ORIGAMI_19.mp3"]	
+1503	dress_high	103	["sound/role/sisinai/YOSHINO_26.mp3"]	
+1504	dress_high	104	["sound/role/kuangsan/KURUMI_27.mp3"]	
+1505	dress_high	105	["sound/role/qinli/KOTORI_S_13.mp3"]	
+1601	button_room	101	["sound/role/shixiang/TOUKA_S_13.mp3"]	进入房间
+1602	button_room	102	["sound/role/zhezhi/ORIGAMI_21.mp3"]	
+1603	button_room	103	["sound/role/sisinai/YOSHINO_S_02.mp3"]	
+1604	button_room	104	["sound/role/kuangsan/KURUMI_S_10.mp3"]	
+1605	button_room	105	["sound/role/qinli/KOTORI_S_17.mp3"]	
+1701	room_confirm	101	["sound/role/shixiang/TOUKA_S_12.mp3"]	更换房间
+1702	room_confirm	102	["sound/role/zhezhi/ORIGAMI_32.mp3"]	
+1703	room_confirm	103	["sound/role/sisinai/YOSHINO_21.mp3"]	
+1704	room_confirm	104	["sound/role/kuangsan/KURUMI_S_21.mp3"]	
+1705	room_confirm	105	["sound/role/qinli/KOTORI_S_19.mp3"]	
+1801	button_gift	101	["sound/role/shixiang/TOUKA_S_02.mp3"]	进入送礼
+1802	button_gift	102	["sound/role/zhezhi/ORIGAMI_21.mp3"]	
+1803	button_gift	103	["sound/role/sisinai/YOSHINO_S_04.mp3"]	
+1804	button_gift	104	["sound/role/kuangsan/KURUMI_S_20.mp3"]	
+1805	button_gift	105	["sound/role/qinli/KOTORI_S_26.mp3"]	
+1901	gifts_wait	101	["sound/role/shixiang/TOUKA_S_02.mp3"]	等待送礼
+1902	gifts_wait	102	["sound/role/zhezhi/ORIGAMI_08.mp3"]	
+1903	gifts_wait	103	["sound/role/sisinai/YOSHINO_S_08.mp3"]	
+1904	gifts_wait	104	["sound/role/kuangsan/KURUMI_S_18.mp3"]	
+1905	gifts_wait	105	["sound/role/qinli/KOTORI_S_20.mp3"]	
+2001	food_high	101	["sound/role/shixiang/TOUKA_19.mp3"]	喜爱食物
+2002	food_high	102	["sound/role/zhezhi/ORIGAMI_27.mp3"]	
+2003	food_high	103	["sound/role/sisinai/YOSHINO_23.mp3"]	
+2004	food_high	104	["sound/role/kuangsan/KURUMI_29.mp3"]	
+2005	food_high	105	["sound/role/qinli/KOTORI_19.mp3"]	
+2101	food_low	101	["sound/role/shixiang/TOUKA_20.mp3"]	一般食物
+2102	food_low	102	["sound/role/zhezhi/ORIGAMI_28.mp3"]	
+2103	food_low	103	["sound/role/sisinai/YOSHINO_24.mp3"]	
+2104	food_low	104	["sound/role/kuangsan/KURUMI_30.mp3"]	
+2105	food_low	105	["sound/role/qinli/KOTORI_20.mp3"]	
+2201	gift_high	101	["sound/role/shixiang/TOUKA_22.mp3"]	喜爱礼物
+2202	gift_high	102	["sound/role/zhezhi/ORIGAMI_30.mp3"]	
+2203	gift_high	103	["sound/role/sisinai/YOSHINO_26.mp3"]	
+2204	gift_high	104	["sound/role/kuangsan/KURUMI_32.mp3"]	
+2205	gift_high	105	["sound/role/qinli/KOTORI_22.mp3"]	
+2301	gift_low	101	["sound/role/shixiang/TOUKA_22.mp3"]	一般礼物
+2302	gift_low	102	["sound/role/zhezhi/ORIGAMI_30.mp3"]	
+2303	gift_low	103	["sound/role/sisinai/YOSHINO_26.mp3"]	
+2304	gift_low	104	["sound/role/kuangsan/KURUMI_32.mp3"]	
+2305	gift_low	105	["sound/role/qinli/KOTORI_22.mp3"]	
+2401	favor_up	101	["sound/role/shixiang/TOUKA_17.mp3"]	好感度等级提升
+2402	favor_up	102	["sound/role/zhezhi/ORIGAMI_25.mp3"]	
+2403	favor_up	103	["sound/role/sisinai/YOSHINO_21.mp3"]	
+2404	favor_up	104	["sound/role/kuangsan/KURUMI_27.mp3"]	
+2405	favor_up	105	["sound/role/qinli/KOTORI_13.mp3"]	
+2501	ability_up	101	["sound/role/shixiang/TOUKA_29.mp3"]	能力提升
+2502	ability_up	102	["sound/role/zhezhi/ORIGAMI_AST_01.mp3"]	
+2503	ability_up	103	["sound/role/sisinai/YOSHINO_28.mp3"]	
+2504	ability_up	104	["sound/role/kuangsan/KURUMI_34.mp3"]	
+2505	ability_up	105	["sound/role/qinli/KOTORI_24.mp3"]	
+2601	work_play	101	["sound/role/shixiang/TOUKA_S_10.mp3"]	打工上阵
+2602	work_play	102	["sound/role/zhezhi/ORIGAMI_05.mp3"]	
+2603	work_play	103	["sound/role/sisinai/YOSHINO_S_02.mp3"]	
+2604	work_play	104	["sound/role/kuangsan/KURUMI_S_21.mp3"]	
+2605	work_play	105	["sound/role/qinli/KOTORI_S_19.mp3"]	
+2701	change_kanban	101	["sound/role/shixiang/TOUKA_S_07.mp3"]	切换看板娘
+2702	change_kanban	102	["sound/role/zhezhi/ORIGAMI_08.mp3"]	
+2703	change_kanban	103	["sound/role/sisinai/YOSHINO_S_09.mp3"]	
+2704	change_kanban	104	["sound/role/kuangsan/KURUMI_S_10.mp3"]	
+2705	change_kanban	105	["sound/role/qinli/KOTORI_S_20.mp3"]	
+2801	change_hero	101	["sound/role/shixiang/TOUKA_S_13.mp3"]	切换精灵
+2802	change_hero	102	["sound/role/zhezhi/ORIGAMI_21.mp3"]	
+2803	change_hero	103	["sound/role/sisinai/YOSHINO_29.mp3"]	
+2804	change_hero	104	["sound/role/kuangsan/KURUMI_S_18.mp3"]	
+2805	change_hero	105	["sound/role/qinli/KOTORI_S_25.mp3"]	
+2901	change_equip	101	["sound/role/shixiang/TOUKA_S_07.mp3"]	更换灵装
+2902	change_equip	102	["sound/role/zhezhi/ORIGAMI_31.mp3"]	
+2903	change_equip	103	["sound/role/sisinai/YOSHINO_S_09.mp3"]	
+2904	change_equip	104	["sound/role/kuangsan/KURUMI_S_09.mp3"]	
+2905	change_equip	105	["sound/role/qinli/KOTORI_S_22.mp3"]	
+3001	battle_play	101	["sound/role/shixiang/TOUKA_S_09.mp3"]	战斗上阵
+3002	battle_play	102	["sound/role/zhezhi/ORIGAMI_AST_14.mp3"]	
+3003	battle_play	103	["sound/role/sisinai/YOSHINO_S_07.mp3"]	
+3004	battle_play	104	["sound/role/kuangsan/KURUMI_43.mp3"]	
+3005	battle_play	105	["sound/role/qinli/KOTORI_33.mp3"]	

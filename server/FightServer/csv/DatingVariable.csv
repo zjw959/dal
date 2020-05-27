@@ -1,0 +1,31 @@
+ID	是否为隐藏属性（0是1不是）	图标	名称（策划看）	备注（策划看）	属性名称	初始值	上下限
+id	hide	icon	variableName	variableDes	name	initialValue	limit
+number	number	string	comment	comment	number	number	numbers
+int	int	string			int	int	int[]
+101101	1	ui/newCity/city_main/1.png	直男	十香主线	12200	0	0-100
+101102	1	ui/newCity/city_main/2.png	暖男	十香主线	12201	0	0-100
+101103	1	ui/newCity/city_main/3.png	渣男	十香主线	12202	0	0-100
+102101	1	ui/newCity/city_main/1.png	直男	折纸主线	12200	0	0-100
+102102	1	ui/newCity/city_main/2.png	暖男	折纸主线	12201	0	0-100
+102103	1	ui/newCity/city_main/3.png	渣男	折纸主线	12202	0	0-100
+103101	1	ui/newCity/city_main/1.png	直男	四糸乃主线	12200	0	0-100
+103102	1	ui/newCity/city_main/2.png	暖男	四糸乃主线	12201	0	0-100
+103103	1	ui/newCity/city_main/3.png	渣男	四糸乃主线	12202	0	0-100
+104101	1	ui/newCity/city_main/1.png	直男	狂三主线	12200	0	0-100
+104102	1	ui/newCity/city_main/2.png	暖男	狂三主线	12201	0	0-100
+104103	1	ui/newCity/city_main/3.png	渣男	狂三主线	12202	0	0-100
+105101	1	ui/newCity/city_main/1.png	直男	琴里主线	12200	0	0-100
+105102	1	ui/newCity/city_main/2.png	暖男	琴里主线	12201	0	0-100
+105103	1	ui/newCity/city_main/3.png	渣男	琴里主线	12202	0	0-100
+101201	0		属性1	十香主线额外属性		0	0-100
+101202	0		属性2	十香主线额外属性		0	0-100
+101203	0		属性3	十香主线额外属性		0	0-100
+101204	0		属性4	十香主线额外属性		0	0-100
+101205	0		属性5	十香主线额外属性		0	0-100
+101206	0		属性6	十香主线额外属性		0	0-100
+101207	0		属性7	十香主线额外属性		0	0-100
+101208	0		属性8	十香主线额外属性		0	0-100
+101209	0		属性9	十香主线额外属性		0	0-100
+101210	0		属性10	十香主线额外属性		0	0-100
+101211	0		属性11	十香主线额外属性		0	0-100
+101212	0		属性12	十香主线额外属性		0	0-100

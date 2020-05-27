@@ -1,0 +1,98 @@
+id	阶段	是否使用中	阶段跳转	事件类型（0地点1角色1信息3功能）	绑定类型（0地点1角色）	地点事件图标（地点）	人物事件图标（地点）	人物事件图标（人物）	地点	地点（策划看）	角色	角色（策划看）	角色位置	角色动作	剧本	开始节点id	信息	调用功能	完成规则	是否隐藏	隐藏显示条件（拥有）	条件组合（0且1或）	隐藏显示条件（不拥有）	消耗时间	限制时间	强制推动时间	完成删除
+id	stepId	use	stepJump	eventType	bindType	scriptIcon1	scriptIcon2	scriptIcon3	bindBuild	bindBuildDes	bindRole	bindRoleDes	position	action	scriptId	startId	message	game	gameRule	hide	hideCondition1		hideCondition2	costTime	limitTime	addTime	delete
+number	number	boolean	number	number	number	string	string	string	number	comment	number	comment		number	number	number	number	number	json	boolean	json		json	number	string	string	boolean
+int	int	boolean	int	int	int				int		int			int	int	int	int	int	map	boolean	map		map	int	string	string	boolean
+110001	101000	1	101001												113101001	110101001				0	{}		{}		09:00:00-09:00:00	11:00:00	1
+110101	101001	1	101001	1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	104	学校1F	410104	十香校服			113101001	110101001				0	{}		{}		11:00:00-11:00:00	11:00:00	1
+110102	101001	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	105	体育馆	410104	折纸校服			113101001	110101001				0	{}		{}	10	11:00:00-11:00:00		1
+110103	101001	1		0	0	ui/newCity/state/faver_zhuxian_2.png			103	学校1F					113103001	110103001				0	{}		{}	10	11:00:00-11:00:00		1
+110104	101001	1		1	0	ui/newCity/state/faver_zhuxian_2.png			101	商场							104001			0	{}		{}	10	11:00:00-11:00:00		0
+110105	101001	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	101	商场	410505	琴里指挥官			113105001	110105001				0	{}		{}	10	11:00:00-11:00:00		1
+110106	101001	1		0	0	ui/newCity/state/faver_jiaoyi_2.png			108	游乐场					113106001	110106001				0	{}		{}	10	11:00:00-11:00:00		1
+110201	101001	1	101003	1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_jiaoyi_2.png	103	学校1F	410104	十香校服			113301001	110301001				0	{}		{}		11:00:00-14:00:00	14:00:00	1
+110202	101001	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_jiaoyi_2.png	104	学校1F	410404	狂三校服			113301001	110301001				0	{}		{}	10	11:00:00-14:00:00		1
+110203	101001	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_jiaoyi_2.png	101	图书馆	410505	琴里指挥官			113303001	110303001				0	{}		{}	10	11:00:00-14:00:00		1
+110204	101001	1		1	0	ui/newCity/state/faver_zhuxian_2.png			101	商场							304001			0	{}		{}	10	11:00:00-14:00:00		0
+110205	101001	1		0	0	ui/newCity/state/faver_zhuxian_2.png			106	公园					113305001	110305001				0	{}		{}	10	11:00:00-14:00:00		1
+110301	101003	1	101004	1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	103	学校1F	410104	十香校服			113401001	110401001				0	{}		{}		14:00:00-16:00:00	16:00:00	1
+110302	101003	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	104	学校1F	410104	折纸校服			113401001	110401001				0	{}		{}	10	14:00:00-16:00:00		1
+110303	101003	1		0	0	ui/newCity/state/faver_zhuxian_2.png			104	学校1F					113403001	110403001				1	{"ownSign":[31]}		{}	10	14:00:00-16:00:00		1
+110304	101003	1		1	0	ui/newCity/state/faver_zhuxian_2.png			101	商场							404001			0	{}		{}	10	14:00:00-16:00:00		0
+110401	101004	1	101005	1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	106	公园	410505	琴里指挥官			113501001	110501001				0	{}		{}		16:00:00-18:00:00	18:00:00	1
+110402	101004	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	103	学校1F	410104	折纸校服			113501001	110501001				0	{}		{}	30	16:00:00-18:00:00		1
+110403	101004	1		0	0	ui/newCity/state/faver_zhuxian_2.png			104	花店					113503001	110503001				0	{}		{}	30	16:00:00-18:00:00		1
+110501	101005	1	101006	1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	106	面包店	410404	狂三校服			113601001	110601001				0	{}		{}		18:00:00-10:00:00	10:00:00	1
+110502	101005	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	107	饮品店	410104	折纸校服			113601001	110601001				1	{"ownSign":[51]}		{}	30	18:00:00-10:00:00		1
+110503	101005	1		0	0	ui/newCity/state/faver_jiaoyi_2.png			103	学校1F					113603001	110603001				0	{}		{}	30	18:00:00-10:00:00		1
+110504	101005	1		0	0	ui/newCity/state/faver_zhuxian_2.png			105	体育馆					113604001	110604001				0	{}		{}	30	18:00:00-10:00:00		1
+110601	101006	1	101007	0	0	ui/newCity/state/faver_zhuxian_2.png			101	商场					113701001	110701001				0	{}		{}		10:00:00-11:00:00	11:00:00	1
+110602	101006	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	101	商场	410303	四糸乃休闲装			113701001	110701001				0	{"ownSign":[541011]}		{}	10	10:00:00-11:00:00		1
+110603	101006	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	101	商场	410303	四糸乃休闲装			113703001	110703001				1	{"ownSign":[541011]}		{}	10	10:00:00-11:00:00		1
+110604	101006	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	105	豪华餐厅	410104	折纸校服			113704001	110704001				1	{"ownSign":[61]}		{}	10	10:00:00-11:00:00		1
+110605	101007	1		1	1		ui/newCity/state/faver_zhuxian_1.png	ui/newCity/state/faver_zhuxian_2.png	105	豪华餐厅	410104	十香校服			113801001	110801001				0	{}		{}		11:00:00-11:00:00	09:00:00	1
+																											
+101010000	1010100	1	1010101												101010000	100001				0	{}	0	{}		7:00:00-8:00:00	08:00:00	1
+101010111	1010101	1		0	0	ui/newCity/state/faver_zhixian_2.png			206	公园					101010111	101101				0	{}	0	{}	20	8:00:00-10:00:00		1
+101010112	1010101	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	105	豪华餐厅	420105	山吹亚衣			101010112	101201				0	{}	0	{}	20	8:00:00-10:00:00		1
+101010113	1010101	1		0	0	ui/newCity/state/faver_zhixian_2.png			102	饰品店					101010113	101301				0	{}	0	{}	20	8:00:00-10:00:00		1
+101010114	1010101	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	107	饮品店	420101	神无月			101010114	101401				0	{}	0	{}	20	8:00:00-10:00:00		1
+101010115	1010101	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	201	超市	420106	叶樱麻衣			101010115	101501				1	{"muchVariable":{101103:5}}	0	{}	30	8:20:00-10:00:00		1
+101010116	1010101	1		0	0	ui/newCity/state/faver_zhixian_2.png			202	图书馆					101010116	101601				0	{}	0	{}	10	8:00:00-10:00:00		1
+101010101	1010101	1	1010102	0	0	ui/newCity/state/faver_zhuxian_2.png			201	超市					101010101	101701				1	{"ownSign":[101]}	0	{}		9:10:00-10:00:00	10:00:00	1
+101010102	1010101	1	1010102	0	0	ui/newCity/state/faver_zhuxian_2.png			201	超市					101010102	101801				1	{"ownItem":{543001:1}}	0	{}		9:10:00-10:00:00	10:00:00	1
+101010211	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			107	饮品店					101010211	201101				1	{"ownSign":[201]}	0	{}	20	10:00:00-11:40:00		1
+101010212	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			106	面包店					101010212	201201				1	{"ownSign":[201]}	0	{}	20	10:00:00-11:40:00		1
+101010213	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			104	花店					101010213	201301				1	{"ownSign":[108]}	0	{}	20	10:00:00-11:40:00		1
+101010214	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			107	饮品店					101010214	201401				1	{"ownSign":[108]}	0	{}	20	10:00:00-11:40:00		1
+101010215	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			206	公园					101010215	201501				0	{}	0	{}	0	10:40:00-10:41:00		1
+101010216	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			201	超市					101010216	201601				0	{}	0	{}	20	10:00:00-11:40:00		1
+101010217	1010102	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	102	饰品店	420101	神无月			101010217	201701				0	{}	0	{}	20	10:00:00-11:40:00		1
+101010218	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			203	学校1F					101010218	201801				1	{"muchVariable":{101102:15}}	0	{}	10	11:00:00-11:01:00		1
+101010219	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			103	玩偶店					101010219	201901				1	{"ownSign":[110]}	0	{}	0	11:00:00-12:00:00		1
+101010220	1010102	1		0	0	ui/newCity/state/faver_zhixian_2.png			203	学校1F					101010220	202301				0	{"muchVariable":{101102:15}}	0	{}	10	11:00:00-11:01:00		1
+101010201	1010102	1	1010103	0	0	ui/newCity/state/faver_zhuxian_2.png			105	豪华餐厅					101010201	202001				1	{"ownSign":[201]}	1	{}		10:30:00-12:00:00	13:00:00	1
+101010202	1010102	1	1010103	0	0	ui/newCity/state/faver_zhuxian_2.png			105	豪华餐厅					101010202	202101				1	{"ownSign":[106]}	0	{}		11:00:00-12:00:00	13:00:00	1
+101010203	1010102	1	1010103	0	0	ui/newCity/state/faver_zhuxian_2.png			105	豪华餐厅					101010203	202201				1	{"ownSign":[107]}	0	{}		11:00:00-12:00:00	13:00:00	1
+101010311	1010103	1		0	0	ui/newCity/state/faver_zhixian_2.png			107	饮品店					101010311	301101				0	{"ownSign":[202]}	0	{}	40	13:00:00-15:00:00		1
+101010312	1010103	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	208	游乐场	420106	叶樱麻衣			101010312	301201				0	{"ownSign":[202]}	0	{}	40	13:00:00-15:00:00		1
+101010313	1010103	1		0	0	ui/newCity/state/faver_zhixian_2.png			102	饰品店					101010313	301301				1	{"ownSign":[109]}	0	{}	15	13:00:00-15:00:00		1
+101010314	1010103	1		0	0	ui/newCity/state/faver_zhixian_2.png			208	游乐场					101010314	301401				1	{"ownSign":[109]}	0	{}	15	13:00:00-15:00:00		1
+101010315	1010103	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	208	游乐场	420105	山吹亚衣			101010315	301501				0	{}	0	{}	20	13:00:00-15:00:00		1
+101010316	1010103	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	104	花店	420101	神无月			101010316	301601				0	{}	0	{}	20	13:00:00-15:00:00		1
+101010317	1010103	1		0	0	ui/newCity/state/faver_zhixian_2.png			107	饮品店					101010317	301701				0	{}	0	{}	10	13:40:00-14:30:00		1
+101010318	1010103	1		0	0	ui/newCity/state/faver_zhixian_2.png			106	面包店					101010318	301801				1	{"ownSign":[111]}	0	{}	15	13:00:00-15:00:00		1
+101010301	1010103	1	1010104	0	0	ui/newCity/state/faver_zhuxian_2.png			208	游乐场					101010301	301901				1	{"ownSign":[112,202]}	0	{}		14:00:00-15:00:00	15:00:00	1
+101010302	1010103	1	1010104	0	0	ui/newCity/state/faver_zhuxian_2.png			208	游乐场					101010302	302001				1	{"ownSign":[113,202]}	0	{}		14:00:00-15:00:00	15:00:00	1
+101010411	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			103	玩偶店					101010411	401101				1	{"ownSign":[114]}	0	{}	10	15:00:00-17:00:00		1
+101010412	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			208	游乐场					101010412	401201				1	{"ownSign":[114]}	0	{}	10	15:00:00-17:00:00		1
+101010413	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			101	浴场					101010413	401301				1	{"ownItem":{543003:1}}	0	{}	10	15:00:00-17:00:00		1
+101010414	1010104	1		1	1		ui/newCity/state/faver_zhixian_1.png	ui/newCity/state/faver_zhixian_2.png	104	花店	420101	神无月			101010414	401401				0	{}	0	{}	50	15:00:00-17:00:00		1
+101010415	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			103	玩偶店					101010415	401501				1	{"muchVariable":{101101:15}}	0	{}	10	15:00:00-17:00:00		1
+101010416	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			208	游乐场					101010416	401601				0	{}	0	{}	10	16:00:00-16:01:00		1
+101010417	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			101	浴场					101010417	401701				1	{"ownSign":[117],"muchVariable":{101102:18}}	0	{}	10	16:00:00-16:01:00		1
+101010418	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			103	玩偶店					101010418	401801				0	{}	0	{}	10	15:00:00-17:00:00		1
+101010419	1010104	1		0	0	ui/newCity/state/faver_zhixian_2.png			101	浴场					101010419	402101				1	{"ownSign":[117]}	0	{}		15:00:00-16:00:00		0
+101010401	1010104	1	1010105	0	0	ui/newCity/state/faver_zhuxian_2.png			108	精灵公寓1F					101010401	401901				0	{"ownSign":[132]}	0	{}		16:00:00-17:00:00	17:00:00	1
+101010402	1010104	1	1010105	0	0	ui/newCity/state/faver_zhuxian_2.png			108	精灵公寓1F					101010402	402001				1	{"ownSign":[132]}	0	{}		16:00:00-17:00:00	17:00:00	1
+101010511	1010105	1		0	0	ui/newCity/state/faver_zhixian_2.png			103	玩偶店					101010511	501101				1	{"ownSign":[118]}	0	{}	10	17:00:00-19:00:00		1
+101010512	1010105	1		0	0	ui/newCity/state/faver_zhixian_2.png			104	花店					101010512	501201				1	{"ownSign":[118]}	0	{}	10	17:00:00-19:00:00		1
+101010513	1010105	1		0	0	ui/newCity/state/faver_zhixian_2.png			105	豪华餐厅					101010513	501301				0	{}	0	{}	30	17:00:00-19:00:00		1
+101010514	1010105	1		1	1	ui/newCity/state/faver_zhixian_2.png			206	公园	420101	神无月			101010514	501401				1	{"ownSign":[119]}	0	{}	10	17:00:00-19:00:00		1
+101010515	1010105	1		0	0	ui/newCity/state/faver_zhixian_2.png			208	游乐场					101010515	501501				1	{"ownSign":[116]}	0	{}	10	17:00:00-19:00:00		1
+101010516	1010105	1		0	0	ui/newCity/state/faver_zhixian_2.png			106	面包店					101010516	501601				1	{"ownSign":[120],"muchVariable":{101102:20}}	0	{}	10	17:00:00-19:00:00		1
+101010517	1010105	1		0	0	ui/newCity/state/faver_zhixian_2.png			107	饮品店					101010517	501701				0	{}	0	{}	30	17:00:00-19:00:00		1
+101010518	1010105	1		0	0	ui/newCity/state/faver_zhixian_2.png			111	住宅					101010518	501801				1	{"muchVariable":{101101:15}}	0	{}	10	17:00:00-19:00:00		1
+101010501	1010105	1	1010106	0	0	ui/newCity/state/faver_zhuxian_2.png			208	游乐场					101010501	501901				0	{}	0	{}		18:00:00-19:00:00	19:00:00	1
+101010502	1010105	1	1010106	0	0	ui/newCity/state/faver_zhuxian_2.png			208	游乐场					101010502	502001				1	{"ownSign":[126],"ownItem":{543004:1}}	0	{}		18:00:00-19:00:00	19:00:00	1
+101010503	1010105	1	1010106	0	0	ui/newCity/state/faver_zhuxian_2.png			208	游乐场					101010503	502101				1	{"ownSign":[125]}	0	{}		18:00:00-19:00:00	19:00:00	1
+101010611	1010106	1		0	0	ui/newCity/state/faver_zhixian_2.png			208	游乐场					101010611	601101				0	{}	0	{}	30	19:00:00-21:00:00		1
+101010612	1010106	1		0	0	ui/newCity/state/faver_zhixian_2.png			106	面包店					101010612	601201				1	{"ownSign":[122],"muchVariable":{101102:25}}	0	{}	10	19:00:00-21:00:00		1
+101010613	1010106	1		1	1	ui/newCity/state/faver_zhixian_2.png			206	公园	420101	神无月			101010613	601301				1	{"ownSign":[121]}	0	{}	10	19:00:00-21:00:00		1
+101010614	1010106	1		0	0	ui/newCity/state/faver_zhixian_2.png			111	住宅					101010614	601401				0	{}	0	{}	30	19:00:00-21:00:00		1
+101010615	1010106	1		0	0	ui/newCity/state/faver_zhixian_2.png			111	住宅					101010615	601501				1	{"ownSign":[123],"ownItem":{543006:1},"muchVariable":{101101:25}}	0	{}	10	19:00:00-21:00:00		1
+101010616	1010106	1		0	0	ui/newCity/state/faver_zhixian_2.png			207	神社					101010616	601601				0	{}	0	{}	30	20:00:00-21:00:00		1
+101010602	1010106	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	111	住宅	410104	十香			101010601	601701				1	{"ownSign":[129]}	0	{}		20:00:00-21:00:00		1
+101010603	1010106	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	111	住宅	410104	十香			101010602	601801				1	{"ownSign":[128]}	0	{}		20:00:00-21:00:00		1
+101010605	1010106	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	111	住宅	410104	十香			101010603	601901				1	{"ownSign":[131]}	0	{}		20:00:00-21:00:00		1
+101010604	1010106	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	111	住宅	410104	十香			101010604	602001				1	{"ownSign":[130]}	0	{}		20:00:00-21:00:00		1
+101010601	1010106	1		1	1		ui/newCity/state/faver_jiaoyi_1.png	ui/newCity/state/faver_jiaoyi_2.png	111	住宅	410104	十香			101010605	602101				0	{}	0	{}		20:00:00-21:00:00		1

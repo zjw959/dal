@@ -1,0 +1,7 @@
+id	下级id	icon	name	说明文本	说明文本备注	购买立即获得奖励	月卡奖励资源	领奖天数	类型（1月卡、3季卡、4年卡）
+id	upgradeId	icon	name	des1	des1Comment	presentItem	gainItem	days	type
+number	number	string	string	string	comment	json	json	number	number
+int	int	string	string	string		map	map	int	int
+1001	1002	icon/system/015.png	1610001	1630008	月卡说明	{500002:300}	{500002:60}	30	1
+1002	1003	icon/system/015.png	1610001	1630008	季卡说明	{500002:300}	{500002:60}	30	1
+1003	1001	icon/system/015.png	1610001	1630008	半年卡说明	{500002:300}	{500002:60}	30	1

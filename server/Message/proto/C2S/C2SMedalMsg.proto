@@ -1,0 +1,24 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SMedalMsg";
+
+// 取得所有激活的勋章
+// code = 3001
+message ReqActivateMedals{
+	enum MsgID{eMsgID = 3001;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 装备勋章
+// code = 3002
+message ReqEquipMedal{
+	required int32 cid = 1;
+	enum MsgID{eMsgID = 3002;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 卸下勋章
+// code = 3003
+message ReqTakeOffMedal{
+	required int32 cid = 1;
+	enum MsgID{eMsgID = 3003;}; //注意：消息id放最后,以免客户端解析异常
+}

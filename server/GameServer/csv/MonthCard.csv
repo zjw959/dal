@@ -1,0 +1,6 @@
+id	下级id	icon	name	说明文本	说明文本备注	审核名称	审核名称备注	审核描述	审核描述备注	购买立即获得奖励	月卡奖励资源	领奖天数	类型（1月卡、3季卡、4年卡）
+id	upgradeId	icon	name	des1	des1Comment	name2	name2Comment	des3	des3Comment	presentItem	gainItem	days	type
+number	number	string	string	string	comment	string	comment	string	comment	json	json	number	number
+int	int	string	string	string		string		string		map	map	int	int
+1001	1002	icon/system/zm.png	1610001	1630008	月卡说明	1650019	月卡	1660019	购买月卡	{500002:300}	{500002:60}	30	1
+1002	1002	icon/system/zm.png	1610002	1630008	月卡续费说明	1650020	月卡续期	1660020	购买月卡续期	{500002:300}	{500002:60}	30	1

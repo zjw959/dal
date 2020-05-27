@@ -1,0 +1,14 @@
+音效ID	音量	音效资源
+id	volume	resource
+number	number	string
+int	int	string
+101	100	sound/battle_sound/battle_001.mp3
+102	100	sound/battle_sound/battle_002.mp3
+103	100	sound/battle_sound/battle_003.mp3
+104	100	sound/battle_sound/battle_004.mp3
+1001	100	sound/battle_sound/jixie_dunbing_chonngfeng.mp3
+1002	100	sound/battle_sound/jixie_dunbing_chuanci.mp3
+1003	100	sound/battle_sound/jixie_dunbing_fangyu.mp3
+1004	100	sound/battle_sound/jixie_wenzi_chongfeng.mp3
+1005	100	sound/battle_sound/jixie_wenzi_zibao.mp3
+1006	100	sound/battle_sound/jixie_xingxing_chongzhuang.mp3

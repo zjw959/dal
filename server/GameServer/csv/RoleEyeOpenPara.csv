@@ -1,0 +1,62 @@
+	所属模型	表情名称	眨眼参数上限	是否启用眨眼
+id	roleModel	faceId	eyeOpenPara	isEyeBlink
+number	number	string	number	boolean
+int				
+1	10101	id_look_1	0.92	0
+2	10101	id_look_2	0.92	0
+3	10101	id_look_3	1	1
+4	10101	id_look_4	0	0
+5	10101	id_look_5		0
+6	10101	id_look_6	1	1
+7	10101	id_look_7	1	1
+8	10101	id_look_8		0
+9	10101	id_look_9	0.92	0
+10	10101	id_look_10		0
+11	10101	id_look_11	1	1
+12	10101	id_look_12		0
+13	10101	id_look_13	1	1
+14	10104	id_look_1	0.92	0
+15	10104	id_look_2	0.92	0
+16	10104	id_look_3	1	1
+17	10104	id_look_4	0	0
+18	10104	id_look_5		0
+19	10104	id_look_6	1	1
+20	10104	id_look_7	1	1
+21	10104	id_look_8		0
+22	10104	id_look_9	0.92	0
+23	10104	id_look_10		0
+24	10104	id_look_11	1	1
+25	10104	id_look_12		0
+26	10104	id_look_13	1	1
+27	10107	id_look_1	0.92	0
+28	10107	id_look_2	0.92	0
+29	10107	id_look_3	1	1
+30	10107	id_look_4	0	0
+31	10107	id_look_5		0
+32	10107	id_look_6	1	1
+33	10107	id_look_7	1	1
+34	10107	id_look_8		0
+35	10107	id_look_9	0.92	0
+36	10107	id_look_10		0
+37	10107	id_look_11	1	1
+38	10107	id_look_12		0
+39	10107	id_look_13	1	1
+40	10505	id_look_1	1	1
+41	10505	id_look_2	0.8	0
+42	10505	id_look_3	0.75	0
+43	10505	id_look_4	0.8	0
+44	10505	id_look_5	1	1
+45	10505	id_look_9	0	0
+46	10505	id_look_10	1	1
+47	10505	id_look_11	0.67	0
+48	10505	id_look_12	0	0
+49	10203	id_look_4		0
+50	10203	id_look_6		0
+51	10204	id_look_4		0
+52	10204	id_look_6		0
+53	10205	id_look_4		0
+54	10205	id_look_6		0
+55	10206	id_look_4		0
+56	10206	id_look_6		0
+57	10207	id_look_4		0
+58	10207	id_look_6		0

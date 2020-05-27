@@ -1,0 +1,12 @@
+id	剧本id	播放顺序	text	isMask	phonePath	phoneAction	textArea
+id	group	order	文本	黑幕	电话路径	电话动作	文字框
+number	number	number	number	boolean	string	string	number
+int	int	int					
+1101	1001	1	没想到运气这么好，居然会遇到「公主」——	1	effect/dianhua/dianhua	dianhua	
+1102	1001	2	咳咳……你先陪十香前往美食街吧	1	1	1	
+1201	1002	1	接下来开始正式攻略	1	effect/dianhua/dianhua	dianhua	
+1202	1002	2	打起精神来，我们会提供支援的	1	1	1	
+1301	1003	1	测试	1	effect/dianhua/dianhua	dianhua	
+1401	1004	1	测试	1	effect/dianhua/dianhua	dianhua	
+1501	1005	1	测试	1	effect/dianhua/dianhua	dianhua	
+1601	1006	1	测试	1	effect/dianhua/dianhua	dianhua	

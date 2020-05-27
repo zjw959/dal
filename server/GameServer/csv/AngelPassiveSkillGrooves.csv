@@ -1,0 +1,8 @@
+id	名称（策划用）	效果描述（策划用）	英雄等级要求	天使星级要求
+id	name	name2	needHeroLvl	AngelLvl
+number	comment	comment	number	number
+int			int	int
+1	被动技能装备槽1	被动技能装备槽1	0	2
+2	被动技能装备槽2	被动技能装备槽2	0	3
+3	被动技能装备槽3	被动技能装备槽3	0	4
+4	被动技能装备槽4	被动技能装备槽4	0	5

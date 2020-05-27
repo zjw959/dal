@@ -1,0 +1,10 @@
+ID	名称	名称	商店图标	商店类型（1.补给 2.城建 3.微信商店 4.十香生日活动商店）	货源类型（1.固定类商城。2.随机商品商城）	排序	开启条件类型（1.玩家等级。2.需要通过的关卡）	开启条件值	开启时间类型（1.任意时间。2.每日固定时刻。3.每周固定时刻。）	开启时间（分钟）	自动刷新时间（分钟）	是否可以手动刷新	刷新消耗ID（货币id）	刷新消耗数量	展示货币类型	商店标签	商店看板娘
+id	comment	name	icon	storeType	commoditySupplyType	rank	openContType	openContVal	openTimeType	openTime	autoRefreshCorn	manualRefresh	refreshCostId	refreshCostNum	showCurrency	storeLabel	roleSet
+number	comment	string	string	number	number	number	number	number	number	numbers	string	boolean	number	numbers	numbers	string	number
+int		string		int	int	int	int	int	int	int[]	string	boolean	int	int[]	int[]		
+100000	普通商店	302001	ui/store/new_ui/icon1.png	1	2	1	1	7	1		0 0 0 * * ?	0					21
+110000	碎片商店	302002	ui/store/new_ui/icon4.png	1	2	2	1	7	1		0 0 0,12 * * ? 	1	500002	10-20-30-40-50-50-50-50-50-50	570002	ui/store/hot.png	23
+120000	联机商店	302003	ui/store/new_ui/icon3.png	1	2	3	1	20	1		0 0 0 * * ?	1	500002	10-20-30-40-50-50-50-50-50-50	570001-570029		22
+130000	无尽副本商店	302004	ui/store/new_ui/icon2.png	1	1	4	1	15	1		0 0 6 ? * MON,FRI 	0			570005-570006		22
+140000	卡巴拉商店	302005	ui/store/new_ui/icon6.png	1	1	5	1	25	1		0 0 6 ? * MON 	0			570101		22
+150000	超市商店	302006	ui/store/new_ui/icon5.png	1	2	6	1	7	1		0 0 0,6,8,10,12,14,16,18,20,22 * * ? 	0			500018		22

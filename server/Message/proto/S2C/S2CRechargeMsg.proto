@@ -1,0 +1,119 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CRechargeMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CItemMsg.proto";
+
+//获取订单号
+//code = 4353
+message GetOrderNo {
+    required string orderNo = 1; //订单号
+	enum MsgID{eMsgID = 4353;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//领月卡物品
+//code = 4354
+message GainMonthCardItem {
+	enum MsgID{eMsgID = 4354;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//充值成功
+//code = 4355
+message RechargeSuccess {
+    required int32 cid = 1;
+	enum MsgID{eMsgID = 4355;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//领月卡物品
+//code = 4356
+message GetMonthCardInfo {
+    required ChangeType ct = 4; // 类型
+    required int32 lastGainDate = 1; //上次领取时间
+    required int32 surplus_Gain_Count = 2; //剩余领取次数
+    required int32 cardCid = 3; //卡cid
+	enum MsgID{eMsgID = 4356;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取购买记录
+//code = 4357
+message GetBuyRecordInfo {
+    repeated BuyRecordInfo info = 1;
+	enum MsgID{eMsgID = 4357;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取购买记录
+//code = 4358
+message BuyRecordInfo {
+    required ChangeType ct = 1; // 类型
+    required int32 cid = 2; //
+    required int32 buy_count = 3; //购买次数
+	enum MsgID{eMsgID = 4358;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//推送月卡购买信息
+//code = 4359
+message BuyMonthCardInfo {
+    required GetMonthCardInfo monthCardInfo = 1;
+    optional ItemList itemList = 2;
+	enum MsgID{eMsgID = 4359;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取充值商品信息
+//code = 4360
+message GetRechargeCfg {
+    repeated MonthCardCfg monthCardCfg = 1;
+    repeated RechargeGiftBagCfg rechargeGiftBagCfg = 2;
+	enum MsgID{eMsgID = 4360;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//充值商品信息
+message RechargeGoodsInfo {
+    required int32 id = 1;
+    required int32 type = 2; //类型1.月卡 2.礼包
+    required int32 goodsId = 3; //商品id，对应月卡和礼包配置表里面的id
+}
+
+//充值商品配置
+message RechargeCfg {
+    required int32 id = 1;
+    required float price = 2; //价格
+}
+
+//月卡配置
+message MonthCardCfg {
+    required RechargeCfg rechargeCfg = 1; //充值商品配置
+    required int32 upgradeId = 2; //升级id
+    required string icon = 3;
+    required string name = 4;
+    required string des1 = 5;
+    repeated RewardsMsg presentItem = 6; //购买立即奖励
+    repeated RewardsMsg gainItem = 7; //每日领取奖励
+    required int32 days = 8; //持续领取天数
+    required int32 type = 9; //卡类型：1.月卡 2.季卡 3.年卡
+	optional string name2 = 10;
+	optional string des3 = 11;
+}
+
+//充值礼包配置
+message RechargeGiftBagCfg {
+    required RechargeCfg rechargeCfg = 1;//充值商品配置
+    required int32 type = 2; //所属界面
+    repeated RewardsMsg item =3;//礼包
+    required string name =4;
+    required string icon =5;
+    required bool tag = 6;
+    required string tagDes = 7;
+    required string tagDes2 = 8;
+    required string des1 =9;
+    required string des2 = 10;
+    required int32 order =11;//排序
+    optional int32 startDate = 12;//开始时间
+    optional int32 endDate = 13;//结束时间
+    required int32 buyCount = 14;//限制购买次数
+    required int32 resetType = 15;//重置类型 0.不重置 1.每日重置 2.每周重置 3.每月重置
+    required int32 resetDate = 16;//重置时间 默认为周一、一日重置，否则周日=1，周一=2，以此类推
+    repeated int32 playerLevel =17 [packed=true]; //玩家等级限制
+    repeated RewardsMsg firstBuyItem =18;//首充奖励
+	optional string name2 = 19;
+	optional string des3 = 20;
+}

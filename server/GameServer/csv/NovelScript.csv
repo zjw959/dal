@@ -1,0 +1,15 @@
+id	阶段	是否跳过建筑点击直接进入约会	是否使用中	是否引导	引导对话1	引导对话2	阶段跳转	事件类型（0地点1角色2信息3功能）	绑定类型（0地点1角色）	地点事件图标（地点）	人物事件图标（地点）	人物事件图标（人物）	地点	地点（策划看）	角色	角色（策划看）	角色位置	角色动作	剧本	开始节点id	信息	调用功能	完成规则	是否隐藏	隐藏显示条件（拥有）	隐藏显示条件（不拥有）	消耗时间	限制时间	强制推动时间	完成删除
+id	stepId	isSkipBuild	use	isGuide	guideId1	guideId2	stepJump	eventType	bindType	scriptIcon1	scriptIcon2	scriptIcon3	bindBuild	bindBuildDes	bindRole	bindRoleDes	position	action	scriptId	startId	message	game	gameRule	hide	hideCondition1	hideCondition2	costTime	limitTime	addTime	delete
+number	number	boolean	boolean	boolean	numbers	numbers	number	number	number	string	string	string	number	comment	number	comment		number	number	number	number	number	json	boolean	json	json	number	string	string	boolean
+int	int	boolean	boolean	int			int	int	int				int	string	int	string		int	int	int	int	int	map	boolean	map	map	int	string	string	boolean
+100001	1000		1	0			1001												10022	1022001				0	{}	{}		08:40:00-08:40:00	12:00:00	1
+100101	1001	1	1	1	960001-960002		1003	1	1		ui/newCity/state/faver_zhuxian_2.png	ui/newCity/state/faver_zhuxian_2.png	106	面包店	410104	十香校服			10023	1023001				0	{}	{}		12:00:00-12:00:00	15:20:00	1
+100201	1002		1	1			1003	1	1		ui/newCity/state/faver_zhuxian_2.png	ui/newCity/state/faver_zhuxian_2.png	208	游乐园	410104	十香校服			10024	1024001				0	{}	{}		15:20:00-15:20:00	18:05:00	1
+100301	1003		1	1	960007-960008			1	1		ui/newCity/state/faver_zhuxian_2.png	ui/newCity/state/faver_zhuxian_2.png	206	公园	410104	十香校服			1002	1021001				0	{}	{}		18:05:00-18:05:00		1
+																														
+300001	3000		1	0			3001												3003	3003001				0	{}	{}		12:30:00-13:00:00	13:00:00	1
+300101	3001		1	0				1	1		ui/newCity/state/faver_zhixian_2.png	ui/newCity/state/faver_zhixian_2.png	106	面包店	410104	十香休闲装			3004	3004001				0	{}	{}	30	13:00:00-15:00:00		1
+300102	3001		1	0				1	1		ui/newCity/state/faver_zhixian_2.png	ui/newCity/state/faver_zhixian_2.png	103	玩偶店	410404	狂三校服			3005	3005001				0	{}	{}	30	13:00:00-15:00:00		1
+300103	3001		1	0				1	1		ui/newCity/state/faver_zhixian_2.png	ui/newCity/state/faver_zhixian_2.png	102	饰品店	410205	折纸休闲装			3006	3006001				0	{}	{}	30	13:00:00-15:00:00		1
+300104	3001		1	0			3002	0	0	ui/newCity/state/faver_zhixian_2.png			105	豪华餐厅					3007	3007001				1	{"sign":[101,102]}	{}	30	13:00:00-15:00:00	15:00:00	1
+300105	3002		1	1				0	0	ui/newCity/state/faver_zhuxian_2.png			206	公园					3008	3008001				0	{}	{}		13:00:00-15:30:00		1

@@ -1,0 +1,9 @@
+id	所属看板娘	CG	结局	事件
+id	roleId	cgWeight	endWeight	eventWeight
+number	number	number	number	number
+int	int	int	int	int
+1	101	40	40	20
+2	102	40	40	20
+3	103	40	40	20
+4	104	40	40	20
+5	105	40	40	20

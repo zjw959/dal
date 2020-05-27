@@ -1,0 +1,145 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CDungeonMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CHeroMsg.proto";
+import "S2C/S2CPlayerMsg.proto";
+
+//副本：战斗开始
+//code = 1793
+message FightStartMsg {
+	required int32 levelCid = 1;
+	optional HeroInfo hero = 2;        //助战英雄信息
+	required string fightId = 3;		//战斗ID
+	required int32 randomSeed = 4;		//随机种子
+	repeated RewardsMsg rewards = 5; //奖励
+	optional int32 helpPid = 6; //助战玩家id
+	repeated LimitHeroSimpleInfo limitHeros = 7; //限定英雄信息返回
+	optional bool isDuelMod = 8;// 决斗模式
+	enum MsgID{eMsgID = 1793;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//战斗结束
+//code = 1794
+message FightOverMsg {
+	required LevelInfo levelInfo = 1; //关卡信息
+	repeated RewardsMsg rewards = 2; //奖励
+	required bool win = 3; //是否胜利
+	enum MsgID{eMsgID = 1794;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//副本：通知服务器记录主线进度
+//code = 1795
+message ProgressMsg {
+	required DungeonLevelGroupInfo group = 1;
+	enum MsgID{eMsgID = 1795;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求获取关卡及章节信息
+//code = 1796
+message GetLevelInfo {
+	optional LevelInfos levelInfos = 1; //章节信息
+	optional RefreshDungeonLevelGroupList groups = 2;
+	enum MsgID{eMsgID = 1796;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//活动副本更新
+//code = 1799
+message UpdateActivityDungeon {
+	repeated int32 startIds = 1 [packed=true]; //活动开始副本组id
+	repeated int32 endIds = 2 [packed=true]; //活动结束副本组id
+	enum MsgID{eMsgID = 1799;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//购买副本组战斗次数
+//code = 1800
+message BuyFightCount {
+	required int32 cid = 1; //副本组cid
+	enum MsgID{eMsgID = 1800;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//刷新副本组信息
+//code = 1801
+message RefreshDungeonLevelGroupList {
+	repeated DungeonLevelGroupInfo group = 1;
+	enum MsgID{eMsgID = 1801;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//领取副本组奖励
+//code = 1802
+message GetLevelGroupReward {
+	required int32 cid = 1; //副本组cid
+	required int32 difficulty = 2; //难度
+	required int32 starNum = 3; //星数
+	repeated ListMap rewardInfo = 4; //领奖情况
+	enum MsgID{eMsgID = 1802;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//刷新副本组信息
+//code = 1803
+message UpdateLevelGroupInfo {
+	required DungeonLevelGroupInfo group = 1;
+	enum MsgID{eMsgID = 1803;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//刷新副本信息
+//code = 1804
+message LevelInfos {
+	repeated LevelInfo levelInfos = 1; //章节信息
+	enum MsgID{eMsgID = 1804;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//副本组
+message DungeonLevelGroupInfo {
+	required string id = 1; //id
+	required int32 cid = 2; //cid
+	required int32 fightCount = 3; //战斗次数
+	required int32 buyCount = 4; //购买次数
+	repeated ListMap rewardInfo = 5; //领奖情况
+	required int32 mainLineCid = 6; //当前关卡标记
+	required int32 maxMainLine = 7; //最大关卡进度
+}
+
+//关卡信息
+message LevelInfo {
+	required int32 cid = 1; //关卡cid
+	repeated int32 goals = 2 [packed=true]; //达成目标的下标
+	required int32 fightCount = 3; //战斗次数
+	required bool win = 4; //是否胜利
+}
+
+message NewTeamMemberJoinMsg {
+}
+
+//获取限定英雄
+//code = 1808
+message LimitHeroDungeonMsg {
+	repeated LimitHeroInfo heros = 1; //限定英雄数据
+	required int32 leveId = 2; //关卡id
+	required FormationInfo limitFormation = 3; //组装的阵型数据
+	enum MsgID{eMsgID = 1808;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//限定英雄信息
+message LimitHeroInfo {
+	required int32 limitId = 1;// 限定英雄id
+	required HeroInfo heros = 2;//限定英雄信息
+}
+
+//限定英雄信息
+message LimitHeroSimpleInfo {
+	required int32 limitType = 1;//限定类型,1:玩家英雄类型,2:限定英雄类型
+	required int32 limitCid = 2;//限定英雄id
+}
+
+//获取关卡组多倍收益
+//code = 1809
+message GroupMultipleRewardMsg {
+	repeated GroupMultipleInfo multipleInfo = 1; //关卡组多倍信息
+	enum MsgID{eMsgID = 1809;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message GroupMultipleInfo {
+	required int32 groupId = 1;//关卡组id
+	required string multiple = 2;//倍数
+}

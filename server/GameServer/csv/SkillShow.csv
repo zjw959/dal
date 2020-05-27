@@ -1,0 +1,18 @@
+ID	触发动作id	触发帧事件	是否检测角色朝向	觉醒表现角色动作	觉醒表现Up	觉醒表现Down	觉醒声音	连接小游戏
+id	actionId	triggerEvents	detection	showAction	effectsUp	effectsDown	showSound	skipGame
+number	number	strings	boolean	string	strings	strings	string	number
+long	long	strings	boolean	string	strings	strings	string	int
+1	300	show1	1	fight_10101%skllDshow	effects_10101_skillD%skillDshow	effects_10101_skillD1%skillD	0	
+2	311	show1	1	fight_10104%skllDshow	effects_10101_skillD%skillDshow	effects_10101_skillD1%effects_skillDshow	0	
+3	316	show1	1	fight_10108%skllDshow	effects_10101_skillD%skillDshow	effects_10101_skillD1%effects_skillDshow	0	
+4	2030	show1	1	fight_10201_2%skillD2	effects_10201_skillD%effects_10201_skillD_show	effects_10201_skillD%effects_10201_skillD_down	0	
+5	3030	show1	1	fight_10301%skillDshow	effects_10301_skillD%effects_10301_skillD_show	effects_10301_skillD%effects_10301_skillD_down	0	
+6	4030	show1	0		effects_10401_skillfeature1%effects_10401_skillfeature1		0	
+7	6030	show1	1	fight_10601%skillshow	effects_10601_skillD%skillDshow	effects_10601_skillD1%effects_skillD1	0	
+8	6035	show1	1	fight_10603%skillshow	effects_10601_skillD%skillDshow	effects_10601_skillD1%effects_skillD1	0	
+9	5030	show1	1	fight_10501%skillD	effects_10501_skillDshow%skillDshow_1	effects_10501_skillDshow%skillDshow_2	0	
+10	7030	show1	0	fight_10701%skillshow	effects_10701_skillD3_skillshow_t%skillB-effects_10701_skillD4%skillshow2	effects_10701_skillD3_skillshow_d%skillB	0	
+11	8030	show1	0	fight_10801%skillDshow	fight_10802%skillDshow-effects_10801_skilld_show%skilldshow1_up	effects_10801_skilld_show%skilldshow2_down	0	
+12	10060	show1	0		effects_11001_skillshow%effects_11001_skillshow	effects_11001_skillD_role%skillD	0	1
+13	9060	show1	1	fight_10901%skillD_4	effects_10901_skillD%skillD_2_up	effects_10901_skillD%skillD_2_down	0	
+14	10230	show1	1		effects_10103_skillD_CG%skillD2		0	

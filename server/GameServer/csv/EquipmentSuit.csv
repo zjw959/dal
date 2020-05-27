@@ -1,0 +1,9 @@
+id	套装名称	技能icon	名称图片	套装技能
+id	suitName	icon	nameIcon	suitSkill
+number	comment	string	string	number
+int				int
+1	天神套装	icon/equipment/suit/icon1.png	icon/equipment/suit/tianshenzhijian.png	20001
+2	战姬套装	icon/equipment/suit/icon2.png	icon/equipment/suit/zhanjishouhu.png	20002
+3	圣灵套装	icon/equipment/suit/icon3.png	icon/equipment/suit/shenglingbodong.png	20003
+4	蔷薇套装	icon/equipment/suit/icon4.png	icon/equipment/suit/qiangweifengbao.png	20004
+5	领袖套装	icon/equipment/suit/icon5.png	icon/equipment/suit/yingyongchongfeng.png	20005

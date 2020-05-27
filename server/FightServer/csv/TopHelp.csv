@@ -1,0 +1,66 @@
+顺序ID	界面名称	界面文件名	图标	名称	是否显示顶部底板	是否显示帮助(1显示0隐藏)	帮助文字	是否显示资源条(1显示0隐藏)	资源条内容（资源类型：是否可购买）	是否显示返回(1显示0隐藏)	是否显示主界面(1显示0隐藏)	帮助界面组	帮助标题	帮助文本	是否为动态背景
+id	name	fileName	icon	name	isDiban	isHelp	help	isResource	resource	isBack	isMain	helpInterface	helpTitle	helpDes	dynamic
+number	string	string	string	string	boolean	boolean	string	boolean	vjson	boolean	boolean	numbers	number	number	boolean
+int	string	string	string	string	boolean	boolean	string	boolean	map	boolean	boolean	int[]	int	int	boolean
+1	作战主线	FubenLevelView	icon/system/025.png	作战·副本	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60001	61001	0
+2	作战中心	FubenChapterView	icon/system/025.png	作战·中心	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60002	61002	0
+3	日常副本	FubenDailyView	icon/system/025.png	作战·日常	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60002	61002	0
+4	战斗准备	FubenSquadView	icon/system/025.png	作战·准备	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60004	61004	0
+5	精灵强化	FairyMainLayer	icon/system/025.png	精灵·强化	1	1		1	{500004:1,500001:1,500002:1}	1	1	1-2-3	60005	61005	0
+6	精灵天使强化	AngelInfo	icon/system/025.png	精灵·天使	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60006	61006	1
+7	背包	BagView	icon/system/025.png	背包·仓库	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60007	61007	1
+8	补给	StoreMainView	icon/system/025.png	补给·常规	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60008	61008	1
+9	城市地图	CityMainView	icon/system/025.png	城市·总览	1	1		1	{500001:1,500002:1,500018:1}	1	1	999	60009	61009	0
+10	打工选择	CityInfoView	icon/system/025.png	城市·信息	1	1		1	{500001:1,500002:1,500018:1}	1	1	999	60010	61010	0
+11	打工主界面	CityWorkView	icon/system/025.png	城市·建筑	1	1		1	{500001:1,500002:1,500018:1}	1	1	999	60011	61011	0
+12	约会主界面	RoleInfoLayer	icon/system/025.png	约会·信息	1	1		0		1	1	999	60012	61012	0
+13	主线约会	DatingScriptView			0	0		0		1	0				0
+14	灵装	EquipmentSelect	icon/system/025.png	质点·更换	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60013	61013	1
+15	灵装详细界面	EquipmentInfo	icon/system/025.png	质点·信息	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60014	61014	0
+16	灵装强化	EquipmentStrengthen	icon/system/025.png	质点·强化	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60015	61015	1
+17	灵装洗练	EquipConvert	icon/system/025.png	质点·洗练	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60016	61016	1
+18	好友	FriendView	icon/system/025.png	好友·信息	1	1		0		1	1	999	60017	61017	1
+19	邮件	MailMain	icon/system/025.png	邮件·列表	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60018	61018	1
+20	召唤·祈愿	SummonMainView	icon/system/025.png	召唤·祈愿	1	1		1	{500001:1,500002:1,500003:1}	1	1	999	60019	61019	1
+21	召唤	SummonView	icon/system/025.png	随机·召唤	1	1		1	{500001:1,500002:1,500003:1}	1	1	999	60020	61020	1
+23	召唤	SummonComposeView	icon/system/025.png	祈愿·召唤	1	1		1	{500001:1,500002:1,500003:1}	1	1	999	60022	61022	1
+24	任务	TaskMainView	icon/system/025.png	指令·任务	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60023	61023	1
+25	签到	TaskSignInView			0	0		0		1	0				0
+26	赠送	GiftsView	icon/system/025.png	约会·赠送	1	1		0		1	1	999	60024	61024	0
+27	换装	DressView	icon/system/025.png	约会·换装	1	1		0		1	1	999	60025	61025	0
+28	装饰	DecorateRoomView	icon/system/025.png	约会·装饰	1	1		0		1	1	999	60026	61026	0
+29	充值	RechargeMain	icon/system/025.png	充值·礼包	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60027	61027	1
+30	图鉴主界面	PokedexMainView	icon/system/025.png	图鉴	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60028	61028	1
+31	质点图鉴	PokedexEquipmentView	icon/system/025.png	图鉴·质点	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60029	61029	1
+32	精灵图鉴选择精灵	PokedexSelectView	icon/system/025.png	图鉴·精灵	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60030	61030	1
+33	精灵图鉴	PokedexSpriteView	icon/system/025.png	图鉴·精灵	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60031	61031	1
+34	活动界面	ActivityMain	icon/system/025.png	福利·活动	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60032	61032	1
+35	副本活动作战	FubenEndlessView	icon/system/025.png	福利·活动	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60033	61033	0
+36	抓娃娃	CatchDollUIView			0	0		0		1	0				0
+37	约会·类型	DatingTypeView	icon/system/025.png	约会·类型	1	1		0		1	1	999	60034	61034	0
+38	约会·日常	DailyCityInfoView	icon/system/025.png	约会·日常	1	1		0		1	1	999	60035	61035	0
+39	约会·主线	DatingMainView	icon/system/025.png	约会·主线	1	1		0		1	1	999	60036	61036	0
+40	约会·外传	DatingOutsideView	icon/system/025.png	约会·外传	1	1		0		1	1	999	60037	61037	0
+41	约会·道具	DatingGiftView	icon/system/025.png	约会·道具	1	1		0		1	1	999	60038	61038	0
+42	玩家信息	PlayerSetting	icon/system/025.png	个人·信息	1	1		0		1	1	999	60039	61039	1
+43	联机副本	TeamLevelSelView	icon/system/025.png	联机·副本	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60040	61040	0
+44	联机副本	TeamFightTeamView	icon/system/025.png	联机·房间	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60041	61041	1
+45	十香生日	BirthdayView	icon/system/025.png	庆典·生日	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60042	61042	1
+46	外传约会城市	DatingOutsideCityMainView	icon/system/025.png	约会·城市	1	0		1	{500004:1,500001:1,500002:1}	1	1				0
+47	手札	DatingLetterView	icon/system/025.png	约会·手札	1	0		1	{500024:1,500018:1,500002:1}	1	1				0
+48	兼职	CityJobView	icon/system/025.png	城市·兼职	1	1		0		1	1	999	60026	61026	0
+49	 勋章	MedalIndexView	icon/system/025.png	勋章一览	1	1		0		1	1	999	60026	61026	1
+50	 看板娘展示	RoleShowView	icon/system/025.png	 看板娘展示	1	1		0		1	1	999	60026	61026	1
+51	看板娘选择	RoleListView	icon/system/025.png	看板娘选择	1	1		0		1	1	999	60026	61026	1
+52	精灵属性界面	FairyDetailsLayer	icon/system/025.png	精灵·属性	1	1		1	{500004:1,500001:1,500002:1}	1	1	4-999-999-999			1
+53	精灵结晶突破界面	FairyEvolutionLayer	icon/system/025.png	精灵·结晶	1	1		1	{500004:1,500001:1,500002:1}	1	1	999			1
+54	新城市界面	NewCityMainLayer	icon/system/025.png	约会·城市	1	1		1	{500024:1,500018:1,500002:1}	1	1	999	60026	61026	1
+55	城市房间界面	NewCityRoomView	icon/system/025.png	约会·房间	1	1		1	{500024:1,500018:1,500002:1}	1	1	999	60026	61026	1
+56	约会·换装	DatingDressView	icon/system/025.png	约会·换装	1	1		0		1	1	999	60038	61038	0
+57	卡巴拉生命之树	KabalaTreeMainView	icon/system/025.png	卡巴拉生命之树	1	1		1	{500002:1,500018:1,500024:1}	1	1	999	60026	61026	1
+58	卡巴拉探索	KabalaTreeExploreView	icon/system/025.png	卡巴拉探索	1	1		1	{500002:1,500018:1,500024:1}	1	1	999	60026	61026	1
+59	卡巴拉战斗	KabalaTreeFight	icon/system/025.png	卡巴拉战斗	1	1		1	{500002:1,500018:1,500024:1}	1	1	999	60026	61026	1
+60	料理制作	MakeFoodView	icon/system/025.png	料理·制作	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60026	61026	1
+61	飞行.撞击战斗准备	FubenFlightSquadView	icon/system/025.png	作战·准备	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60004	61004	0
+62	手工制作	ManualMakeView	icon/system/025.png	手工·制作	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60026	61026	1
+63	活动主界面	ActivityMainView	icon/system/025.png	活动	1	1		1	{500004:1,500001:1,500002:1}	1	1	999	60028	61028	1

@@ -1,0 +1,6 @@
+ID	主线章节名称	剧本文件名	对应关卡ID
+id	nameDes	callTableNameF	dgLevelId
+number	comment	string	int
+int		string	int
+101	十香-城市约会	NovelDating	101206
+201	狂三三人约会	NovelDating	

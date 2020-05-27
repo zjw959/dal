@@ -1,0 +1,110 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SPlayerMsg";
+
+// 修改玩家名称
+// code = 260
+message SetPlayerInfo {
+	optional string playerName = 1;	// 玩家名字
+	optional string remark = 2;			// 玩家宣言
+	enum MsgID{eMsgID = 260;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 阵型操作
+// code = 264
+message OperateFormation {
+	required int32 formationType = 1 [default = 1];
+	required string sourceHeroId = 2;
+	required string targetHeroId = 3;
+	enum MsgID{eMsgID = 264;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得玩家信息
+// code = 267
+message GetPlayerInfo {
+	enum MsgID{eMsgID = 267;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得所有的阵型信息
+// code = 265
+message GetFormations {
+	enum MsgID{eMsgID = 265;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 命令接口
+// code = 266
+message TestMsg {
+	required string content = 1;
+	enum MsgID{eMsgID = 266;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改助战
+// code = 269
+message ChangeHelpFightHero{
+	required string heroId = 1;
+	enum MsgID{eMsgID = 269;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求目标玩家信息
+// code = 271
+message ReqTargetPlayerInfo{
+	required int32 targetPid = 1;
+	enum MsgID{eMsgID = 271;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 切换阵型
+// code = 272
+message ReqSwitchFormation{
+	required int32 formationType = 1;
+	enum MsgID{eMsgID = 272;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得帮助战斗玩家(路人)
+// code = 273
+message ReqHelpFightPlayers{
+	enum MsgID{eMsgID = 273;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 购买资源
+// code = 275
+message ReqBuyResources{
+	required int32 cid = 1;
+	required int32 num = 2;
+	enum MsgID{eMsgID = 275;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求资源购买记录
+// code = 276
+message ReqBuyResourcesLog{
+	enum MsgID{eMsgID = 276;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 新手引导
+// code = 278
+message ReqNewPlayerGuide{
+	required string data = 1;//数据
+	enum MsgID{eMsgID = 278;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 记录客户端异常
+// code = 279
+message RecordClientErr{
+	required string err = 1;//数据
+	enum MsgID{eMsgID = 279;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 玩家设置
+// code = 281
+message Settings{
+	required string data = 1;//数据
+	enum MsgID{eMsgID = 281;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 修改防沉迷状态
+// code = 284
+message ReqChangeAntiAddiction{
+	required int32 anti = 1;//当前防沉迷状态
+	enum MsgID{eMsgID = 284;}; //注意：消息id放最后,以免客户端解析异常
+}
+

@@ -1,0 +1,43 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CChatMsg";
+// code = 2305
+message ChatMsg{
+	required int32 time = 1;//禁言截止时间
+	enum MsgID{eMsgID = 2305;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 聊天消息
+// code = 2306
+message ChatInfo {
+	required int32 channel = 1;			//	聊天类型:1.公共 2.私聊；3.帮派 4.系统 5.队伍
+	required int32 fun = 2;				// 	功能类型:1.聊天 2.深渊组队邀请
+	required string content = 3;			//	内容
+	required int32 pid = 4;				//	说话人的id
+	required string pname = 5;			//	说话人名称
+	required int32 lvl = 6;				// 	玩家等级
+	required int32 helpFightHeroCid = 7;
+	enum MsgID{eMsgID = 2306;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 随机房间
+// code = 2307
+message RespChangeRoom{
+	required RespInitChatInfo roomInfo = 1;
+	enum MsgID{eMsgID = 2307;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 聊天历史消息
+// code = 2311
+message RespInitChatInfo{
+	required int32 roomId = 1;
+	repeated ChatInfo msgs = 2;
+	enum MsgID{eMsgID = 2311;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// GM依赖回调
+// code = 2312
+message RespGMCallBack{
+	enum MsgID{eMsgID = 2312;}; //注意：消息id放最后,以免客户端解析异常
+
+}

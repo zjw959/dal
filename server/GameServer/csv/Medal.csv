@@ -1,0 +1,6 @@
+id	策划备注	名称	勋章类型（勋章类型固定为12）	勋章描述	描述策划备注	星级	品质	图鉴排序	icon	展示图（详情界面展示图）	图标大小（缩列图大小，展示图大小）	有效时间（单位：S）	携带属性({属性号：属性值，属性号：属性值})	技能title	携带技能({技能ID：属性})	获取途径（途径ID，值）[1参与删档测试，2通关指定关卡]	获取描述	策划备注
+id	name2	name	superType	desTextId	des2	star	quality	order	icon	exposedview	size	effectivetime	baseAttribute	skilltitle	baseskill	accessway	accessdes	name3
+number	comment	string	number	number	comment	number	number	number	string	string	numbers	number	json	string	json	json	string	comment
+int			int			int	int				int[]	int	map		map	map		
+1200001	测试纪念勋章	2450000	12	2460000	为参与测试的你们定制了这枚纪念勋章,感谢日日夜夜陪伴的你们	4	3	1	icon/item/goods/1200001.png	icon/item/goods/1200001.png	17-20	-1					2470000	参与第一次删档测试获得
+1200002	小电视应援勋章	2450001	12	2460001	来自小电视的应援	4	3	2	icon/item/goods/1200002.png	icon/item/goods/1200002.png	17-20	-1					2470001	参与bilibili联动活动获得

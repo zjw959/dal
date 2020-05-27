@@ -1,0 +1,63 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SFightMsg";
+// 进入战斗
+// code = 25601
+message ReqEnterFight{
+	required string fightId = 1;	// 进入战斗
+	required int32 pid = 2;		// 玩家PID
+	enum MsgID{eMsgID = 25601;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 战斗操作
+// code = 25603
+message ReqOperateFight {
+	required int32 keyCode = 1; //按键键值 （摇杆、按键）
+	required int32 keyEvent = 2; //按键状态  down/doing/up/摇杆角度
+	required int32 keyEventEx = 3; //按键状态扩展
+	enum MsgID{eMsgID = 25603;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 战斗结束
+// code = 25605
+message ReqEndFight{
+	required int32 randomSeed = 1;			// 最终随机种子
+	required bool isWin = 2; 				// 是否胜利
+	repeated MemberData memberData = 3;	// 战斗结果
+	required int32 fightTime = 4;			// 战斗时间
+	enum MsgID{eMsgID = 25605;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 拉取网络帧
+// code = 25606
+message ReqPullNetFrame {
+	required int32 fromIndex = 1; //起始帧序
+	required int32 pid = 2;		// 玩家PID
+	required string fightId = 3;	// 战斗ID
+	enum MsgID{eMsgID = 25606;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求复活
+// code = 25607
+message ReqReviveFight {
+	required bool isReviveFight = 1; // 解码器必须要有内容，所以加上这个bool
+	enum MsgID{eMsgID = 25607;};
+}
+
+// 请求退出战斗
+// code = 25608
+message ReqExitFight {
+	required bool isExitFight = 1;	// 解码器必须要有内容，所以加上这个bool
+	enum MsgID{eMsgID = 25608;};
+}
+
+message MemberData{
+	required int32 pid = 1;				// 玩家ID
+	required int32 hurt = 2;			// 累计伤害
+}
+
+// code = 25609   
+message ReqFightPing{
+	required int32 time = 1;				// 时间
+	enum MsgID{eMsgID = 25609;};
+}

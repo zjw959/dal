@@ -1,0 +1,10 @@
+ID	策划看	道具类型(1补给效果，与item表的类型无关)	资源类型	模型资源	待机特效资源名	动画名称	拾取特效资源名	动画名称	效果类型	效果参数	存在时间	生效范围（1自身，2全队）
+id	name	itemType	resType	resource	standResource	standAction	getResource	getAction	type	typeData	existTime	scope
+number	string	number	number	string	string	string	string	string	numbers	numbers	number	number
+int	string	int	int	string	string	string	string	string	int[]	int[]	int	int
+1	防御	1	1	icon/item/battledrop/1.png	effect_battleItem_buff	2	effects_renwuhuifu	effects_renwuhuifu_up	1	102	300	2
+2	攻击	1	1	icon/item/battledrop/2.png	effect_battleItem_buff	3	effects_renwuhuifu	effects_renwuhuifu_up	1	101	300	2
+3	血	1	1	icon/item/battledrop/3.png	effect_battleItem_buff	4	effects_renwuhuifu	effects_renwuhuifu_up	1	104	300	2
+4	能量	1	1	icon/item/battledrop/4.png	effect_battleItem_buff	5	effects_renwuhuifu	effects_renwuhuifu_up	1	105	300	2
+5	速度	1	1	icon/item/battledrop/5.png	effect_battleItem_buff	1	effects_renwuhuifu	effects_renwuhuifu_up	1	103	300	2
+6	护盾	1	1	icon/item/battledrop/1.png	effect_battleItem_buff	2	effects_renwuhuifu	effects_renwuhuifu_up	1	106	300	2

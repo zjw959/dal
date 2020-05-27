@@ -1,0 +1,5 @@
+id	外传ID	外传名称（策划看）	外传名称	按钮背景图	外传背景图	开启时间	关闭时间
+id	outsideId	des	name	icon	bg	open	close
+number	number	string	number	string	string	string	string
+int	int					string	string
+1	1	十香——birthday	900218	icon/outside/1.png	modle/cg/cg_waizhuan_shixiang1.png	2018/04/30 00:00:00	2018/09/30 00:00:00

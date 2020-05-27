@@ -1,0 +1,6 @@
+bulletid	名称	技能类型	全屏特效文件名	全屏特效缩放尺寸	全屏特效动画	碰撞框名字	开火特效{"effectName":"必须有，没有不播放","scale":默认1,"actionName":"如果只有一个动画可不填", "launchPointName":"发射点名称，默认0,0", "offset":偏移坐标默认0,0},玩家、僚机别填	击中特效:{"effectName":"必须有，没有不播放","scale":默认1,"actionName":"如果只有一个动画可不填", "offset":偏移坐标默认0,0}	技能是否终止(精灵死亡后有的技能终止，有的不需要)	按键（怪物该字段不填）	按键图标	位移距离(如果有)	技能伤害系数(取精灵攻击伤害百分比)	技能CD	怒气消耗	有效间隔
+id	name	type	effectName	scale	actionName	colliderName	fireEffect	hitEffect	isEnd	keyName	keyIcon	range	damagePercent	bulletCD	angerCost	interval
+number	comment	number	string	number	string	string	json	json	boolean	string	string	number	number	number	number	number
+int			string	int	string	string	map	map	boolean	string	string		int	int	int	int
+1	十香炸弹	1	effects_10101_1_bladestorm			bdbox	{"effectName":"effects_10101_1_bladestorm_2","scale":0.5, "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	A	icon/skill/10101_skillD.png		20	7500	0	250
+2	兔子咬人	2			chongci		{"effectName":"effects_10101_1_bladestorm_2","scale":0.5, "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	A	icon/skill/10301_skillD.png	300	20	4000	0	250

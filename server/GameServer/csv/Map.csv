@@ -1,0 +1,22 @@
+ID	地图资源	障碍物坐标	障碍物数据	关卡图片	关卡图片	背景音乐
+id	map	barrierSite	barrierData	picture	intendPicture	bgm
+number	string	strings	numbers	string	string	string
+int	string	strings	int[]	string	string	string
+1	map_101	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-1-1-1-1-1-1-1-1-1	scene/bg/bg_fuben_ditie.png	scene/bg/bg_zhunbei_ditie.png	sound/battle_sound/battle_001.mp3
+2	map_1011	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-1-1-1-1-1-1-1-1-1	scene/bg/bg_fuben_zhengchangditie.png	scene/bg/bg_zhunbei_zhengchangditie.png	sound/battle_sound/battle_001.mp3
+3	map_201	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_xuexiao.png	scene/bg/bg_zhunbei_xuexiao.png	sound/battle_sound/battle_002.mp3
+4	map_401	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-1-1-5-1-1-1-1-5-1	scene/bg/bg_fuben_jiaowai.png	scene/bg/bg_zhunbei_jiaowai.png	sound/battle_sound/battle_003.mp3
+5	map_402	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	6-7-6-7-6-7-6-7-6-7	scene/bg/bg_fuben_shatanyewan.png	scene/bg/bg_zhunbei_shatanyewan.png	sound/battle_sound/battle_001.mp3
+6	map_501	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	6-7-6-7-6-7-6-7-6-7	scene/bg/bg_fuben_shatanbaitian.png	scene/bg/bg_zhunbei_shatanbaitian.png	sound/battle_sound/battle_004.mp3
+7	map_101juqing	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-1-1-1-1-1-1-1-1-1			
+8	map_201juqing	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_xuexiao.png	scene/bg/bg_zhunbei_xuexiao.png	sound/battle_sound/battle_002.mp3
+9	map_601	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_caochang.png	scene/bg/bg_zhunbei_caochang.png	sound/battle_sound/battle_002.mp3
+10	map_2011	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_pohuaixiaowai.png	scene/bg/bg_zhunbei_pohuaixiaowai.png	sound/battle_sound/battle_004.mp3
+11	map_701	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_putongjiedao.png	scene/bg/bg_zhunbei_putongjiedao.png	sound/battle_sound/battle_003.mp3
+12	map_DEMboss	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_11	9-9-9-9-9-9-9-9-9-9	scene/bg/bg_fuben_DEMboss.png	scene/bg/bg_zhunbei_DEMboss.png	sound/battle_sound/battle_004.mp3
+13	map_DEM001	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_11	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_dem001.png	scene/bg/bg_zhunbei_dem001.png	sound/battle_sound/battle_004.mp3
+14	map_702	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_11	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_pohuaiputongjiedao.png	scene/bg/bg_zhunbei_pohuaiputongjiedao.png	sound/battle_sound/battle_004.mp3
+15	map_801	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_11	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_pohuaiyouleyuan.png	scene/bg/bg_zhunbei_pohuaiyouleyuan.png	sound/battle_sound/battle_004.mp3
+16	map_DEM002	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_11	1-5-1-1-5-1-1-5-1-1	scene/bg/bg_fuben_dem002.png	scene/bg/bg_zhunbei_dem002.png	sound/battle_sound/battle_004.mp3
+17	map_702boss	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_11	9-9-9-9-9-9-9-9-9-9	scene/bg/bg_fuben_pohuaiputongjiedao.png	scene/bg/bg_zhunbei_pohuaiputongjiedao.png	sound/battle_sound/battle_004.mp3
+18	map_402boss	Spine_1-Spine_2-Spine_3-Spine_4-Spine_5-Spine_6-Spine_7-Spine_8-Spine_9-Spine_10	6-7-6-7-6-7-6-7-6-7	scene/bg/bg_fuben_shatanyewan.png	scene/bg/bg_zhunbei_shatanyewan.png	sound/battle_sound/battle_001.mp3

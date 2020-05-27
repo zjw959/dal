@@ -1,0 +1,4 @@
+id	状态类型	状态值
+id	state_type	state_value
+number	string	number
+int	string	int

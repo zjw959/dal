@@ -1,0 +1,18 @@
+id	地图事件名(string表中ID)	资源路径(填美术资源存放路径)	替换tile规则(0-不换，1-换为蓝色，2-换为黄色)	事件类型(取kabalaevent表中的事件类型ID)	事件名(策划看)
+id	mapActorName	mapActorIcon	tileGid	eventType	name
+number	string	string	number	numbers	comment
+int	string		int	int[]	
+1	3003001	ui\kabalatree\event\floor_enemy.png	203	2001	普通敌人
+2	3003002	ui\kabalatree\event\floor_enemy.png	203	2001	困难敌人
+3	3003003	ui\kabalatree\event\floor_fight.png	203	1003-1013	目标敌人
+4	3003004	ui\kabalatree\event\floor_boss.png	203	1001	质点Boss
+5	3003005		202		空舰
+6	3003006	ui\kabalatree\event\floor_random.png	204	2002-2012	随机奖励
+7	3003007	ui\kabalatree\event\floor_spot.png	202		灯塔
+8	3003008	ui\kabalatree\event\floor_spot.png	202		航标
+9	3003009	ui\kabalatree\event\floor_item.png	203	1002-1012-1022	任务道具
+10	3003010	ui\kabalatree\event\floor_plot.png	203	1006-1016	剧情NPC
+11	3003011	ui\kabalatree\event\floor_store.png	203	2004	商店
+12	3003012	ui\kabalatree\event\floor_transport.png	203	2003-2013	传送点
+13	3003013	ui\kabalatree\event\floor_spot.png	0		实验室
+14	3003014	ui\kabalatree\event\floor_enemy.png	203	2001	地狱敌人

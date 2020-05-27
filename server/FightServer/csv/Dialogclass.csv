@@ -1,0 +1,6 @@
+id	关卡备注（策划用）	对应剧情对话ID
+id	desc	DialogID
+number	string	numbers
+int		int[]
+1	第1关开头对话	1-2-3-4
+2	第1关开头对话	5-6-7-8

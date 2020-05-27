@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--服务器配置 -->
+<server>
+    <!-- 1 kcp, 2 tcp -->
+    <net_type value="2" desc="通信方式" />  
+    
+    <client_listen_port value="10088" desc="监听客服端的端口" />
+    <client_channel_idle_time value="20000" desc="客服端空闲检测时间间隔" />
+    <http_listen_port value="8188" desc="监听GM后台HTTP的端口" />
+    
+    <team_max_mate value="100" desc="单人匹配 队伍数超过此上限 匹配间隔会加长" />
+    <inteval_mate value="10" desc="单人匹配 队伍数超过上限 会被跳过的匹配间隔次数" />
+    
+    <!-- 服务器初始化信息地址 -->
+    <init_server_url value="http://192.168.20.182:8081" desc="获取服务器初始化信息地址" />
+    
+    <tick_interval value="1" desc="单次tick的时间(单位毫秒)" />
+</server>

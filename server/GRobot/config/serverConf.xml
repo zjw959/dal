@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+	<!-- 服务器列表配置 -->
+	<servers>
+		<server>
+			<name>liuziao</name>
+		</server>
+		<server>
+			<name>ouyangcheng</name>
+		</server>
+		<server>
+			<name>zhangjianwei</name>
+		</server>
+		<server>
+			<name>zhongmingyu</name>
+		</server>
+		<server>
+			<name>liujiang</name>
+		</server>	
+		<server>
+			<name>lanlin</name>
+		</server>
+		<server>
+			<name>lihongji</name>
+		</server>
+		<server>
+			<name>wanghongfu</name>
+		</server>
+		<server>
+			<name>zhaojianbo</name>
+		</server>
+		<server>
+			<name>week1</name>
+		</server>	
+	</servers>
+	<!-- 登录连接地址 -->
+	<loginUrl>
+		<!-- 内网：http://192.168.20.182:8081/account/login -->
+		<!-- 外网：http://140.143.181.116	:8081/account/login -->
+		<url>http://192.168.20.182:8081/account/login</url>
+	</loginUrl>
+</objects>

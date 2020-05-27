@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans classpath:/org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context classpath:/org/springframework/context/config/spring-context-3.0.xsd
+   http://www.springframework.org/schema/aop classpath:/org/springframework/aop/config/spring-aop-3.0.xsd
+   http://www.springframework.org/schema/tx classpath:/org/springframework/transaction/config/spring-tx-3.0.xsd">
+
+
+	<!-- ioc -->
+	<!-- 声明包扫描驱动，它的作用是Spring容器在启动时会启动注解驱动去扫描对应包下的bean对象并将创建它们的实例，这样我们就无法一个个地进行bean配置声明了 -->
+	<bean id="redisConfigurer" class="redis.RedisPropertyConfigurer">
+		<property name="locations">
+			<list>
+				<value>file:./config/properties/redis_server.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- Jedis 连接池配置 -->
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="${jedis_pool.maxTotal}" />
+		<property name="maxIdle" value="${jedis_pool.maxIdle}" />
+		<property name="minIdle" value="${jedis_pool.minIdle}" />
+		<property name="maxWaitMillis" value="1000" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+		<property name="testWhileIdle" value="false" />
+	</bean>
+	<bean id="jedisPoolComment" class="redis.clients.jedis.JedisPool">
+		<constructor-arg ref="jedisPoolConfig" />
+		<constructor-arg name="host" value="${redis_activity.host}" />
+		<constructor-arg name="port" value="${redis_activity.port}" type="int"/>
+		<constructor-arg name="timeout" value="2000" />
+		<constructor-arg name="password" value="${redis_activity.pass}" />
+	</bean>	
+	
+	<bean id="jedisPoolActivity" class="redis.clients.jedis.JedisPool">
+		<constructor-arg ref="jedisPoolConfig" />
+		<constructor-arg name="host" value="${redis_comment.host}" />
+		<constructor-arg name="port" value="${redis_comment.port}" type="int"/>
+		<constructor-arg name="timeout" value="2000" />
+		<constructor-arg name="password" value="${redis_comment.pass}" />
+	</bean>	
+</beans>

@@ -1,0 +1,76 @@
+ID	事件所属质点世界(备注，策划看)	事件类型(1-直接战斗，2-收集任务道具，3-占领据点，4-任务剧情，5-探索区域，6-拾取随机奖励，7-传送事件，8-商店事件)	事件子类型(1001-BOSS击杀，1002-收集道具-常规，1012-收集道具-剧情，1022-收集道具-战斗（任务道具配在关卡掉落里），1003-击杀目标-数量，1013-击杀目标-具体怪物及数量，1004-探索区域（编辑器中探索目标地块ID），1005-占领据点，1006-剧情事件-常规；2001-可见战斗，2002-宝箱事件-道具，2012-宝箱事件-buff/debuff，2003-传送事件-随机传送，2013-传送事件-定点传送，2004-商店事件)	事件类型参数(每个任务或事件配置参数不一样，具体按文档里的设计来定)	地图编辑器中地块ID(填地图导出的json文件中的数字ID)	探索区域地块ID(其他事件不用此字段)	事件名文本(主要是传送点名用)	事件素材调用路径	事件能源点数消耗	前置剧情(maindialog表中ID，触发事件后立即播放，播放完了再执行事件)	触发后是否删除模型	事件可否重复进行
+id	Name	eventType	eventSubType	eventParam	tileID	scanTileID	eventText	showRes	oilCost	prePlot	isDelete	isAgain
+number	comment	number	number	json	number	number	numbers	string	number	number	boolean	boolean
+int		int	int	list	int		int[]		int		boolean	boolean
+1001001		1	1001	[6061003]	20			ui\kabalatree\event\floor_boss.png	2	1995	1	0
+1001002		2	1002	[61111111]	21			ui\kabalatree\event\floor_item.png	2	1995	1	0
+1001003		2	1012	[61111112]	22			ui\kabalatree\event\floor_item.png	2	1995	1	0
+1001004		1	1003	[6061001]	11			ui\kabalatree\event\floor_fight.png	2	1995	1	0
+1001005		5	1004	[51]	51	59			0		0	0
+1001006		7	2003		61			ui\kabalatree\event\floor_transport.png	0		0	1
+1001007		1	2001	[6061001]				ui\kabalatree\event\floor_enemy.png	2		1	0
+1001008		1	2001	[6061003]				ui\kabalatree\event\floor_enemy.png	2		1	0
+1001009		6	2002	[60210101,60210618]				ui\kabalatree\event\floor_random.png	2		1	0
+1001010		6	2012					ui\kabalatree\event\floor_random.png				0
+1001011		8	2004					ui\kabalatree\event\floor_store.png	0		0	1
+1002001		1	1001	[6061003]	20			ui\kabalatree\event\floor_boss.png	2	1995	1	0
+1002002		1	1013	[6061003]	11			ui\kabalatree\event\floor_fight.png	2	1995	1	0
+1002003		1	1013	[6061003]	12			ui\kabalatree\event\floor_fight.png	2	1995	1	0
+1002004		1	1013	[6061003]	13			ui\kabalatree\event\floor_fight.png	2		1	0
+1002005		1	1022	[6061003]	23			ui\kabalatree\event\floor_fight.png	2		1	0
+1002006		3	1005	[6061003]	31			ui\kabalatree\event\floor_spot.png	2		1	0
+1002007		3	1005	[6061003]	32			ui\kabalatree\event\floor_spot.png	2	1995	1	0
+1002008		4	1006	[1995]	41			ui\kabalatree\event\floor_task.png	2		1	0
+1002009		7	2013	[62,63]	61		3004201-3004202	ui\kabalatree\event\floor_transport.png	0		0	1
+1002010		7	2013	[70]	62		3004203	ui\kabalatree\event\floor_transport.png	0		0	1
+1002011		1	2001	[6061004]				ui\kabalatree\event\floor_enemy.png	2		1	0
+1002012		1	2001	[6061003]				ui\kabalatree\event\floor_enemy.png	2		1	0
+1002013		6	2002	[60210104]				ui\kabalatree\event\floor_random.png	2		1	0
+1002014		6	2012					ui\kabalatree\event\floor_random.png	2		1	0
+1002015		8	2004					ui\kabalatree\event\floor_store.png	0		1	1
+1003101		4	1006	[1991]	161			ui\kabalatree\event\floor_plot.png	0		1	0
+1003102		4	1006	[1991]	162			ui\kabalatree\event\floor_plot.png	0		1	0
+1003103		4	1006	[1991]	163			ui\kabalatree\event\floor_plot.png	0		1	0
+1003104		4	1006	[1991]	164			ui\kabalatree\event\floor_plot.png	0		1	0
+1003105		4	1006	[1991]	165			ui\kabalatree\event\floor_plot.png	0		1	0
+1003201		3	1005	[6061008]	91			ui\kabalatree\event\floor_spot.png	50		0	0
+1003202		3	1005	[6061008]	92			ui\kabalatree\event\floor_spot.png	50		0	0
+1003203		3	1005	[6061008]	93			ui\kabalatree\event\floor_spot.png	50		0	0
+1003204		3	1005	[6061008]	94			ui\kabalatree\event\floor_spot.png	50		0	0
+1003205		3	1005	[6061008]	95			ui\kabalatree\event\floor_spot.png	50		0	0
+1003301		2	1002	[60600301]	61			ui\kabalatree\event\floor_item.png	20		1	0
+1003302		2	1002	[60600301]	62			ui\kabalatree\event\floor_item.png	20		1	0
+1003303		2	1002	[60600301]	63			ui\kabalatree\event\floor_item.png	20		1	0
+1003304		2	1002	[60600301]	64			ui\kabalatree\event\floor_item.png	20		1	0
+1003305		2	1002	[60600301]	65			ui\kabalatree\event\floor_item.png	20		1	0
+1003306		2	1002	[60600301]	66			ui\kabalatree\event\floor_item.png	20		1	0
+1003307		2	1002	[60600301]	67			ui\kabalatree\event\floor_item.png	20		1	0
+1003308		2	1002	[60600301]	68			ui\kabalatree\event\floor_item.png	20		1	0
+1003309		2	1002	[60600301]	69			ui\kabalatree\event\floor_item.png	20		1	0
+1003310		2	1002	[60600301]	70			ui\kabalatree\event\floor_item.png	20		1	0
+1003401		1	1003	[6061001]	11			ui\kabalatree\event\floor_fight.png	30		1	0
+1003402		1	1003	[6061002]	12			ui\kabalatree\event\floor_fight.png	30		1	0
+1003403		1	1003	[6061003]	13			ui\kabalatree\event\floor_fight.png	30		1	0
+1003404		1	1003	[6061004]	14			ui\kabalatree\event\floor_fight.png	30		1	0
+1003405		1	1003	[6061005]	15			ui\kabalatree\event\floor_fight.png	30		1	0
+1003406		1	1013	[6061001]	16			ui\kabalatree\event\floor_fight.png	30		1	0
+1003407		1	1013	[6061002]	17			ui\kabalatree\event\floor_fight.png	30		1	0
+1003408		1	1013	[6061003]	18			ui\kabalatree\event\floor_fight.png	30		1	0
+1003409		1	1013	[6061004]	19			ui\kabalatree\event\floor_fight.png	30		1	0
+1003410		1	1013	[6061005]	20			ui\kabalatree\event\floor_fight.png	30		1	0
+1003501		5	1004	[121]	121	141					0	0
+1003502		5	1004	[122]	122	142					0	0
+1003503		5	1004	[123]	123	143					0	0
+1003601		1	1001	[6061007]	5			ui\kabalatree\event\floor_boss.png	100		1	0
+1003701		1	2001	[6061001]				ui\kabalatree\event\floor_enemy.png	10		1	0
+1003702		1	2001	[6061003]				ui\kabalatree\event\floor_enemy.png	30		1	0
+1003703		1	2001	[6061005]				ui\kabalatree\event\floor_enemy.png	50		1	0
+1003801		6	2002	[60600401]				ui\kabalatree\event\floor_random.png	10		1	0
+1003802		6	2002	[60600402]				ui\kabalatree\event\floor_random.png	30		1	0
+1003803		6	2002	[60600403]				ui\kabalatree\event\floor_random.png	50		1	0
+1003901		7	2003		181			ui\kabalatree\event\floor_transport.png	0		0	1
+1003911		7	2013	[191]	182		3004201	ui\kabalatree\event\floor_transport.png	0		0	1
+1003912		7	2013	[192,193]	183		3004202-3004203	ui\kabalatree\event\floor_transport.png	0		0	1
+1003921		7	2013	[191,192,193]	184		3004205	ui\kabalatree\event\floor_transport.png	0		0	1
+1003922		7	2013	[191,192]	185		3004204-3004205	ui\kabalatree\event\floor_transport.png	0		0	1
+1003001		8	2004					ui\kabalatree\event\floor_store.png	0		0	1

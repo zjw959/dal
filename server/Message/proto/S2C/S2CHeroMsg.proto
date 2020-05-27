@@ -1,0 +1,204 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CHeroMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CItemMsg.proto";
+// 英雄列表
+// code = 1025
+message HeroInfoList {
+	repeated HeroInfo heros = 1;
+	enum MsgID{eMsgID = 1025;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 英雄信息
+// code = 1026
+message HeroInfo {
+	required ChangeType ct = 1;
+	optional string id = 2;			// 实例ID
+	optional int32 cid = 3;			// 配置ID
+	optional int32 lvl = 4;			// 等级
+	optional int64 exp = 5;			// 经验
+	repeated AttributeInfo attr = 6;	// 属性
+	optional int32 advancedLvl = 7;	// 突破等级
+	repeated HeroEquipment equipments = 8;	// 装备id
+	required bool helpFight = 9;			// 助战
+	optional int32 angelLvl = 10;			// 天使等级
+	repeated AngeSkillInfo angeSkillInfos = 11;	//天使技能信息
+	required int32 useSkillPiont = 12;		// 已使用技能点
+	required int32 quality = 13;			// 品质(进阶等级)
+	optional int32 provide = 14;			//出处
+	required int32 fightPower = 15;		// 战斗力
+	required int32 skinCid = 16;		// 皮肤cid
+	repeated SkillStrategy skillStrategyInfo = 17;
+	optional int32 useSkillStrategy = 18;
+	repeated CrystalInfo crystalInfo = 19; 
+	repeated int32 equipSkillIds = 20;		//装备激活的skillId,对应PassiveSkills表的id
+	enum MsgID{eMsgID = 1026;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 天使页
+message SkillStrategy {
+	required int32 id = 1;
+	required string name = 2;
+	required int32 alreadyUseSkillPiont = 3;
+	repeated AngeSkillInfo angeSkillInfos = 4;
+	repeated PassiveSkillInfo passiveSkillInfo = 5; 
+}
+
+// 被动技能信息
+message PassiveSkillInfo {
+	required int32 pos = 1;
+	required int32 skillId = 2;
+}
+
+// 天使技能信息
+message AngeSkillInfo{
+	required int32 type = 1;
+	required int32 pos = 2;
+	required int32 lvl = 3;
+}
+
+// 结晶
+message CrystalInfo {
+	required int32 rarity = 1;
+	required int32 gridId = 2;
+}
+
+// 英雄升级
+// code = 1027
+message HeroUpgradeResult{
+	repeated RewardsMsg rewards = 1;
+	enum MsgID{eMsgID = 1027;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 英雄进阶
+// code = 1028
+message HeroAdvanceResult{
+	required HeroInfo hero = 1;
+	enum MsgID{eMsgID = 1028;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 英雄经验信息
+// code = 1029
+message HeroExpInfo {
+	optional string id = 1;			// 实例ID
+	optional int64 exp = 2;			// 经验
+	optional int32 cid = 3;
+	enum MsgID{eMsgID = 1029;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 英雄合成
+// code = 1031
+message HeroCompose {
+	required bool success = 1;
+	enum MsgID{eMsgID = 1031;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 英雄装备
+message HeroEquipment{
+	required int32 position = 1;//装备位置
+	required string equipmentId = 2;//装备id
+	required EquipmentInfo equip = 3;//装备具体信息
+}
+
+// 天使觉醒
+// code = 1032
+message RespAngelWake {
+	enum MsgID{eMsgID = 1032;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 天使加点
+// code = 1033
+message RespAngelAddBit {
+	enum MsgID{eMsgID = 1033;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 天使重置
+// code = 1034
+message RespAngelReset {
+	enum MsgID{eMsgID = 1034;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 英雄进阶
+// code = 1035
+message RespUpQuality {
+	required HeroInfo hero = 1;
+	enum MsgID{eMsgID = 1035;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 更换英雄皮肤
+// code = 1036
+message RespChangeHeroSkin {
+	required HeroInfo hero = 1;
+	required string beforeSkinId = 2;
+	enum MsgID{eMsgID = 1036;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 天使觉醒
+// code = 1037
+message ResAwakeAngel {
+	required string heroId = 1;
+	required int32 angelLvl = 2;
+	enum MsgID{eMsgID = 1037;};
+}
+
+//升级或降级技能
+//code = 1038
+message ResUpgradeSkill {
+	required string heroId = 1;
+	required AngeSkillInfo angeSkillInfo = 2;
+	required int32 useSkillPiont = 3;	// 已使用技能点
+	enum MsgID{eMsgID = 1038;};
+}
+
+// 修改名字
+// code = 1039
+message ResModifyStrategyName {
+	required string heroId = 1;
+	required int32 skillStrategyId = 2;
+	required string name = 3;
+	enum MsgID{eMsgID = 1039;};
+}
+
+//请求使用天使页
+// code = 1040
+message ResUseSkillStrategy {
+	required string heroId = 1;
+	required int32 skillStrategyId = 2;
+	enum MsgID{eMsgID = 1040;};
+}
+
+
+// 请求装备/卸下被动技能
+// code = 1041
+message ResEquipPassiveSkill {
+	required string heroId = 1;
+	required PassiveSkillInfo passiveSkillInfo = 2;
+	enum MsgID{eMsgID = 1041;};
+}
+
+// 响应激活结晶
+// code = 1042
+message ResActiveCrystal {
+	required string heroId = 1;
+	required int32 rarity = 2;
+	required int32 gridId = 3;
+	enum MsgID{eMsgID = 1042;};
+}
+
+// 响应属性变化
+// code = 1043
+message ResPropertyChange {
+	required string heroId = 1;
+	repeated AttributeInfo attr = 2;
+	required int32 fightPower = 3;
+	enum MsgID{eMsgID = 1043;};
+}
+
+// 重置技能
+// code = 1044
+message ResResetSkill {
+	required string heroId = 1;
+	required SkillStrategy skillStrategy = 2;
+	enum MsgID{eMsgID = 1044;};
+}

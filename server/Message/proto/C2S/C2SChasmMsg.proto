@@ -1,0 +1,28 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SChasmMsg";
+
+// 开始战斗
+// code = 6145
+message ReqChasmStartFight{
+	enum MsgID{eMsgID = 6145;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 复活战斗
+// code = 6146
+message ReqChasmFightRevive{
+	enum MsgID{eMsgID = 6146;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 退出战斗
+// code = 6147
+message ReqChasmExitFight{
+	enum MsgID{eMsgID = 6147;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 进入深渊
+// code = 6149
+message ReqEnterChasm{
+	enum MsgID{eMsgID = 6149;}; //注意：消息id放最后,以免客户端解析异常
+}

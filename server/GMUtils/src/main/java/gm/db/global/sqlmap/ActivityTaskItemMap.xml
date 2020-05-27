@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_item_task">
+	<resultMap id="bean" type="gm.db.global.bean.ActivityTaskItem">
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="icon" property="icon" jdbcType="VARCHAR" />
+		<result column="rank" property="rank" jdbcType="INTEGER" />
+		<result column="des" property="des" jdbcType="VARCHAR" />
+		<result column="des2" property="des2" jdbcType="VARCHAR" />
+		<result column="resetType" property="resetType" jdbcType="INTEGER" />
+		<result column="finishCondid" property="finishCondid" jdbcType="INTEGER" />
+		<result column="finishParams" property="finishParams" jdbcType="VARCHAR" />
+		<result column="progress" property="progress" jdbcType="INTEGER" />
+		<result column="reward" property="reward" jdbcType="VARCHAR" />
+		<result column="jumpInterface" property="jumpInterface" jdbcType="INTEGER" />
+		<result column="open" property="open" jdbcType="INTEGER" />
+	</resultMap>
+
+	<select id="selectAll" resultMap="bean">
+		select * from t_item_task
+	</select>
+	
+	<select id="selectById" parameterType="HashMap" resultMap="bean">
+        select * from  t_item_task
+        WHERE id = #{id,jdbcType=INTEGER};
+    </select>
+    
+    <insert id="insertConfig" parameterType="HashMap">
+		insert into t_item_task
+		(
+		id,
+		icon,
+		rank,
+		des,
+		des2,
+		resetType,
+		finishCondid,
+		finishParams,
+		progress,
+		reward,
+		jumpInterface,
+		open
+		)values(
+		#{config.id, jdbcType=INTEGER},
+		#{config.icon, jdbcType=VARCHAR},
+		#{config.rank, jdbcType=INTEGER},
+		#{config.des, jdbcType=VARCHAR},
+		#{config.des2, jdbcType=VARCHAR},
+		#{config.resetType, jdbcType=INTEGER},
+		#{config.finishCondid, jdbcType=INTEGER},
+		#{config.finishParams, jdbcType=VARCHAR},
+		#{config.progress, jdbcType=INTEGER},
+		#{config.reward, jdbcType=VARCHAR},
+		#{config.jumpInterface, jdbcType=INTEGER},
+		#{config.open, jdbcType=INTEGER}
+		)
+    </insert>
+    
+    <update id="updateConfig" parameterType="HashMap">
+		update t_item_task set
+		icon = #{config.icon, jdbcType=VARCHAR},
+		rank = #{config.rank, jdbcType=INTEGER},
+		des = #{config.des, jdbcType=VARCHAR},
+		des2 = #{config.des2, jdbcType=VARCHAR},
+		resetType = #{config.resetType, jdbcType=INTEGER},
+		finishCondid = #{config.finishCondid, jdbcType=INTEGER},
+		finishParams = #{config.finishParams, jdbcType=VARCHAR},
+		progress = #{config.progress, jdbcType=INTEGER},
+		reward = #{config.reward, jdbcType=VARCHAR},
+		jumpInterface = #{config.jumpInterface, jdbcType=INTEGER},
+		open = #{config.open, jdbcType=INTEGER}
+		where id = #{config.id, jdbcType=INTEGER};
+    </update>
+    
+    <delete id="deleteById" parameterType="HashMap">
+    	delete from t_item_task 
+    	WHERE id = #{id,jdbcType=INTEGER};
+    </delete>
+</mapper>

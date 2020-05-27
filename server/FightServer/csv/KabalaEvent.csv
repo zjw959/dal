@@ -1,0 +1,30 @@
+ID	事件所属质点世界(备注，策划看)	事件类型(1-直接战斗，2-收集任务道具，3-占领据点，4-任务剧情，5-探索区域，6-拾取随机奖励，7-传送事件，8-商店事件)	事件子类型(1001-BOSS击杀，1002-收集道具-常规，1012-收集道具-剧情，1022-收集道具-战斗（任务道具配在关卡掉落里），1003-击杀目标-数量，1013-击杀目标-具体怪物及数量，1004-探索区域（编辑器中探索目标地块ID），1005-占领据点，1006-剧情事件-常规；2001-可见战斗，2002-宝箱事件-道具，2012-宝箱事件-buff/debuff，2003-传送事件-随机传送，2013-传送事件-定点传送，2004-商店事件)	事件类型参数(每个任务或事件配置参数不一样，具体按文档里的设计来定)	地图编辑器中地块ID(填地图导出的json文件中的数字ID)	事件名文本(主要是传送点名用)	事件素材调用路径	事件能源点数消耗	前置剧情(maindialog表中ID，触发事件后立即播放，播放完了再执行事件)	触发后是否删除模型
+id	Name	eventType	eventSubType	eventParam	tileID	eventText	showRes	oilCost	prePlot	isDelete
+number	comment	number	number	json	number	numbers	string	number	json	boolean
+int		int	int	list	int	int[]		int		boolean
+1001001		1	1001	[601004]	20		ui\kabalatree\event\floor_fight.png	2	{1:1011001}	1
+1001002		2	1002	[[500001,1]]	21		ui\kabalatree\event\floor_item.png	2		1
+1001003		2	1012	[[500001,1]]	22		ui\kabalatree\event\floor_item.png	2	{1:1011001}	1
+1001004		1	1003	[601001]	11		ui\kabalatree\event\floor_fight.png	2	{1:1011001}	1
+1001005		5	1004	[51]	51			2		0
+1001006		7	2003		61		ui\kabalatree\event\floor_transpot.png			0
+1001007		1	2001	[601001]				2		1
+1001008		1	2001	[601004]				2		1
+1001009		6	2002	[[500001,100],[500002,100],[500003,100]]			ui\kabalatree\event\floor_random.png	2		1
+1001010		6	2012				ui\kabalatree\event\floor_random.png			
+1001011		8	2004				ui\kabalatree\event\floor_store.png			0
+1002001		1	1001	[601003]	20		ui\kabalatree\event\floor_fight.png	2	{1:1011001}	1
+1002002		1	1013	[601004]	11		ui\kabalatree\event\floor_fight.png	2	{1:1011001}	1
+1002003		1	1013	[601004]	12		ui\kabalatree\event\floor_fight.png	2		1
+1002004		1	1013	[601004]	13		ui\kabalatree\event\floor_fight.png	2		1
+1002005		1	1022	[601004]	23		ui\kabalatree\event\floor_fight.png	2		1
+1002006		3	1005	[601004]	31		ui\kabalatree\event\floor_spot.png	2		1
+1002007		3	1005	[601004]	32		ui\kabalatree\event\floor_spot.png	2	{1:1011001}	1
+1002008		4	1006	[1011001]	41		ui\kabalatree\event\floor_task.png	2		1
+1002009		7	2013	[62,63]	61	3004201-3004202	ui\kabalatree\event\floor_transpot.png			0
+1002010		7	2013	[70]	62	3004203	ui\kabalatree\event\floor_transpot.png			0
+1002011		1	2001	[601004]				2		1
+1002012		1	2001	[601003]				2		1
+1002013		6	2002	[[500001,100],[500002,100],[500003,100]]			ui\kabalatree\event\floor_random.png	2		1
+1002014		6	2012				ui\kabalatree\event\floor_random.png	2		1
+1002015		8	2004				ui\kabalatree\event\floor_store.png	2		1

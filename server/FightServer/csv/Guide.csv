@@ -1,0 +1,85 @@
+id	所属引导id	引导名称	前置id	所在界面	界面名称	引导位置（需点击的按钮）	位置名称	文本内容	是否需要指定操作
+id	guideId	comment	frontId	fileName	comment1	uiName	comment2	des	showContinue
+number	number	comment	number	string	comment	string	comment	string	boolean
+int	int	comment	int	string	comment	string	comment	string	boolean
+1	1	约会引导		MainLayer	主界面			击败AST看起来赢得了十香的信任，继续和十香进行约会吧！	0
+2	1	约会引导	1	MainLayer	主界面	Panelyuehui	点击约会模式		1
+3	1	约会引导	2	RoleInfoLayer	约会界面	Button_dating	点击约会按钮		1
+4	1	约会引导	3	DatingScriptView	约会场景			在这里你可以和拥有的看板娘进行约会	0
+5	1	约会引导	4	DatingScriptView	约会场景			每个精灵都有不同的性格，小心培养和她们的好感，把她们一一攻略吧！	0
+6	1	约会引导	5	SettlementLayer	约会完成	TextButton_enter	点击【继续】		1
+7	1	约会引导	6	RoleInfoLayer	约会完成			干得不错！十香似乎很满意这次约会！	0
+8	1	约会引导	7	RoleInfoLayer	约会完成			不同的结局会让精灵的心情产生不同变化，有时还能强化精灵的作战能力	0
+9	1	约会引导	8	RoleInfoLayer	约会完成			约会的结局和你的行动息息相关，有空时多尝试和精灵们约会吧！	0
+10	2	换装引导	9	MainLayer	主界面	Panelyuehui	点击约会模式	十香似乎对刚刚获得的新服装十分感兴趣，试试给她换上吧	1
+11	2	换装引导	10	RoleInfoLayer	约会界面	Button_changeDress	点击换装按钮		1
+12	2	换装引导	11	UIDatingScrollLayer	换装界面		点击服装	先让十香试穿一下新服装吧！	1
+13	2	换装引导	12	UIDatingScrollLayer	换装界面	Image_changeDressOk	点击确认更换	如果觉得好看的话，就确定让十香换上这套制服吧~	1
+14	2	换装引导	13	DressView	换装界面			除了服装，在约会中可能还会获得其他物品，试着把它们送给精灵们吧	0
+15	2	换装引导	14	DressView	换装界面	Button_back	点击返回		1
+16	2	换装引导	15	RoleInfoLayer	约会界面	Button_back	点击返回主界面		1
+17	3	进入副本	16	MainLayer	主界面			让我们继续战斗吧	0
+18	3	进入副本	17	MainLayer	主界面	Panelzuozhan	点击战斗模式	从这里可以进入游戏的战斗关卡	1
+19	3	进入副本	18	FubenLevelView	关卡界面	Button_plotLevel1	点chap1	选择第一个关卡进入吧	1
+20	3	进入副本	19	FubenReadyView	关卡信息界面	Button_ready	点准备		1
+21	3	进入副本	20	FubenSquadView	战斗准备界面	Button_fighting	点出击		1
+22	3	进入副本	21	FubenLevelView	关卡界面	Button_back	点返回		1
+23	4	任务引导	22	MainLayer	主界面	Panel_task	点击任务按钮	哟呼！任务系统解锁啦，让我们去看看司令给我们发布了些什么任务	1
+24	4	任务引导	23	TaskMainView	任务界面	Button_receive1	点击领取按钮	呀，想不到你已经完成了一个任务啦，赶快把奖励领取了吧！	1
+25	4	任务引导	24	GetItemView	物品领取界面	Button_ok	点击确定按钮		1
+26	4	任务引导	25	TaskMainView	物品领取界面			是经验卡！！可以强化精灵的材料，赶快去试试！	0
+27	4	任务引导	26	TaskMainView	任务界面	Button_back	点击返回		1
+28	5	精灵升级	27	MainLayer	主界面	Button_fairy	点击精灵		1
+29	5	精灵升级	28	FairyMainLayer	精灵强化界面	Button_fairy	点击精灵切页		1
+30	5	精灵升级	29	FairyMainLayer	精灵强化界面	Button_lvup	点击升级按钮	使用经验卡等道具可以提升精灵的经验，从而升级，赶快试一下吧！	1
+31	5	精灵升级	30	FairyLevelUp	强化弹出框	Button_ok	点击确定		1
+32	5	精灵升级	31	FairyMainLayer	精灵强化界面			升级精灵能在前期大幅度提高你的战斗力，记得给精灵们及时升级哟~	0
+33	5	精灵升级	32	FairyMainLayer	精灵强化界面	Button_back	点击返回		1
+34	6	进入第二个副本	33	MainLayer	主界面	Panelzuozhan	点击战斗模式	让我们继续战斗吧	1
+35	6	进入第二个副本	34	FubenLevelView	关卡界面	Button_plotLevel2	点chap2		1
+36	6	进入第二个副本	35	FubenReadyView	关卡信息界面	Button_ready	点准备		1
+37	6	进入第二个副本	36	FubenSquadView	战斗准备界面	Button_fighting	点出击		1
+38	7	领取星星奖励	37	MainLayer	主界面	Panelzuozhan	点击战斗模式		1
+39	7	领取星星奖励	38	FubenLevelView	关卡界面	Button_reward	点星星	完成关卡中的挑战可以获得星星，累计星星后可以获得奖励哟	1
+40	7	领取星星奖励	39	FubenStarRewardView	星星奖励界面	Button_get1	点第一个奖励		1
+41	7	领取星星奖励	40	FubenStarRewardView	星星奖励界面			嗯，这样子材料就集齐了……去突破精灵吧！	0
+42	7	领取星星奖励	41	FubenStarRewardView	星星奖励界面	Button_close	点关闭		1
+43	7	领取星星奖励	42	FubenLevelView	关卡界面	Button_back	点击返回		1
+44	8	突破引导	43	MainLayer	主界面	Button_fairy	点击精灵		1
+45	8	突破引导	44	FairyMainLayer	精灵强化界面	Button_fairy	点击精灵切页		1
+46	8	突破引导	45	FairyMainLayer	精灵强化界面	Button_tupo	点击突破	突破除了能提升精灵的属性外，还可以提升精灵的最大等级。	1
+47	8	突破引导	46	FairyMainLayer	精灵强化界面	Button_back	点击返回		1
+48	9	进入第3个副本	47	MainLayer	主界面	Panelzuozhan	点击战斗模式	继续战斗，感受一下突破后的战力吧！	1
+49	9	进入第3个副本	48	FubenLevelView	关卡界面	Button_plotLevel3	点chap3		1
+50	9	进入第3个副本	49	FubenReadyView	关卡信息界面	Button_ready	点准备		1
+51	9	进入第3个副本	50	FubenSquadView	战斗准备界面	Button_fighting	点出击		1
+52	9	进入第3个副本	51	FubenLevelView	关卡界面	Button_back	点返回	刚刚的通关奖励似乎是【灵装】喔，赶快去装备上吧！	1
+53	10	灵装穿戴引导	52	MainLayer	主界面	Button_fairy	点击精灵		1
+54	10	灵装穿戴引导	53	FairyMainLayer	精灵强化界面	Button_lingzhuang	点击灵装切页		1
+55	10	灵装穿戴引导	54	FairyMainLayer	精灵强化界面			一个精灵最多可以装备3件灵装，不过要记住不能装备重复类型的灵装哟	0
+56	10	灵装穿戴引导	55	FairyMainLayer	精灵强化界面	Image_equipment_di1	点击第一个灵装槽位		1
+57	10	灵装穿戴引导	56	EquipmentSelect	灵装更换界面	Button_change	点击确认装备	灵装除了能提供基础属性以外，还能给装备的精灵提供一些特殊技能	1
+58	10	灵装穿戴引导	57	FairyMainLayer	精灵强化界面	Button_back	点击返回		1
+59	11	进入第4个副本	58	MainLayer	主界面	Panelzuozhan	点击战斗模式	让我们继续战斗吧	1
+60	11	进入第4个副本	59	FubenLevelView	关卡界面	Button_plotLevel4	点elite1		1
+61	11	进入第4个副本	60	FubenReadyView	关卡信息界面	Button_ready	点准备		1
+62	11	进入第4个副本	61	FubenSquadView	战斗准备界面			单打独斗可不是我们的作风，遇到比较困难的关卡可以召唤助战好友呢	0
+63	11	进入第4个副本	62	FubenSquadView	战斗准备界面	froot1	选择助战（第一个）	选择一个助战好友吧	1
+64	11	进入第4个副本	63	FubenSquadView	战斗准备界面	Button_fighting	点出击		1
+65	11	进入第4个副本	64	FubenLevelView	关卡界面	Button_back	点返回		1
+66	12	领取第二个主线任务奖励	65	MainLayer	主界面	Panel_task	点击任务按钮	似乎又完成司令指定的任务了，让我们去看看这次又什么奖励	1
+67	12	领取第二个主线任务奖励	66	TaskMainView	任务界面	Button_receive1	点击领取按钮		1
+68	12	领取第二个主线任务奖励	67	GetItemView	物品领取界面	Button_ok	点击确定按钮		1
+69	12	领取第二个主线任务奖励	68	TaskMainView	任务界面	Button_back	点击返回	居然是灵装强化材料，太棒了，我们赶快去强化灵装吧！	1
+70	13	强化灵装	69	MainLayer	主界面	Button_fairy	点击精灵		1
+71	13	强化灵装	70	FairyMainLayer	精灵强化界面	Button_lingzhuang	点击灵装切页		1
+72	13	强化灵装	71	FairyMainLayer	精灵强化界面	Image_equipment_di1	点击第一个灵装槽位		1
+73	13	强化灵装	72	EquipmentInfo	灵装详细信息界面	Button_qianghua	点击强化		1
+74	13	强化灵装	73	EquipmentStrengthen	灵装强化界面	guideItem1	选择第一个灵装材料	选择刚刚得到的强化材料吧	1
+75	13	强化灵装	74	EquipmentStrengthen	灵装强化界面	Button_change	点击确认强化	强化能大幅度提高灵装的属性，对战斗很有帮助哦！	1
+76	13	强化灵装	75	EquipmentStrengthen		Button_back	点击返回		1
+77	13	强化灵装	76	FairyMainLayer		Button_back	点击返回		1
+78	14	进入第5个副本	77	MainLayer	主界面	Panelzuozhan	点击战斗模式	让我们继续战斗吧	1
+79	14	进入第5个副本	78	FubenLevelView	关卡界面	Button_plotLevel5	点elite2		1
+80	14	进入第5个副本	79	FubenReadyView	关卡信息界面	Button_ready	点准备		1
+81	14	进入第5个副本	80	FubenSquadView	战斗准备界面	Button_fighting	点出击		1

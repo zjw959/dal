@@ -1,0 +1,8 @@
+id	所属外传	结局标题（策划看）	结局标题	结局内容（完成前）	结局内容（完成后）	结局CG	达成奖励
+id	outside	titleDes	title	storyShow1	storyShow2	cg	rewardShow
+number	number	string	number	number	number	string	number
+int	int	string	int	int	int	string	int
+1	1	结局1	900694	900695	900695	icon/cg/date_cg_42.png	
+2	1	结局2	900696	900697	900697	icon/cg/date_cg_waizhuan_1.png	
+3	1	结局3	900698	900699	900699	icon/cg/date_cg_43.png	
+4	1	结局4	900700	900701	900701	icon/cg/date_cg_44.png	

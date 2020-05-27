@@ -1,0 +1,5 @@
+自然恢复ID	非强制消耗能量恢复量	怒气获取量	获取周期（ms）	指定角色
+id		getNumber	getCycle	
+number		number	number	
+int		int	int	
+1	30		1000	110401

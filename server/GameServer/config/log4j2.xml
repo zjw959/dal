@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--monitorInterval：Log4j能够自动检测修改配置 文件和重新配置本身，设置间隔秒数 -->
+<Configuration status="info" monitorInterval="30">
+	<Properties>
+		<Property name="baseDir">logsbd</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="RollingFilePlayer" fileName="${baseDir}/player_event.log"
+			filePattern="${baseDir}/playerevent/$${date:yyyy-MM-dd}/player_event_%d{yyyy-MM-dd-HH}_%i.log">
+			<!-- 控制台只输出level及以上级别的信息(onMatch), 其他的直接拒绝(onMismatch) -->
+			<ThresholdFilter level="info" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout pattern="%m%n" />
+			<!-- 备份策略:满足其中一个就可以启动备份(更换文件) -->
+			<Policies>
+				<!-- interval 多久执行一次备份 -->
+				<!-- 单位为 RollingRandomAccessFile的属性filePattern中%d{yyyy-MM-dd}的最小时间单位， 
+					此处是小时 -->
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<!-- 避免文件过大 -->
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+
+			<!-- DefaultRolloverStrategy指定了当触发rollover时的默认策略 -->
+			<!-- DefaultRolloverStrategy是Log4j2提供的默认的rollover策略 -->
+			<!-- 即使在log4j2.xml中没有显式指明，也相当于为RollingFile配置下添加了如下语句 -->
+			<!-- DefaultRolloverStrategy默认的max为7。同一文件夹下文件数量 -->
+			<!--这个配置也将会删除匹配*/player_event_*.log 超过7天或更早的文件 -->
+			<!-- <DefaultRolloverStrategy fileIndex="nomax"> Nested conditions: the 
+				inner condition is only evaluated on files for which the outer conditions 
+				are true. <Delete basePath="${baseDir}/playerevent/" maxDepth="2"> <IfLastModified 
+				age="7d" /> </Delete> </DefaultRolloverStrategy> -->
+			<DefaultRolloverStrategy fileIndex="nomax">
+				<Delete basePath="${baseDir}/playerevent/" maxDepth="2">
+					<IfLastModified age="7d" />
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingFile>
+
+		<RollingFile name="RollingFileAction" fileName="${baseDir}/action_event.log"
+			filePattern="${baseDir}/actionevent/$${date:yyyy-MM-dd}/action_event_%d{yyyy-MM-dd-HH}_%i.log">
+			<ThresholdFilter level="info" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout pattern="%m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+
+			<DefaultRolloverStrategy fileIndex="nomax">
+				<Delete basePath="${baseDir}/actionevent/" maxDepth="2">
+					<IfLastModified age="7d" />
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingFile>
+
+		<RollingFile name="RollingFileItem" fileName="${baseDir}/item_event.log"
+			filePattern="${baseDir}/itemevent/$${date:yyyy-MM-dd}/item_event_%d{yyyy-MM-dd-HH}_%i.log">
+			<ThresholdFilter level="info" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout pattern="%m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+
+			<DefaultRolloverStrategy fileIndex="nomax">
+				<Delete basePath="${baseDir}/itemevent/" maxDepth="2">
+					<IfLastModified age="7d" />
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingFile>
+		
+		<!-- 文件输出用异步 -->
+		<!-- 不需要位置信息 includeLocation="false" -->
+		<!-- TODO 停服shutdown 测试 -->
+		<!-- 根据性能情况 考虑替换 AsyncLogger -->
+		<Async name="asyncPlayer" bufferSize="1024">
+			<AppenderRef ref="RollingFilePlayer" />
+		</Async>
+		<Async name="asyncAction" bufferSize="1024">
+			<AppenderRef ref="RollingFileAction" />
+		</Async>
+		<Async name="asyncItem" bufferSize="1024">
+			<AppenderRef ref="RollingFileItem" />
+		</Async>
+	</Appenders>
+	<Loggers>
+		<logger name="playerevent" level="INFO" additivity="false">
+			<appender-ref ref="asyncPlayer" />
+		</logger>
+		<logger name="actionevent" level="INFO" additivity="false">
+			<AppenderRef ref="asyncAction" />
+		</logger>
+		<logger name="itemevent" level="INFO" additivity="false">
+			<AppenderRef ref="asyncItem" />
+		</logger>
+		<Root level="info">
+		</Root>
+	</Loggers>
+</Configuration>

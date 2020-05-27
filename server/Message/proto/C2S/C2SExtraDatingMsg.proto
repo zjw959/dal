@@ -1,0 +1,79 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SExtraDatingMsg";
+
+// 取得外传激活信息
+// code = 5639
+message ReqOutsideActiveInfo{
+	enum MsgID{eMsgID = 5639;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得主线或者外传约会信息
+// code = 5633
+message ReqExtraDatingInfo{
+    required int32 datingType = 1; //约会类型1 外传 2 主线
+	required int32 datingValue = 2; //当类型为外传时,值传外传ID,主线则为主线章节
+	optional int32 roleId = 3; //精灵ID
+	enum MsgID{eMsgID = 5633;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求开始建筑事件
+// code = 5634
+message ReqStartEntranceEvent{
+	required int32 datingType = 1; //约会类型1 外传 2 主线 
+	required int32 datingValue = 2; //当类型为外传时,值传外传ID,主线则为主线章节
+	required int32 entranceId = 3; //入口id
+	enum MsgID{eMsgID = 5634;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 建筑事件选择
+// code = 5635
+message ReqChooseEntranceEvent{
+	required int32 datingType = 1; //约会类型1 外传 2 主线 
+	required int32 datingValue = 2; //当类型为外传时,值传外传ID,主线则为主线章节
+	required int32 eventId = 3; //事件id,剧本/信息
+	required int32 entranceId = 4; //入口id
+	required int32 choiceType = 5;// 选择项类型,1:剧本/2:信息
+	required int32 choice = 6;// 选择项
+	enum MsgID{eMsgID = 5635;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求获取可用选项
+// code = 5640
+message ReqGetEventChoices{
+	required int32 datingType = 1; //约会类型1 外传 2 主线 
+	required int32 datingValue = 2; //当类型为外传时,值传外传ID,主线则为主线章节
+	required int32 eventId = 3; //事件id,剧本/信息
+	required int32 choiceType = 4;// 选择项类型,1:剧本/2:信息
+	enum MsgID{eMsgID = 5640;}; //注意：消息id放最后,以免客户端解析异常
+}
+//请求获取精灵章节激活状态
+//code = 5653
+message ReqFavorDatingRoleStatue{
+    enum MsgID{eMsgID = 5653;}; //注意：消息id放最后,以免客户端解析异常
+}
+//请求主线约会引导界面
+//code = 5650
+message ReqFavorDatingPanel{
+    required int32 roleId = 1; //精灵ID
+    enum MsgID{eMsgID = 5650;}; //注意：消息id放最后,以免客户端解析异常
+}
+//请求领奖
+//code = 5651
+message ReqFavorReward{
+    required int32 favorDatingId = 1; //Favor表对应id
+    enum MsgID{eMsgID = 5651;}; //注意：消息id放最后,以免客户端解析异常
+}
+//获取指定精灵对应约会章节相关约会信息(测试用)
+//code = 5660
+message ReqFavorDatingTestInfo{
+    required int32 roleId = 1; //精灵ID
+    required int32 favorDatingId = 2; //Favor表对应id
+    enum MsgID{eMsgID = 5660;}; //注意：消息id放最后,以免客户端解析异常
+}
+//主线约会点击精灵头像更新状态
+//code = 5661
+message ReqFreshRoleNotice{
+    required int32 roleId = 1; //精灵id
+    enum MsgID{eMsgID = 5661;}; //注意：消息id放最后,以免客户端解析异常
+}

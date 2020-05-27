@@ -1,0 +1,44 @@
+id	事件ID	是否需要检查历史数据	备注	参数
+id	event_id	history	remark	comment
+number	number	boolean	string	comment
+int	int	boolean	string	
+2001	2	1	持有英雄X个	可选参数：heroId | quality
+2002	2	1	持有物品X个	可选参数：itemId | superType | subType | smallType | quality
+2003	2	0	获得物品X个	可选参数：itemId | superType | subType | smallType | quality
+2004	2	0	消耗物品X个	可选参数：itemId
+2005	2	1	持有灵装套装X套 	参数：coverId
+3001	3	1	累计登陆天数	
+3002	3	1	连续登陆天数	
+7001	7	1	好友数量	
+8001	8	0	十香时装约会1	
+8002	8	1	灵装最高等级 	参数：equipId
+9001	9	0	关卡指定副本次数	可选参数：dunId | star | heroNum(战斗英雄数) | time(耗时) | difficulty(难度) | dunType(副本类型)
+9002	9	1	关卡通关总星数	可选参数：dunId | star | heroNum(战斗英雄数) | time(耗时) | difficulty(难度) | dunType(副本类型)
+9003	9	1	3星通关副本数	可选参数：dunId | star | heroNum(战斗英雄数) | time(耗时) | difficulty(难度) | dunType(副本类型)
+9004	9	0	战斗最大连击数	可选参数：dunId | star | heroNum(战斗英雄数) | time(耗时) | difficulty(难度) | dunType(副本类型)
+9005	9	0	战斗拾取X道具	可选参数：dunId | star | heroNum(战斗英雄数) | time(耗时) | difficulty(难度) | dunType(副本类型)
+9006	9	0	战斗拾取X类道具	可选参数：dunId | star | heroNum(战斗英雄数) | time(耗时) | difficulty(难度) | dunType(副本类型)
+9007	9	1	通关指定副本关卡	必须参数：dunId
+10001	10	0	常规任务接取条件	可选参数：plvl | pre_task_id(前置任务ID)
+11001	11	1	玩家等级达到X级	
+11002	11	0	玩家改名X次	
+12003	12	0	完成X次约会	参数：roleId | datingType(约会类型) | scriptId(剧本ID) | endType(结局类型)
+12004	12	0	赠送礼物次数	参数：roleId | giftId | maxCount(最大赠送约会次数)
+12001	12	1	精灵好感度达到X值	参数：roleId
+12002	12	1	X精灵好感度达到X值	参数：roleId | limit 
+13001	13	1	最大英雄等级	参数：heroId
+13002	13	1	最大突破等级	参数：heroId
+13003	13	1	X个英雄突破等级X 	参数：limitLvl
+13004	13	0	英雄升级次数	参数：heroId
+14001	14	1	天使最大星级X	参数：heroId
+14002	14	1	X个天使最大星级X	参数：limitLvl
+16001	16	0	打工收益条件	参数：buildId | buildLvl 
+16002	16	1	X个建筑达到X级	参数：limitLvl | buildingId
+16003	16	0	领取X次打工奖励	参数：buildingId
+16004	16	0	累计打工时间	参数：buildingId
+17001	17	0	指定召唤X次	
+17002	17	0	随机召唤X次	
+17003	17	0	购买资源X次	参数：resId
+17004	17	0	商城购买X次	参数：cid | storeId
+17005	17	0	月卡	
+17006	17	0	玩小游戏X次	可选参数：subType

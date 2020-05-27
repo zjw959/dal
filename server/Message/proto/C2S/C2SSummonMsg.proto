@@ -1,0 +1,42 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SSummonMsg";
+
+//召唤
+//code = 3329
+message Summon {
+    required int32 cid = 1; //召唤id
+    optional int32 cost = 2; //消耗
+	enum MsgID{eMsgID = 3329;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//合成
+//code = 3330
+message ComposeSummon {
+    required int32 cid = 1; //合成召唤id
+	enum MsgID{eMsgID = 3330;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//合成完成
+//code = 3331
+message ComposeFinish {
+    required int32 zPointType = 1; //质点类型
+	enum MsgID{eMsgID = 3331;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取完成信息
+//code = 3333
+message GetComposeInfo{
+	enum MsgID{eMsgID = 3333;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求获取历史记录
+//code = 3335
+message ReqHistoryRecord {
+	repeated int32 type = 1;	// 1 钻石召唤 2 友情召唤 3 指定召唤
+	enum MsgID{eMsgID = 3335;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+
+

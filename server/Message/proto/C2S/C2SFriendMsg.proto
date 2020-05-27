@@ -1,0 +1,37 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SFriendMsg";
+// 取得好友信息
+// code = 3073
+message ReqFriends{
+	enum MsgID{eMsgID = 3073;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得推荐好友
+// code = 3075
+message ReqRecommendFriends{
+	enum MsgID{eMsgID = 3075;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 查询玩家
+// code = 3076
+message ReqQueryPlayer{
+	required int32 pid = 1;	// 玩家ID
+	enum MsgID{eMsgID = 3076;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求操作
+/* public static final int OPERATE_APPLY_FRIEND = 1;	// 申请好友
+	public static final int OPERATE_DELETE_FRIEND = 2;	// 删除好友
+	public static final int OPERATE_SHIELD_PLAYER = 3;	// 屏蔽玩家
+	public static final int OPERATE_LIFTED_SHIELD = 4;	// 取消屏蔽
+	public static final int OPERATE_AGREE_APPLY = 5;	// 同意申请
+	public static final int OPERATE_REFUSE_APPLY = 6;	// 拒绝申请
+	public static final int OPERATE_GIVE_GIFT = 7;		// 赠送礼品
+	public static final int OPERATE_RECEIVE_GIFT = 8;	// 收取礼品 */
+// code = 3074
+message ReqOperate{
+	required int32 type = 1;		// 操作类型
+	repeated int32 targets = 2;	// 目标ID
+	enum MsgID{eMsgID = 3074;}; //注意：消息id放最后,以免客户端解析异常
+}

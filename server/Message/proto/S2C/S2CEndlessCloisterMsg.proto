@@ -1,0 +1,36 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CEndlessCloisterMsg";
+import "S2C/S2CShareMsg.proto";
+
+// 无尽回廊活动副本信息
+message EndlessCloisterInfo{
+	required int32 step = 1;//活动阶段（0-准备期；1-进行期；2-结算期）
+	required int32 historyBest = 2;//历史最佳成绩（层）
+	required int32 todayBest = 3;//今日最佳成绩（层）
+	required int32 todayCostTime = 4;//今日总耗时（秒）
+	required int32 nextStepTime = 5;//进入下阶段的具体时刻（秒）
+}
+
+// 响应无尽回廊活动副本信息
+// code = 5377
+message RspEndlessCloisterInfo{
+	required EndlessCloisterInfo info = 1;//活动副本信息
+	enum MsgID{eMsgID = 5377;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 响应开始挑战
+// code = 5378
+message RspStartFightEndless{
+	required int32 levelCid = 1; //起始关卡id
+	enum MsgID{eMsgID = 5378;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 响应通关指定关卡
+// code = 5379
+message RspPassStageEndless{
+	required int32 nextLevelCid = 1; //下一关卡id
+	repeated RewardsMsg rewards = 2;//通关奖励
+	enum MsgID{eMsgID = 5379;}; //注意：消息id放最后,以免客户端解析异常
+}
+

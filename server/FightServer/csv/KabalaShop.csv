@@ -1,0 +1,7 @@
+id	道具Id	购买上限	商品类型	价格
+id	ItemId	maxNum	itemType	price
+number	number	number	number	numbers
+int	int	int	int	int[]
+1	590001	1	1	500001-30
+2	590002	2	1	500001-30
+3	590003	1	1	500001-30

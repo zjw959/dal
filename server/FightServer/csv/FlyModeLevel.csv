@@ -1,0 +1,377 @@
+排序	怪物ID(填写monster.csv表中怪物ID)	关卡ID(填写dungeonLevel.csv表中关卡ID)	怪物等级	怪物出现时间(从关卡第0秒开始计时，直到关卡结束，单位毫秒)	怪物出现坐标(以1屏尺寸为基础，坐标可出屏，场景左下角为(0,0))	怪物是否翻转	怪物AI(填AI的ID)	怪物出场帧段数(点第一段轨迹的结算帧段值)	出场动作名	怪物移动轨迹(移动轨迹在路径编辑器里编辑，此处填对应轨迹ID)	轨迹是否需要循环(第一段出场轨迹后的轨迹循环，多用于BOSS)	弹幕ID(弹幕表中I的D)	怒气恢复(怪物被击杀后，精灵恢复怒气点数)	怪物掉落Buff(关卡内的Buff道具)	怪物击杀得分	怪物掉落奖励(实际掉落)	死亡特效{"effectName":"必须有，没有不播放","scale":默认1,"actionName":"如果只有一个动画可不填,1个或多个是数组", "offset":偏移坐标默认0,0}
+id	fixedMonster	levelID	level	timing	createCoordinate	turnback	AI	bornTime	bornActionName	orbit	isLoop	bullet	angerRecovery	itemDrop	points	ItemAward	deadEffect
+number	number	number	number	number	json	boolean	number	number	strings	string	boolean	numbers	number	json	number	json	json
+int	int	int	int	int	map			int	strings	string	boolean	int[]	int	map	int		map
+1	800002	101207	5	3000	{"x":1200, "y":440}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+2	800002	101207	5	3300	{"x":1200, "y":360}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+3	800002	101207	5	3600	{"x":1200, "y":280}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+4	800002	101207	5	3900	{"x":1200, "y":200}		1012060001			horizontal_1_1-6		2001001		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+5	800003	101207	5	7400	{"x":720, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+6	800003	101207	5	7700	{"x":800, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+7	800003	101207	5	8000	{"x":880, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+8	800003	101207	5	8300	{"x":960, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+9	800003	101207	5	8600	{"x":1040, "y":700}		1012060002			test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+10	800003	101207	5	8900	{"x":1120, "y":-60}		1012060002			test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+11	800001	101207	15	10500	{"x":1320, "y":320}		1012060003			horizontal_2_1-6		2001002-2001003-2001004		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+12	800004	101207	5	11100	{"x":1420, "y":480}		1012060004			horizontal_7_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+13	800004	101207	5	11100	{"x":1420, "y":160}		1012060004			horizontal_6_1-6		2001006		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+14	800003	101207	5	14900	{"x":1200, "y":470}		1012060005			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+15	800003	101207	5	14900	{"x":1200, "y":370}		1012060005			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+16	800003	101207	5	14900	{"x":1200, "y":270}		1012060005			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+17	800003	101207	5	14900	{"x":1200, "y":170}		1012060005			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+18	800002	101207	5	17400	{"x":700, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+19	800002	101207	5	19000	{"x":700, "y":-80}		1012060005			vertical_4_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+20	800002	101207	5	17900	{"x":740, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+21	800002	101207	5	19500	{"x":740, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+22	800002	101207	5	18400	{"x":780, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+23	800002	101207	5	20000	{"x":780, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+24	800001	101207	15	22700	{"x":1330, "y":320}		1012060003			horizontal_2_1-6		2001002-2001003-2001004		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+25	800003	101207	5	23700	{"x":1240, "y":400}		1012060006			horizontal_8_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+26	800003	101207	5	23700	{"x":1240, "y":240}		1012060006			horizontal_9_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+27	800002	101207	5	24600	{"x":630, "y":700}		1012060006			vertical_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+28	800002	101207	5	24600	{"x":630, "y":-60}		1012060006			vertical_6_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+29	800004	101207	5	29000	{"x":820, "y":720}		1012060007			vertical_9_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+30	800004	101207	5	29000	{"x":820, "y":-80}		1012060007			vertical_10_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+31	800003	101207	5	28900	{"x":1015, "y":840}		1012060008			vertical_7_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+32	800003	101207	5	28900	{"x":1015, "y":-200}		1012060008			vertical_8_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+33	800002	101207	5	29400	{"x":620, "y":720}		1012060008			vertical_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+34	800002	101207	5	29400	{"x":620, "y":-80}		1012060008			vertical_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+35	800001	101207	15	34000	{"x":1300, "y":450}		1012060009			horizontal_2_1-6		2001002-2001003		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+36	800003	101207	5	34000	{"x":1450, "y":520}		1012060011			horizontal_10_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+37	800003	101207	5	34000	{"x":1450, "y":380}		1012060011			horizontal_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+38	800001	101207	15	35300	{"x":1300, "y":190}		1012060010			horizontal_2_1-6		2001002-2001004			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+39	800002	101207	5	35300	{"x":1450, "y":260}		1012060011			horizontal_10_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+40	800002	101207	5	35300	{"x":1450, "y":110}		1012060011			horizontal_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+41	800003	101207	5	42300	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+42	800003	101207	5	42500	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+43	800003	101207	5	42700	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+44	800003	101207	5	42900	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+45	800002	101207	5	43300	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+46	800002	101207	5	43500	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+47	800002	101207	5	43700	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+48	800002	101207	5	43900	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+49	800003	101207	5	44200	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+50	800003	101207	5	44400	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+51	800003	101207	5	44600	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+52	800003	101207	5	44800	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+53	800002	101207	5	45200	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+54	800002	101207	5	45400	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+55	800002	101207	5	45600	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+56	800002	101207	5	45800	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+57	800005	101207	5	100000	{"x":950, "y":-180}		1012060013	60		orbit_Boss_1-6	1	2001101-2001102-2001103-2001104			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+															5		
+58	800002	501001	5	3000	{"x":1250, "y":400}		5001001			dailyExp_1_1		2001001-2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+59	800002	501001	5	3200	{"x":1250, "y":440}		5001001			dailyExp_1_1		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+60	800002	501001	5	3400	{"x":1250, "y":480}		5001001			dailyExp_1_1		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+61	800002	501001	5	3600	{"x":1250, "y":520}		5001001			dailyExp_1_1		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+62	800002	501001	5	8300	{"x":1250, "y":240}		5001001			dailyExp_1_2		2001001-2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+63	800002	501001	5	8500	{"x":1250, "y":200}		5001001			dailyExp_1_2		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+64	800002	501001	5	8700	{"x":1250, "y":160}		5001001			dailyExp_1_2		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+65	800002	501001	5	8900	{"x":1250, "y":120}		5001001			dailyExp_1_2		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+66	800003	501001	5	13600	{"x":530, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+67	800003	501001	5	13900	{"x":500, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+68	800003	501001	5	14200	{"x":470, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+69	800003	501001	5	14500	{"x":440, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+70	800003	501001	5	18100	{"x":530, "y":-60}		5001002			dailyExp_1_4		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+71	800003	501001	5	18400	{"x":500, "y":-60}		5001002			dailyExp_1_4		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+72	800003	501001	5	18700	{"x":470, "y":-60}		5001002			dailyExp_1_4		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+73	800003	501001	5	19000	{"x":440, "y":-60}		5001002			dailyExp_1_4		2001001-2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+74	800001	501001	15	22500	{"x":1330, "y":320}		1012060003			horizontal_2_1-6		2001002-2001003-2001004		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+75	800002	501001	5	24200	{"x":1370, "y":230}		5001003			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+76	800002	501001	5	24200	{"x":1370, "y":410}		5001003			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+77	800003	501001	5	24200	{"x":1370, "y":140}		5001003			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+78	800003	501001	5	24200	{"x":1370, "y":500}		5001003			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+79	800004	501001	5	29000	{"x":1400, "y":260}		1012060007			horizontal_6_1-6		2001006		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+80	800004	501001	5	29000	{"x":1400, "y":380}		1012060007			horizontal_7_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+81	800004	501001	5	29800	{"x":780, "y":-180}		1012060007			vertical_8_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+82	800004	501001	5	29800	{"x":780, "y":820}		1012060007			vertical_7_1-6		2001006		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+83	800003	501001	5	36000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+84	800003	501001	5	36000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+85	800003	501001	5	36000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+86	800003	501001	5	36000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+87	800002	501001	5	38000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+88	800002	501001	5	38000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+89	800002	501001	5	38000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+90	800002	501001	5	38000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+91	800003	501001	5	40000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+92	800003	501001	5	40000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+93	800003	501001	5	40000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+94	800003	501001	5	40000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+95	800003	501001	5	42000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+96	800003	501001	5	42000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+97	800003	501001	5	42000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+98	800003	501001	5	42000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+99	800003	501001	5	44000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+100	800003	501001	5	44000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+101	800003	501001	5	44000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+102	800003	501001	5	44000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+103	800003	501001	5	46000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+104	800003	501001	5	46000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+105	800003	501001	5	46000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+106	800003	501001	5	46000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+															5		
+107	800002	501002	5	3000	{"x":1200, "y":440}		1012060001			horizontal_1_1-6		2001001		{101001:10000}	5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+108	800002	501002	5	3300	{"x":1200, "y":360}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+109	800002	501002	5	3600	{"x":1200, "y":280}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+110	800002	501002	5	3900	{"x":1200, "y":200}		1012060001			horizontal_1_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+111	800002	501002	5	7600	{"x":1200, "y":200}		1012060001			dailyExp_2_1		2001001		{102001:10000}	5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+112	800002	501002	5	7900	{"x":1200, "y":280}		1012060001			dailyExp_2_1		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+113	800002	501002	5	8200	{"x":1200, "y":360}		1012060001			dailyExp_2_1		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+114	800002	501002	5	8500	{"x":1200, "y":440}		1012060001			dailyExp_2_1		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+115	800003	501002	5	12200	{"x":720, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+116	800003	501002	5	12500	{"x":800, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+117	800003	501002	5	12800	{"x":880, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+118	800003	501002	5	13100	{"x":960, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+119	800003	501002	5	13400	{"x":1040, "y":700}		1012060002			test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+120	800003	501002	5	13700	{"x":1120, "y":-60}		1012060002			test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+121	800001	501002	15	15400	{"x":1350, "y":400}		1012060009			horizontal_2_1-6		2001002-2001003		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+122	800001	501002	15	15400	{"x":1350, "y":240}		1012060010			horizontal_2_1-6		2001002-2001004		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+123	800002	501002	5	17200	{"x":630, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+124	800002	501002	5	18800	{"x":630, "y":-80}		1012060005			vertical_4_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+125	800002	501002	5	17700	{"x":670, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+126	800002	501002	5	19300	{"x":670, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+127	800002	501002	5	18200	{"x":710, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+128	800002	501002	5	19800	{"x":710, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+129	800004	501002	5	23500	{"x":1400, "y":270}		5002001			horizontal_4_1-6		2001006		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+130	800004	501002	5	23500	{"x":1400, "y":370}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+131	800004	501002	5	23500	{"x":1400, "y":170}		5002001			horizontal_4_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+132	800004	501002	5	23500	{"x":1400, "y":470}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+133	800004	501002	5	23500	{"x":1400, "y":70}		5002001			horizontal_4_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+134	800004	501002	5	23500	{"x":1400, "y":570}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+135	800001	501002	25	26000	{"x":1360, "y":320}		5002002			horizontal_2_1-6		2001007-2001008		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+136	800002	501002	5	27500	{"x":1370, "y":210}		5002003			horizontal_4_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+137	800002	501002	5	27500	{"x":1370, "y":430}		5002003			horizontal_5_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+138	800003	501002	5	27500	{"x":1370, "y":120}		5002003			horizontal_4_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+139	800003	501002	5	27500	{"x":1370, "y":520}		5002003			horizontal_5_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+140	800003	501002	5	32500	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+141	800003	501002	5	32800	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+142	800003	501002	5	33100	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+143	800003	501002	5	33400	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+144	800003	501002	5	33700	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+145	800003	501002	5	34000	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+146	800003	501002	5	34300	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+147	800003	501002	5	34600	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+148	800002	501002	5	32500	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+149	800002	501002	5	32800	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+150	800002	501002	5	33100	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+151	800002	501002	5	33400	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+152	800002	501002	5	33700	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+153	800002	501002	5	34000	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+154	800002	501002	5	34300	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+155	800002	501002	5	34600	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+156	800003	501002	5	36000	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+157	800003	501002	5	36300	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+158	800003	501002	5	36600	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+159	800003	501002	5	36900	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+160	800003	501002	5	37200	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+161	800003	501002	5	37500	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+162	800003	501002	5	37800	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+163	800003	501002	5	38100	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+164	800002	501002	5	36000	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+165	800002	501002	5	36300	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+166	800002	501002	5	36600	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+167	800002	501002	5	36900	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+168	800002	501002	5	37200	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+169	800002	501002	5	37500	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+170	800002	501002	5	37800	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+171	800002	501002	5	38100	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+172	800001	501002	25	40000	{"x":1360, "y":320}		5002002			horizontal_2_1-6		2001007-2001008			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+173	800004	501002	5	41500	{"x":1400, "y":440}		5002001			horizontal_4_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+174	800004	501002	5	41500	{"x":1400, "y":560}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+175	800004	501002	5	41500	{"x":1400, "y":200}		5002001			horizontal_4_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+176	800004	501002	5	41500	{"x":1400, "y":80}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+177	800004	501002	5	46000	{"x":1400, "y":270}		5002001			horizontal_4_1-6		2001006		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+178	800004	501002	5	46000	{"x":1400, "y":370}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+179	800004	501002	5	46000	{"x":1400, "y":170}		5002001			horizontal_4_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+180	800004	501002	5	46000	{"x":1400, "y":470}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+181	800004	501002	5	46000	{"x":1400, "y":70}		5002001			horizontal_4_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+182	800004	501002	5	46000	{"x":1400, "y":570}		5002001			horizontal_5_1-6		2001006			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+183	800003	501003	5	3000	{"x":1280, "y":470}		5003001			horizontal_8_1-6		2001009		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+184	800003	501003	5	3400	{"x":1280, "y":420}		5003001			horizontal_8_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+185	800003	501003	5	3800	{"x":1280, "y":370}		5003001			horizontal_8_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+186	800003	501003	5	3000	{"x":1280, "y":170}		5003001			horizontal_9_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+187	800003	501003	5	3400	{"x":1280, "y":220}		5003001			horizontal_9_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+188	800003	501003	5	3800	{"x":1280, "y":270}		5003001			horizontal_9_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+189	800002	501003	5	8000	{"x":740, "y":700}		5003001			vertical_5_1-6		2001009		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+190	800002	501003	5	8400	{"x":740, "y":-60}		5003001	s		vertical_6_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+191	800002	501003	5	8900	{"x":740, "y":700}		5003001			vertical_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+192	800002	501003	5	8000	{"x":740, "y":-60}		5003001			vertical_6_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+193	800002	501003	5	8400	{"x":740, "y":700}		5003001			vertical_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+194	800002	501003	5	8900	{"x":740, "y":-60}		5003001			vertical_6_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+195	800003	501003	5	13000	{"x":1200, "y":470}		5003002			horizontal_4_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+196	800003	501003	5	13000	{"x":1200, "y":370}		5003002			horizontal_3_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+197	800003	501003	5	13000	{"x":1200, "y":270}		5003002			horizontal_3_1-6		2001009		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+198	800003	501003	5	13000	{"x":1200, "y":170}		5003002			horizontal_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+199	800003	501003	5	15000	{"x":1200, "y":470}		5003002			horizontal_4_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+200	800003	501003	5	15000	{"x":1200, "y":370}		5003002			horizontal_3_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+201	800003	501003	5	15000	{"x":1200, "y":270}		5003002			horizontal_3_1-6		2001009		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+202	800003	501003	5	15000	{"x":1200, "y":170}		5003002			horizontal_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+203	800001	501003	25	17300	{"x":1400, "y":320}		5002002			horizontal_2_1-6		2001007-2001008		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+204	800002	501003	5	18800	{"x":1370, "y":210}		5003003			horizontal_4_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+205	800002	501003	5	18800	{"x":1370, "y":430}		5003003			horizontal_5_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+206	800003	501003	5	18800	{"x":1370, "y":120}		5003003			horizontal_4_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+207	800003	501003	5	18800	{"x":1370, "y":520}		5003003			horizontal_5_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+208	800001	501003	20	23800	{"x":1430, "y":450}		5003004			horizontal_2_1-6		2001011-2001008		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+209	800001	501003	20	23800	{"x":1430, "y":190}		5003004			horizontal_2_1-6		2001011-2001008		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+210	800004	501003	15	30400	{"x":1460, "y":500}		5003005			dailyExp_3_1		2001003-2001004			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+211	800004	501003	15	30400	{"x":1460, "y":380}		5003005			dailyExp_3_1		2001003-2001004			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+212	800004	501003	15	30400	{"x":1460, "y":260}		5003005			dailyExp_3_1		2001003-2001004			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+213	800004	501003	15	30400	{"x":1460, "y":140}		5003005			dailyExp_3_1		2001003-2001004		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+214	800003	501003	5	38700	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+215	800003	501003	5	39100	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+216	800003	501003	5	39500	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+217	800003	501003	5	39900	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+218	800003	501003	5	40300	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+219	800003	501003	5	40700	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+220	800003	501003	5	41100	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+221	800003	501003	5	41500	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+222	800003	501003	5	38700	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+223	800003	501003	5	39100	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+224	800003	501003	5	39500	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+225	800003	501003	5	39900	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+226	800003	501003	5	40300	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+227	800003	501003	5	40700	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+228	800003	501003	5	41100	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+229	800003	501003	5	41500	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+230	800002	501003	5	44500	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+231	800002	501003	5	44900	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+232	800002	501003	5	45300	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+233	800002	501003	5	45700	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+234	800002	501003	5	46100	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+235	800002	501003	5	46500	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+236	800002	501003	5	46900	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+237	800002	501003	5	47300	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+238	800002	501003	5	44500	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+239	800002	501003	5	44900	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+240	800002	501003	5	45300	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+241	800002	501003	5	45700	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+242	800002	501003	5	46100	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+243	800002	501003	5	46500	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+244	800002	501003	5	46900	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+245	800002	501003	5	47300	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+															5		
+246	800004	501004	5	2000	{"x":1400, "y":480}		5004001			horizontal_2_1-6		2001008		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+247	800004	501004	5	2000	{"x":1400, "y":320}		5004001			horizontal_2_1-6		2001008			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+248	800004	501004	5	2000	{"x":1400, "y":160}		5004001			horizontal_2_1-6		2001008		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+249	800003	501004	5	4800	{"x":780, "y":700}		5004002			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+250	800003	501004	5	5300	{"x":780, "y":700}		5004002			test_1_1-6		2001012		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+251	800003	501004	5	5800	{"x":780, "y":700}		5004002			test_1_1-6		2001012		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+252	800003	501004	5	6100	{"x":780, "y":700}		5004002			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+253	800002	501004	5	8000	{"x":780, "y":-60}		5004002			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+254	800002	501004	5	8500	{"x":780, "y":-60}		5004002			test_2_1-6		2001012		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+255	800002	501004	5	9000	{"x":780, "y":-60}		5004002			test_2_1-6		2001012		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+256	800002	501004	5	9500	{"x":780, "y":-60}		5004002			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+257	800001	501004	20	8500	{"x":1430, "y":450}		5003004			horizontal_2_1-6		2001011-2001008		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+258	800001	501004	20	8500	{"x":1430, "y":190}		5003004			horizontal_2_1-6		2001011-2001008		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+259	800003	501004	5	11500	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+260	800003	501004	5	11800	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+261	800003	501004	5	12100	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+262	800003	501004	5	12400	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+263	800002	501004	5	13800	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+264	800002	501004	5	14100	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+265	800002	501004	5	14400	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+266	800002	501004	5	14700	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+267	800003	501004	5	16000	{"x":1250, "y":520}		5004004			horizontal_4_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+268	800003	501004	5	16200	{"x":1300, "y":420}		5004004			horizontal_4_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+269	800003	501004	5	15800	{"x":1200, "y":370}		5004004			horizontal_3_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+270	800003	501004	5	15800	{"x":1200, "y":270}		5004004			horizontal_3_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+271	800003	501004	5	16200	{"x":1300, "y":220}		5004004			horizontal_5_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+272	800003	501004	5	16000	{"x":1250, "y":120}		5004004			horizontal_5_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+273	800001	501004	15	18000	{"x":1520, "y":460}		5004005			dailyExp_3_1		2001013		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+274	800001	501004	15	18000	{"x":1520, "y":180}		5004005			dailyExp_3_1		2001013		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+275	800003	501004	5	26000	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+276	800003	501004	5	26300	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+277	800003	501004	5	26600	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+278	800003	501004	5	26900	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+279	800003	501004	5	27200	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+280	800003	501004	5	27500	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+281	800002	501004	5	27200	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+282	800002	501004	5	27500	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+283	800002	501004	5	27800	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+284	800002	501004	5	28100	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+285	800002	501004	5	28400	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+286	800002	501004	5	28700	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+287	800003	501004	5	28400	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+288	800003	501004	5	28700	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+289	800003	501004	5	29000	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+290	800003	501004	5	29300	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+291	800003	501004	5	29600	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+292	800003	501004	5	29900	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+293	800002	501004	5	29600	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+294	800002	501004	5	29900	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+295	800002	501004	5	30200	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+296	800002	501004	5	30500	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+297	800002	501004	5	30800	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+298	800002	501004	5	31100	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+299	800001	501004	35	32500	{"x":1380, "y":320}		5004007			dailyExp_3_1		2001014-2001015		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+300	800003	501004	5	40000	{"x":720, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+301	800003	501004	5	40500	{"x":800, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+302	800003	501004	5	41000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+303	800003	501004	5	41500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+304	800003	501004	5	42000	{"x":1040, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+305	800003	501004	5	42500	{"x":1120, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+306	800003	501004	5	43000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+307	800003	501004	5	43500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+308	800003	501004	5	44000	{"x":720, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+309	800003	501004	5	44500	{"x":800, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+310	800003	501004	5	45000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+311	800003	501004	5	45500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+312	800003	501004	5	46000	{"x":1040, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+313	800003	501004	5	46500	{"x":1120, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+314	800003	501004	5	47000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+315	800003	501004	5	47500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+316	800003	501004	5	48000	{"x":720, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+317	800003	501004	5	48500	{"x":800, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+																	
+318	10003	1000001	1	3000	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+319	10003	1000001	1	3600	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+320	10003	1000001	1	3900	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+321	10003	1000001	1	7400	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+322	10003	1000001	1	7700	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+323	10003	1000001	1	8000	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+324	10003	1000001	1	8300	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+325	10003	1000001	1	8600	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+326	10003	1000001	1	8900	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+327	10003	1000001	1	10500	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+328	10003	1000001	1	11100	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+329	10003	1000001	1	14900	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+330	10003	1000001	1	17400	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+331	10003	1000001	1	19000	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+332	10003	1000001	1	17900	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+333	10003	1000001	1	19500	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+334	10003	1000001	1	18400	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+335	10003	1000001	1	20000	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+336	10003	1000001	1	22700	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+337	10003	1000001	1	23700	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+338	10003	1000001	1	24600	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+339	10003	1000001	1	29000	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+340	10003	1000001	1	29400	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+341	10003	1000001	1	34000	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+342	10003	1000001	1	35300	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+343	10003	1000001	1	42300	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+344	10003	1000001	1	42500	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+345	10003	1000001	1	42700	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+346	10003	1000001	1	42900	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+347	10003	1000001	1	43300	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+348	10003	1000001	1	43500	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+349	10003	1000001	1	43700	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+350	10003	1000001	1	43900	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+351	10003	1000001	1	44200	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+352	10003	1000001	1	44400	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+353	10003	1000001	1	44600	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+354	10003	1000001	1	44800	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+355	10003	1000001	1	45200	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+356	10003	1000001	1	45400	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+357	10003	1000001	1	45600	{"x":1400, "y":150}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+358	10003	1000001	1	45800	{"x":1400, "y":300}		10001			flyorbit_zhuangji					5		{"effectName":"fight_20101","scale":0.35,"actionName":["floor"], "offset":{"x":0,"y":0}}
+																	
+359	800002		5	3000	{"x":868, "y":700}		1012060001			orbit_2-9_1		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+360	800002		5	3400	{"x":868, "y":700}		1012060001			orbit_2-9_1		2001001					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+361	800002		5	3800	{"x":868, "y":700}		1012060001			orbit_2-9_1		2001001					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+362	800002		5	4200	{"x":868, "y":700}		1012060001			orbit_2-9_1		2001001					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+363	800002		5	6000	{"x":168, "y":-60}	1	1012060001			orbit_2-9_2		2001001					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+364	800002		5	6400	{"x":168, "y":-60}	1	1012060001			orbit_2-9_2		2001001					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+365	800002		5	6800	{"x":168, "y":-60}	1	1012060001			orbit_2-9_2		2001001					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+366	800002		5	7200	{"x":168, "y":-60}	1	1012060001			orbit_2-9_2		2001001					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}

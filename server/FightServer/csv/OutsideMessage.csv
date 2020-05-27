@@ -1,0 +1,10 @@
+id	信息标题	信息标题	信息内容	看板娘路径	看板娘展示	看板娘动作	看板娘表情	信息类型	信息选项1	选项1消耗	选项1结算	看板娘选择1动作	看板娘选择1表情	看板娘选择1语音	信息选项2	选项2消耗	选项2结算	看板娘选择2动作	看板娘选择2表情	看板娘选择2语音	直接获得物品
+id	title	titleDes	content	rolePath	roleName	action	face	type	option1	optionCost1	optionReward1	optionAction1	optionFace1	optionVoice1	option2	optionCost2	optionReward2	optionAction2	optionFace2	optionVoice2	reward
+number	string	number	number	string	string	string	string	number	number	json	json	string	string	string	number	json	json	string	string	string	json
+int								int	int	map	map				int	map	map				map
+204001	【信息-提示】第1天，城市2，支线3	900657	900658					1		{}	{}					{}	{}				{}
+304001	【信息-购买】第1天，城市3，支线3	900659	900660					2	900661	{"items":{542001:250}}	{"items":{542012:1},"sign":[542012]}				900662	{}	{}				{}
+404001	【信息-购买】第1天，城市4，支线3	900663	900664					2	900665	{"items":{542001:500}}	{"items":{542014:1},"sign":[542014]}				900666	{}	{}				{}
+1001001	【信息-提示】第2天，城市2，支线1	900679	900680					1		{}	{}					{}	{}				{}
+1104001	【信息-购买】第2天，城市3，支线2	900667	900668					2	900669	{"items":{542001:500}}	{"items":{542007:1},"sign":[542007]}				900670	{}	{}				{}
+1504001	【信息-选项】第2天，城市7，支线3	900675	900676					2	900677	{"items":{542001:3000}}	{"items":{542008:1},"sign":[542008]}				900678	{}	{}				{}

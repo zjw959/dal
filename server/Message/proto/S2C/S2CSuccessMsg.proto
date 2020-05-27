@@ -1,0 +1,8 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CSuccessMsg";
+
+message OperationSuc {
+	required bool isSuc = 1; // 操作成功
+}
+

@@ -1,0 +1,12 @@
+id	是否开放	列表类型（0群组1角色）	解锁条件	名称（策划看）	名称	头像显示
+id	open	type	openType	name	nameId	icon
+number	boolean	number	json	comment	number	string
+int	boolean		map			
+1	1	0	0	讨论组1	900792	icon/hero/face/1110011.png
+2	1	0	0	讨论组2	900793	icon/hero/face/1106011.png
+3	0	0	0	讨论组3	900794	icon/hero/face/1109011.png
+101	1	1	{"roleCids":[101]}	夜刀神十香	900795	icon/hero/face/1101011.png
+102	1	1	{"roleCids":[102]}	鸢一折纸	900796	icon/hero/face/1102011.png
+103	1	1	{"roleCids":[103]}	四糸乃	900797	icon/hero/face/1103011.png
+104	1	1	{"roleCids":[104]}	时崎狂三	900798	icon/hero/face/1104011.png
+105	1	1	{"roleCids":[105]}	五河琴里	900799	icon/hero/face/1105011.png

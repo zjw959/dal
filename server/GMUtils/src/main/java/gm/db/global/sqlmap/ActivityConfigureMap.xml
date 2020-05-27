@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_activity">
+	<resultMap id="bean" type="gm.db.global.bean.ActivityConfigure">
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="type" property="type" jdbcType="INTEGER" />
+		<result column="status" property="status" jdbcType="INTEGER" />
+		<result column="title" property="title" jdbcType="VARCHAR" />
+		<result column="subtitle" property="subtitle" jdbcType="VARCHAR" />
+		<result column="beginTime" property="beginTime" jdbcType="BIGINT" />
+		<result column="endTime" property="endTime" jdbcType="BIGINT" />
+		<result column="showBeginTime" property="showBeginTime" jdbcType="BIGINT" />
+		<result column="showEndTime" property="showEndTime" jdbcType="BIGINT" />
+		<result column="createTime" property="createTime" jdbcType="BIGINT" />
+		<result column="changeTime" property="changeTime" jdbcType="BIGINT" />
+		<result column="details" property="details" jdbcType="VARCHAR" />
+		<result column="items" property="items" jdbcType="VARCHAR" />
+		<result column="weight" property="weight" jdbcType="INTEGER" />
+		<result column="updateStatus" property="updateStatus" jdbcType="INTEGER" />
+		<result column="showIcon" property="showIcon" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="selectAll" resultMap="bean">
+		select * from t_activity
+	</select>
+	
+	 <select id="selectById" parameterType="HashMap" resultMap="bean">
+        select * from  t_activity
+        WHERE id = #{id,jdbcType=INTEGER};
+    </select>
+    
+    <insert id="insertConfig" parameterType="HashMap">
+		insert into t_activity
+		(
+		id,
+		type,
+		status,
+		title,
+		subtitle,
+		beginTime,
+		endTime,
+		showBeginTime,
+		showEndTime,
+		createTime,
+		changeTime,
+		details,
+		items,
+		weight,
+		updateStatus,
+		showIcon
+		)values(
+		#{config.id, jdbcType=INTEGER},
+		#{config.type, jdbcType=INTEGER},
+		#{config.status, jdbcType=INTEGER},
+		#{config.title, jdbcType=VARCHAR},
+		#{config.subtitle, jdbcType=VARCHAR},
+		#{config.beginTime, jdbcType=BIGINT},
+		#{config.endTime, jdbcType=BIGINT},
+		#{config.showBeginTime, jdbcType=BIGINT},
+		#{config.showEndTime, jdbcType=BIGINT},
+		#{config.createTime, jdbcType=BIGINT},
+		#{config.changeTime, jdbcType=BIGINT},
+		#{config.details, jdbcType=VARCHAR},
+		#{config.items, jdbcType=VARCHAR},
+		#{config.weight, jdbcType=INTEGER},
+		#{config.updateStatus, jdbcType=INTEGER},
+		#{config.showIcon, jdbcType=VARCHAR}
+		)
+    </insert>
+    
+    <update id="updateConfig" parameterType="HashMap">
+		update t_activity set
+		type = #{config.type, jdbcType=INTEGER},
+		status = #{config.status, jdbcType=INTEGER},
+		title = #{config.title, jdbcType=VARCHAR},
+		subtitle = #{config.subtitle, jdbcType=VARCHAR},
+		beginTime = #{config.beginTime, jdbcType=BIGINT},
+		endTime = #{config.endTime, jdbcType=BIGINT},
+		showBeginTime = #{config.showBeginTime, jdbcType=BIGINT},
+		showEndTime = #{config.showEndTime, jdbcType=BIGINT},
+		createTime = #{config.createTime, jdbcType=BIGINT},
+		changeTime = #{config.changeTime, jdbcType=BIGINT},
+		details = #{config.details, jdbcType=VARCHAR},
+		items = #{config.items, jdbcType=VARCHAR},
+		weight = #{config.weight, jdbcType=INTEGER},
+		updateStatus = #{config.updateStatus, jdbcType=INTEGER},
+		showIcon = #{config.showIcon, jdbcType=VARCHAR}
+		where id = #{config.id, jdbcType=INTEGER};
+    </update>
+    
+    <delete id="deleteById" parameterType="HashMap">
+    	delete from t_activity 
+    	WHERE id = #{id,jdbcType=INTEGER};
+    </delete>
+    
+    <update id="updateLastChangeTime" parameterType="HashMap">
+    	update t_activity set
+    	changeTime = #{changeTime, jdbcType=BIGINT},
+    	updateStatus = #{updateStatus, jdbcType=INTEGER}
+    	where id = #{id,jdbcType=INTEGER};
+    </update>
+</mapper>

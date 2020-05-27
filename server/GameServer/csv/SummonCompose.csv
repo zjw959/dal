@@ -1,0 +1,34 @@
+id	合成物品卡池	稀有合成卡池	所属质点（1.王冠 ……）	质点中文名	质点英文名	英文名icon灰	英文名icon亮	icon灰	icon亮	名称	配方类型（1.低级 2.中级3.高级）	需要材料	合成时间（秒）
+id	poolType	rarePoolType	zPointType	pointName	pointEnName	enNameGrayIcon	enNameLightIcon	grayIcon	lightIcon	name	level	cost	time
+number	number	number	number	string	string	string	string	string	string	comment	number	vjson	number
+int	int	int	int								int	map	int
+1	101	2001	1	1230001	1230002	artFont/equipTypeName/Kether_gray.png	artFont/equipTypeName/Kether.png	icon/equipType/Kether_gray.png	icon/equipType/Kether.png		1	{550001:1,551002:2,551005:2}	3600
+2	102	2001	1	1230001	1230002	artFont/equipTypeName/Kether_gray.png	artFont/equipTypeName/Kether.png	icon/equipType/Kether_gray.png	icon/equipType/Kether.png		2	{550002:1,551003:2,551006:2}	7200
+3	103	2001	1	1230001	1230002	artFont/equipTypeName/Kether_gray.png	artFont/equipTypeName/Kether.png	icon/equipType/Kether_gray.png	icon/equipType/Kether.png		3	{550003:1,551004:2,551007:2}	10800
+4	201	2001	2	1230003	1230004	artFont/equipTypeName/Chokhmah_gray.png	artFont/equipTypeName/Chokhmah.png	icon/equipType/Chokhmah_gray.png	icon/equipType/Chokhmah.png		1	{550001:1,551002:2,551008:2}	3600
+5	202	2001	2	1230003	1230004	artFont/equipTypeName/Chokhmah_gray.png	artFont/equipTypeName/Chokhmah.png	icon/equipType/Chokhmah_gray.png	icon/equipType/Chokhmah.png		2	{550002:1,551003:2,551009:2}	7200
+6	203	2001	2	1230003	1230004	artFont/equipTypeName/Chokhmah_gray.png	artFont/equipTypeName/Chokhmah.png	icon/equipType/Chokhmah_gray.png	icon/equipType/Chokhmah.png		3	{550003:1,551004:2,551010:2}	10800
+7	301	2001	3	1230005	1230006	artFont/equipTypeName/Binah_gray.png	artFont/equipTypeName/Binah.png	icon/equipType/Binah_gray.png	icon/equipType/Binah.png		1	{550001:1,551002:2,551011:2}	3600
+8	302	2001	3	1230005	1230006	artFont/equipTypeName/Binah_gray.png	artFont/equipTypeName/Binah.png	icon/equipType/Binah_gray.png	icon/equipType/Binah.png		2	{550002:1,551003:2,551012:2}	7200
+9	303	2001	3	1230005	1230006	artFont/equipTypeName/Binah_gray.png	artFont/equipTypeName/Binah.png	icon/equipType/Binah_gray.png	icon/equipType/Binah.png		3	{550003:1,551004:2,551013:2}	10800
+10	401	2001	4	1230007	1230008	artFont/equipTypeName/Chesed_gray.png	artFont/equipTypeName/Chesed.png	icon/equipType/Chesed_gray.png	icon/equipType/Chesed.png		1	{550001:1,551002:2,551014:2}	3600
+11	402	2001	4	1230007	1230008	artFont/equipTypeName/Chesed_gray.png	artFont/equipTypeName/Chesed.png	icon/equipType/Chesed_gray.png	icon/equipType/Chesed.png		2	{550002:1,551003:2,551015:2}	7200
+12	403	2001	4	1230007	1230008	artFont/equipTypeName/Chesed_gray.png	artFont/equipTypeName/Chesed.png	icon/equipType/Chesed_gray.png	icon/equipType/Chesed.png		3	{550003:1,551004:2,551016:2}	10800
+13	501	2001	5	1230009	1230010	artFont/equipTypeName/Geburah_gray.png	artFont/equipTypeName/Geburah.png	icon/equipType/Geburah_gray.png	icon/equipType/Geburah.png		1	{550001:1,551005:2,551008:2}	3600
+14	502	2001	5	1230009	1230010	artFont/equipTypeName/Geburah_gray.png	artFont/equipTypeName/Geburah.png	icon/equipType/Geburah_gray.png	icon/equipType/Geburah.png		2	{550002:1,551006:2,551009:2}	7200
+15	503	2001	5	1230009	1230010	artFont/equipTypeName/Geburah_gray.png	artFont/equipTypeName/Geburah.png	icon/equipType/Geburah_gray.png	icon/equipType/Geburah.png		3	{550003:1,551007:2,551010:2}	10800
+16	601	2001	6	1230011	1230012	artFont/equipTypeName/Tiphareth_gray.png	artFont/equipTypeName/Tiphareth.png	icon/equipType/Tiphareth_gray.png	icon/equipType/Tiphareth.png		1	{550001:1,551005:2,551011:2}	3600
+17	602	2001	6	1230011	1230012	artFont/equipTypeName/Tiphareth_gray.png	artFont/equipTypeName/Tiphareth.png	icon/equipType/Tiphareth_gray.png	icon/equipType/Tiphareth.png		2	{550002:1,551006:2,551012:2}	7200
+18	603	2001	6	1230011	1230012	artFont/equipTypeName/Tiphareth_gray.png	artFont/equipTypeName/Tiphareth.png	icon/equipType/Tiphareth_gray.png	icon/equipType/Tiphareth.png		3	{550003:1,551007:2,551013:2}	10800
+19	701	2001	7	1230013	1230014	artFont/equipTypeName/Netzach_gray.png	artFont/equipTypeName/Netzach.png	icon/equipType/Netzach_gray.png	icon/equipType/Netzach.png		1	{550001:1,551005:2,551014:2}	3600
+20	702	2001	7	1230013	1230014	artFont/equipTypeName/Netzach_gray.png	artFont/equipTypeName/Netzach.png	icon/equipType/Netzach_gray.png	icon/equipType/Netzach.png		2	{550002:1,551006:2,551015:2}	7200
+21	703	2001	7	1230013	1230014	artFont/equipTypeName/Netzach_gray.png	artFont/equipTypeName/Netzach.png	icon/equipType/Netzach_gray.png	icon/equipType/Netzach.png		3	{550003:1,551007:2,551016:2}	10800
+22	801	2001	8	1230015	1230016	artFont/equipTypeName/Hod_gray.png	artFont/equipTypeName/Hod.png	icon/equipType/Hod_gray.png	icon/equipType/Hod.png		1	{550001:1,551008:2,551011:2}	3600
+23	802	2001	8	1230015	1230016	artFont/equipTypeName/Hod_gray.png	artFont/equipTypeName/Hod.png	icon/equipType/Hod_gray.png	icon/equipType/Hod.png		2	{550002:1,551009:2,551012:2}	7200
+24	803	2001	8	1230015	1230016	artFont/equipTypeName/Hod_gray.png	artFont/equipTypeName/Hod.png	icon/equipType/Hod_gray.png	icon/equipType/Hod.png		3	{550003:1,551010:2,551013:2}	10800
+25	901	2001	9	1230017	1230018	artFont/equipTypeName/Yesod_gray.png	artFont/equipTypeName/Yesod.png	icon/equipType/Yesod_gray.png	icon/equipType/Yesod.png		1	{550001:1,551008:2,551014:2}	3600
+26	902	2001	9	1230017	1230018	artFont/equipTypeName/Yesod_gray.png	artFont/equipTypeName/Yesod.png	icon/equipType/Yesod_gray.png	icon/equipType/Yesod.png		2	{550002:1,551009:2,551015:2}	7200
+27	903	2001	9	1230017	1230018	artFont/equipTypeName/Yesod_gray.png	artFont/equipTypeName/Yesod.png	icon/equipType/Yesod_gray.png	icon/equipType/Yesod.png		3	{550003:1,551010:2,551016:2}	10800
+28	1001	2001	10	1230019	1230020	artFont/equipTypeName/Malkuth_gray.png	artFont/equipTypeName/Malkuth.png	icon/equipType/Malkuth_gray.png	icon/equipType/Malkuth.png		1	{550001:1,551011:2,551014:2}	3600
+29	1002	2001	10	1230019	1230020	artFont/equipTypeName/Malkuth_gray.png	artFont/equipTypeName/Malkuth.png	icon/equipType/Malkuth_gray.png	icon/equipType/Malkuth.png		2	{550002:1,551012:2,551015:2}	7200
+30	1003	2001	10	1230019	1230020	artFont/equipTypeName/Malkuth_gray.png	artFont/equipTypeName/Malkuth.png	icon/equipType/Malkuth_gray.png	icon/equipType/Malkuth.png		3	{550003:1,551013:2,551016:2}	10800

@@ -1,0 +1,55 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CChasmMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CHeroMsg.proto";
+
+
+// 开始深渊战斗
+// code = 6145
+message RsepChasmStartFight {
+	required string fightId = 1; // 战斗ID
+	required string fightServerHost = 2; // 战斗服务器地址
+	required int32 fightServerPort = 3; // 战斗服务器端口
+	repeated FightPlayer players = 4; // 参与战斗玩家
+	required int32 randomSeed = 5; //随机种子
+	required int32 dungeonCid = 6;		//副本ID
+	required int32 netType = 7;		// 通信方式 1 kcp 2 tcp
+	enum MsgID{eMsgID = 6145;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 复活战斗
+// code = 6146
+message ResqChasmFightRevive{
+	// required FightPlayer fightPlayer = 1;
+	required bool isSuccess = 1;
+	enum MsgID{eMsgID = 6146;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 退出战斗
+// code = 6147
+message ResqChasmExitFight{
+	enum MsgID{eMsgID = 6147;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 进入深渊
+// code = 6149
+message RsepEnterChasm{
+	repeated ChasmInfo chashs = 1;
+	enum MsgID{eMsgID = 6149;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message ChasmInfo{
+	required int32 id = 1;						// 副本ID
+	required int32 status = 2;					// 状态		0:关闭 1:开启
+	required int32 fightCount = 3;				// 已挑战次数
+}
+
+// 战斗玩家
+message FightPlayer {
+	required int32 pid = 1; 			// 玩家ID
+	required string pname = 2;		// 玩家昵称
+	repeated HeroInfo heros = 3; 		// 战斗英雄数据
+	required int32 reviveCount = 4;	// 复活次数
+}

@@ -1,0 +1,6 @@
+ID	主线章节名称	剧本文件名	对应关卡ID	结算人物模型ID	结算人物模型动作	模型是否播放语音
+id	nameDes	callTableNameF	dgLevelId	modelId	endAction	voiceOn
+number	comment	string	int	number	string	boolean
+int		string	int			
+101	十香-城市约会	NovelDating	101206	210101	Idle	
+301	狂三三人约会	NovelDating	103209	210401	Id_happy	

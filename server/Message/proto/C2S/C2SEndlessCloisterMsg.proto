@@ -1,0 +1,23 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SEndlessCloisterMsg";
+
+// 取得无尽回廊活动副本信息
+// code = 5377
+message ReqEndlessCloisterInfo{
+	enum MsgID{eMsgID = 5377;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求开始挑战
+// code = 5378
+message ReqStartFightEndless{
+	enum MsgID{eMsgID = 5378;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 通关指定关卡
+// code = 5379
+message ReqPassStageEndless{
+	required int32 levelCid = 1; //关卡id
+	required int32 costTime = 2; //耗时（秒）
+	enum MsgID{eMsgID = 5379;}; //注意：消息id放最后,以免客户端解析异常	
+}

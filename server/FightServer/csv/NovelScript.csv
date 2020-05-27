@@ -1,0 +1,8 @@
+id	阶段	是否使用中	阶段跳转	事件类型（0地点1角色2信息3功能）	绑定类型（0地点1角色）	地点事件图标（地点）	人物事件图标（地点）	人物事件图标（人物）	地点	地点（策划看）	角色	角色（策划看）	角色位置	角色动作	剧本	开始节点id	信息	调用功能	完成规则	是否隐藏	隐藏显示条件（拥有）	隐藏显示条件（不拥有）	消耗时间	限制时间	强制推动时间	完成删除
+id	stepId	use	stepJump	eventType	bindType	scriptIcon1	scriptIcon2	scriptIcon3	bindBuild	bindBuildDes	bindRole	bindRoleDes	position	action	scriptId	startId	message	game	gameRule	hide	hideCondition1	hideCondition2	costTime	limitTime	addTime	delete
+number	number	boolean	number	number	number	string	string	string	number	comment	number	comment		number	number	number	number	number	json	boolean	json	json	number	string	string	boolean
+int	int	boolean	int	int	int				int	string	int	string		int	int	int	int	int	map	boolean	map	map	int	string	string	boolean
+100001	1000	1	1001												10022	1022001				0	{}	{}		08:40:00-08:40:00	12:00:00	1
+100101	1001	1	1002	1	1		ui/newCity/state/faver_zhuxian_2.png	ui/newCity/state/faver_zhuxian_2.png	106	面包店	410104	十香校服			10023	1023001				0	{}	{}		12:00:00-12:00:00	15:20:00	1
+100201	1002	1	1003	1	1		ui/newCity/state/faver_zhuxian_2.png	ui/newCity/state/faver_zhuxian_2.png	208	游乐园	410104	十香校服			10024	1024001				0	{}	{}		15:20:00-15:20:00	18:05:00	1
+100301	1003	1		1	1		ui/newCity/state/faver_zhuxian_2.png	ui/newCity/state/faver_zhuxian_2.png	206	公园	410104	十香校服			1002	1021001				0	{}	{}		18:05:00-18:05:00		1

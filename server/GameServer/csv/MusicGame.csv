@@ -1,0 +1,5 @@
+游戏ID	开始特效	开始动画	游戏UI	循环特效资源	循环动画	结束特效资源	结束动画	结束动画触发攻击特效	游戏时长(毫秒)	音乐	音符组ID	游戏总分
+id	startEffect	startAction	gameUi	showEffect	showAction	endEffect	endAction	skillEffectId	gameTime	gameMusic	symbolGroup	score
+number	string	string	string	string	string	string	string	number	number	string	number	number
+int	string	string	string	string	string	string	string	int	int	string	int	int
+1				effects_11001_skillD	effects_11001_skillD3_loop	effects_11001_skillD	effects_11001_skillD5	100062	10000	sound/battle_sound/battle_001.mp3	101	4100

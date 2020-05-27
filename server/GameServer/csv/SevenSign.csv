@@ -1,0 +1,11 @@
+id	累计次数	天数描述	奖励	广告图	活动名称	活动icon
+id	signTimes	dayName	gifts	adIcon	name	icon
+number	number	string	json	string	string	string
+int	int	string	map	string	string	string
+1	1	1830001	{510308:10}	scene/summon/007.png	1800003	ui/fuli/icon3.png
+2	2	1830002	{500002:200}			
+3	3	1830003	{510308:10}			
+4	4	1830004	{500002:300}			
+5	5	1830005	{510308:10}			
+6	6	1830006	{500002:400}			
+7	7	1830007	{510308:30}			

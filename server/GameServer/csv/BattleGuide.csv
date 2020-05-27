@@ -1,0 +1,20 @@
+ID	所属引导	触发条件（1直接触发、2完成上一个引导触发、3特殊触发条件）	条件	参数	参数	特殊触发条件	引导步骤	是否显示跳过	是否显示【点击继续】	引导提示	引导员资源	引导员位置	蒙版类型	控件名称	特效	下一步	是否吞噬	是否自动下一步	自动下一步的时间	触摸区域实际控件尺寸的百分比	
+id	guideId	trigger	condition	param1	param2	specialTrigger	comment	showSkip	showContinue	des	res	desPos	stencilType	widget	effect	nextStep	swallow	autoNext	delayTime	touchArea	showMask
+number	number	number	number	number	number	string	comment	boolean	boolean	string	string	number	number	string	number	number	boolean	boolean	number	number	boolean
+long	int	int	int	int	int	string	comment	boolean	boolean	string	string	long	long	string	long	long	boolean	boolean	long	long	boolean
+1	1	3	1	10102	1	进入第一个剧情战斗{关卡ID -刷怪点}	移动教学-文本【萌新参战】	1	1	呼，又有萌新参战啦？我是司令派来的引导员莉莉子，让我们来熟悉一下基本操作吧！			1		0	2	1	0	0	100	1
+2	1	2	6	1			移动教学-文本【移动舵盘介绍】	1	1	左下方是控制移动的舵盘，可以通过拨动轮盘控制角色移动			1		0	3	1	0	0	100	1
+3	1	2	6	2			移动教学-手划舵盘提示	1	0			1	1	image_roke	1	4	1	1	1500	100	1
+4	2	2	6	3			攻击教学-文本【攻击介绍】	1	1	点击右下方按键，可以发动普通攻击。长按的话还可以发动特殊招式。			1		0	5	1	0	0	100	1
+5	2	2	6	4			攻击教学-攻击键高亮[3,1]	1	0				1	skillA	1	6	1	1	1500	60	1
+6	2	2	6	5			攻击教学-文本和血条高亮	1	1	界面左上角是你的生命值和能量（sp）			2	playInfo	1	7	1	0	0	100	1
+7	3	2	6	6			拾取道具教学-文本【多打路障】	1	1	战斗中有时会出现可破坏物件，击破它们后会出现战斗辅助道具，多多注意吧！			1		0	8	1	0	0	100	1
+8	3	2	6	7			拾取道具教学-路障高亮	1	0				1	luzhang	1	9	1	1	1500	100	1
+9	4	2	6	8			闪避教学-文本【快躲开】	1	1	看准时机点击闪避按钮可以躲开敌人的攻击			1		0	10	1	0	0	100	1
+10	4	2	6	9			闪避教学-闪避高亮	1	0				1	skillB	1	11	1	1	1500	100	1
+11	4	2	6	10			闪避教学-文本【干得漂亮！】	1	1	不过闪避技能不能连续使用，所以一定要注意时机。			1		0	12	1	0	0	100	1
+12	6	2	6	11			大招教学-文本【敌人太多】	1	1	遇到多个敌人时，建议使用大招技能。			1		0	14	1	0	0	100	1
+13	6	2	6	12			大招教学-大招高亮	1	1	使用大招需要消耗sp，平时注意累计sp吧！			1	skillC	1	15	1	0	0	100	1
+14	7	2	6	13			觉醒教学-文本【觉醒介绍】	1	1	当sp累计到极限时，可以使用精灵的觉醒奥义，对战局产生一锤定音的效果			1		0	16	1	0	0	100	1
+15	7	2	6	14			觉醒教学-按觉醒	1	0				1	skillD	1	17	1	1	1500	100	1
+16	7	2	6	15			觉醒教学-文本【觉醒介绍】	1	1	战斗的教学就简单聊到这里，更多的秘密还是等你自己去发现吧~			1		0	0	1	0	0	100	1

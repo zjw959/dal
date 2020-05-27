@@ -1,0 +1,19 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2STaskMsg";
+
+// 取得所有任务信息
+// code = 4097
+message ReqTasks{
+	enum MsgID{eMsgID = 4097;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+
+// 提交任务
+// code = 4098
+message SubmitTask{
+	required int32 taskCid = 1;
+	enum MsgID{eMsgID = 4098;}; //注意：消息id放最后,以免客户端解析异常
+}
+

@@ -1,0 +1,985 @@
+排序	怪物ID(填写monster.csv表中怪物ID)	关卡ID(填写dungeonLevel.csv表中关卡ID)	怪物等级	怪物出现时间(从关卡第0秒开始计时，直到关卡结束，单位毫秒)	怪物出现坐标(以1屏尺寸为基础，坐标可出屏，场景左下角为(0,0))	怪物是否翻转	怪物AI(填AI的ID)	怪物出场帧段数(点第一段轨迹的结算帧段值)	出场动作名	怪物移动轨迹(移动轨迹在路径编辑器里编辑，此处填对应轨迹ID)	轨迹是否需要循环(第一段出场轨迹后的轨迹循环，多用于BOSS)	弹幕ID(弹幕表中I的D)	怒气恢复(怪物被击杀后，精灵恢复怒气点数)	怪物掉落Buff(关卡内的Buff道具)	 怪物击杀得分	怪物掉落奖励(实际掉落)	死亡特效{"effectName":"必须有，没有不播放","scale":默认1,"actionName":"如果只有一个动画可不填,1个或多个是数组", "offset":偏移坐标默认0,0}
+id	fixedMonster	levelID	level	timing	createCoordinate	turnBack	AI	bornTime	bornActionName	orbit	isLoop	bullet	angerRecovery	itemDrop	points	ItemAward	deadEffect
+number	number	number	number	number	json	boolean	number	number	strings	string	boolean	numbers	number	json	number	json	json
+int	int	int	int	int	map			int	strings	string	boolean	int[]	int	map	int		map
+1	800002	101207	3	3000	{"x":1200, "y":440}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+2	800002	101207	3	3300	{"x":1200, "y":360}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+3	800002	101207	3	3600	{"x":1200, "y":280}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+4	800002	101207	3	3900	{"x":1200, "y":200}		1012060001			horizontal_1_1-6		2001001		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+5	800003	101207	3	7400	{"x":720, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+6	800003	101207	3	7700	{"x":800, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+7	800003	101207	3	8000	{"x":880, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+8	800003	101207	3	8300	{"x":960, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+9	800003	101207	3	8600	{"x":1040, "y":700}		1012060002			test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+10	800003	101207	3	8900	{"x":1120, "y":-60}		1012060002			test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+11	800001	101207	10	10500	{"x":1320, "y":320}		1012060003			horizontal_2_1-6		2001002-2001003-2001004		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+12	800004	101207	3	11100	{"x":1420, "y":480}		1012060004			horizontal_7_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+13	800004	101207	3	11100	{"x":1420, "y":160}		1012060004			horizontal_6_1-6		2001006		{102001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+14	800003	101207	3	14900	{"x":1200, "y":470}		1012060005			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+15	800003	101207	3	14900	{"x":1200, "y":370}		1012060005			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+16	800003	101207	3	14900	{"x":1200, "y":270}		1012060005			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+17	800003	101207	3	14900	{"x":1200, "y":170}		1012060005			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+18	800002	101207	3	17400	{"x":700, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+19	800002	101207	3	19000	{"x":700, "y":-80}		1012060005			vertical_4_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+20	800002	101207	3	17900	{"x":740, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+21	800002	101207	3	19500	{"x":740, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+22	800002	101207	3	18400	{"x":780, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+23	800002	101207	3	20000	{"x":780, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+24	800001	101207	10	22700	{"x":1330, "y":320}		1012060003			horizontal_2_1-6		2001002-2001003-2001004		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+25	800003	101207	3	23700	{"x":1240, "y":400}		1012060006			horizontal_8_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+26	800003	101207	3	23700	{"x":1240, "y":240}		1012060006			horizontal_9_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+27	800002	101207	3	24600	{"x":630, "y":700}		1012060006			vertical_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+28	800002	101207	3	24600	{"x":630, "y":-60}		1012060006			vertical_6_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+29	800004	101207	3	29000	{"x":820, "y":720}		1012060007			vertical_9_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+30	800004	101207	3	29000	{"x":820, "y":-80}		1012060007			vertical_10_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+31	800003	101207	3	28900	{"x":1015, "y":840}		1012060008			vertical_7_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+32	800003	101207	3	28900	{"x":1015, "y":-200}		1012060008			vertical_8_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+33	800002	101207	3	29400	{"x":620, "y":720}		1012060008			vertical_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+34	800002	101207	3	29400	{"x":620, "y":-80}		1012060008			vertical_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+35	800001	101207	10	34000	{"x":1300, "y":450}		1012060009			horizontal_2_1-6		2001002-2001003		{102001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+36	800003	101207	3	34000	{"x":1450, "y":520}		1012060011			horizontal_10_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+37	800003	101207	3	34000	{"x":1450, "y":380}		1012060011			horizontal_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+38	800001	101207	10	35300	{"x":1300, "y":190}		1012060010			horizontal_2_1-6		2001002-2001004			15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+39	800002	101207	3	35300	{"x":1450, "y":260}		1012060011			horizontal_10_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+40	800002	101207	3	35300	{"x":1450, "y":110}		1012060011			horizontal_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+41	800003	101207	3	42300	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+42	800003	101207	3	42500	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+43	800003	101207	3	42700	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+44	800003	101207	3	42900	{"x":850, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+45	800002	101207	3	43300	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+46	800002	101207	3	43500	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+47	800002	101207	3	43700	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+48	800002	101207	3	43900	{"x":850, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+49	800003	101207	3	44200	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+50	800003	101207	3	44400	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+51	800003	101207	3	44600	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+52	800003	101207	3	44800	{"x":1350, "y":400}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+53	800002	101207	3	45200	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+54	800002	101207	3	45400	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+55	800002	101207	3	45600	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+56	800002	101207	3	45800	{"x":1350, "y":240}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+57	800005	101207	3	100000	{"x":950, "y":-180}		1012060013	60		orbit_Boss_1-6	1	2001101-2001102-2001103-2001104					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+58	800002	501001	3	3000	{"x":1250, "y":400}		5001001			dailyExp_1_1		2001001-2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+59	800002	501001	3	3200	{"x":1250, "y":440}		5001001			dailyExp_1_1		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+60	800002	501001	3	3400	{"x":1250, "y":480}		5001001			dailyExp_1_1		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+61	800002	501001	3	3600	{"x":1250, "y":520}		5001001			dailyExp_1_1		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+62	800002	501001	3	8300	{"x":1250, "y":240}		5001001			dailyExp_1_2		2001001-2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+63	800002	501001	3	8500	{"x":1250, "y":200}		5001001			dailyExp_1_2		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+64	800002	501001	3	8700	{"x":1250, "y":160}		5001001			dailyExp_1_2		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+65	800002	501001	3	8900	{"x":1250, "y":120}		5001001			dailyExp_1_2		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+66	800003	501001	3	13600	{"x":530, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+67	800003	501001	3	13900	{"x":500, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+68	800003	501001	3	14200	{"x":470, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+69	800003	501001	3	14500	{"x":440, "y":700}		5001002			dailyExp_1_3		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+70	800003	501001	3	18100	{"x":530, "y":-60}		5001002			dailyExp_1_4		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+71	800003	501001	3	18400	{"x":500, "y":-60}		5001002			dailyExp_1_4		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+72	800003	501001	3	18700	{"x":470, "y":-60}		5001002			dailyExp_1_4		2001001-2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+73	800003	501001	3	19000	{"x":440, "y":-60}		5001002			dailyExp_1_4		2001001-2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+74	800001	501001	15	22500	{"x":1330, "y":320}		1012060003			horizontal_2_1-6		2001002-2001003-2001004		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+75	800002	501001	3	24200	{"x":1370, "y":230}		5001003			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+76	800002	501001	3	24200	{"x":1370, "y":410}		5001003			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+77	800003	501001	3	24200	{"x":1370, "y":140}		5001003			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+78	800003	501001	3	24200	{"x":1370, "y":500}		5001003			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+79	800004	501001	10	29000	{"x":1400, "y":260}		1012060007			horizontal_6_1-6		2001006		{102001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+80	800004	501001	10	29000	{"x":1400, "y":380}		1012060007			horizontal_7_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+81	800004	501001	10	29800	{"x":780, "y":-180}		1012060007			vertical_8_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+82	800004	501001	10	29800	{"x":780, "y":820}		1012060007			vertical_7_1-6		2001006		{102001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+83	800003	501001	3	36000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+84	800003	501001	3	36000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+85	800003	501001	3	36000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+86	800003	501001	3	36000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+87	800002	501001	3	38000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+88	800002	501001	3	38000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+89	800002	501001	3	38000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+90	800002	501001	3	38000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+91	800003	501001	3	40000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+92	800003	501001	3	40000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+93	800003	501001	3	40000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+94	800003	501001	3	40000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+95	800003	501001	3	42000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+96	800003	501001	3	42000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+97	800003	501001	3	42000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+98	800003	501001	3	42000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+99	800003	501001	3	44000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+100	800003	501001	3	44000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+101	800003	501001	3	44000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+102	800003	501001	3	44000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+103	800003	501001	3	46000	{"x":1200, "y":470}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+104	800003	501001	3	46000	{"x":1200, "y":370}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+105	800003	501001	3	46000	{"x":1200, "y":270}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+106	800003	501001	3	46000	{"x":1200, "y":170}		5001004			horizontal_3_1-6		2001005			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+107	800002	501002	3	3000	{"x":1200, "y":440}		1012060001			horizontal_1_1-6		2001001		{101001:10000}	5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+108	800002	501002	3	3300	{"x":1200, "y":360}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+109	800002	501002	3	3600	{"x":1200, "y":280}		1012060001			horizontal_1_1-6		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+110	800002	501002	3	3900	{"x":1200, "y":200}		1012060001			horizontal_1_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+111	800002	501002	3	7600	{"x":1200, "y":200}		1012060001			dailyExp_2_1		2001001		{102001:10000}	5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+112	800002	501002	3	7900	{"x":1200, "y":280}		1012060001			dailyExp_2_1		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+113	800002	501002	3	8200	{"x":1200, "y":360}		1012060001			dailyExp_2_1		2001001			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+114	800002	501002	3	8500	{"x":1200, "y":440}		1012060001			dailyExp_2_1		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+115	800003	501002	3	12200	{"x":720, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+116	800003	501002	3	12500	{"x":800, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+117	800003	501002	3	12800	{"x":880, "y":700}		1012060002		bornA-bornA2	test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+118	800003	501002	3	13100	{"x":960, "y":-60}		1012060002		bornB-bornB2	test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+119	800003	501002	3	13400	{"x":1040, "y":700}		1012060002			test_1_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+120	800003	501002	3	13700	{"x":1120, "y":-60}		1012060002			test_2_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+121	800001	501002	15	15400	{"x":1350, "y":400}		1012060009			horizontal_2_1-6		2001002-2001003		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+122	800001	501002	15	15400	{"x":1350, "y":240}		1012060010			horizontal_2_1-6		2001002-2001004		{102001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+123	800002	501002	3	17200	{"x":630, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+124	800002	501002	3	18800	{"x":630, "y":-80}		1012060005			vertical_4_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+125	800002	501002	3	17700	{"x":670, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+126	800002	501002	3	19300	{"x":670, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+127	800002	501002	3	18200	{"x":710, "y":720}		1012060005			vertical_3_1-6		2001005			5	{"fix":{"items":[{"id":500001,"num":50},{"id":500005,"num":5}]}}	{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+128	800002	501002	3	19800	{"x":710, "y":-80}		1012060005			vertical_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+129	800004	501002	10	23500	{"x":1400, "y":270}		5002001			horizontal_4_1-6		2001006		{102001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+130	800004	501002	10	23500	{"x":1400, "y":370}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+131	800004	501002	10	23500	{"x":1400, "y":170}		5002001			horizontal_4_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+132	800004	501002	10	23500	{"x":1400, "y":470}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+133	800004	501002	10	23500	{"x":1400, "y":70}		5002001			horizontal_4_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+134	800004	501002	10	23500	{"x":1400, "y":570}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+135	800001	501002	15	26000	{"x":1360, "y":320}		5002002			horizontal_2_1-6		2001007-2001008		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+136	800002	501002	3	27500	{"x":1370, "y":210}		5002003			horizontal_4_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+137	800002	501002	3	27500	{"x":1370, "y":430}		5002003			horizontal_5_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+138	800003	501002	3	27500	{"x":1370, "y":120}		5002003			horizontal_4_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+139	800003	501002	3	27500	{"x":1370, "y":520}		5002003			horizontal_5_1-6		2001001			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+140	800003	501002	3	32500	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+141	800003	501002	3	32800	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+142	800003	501002	3	33100	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+143	800003	501002	3	33400	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+144	800003	501002	3	33700	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+145	800003	501002	3	34000	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+146	800003	501002	3	34300	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+147	800003	501002	3	34600	{"x":950, "y":800}		1012060012			vertical_11_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+148	800002	501002	3	32500	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+149	800002	501002	3	32800	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+150	800002	501002	3	33100	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+151	800002	501002	3	33400	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+152	800002	501002	3	33700	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+153	800002	501002	3	34000	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+154	800002	501002	3	34300	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+155	800002	501002	3	34600	{"x":950, "y":-160}		1012060012			vertical_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+156	800003	501002	3	36000	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+157	800003	501002	3	36300	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+158	800003	501002	3	36600	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+159	800003	501002	3	36900	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+160	800003	501002	3	37200	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+161	800003	501002	3	37500	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+162	800003	501002	3	37800	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+163	800003	501002	3	38100	{"x":1530, "y":450}		1012060012			horizontal_12_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+164	800002	501002	3	36000	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+165	800002	501002	3	36300	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+166	800002	501002	3	36600	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+167	800002	501002	3	36900	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+168	800002	501002	3	37200	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+169	800002	501002	3	37500	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+170	800002	501002	3	37800	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+171	800002	501002	3	38100	{"x":1530, "y":190}		1012060012			horizontal_13_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+172	800001	501002	15	40000	{"x":1360, "y":320}		5002002			horizontal_2_1-6		2001007-2001008			15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+173	800004	501002	10	41500	{"x":1400, "y":440}		5002001			horizontal_4_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+174	800004	501002	10	41500	{"x":1400, "y":560}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+175	800004	501002	10	41500	{"x":1400, "y":200}		5002001			horizontal_4_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+176	800004	501002	10	41500	{"x":1400, "y":80}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+177	800004	501002	10	46000	{"x":1400, "y":270}		5002001			horizontal_4_1-6		2001006		{102001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+178	800004	501002	10	46000	{"x":1400, "y":370}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+179	800004	501002	10	46000	{"x":1400, "y":170}		5002001			horizontal_4_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+180	800004	501002	10	46000	{"x":1400, "y":470}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+181	800004	501002	10	46000	{"x":1400, "y":70}		5002001			horizontal_4_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+182	800004	501002	10	46000	{"x":1400, "y":570}		5002001			horizontal_5_1-6		2001006			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+183	800003	501003	3	3000	{"x":1280, "y":470}		5003001			horizontal_8_1-6		2001009		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+184	800003	501003	3	3400	{"x":1280, "y":420}		5003001			horizontal_8_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+185	800003	501003	3	3800	{"x":1280, "y":370}		5003001			horizontal_8_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+186	800003	501003	3	3000	{"x":1280, "y":170}		5003001			horizontal_9_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+187	800003	501003	3	3400	{"x":1280, "y":220}		5003001			horizontal_9_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+188	800003	501003	3	3800	{"x":1280, "y":270}		5003001			horizontal_9_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+189	800002	501003	3	8000	{"x":740, "y":700}		5003001			vertical_5_1-6		2001009		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+190	800002	501003	3	8400	{"x":740, "y":-60}		5003001	s		vertical_6_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+191	800002	501003	3	8900	{"x":740, "y":700}		5003001			vertical_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+192	800002	501003	3	8000	{"x":740, "y":-60}		5003001			vertical_6_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+193	800002	501003	3	8400	{"x":740, "y":700}		5003001			vertical_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+194	800002	501003	3	8900	{"x":740, "y":-60}		5003001			vertical_6_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+195	800003	501003	3	13000	{"x":1200, "y":470}		5003002			horizontal_4_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+196	800003	501003	3	13000	{"x":1200, "y":370}		5003002			horizontal_3_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+197	800003	501003	3	13000	{"x":1200, "y":270}		5003002			horizontal_3_1-6		2001009		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+198	800003	501003	3	13000	{"x":1200, "y":170}		5003002			horizontal_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+199	800003	501003	3	15000	{"x":1200, "y":470}		5003002			horizontal_4_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+200	800003	501003	3	15000	{"x":1200, "y":370}		5003002			horizontal_3_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+201	800003	501003	3	15000	{"x":1200, "y":270}		5003002			horizontal_3_1-6		2001009		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+202	800003	501003	3	15000	{"x":1200, "y":170}		5003002			horizontal_5_1-6		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+203	800001	501003	15	17300	{"x":1400, "y":320}		5002002			horizontal_2_1-6		2001007-2001008		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+204	800002	501003	3	18800	{"x":1370, "y":210}		5003003			horizontal_4_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+205	800002	501003	3	18800	{"x":1370, "y":430}		5003003			horizontal_5_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+206	800003	501003	3	18800	{"x":1370, "y":120}		5003003			horizontal_4_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+207	800003	501003	3	18800	{"x":1370, "y":520}		5003003			horizontal_5_1-6		2001010			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+208	800001	501003	15	23800	{"x":1430, "y":450}		5003004			horizontal_2_1-6		2001011-2001008		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+209	800001	501003	15	23800	{"x":1430, "y":190}		5003004			horizontal_2_1-6		2001011-2001008		{102001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+210	800004	501003	10	30400	{"x":1460, "y":500}		5003005			dailyExp_3_1		2001003-2001004			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+211	800004	501003	10	30400	{"x":1460, "y":380}		5003005			dailyExp_3_1		2001003-2001004			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+212	800004	501003	10	30400	{"x":1460, "y":260}		5003005			dailyExp_3_1		2001003-2001004			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+213	800004	501003	10	30400	{"x":1460, "y":140}		5003005			dailyExp_3_1		2001003-2001004		{101001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+214	800003	501003	3	38700	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+215	800003	501003	3	39100	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+216	800003	501003	3	39500	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+217	800003	501003	3	39900	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+218	800003	501003	3	40300	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+219	800003	501003	3	40700	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+220	800003	501003	3	41100	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+221	800003	501003	3	41500	{"x":1250, "y":450}		5003001			dailyExp_3_2		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+222	800003	501003	3	38700	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+223	800003	501003	3	39100	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+224	800003	501003	3	39500	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+225	800003	501003	3	39900	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+226	800003	501003	3	40300	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+227	800003	501003	3	40700	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+228	800003	501003	3	41100	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+229	800003	501003	3	41500	{"x":1250, "y":190}		5003001			dailyExp_3_3		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+230	800002	501003	3	44500	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+231	800002	501003	3	44900	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+232	800002	501003	3	45300	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+233	800002	501003	3	45700	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+234	800002	501003	3	46100	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+235	800002	501003	3	46500	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+236	800002	501003	3	46900	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+237	800002	501003	3	47300	{"x":900, "y":700}		5003001			dailyExp_3_4		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+238	800002	501003	3	44500	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+239	800002	501003	3	44900	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+240	800002	501003	3	45300	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+241	800002	501003	3	45700	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+242	800002	501003	3	46100	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+243	800002	501003	3	46500	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+244	800002	501003	3	46900	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+245	800002	501003	3	47300	{"x":900, "y":-60}		5003001			dailyExp_3_5		2001009			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+246	800004	501004	5	2000	{"x":1400, "y":480}		5004001			horizontal_2_1-6		2001008		{101001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+247	800004	501004	5	2000	{"x":1400, "y":320}		5004001			horizontal_2_1-6		2001008			10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+248	800004	501004	5	2000	{"x":1400, "y":160}		5004001			horizontal_2_1-6		2001008		{102001:10000}	10		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+249	800003	501004	3	4800	{"x":780, "y":700}		5004002			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+250	800003	501004	3	5300	{"x":780, "y":700}		5004002			test_1_1-6		2001012		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+251	800003	501004	3	5800	{"x":780, "y":700}		5004002			test_1_1-6		2001012		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+252	800003	501004	3	6100	{"x":780, "y":700}		5004002			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+253	800002	501004	3	8000	{"x":780, "y":-60}		5004002			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+254	800002	501004	3	8500	{"x":780, "y":-60}		5004002			test_2_1-6		2001012		{102001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+255	800002	501004	3	9000	{"x":780, "y":-60}		5004002			test_2_1-6		2001012		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+256	800002	501004	3	9500	{"x":780, "y":-60}		5004002			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+257	800001	501004	15	8500	{"x":1430, "y":450}		5003004			horizontal_2_1-6		2001011-2001008		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+258	800001	501004	15	8500	{"x":1430, "y":190}		5003004			horizontal_2_1-6		2001011-2001008		{102001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+259	800003	501004	3	11500	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+260	800003	501004	3	11800	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+261	800003	501004	3	12100	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+262	800003	501004	3	12400	{"x":950, "y":800}		5004003			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+263	800002	501004	3	13800	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+264	800002	501004	3	14100	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+265	800002	501004	3	14400	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+266	800002	501004	3	14700	{"x":950, "y":-160}		5004003			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+267	800003	501004	3	16000	{"x":1250, "y":520}		5004004			horizontal_4_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+268	800003	501004	3	16200	{"x":1300, "y":420}		5004004			horizontal_4_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+269	800003	501004	3	15800	{"x":1200, "y":370}		5004004			horizontal_3_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+270	800003	501004	3	15800	{"x":1200, "y":270}		5004004			horizontal_3_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+271	800003	501004	3	16200	{"x":1300, "y":220}		5004004			horizontal_5_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+272	800003	501004	3	16000	{"x":1250, "y":120}		5004004			horizontal_5_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+273	800001	501004	15	18000	{"x":1520, "y":460}		5004005			dailyExp_3_1		2001013		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+274	800001	501004	15	18000	{"x":1520, "y":180}		5004005			dailyExp_3_1		2001013		{102001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+275	800003	501004	3	26000	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+276	800003	501004	3	26300	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+277	800003	501004	3	26600	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+278	800003	501004	3	26900	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+279	800003	501004	3	27200	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+280	800003	501004	3	27500	{"x":950, "y":800}		5004006			vertical_11_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+281	800002	501004	3	27200	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+282	800002	501004	3	27500	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+283	800002	501004	3	27800	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+284	800002	501004	3	28100	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+285	800002	501004	3	28400	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+286	800002	501004	3	28700	{"x":950, "y":-160}		5004006			vertical_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+287	800003	501004	3	28400	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+288	800003	501004	3	28700	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+289	800003	501004	3	29000	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+290	800003	501004	3	29300	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+291	800003	501004	3	29600	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+292	800003	501004	3	29900	{"x":1530, "y":450}		5004006			horizontal_12_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+293	800002	501004	3	29600	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+294	800002	501004	3	29900	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+295	800002	501004	3	30200	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+296	800002	501004	3	30500	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+297	800002	501004	3	30800	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+298	800002	501004	3	31100	{"x":1530, "y":190}		5004006			horizontal_13_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+299	800001	501004	20	32500	{"x":1380, "y":320}		5004007			dailyExp_3_1		2001014-2001015		{101001:10000}	15		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+300	800003	501004	3	40000	{"x":720, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+301	800003	501004	3	40500	{"x":800, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+302	800003	501004	3	41000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+303	800003	501004	3	41500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+304	800003	501004	3	42000	{"x":1040, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+305	800003	501004	3	42500	{"x":1120, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+306	800003	501004	3	43000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+307	800003	501004	3	43500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+308	800003	501004	3	44000	{"x":720, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+309	800003	501004	3	44500	{"x":800, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+310	800003	501004	3	45000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+311	800003	501004	3	45500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+312	800003	501004	3	46000	{"x":1040, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+313	800003	501004	3	46500	{"x":1120, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+314	800003	501004	3	47000	{"x":880, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+315	800003	501004	3	47500	{"x":960, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+316	800003	501004	3	48000	{"x":720, "y":700}		5004008			test_1_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+317	800003	501004	3	48500	{"x":800, "y":-60}		5004008			test_2_1-6		2001012			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+																	
+																	
+318	800202	102310	2	3000	{"x":993, "y":700}		1012060005			orbit_2-9_1		2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+319	800202	102310	2	3400	{"x":993, "y":700}		1012060005			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+320	800202	102310	2	3800	{"x":993, "y":700}		1012060005			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+321	800202	102310	2	4200	{"x":993, "y":700}		1012060005			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+322	800202	102310	2	4600	{"x":993, "y":700}		1012060005			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+323	800202	102310	2	5000	{"x":993, "y":700}		1012060005			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+324	800202	102310	2	7000	{"x":193, "y":-60}	1	1012060005			orbit_2-9_2		2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+325	800202	102310	2	7400	{"x":193, "y":-60}	1	1012060005			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+326	800202	102310	2	7800	{"x":193, "y":-60}	1	1012060005			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+327	800202	102310	2	8200	{"x":193, "y":-60}	1	1012060005			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+328	800202	102310	2	8600	{"x":193, "y":-60}	1	1012060005			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+329	800202	102310	2	9000	{"x":193, "y":-60}	1	1012060005			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+330	800203	102310	2	10800	{"x":1310, "y":200}		10020903			orbit_2-9_3		2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+331	800203	102310	2	11200	{"x":1310, "y":200}		10020903			orbit_2-9_3		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+332	800203	102310	2	11600	{"x":1310, "y":200}		10020903			orbit_2-9_3		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+333	800203	102310	2	12000	{"x":1310, "y":200}		10020903			orbit_2-9_3		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+334	800203	102310	2	12400	{"x":1310, "y":200}		10020903			orbit_2-9_3		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+335	800203	102310	2	12800	{"x":1310, "y":200}		10020903			orbit_2-9_3		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+336	800203	102310	2	15000	{"x":-126, "y":440}	1	10020903			orbit_2-9_4		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+337	800203	102310	2	15400	{"x":-126, "y":440}	1	10020903			orbit_2-9_4		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+338	800203	102310	2	15800	{"x":-126, "y":440}	1	10020903			orbit_2-9_4		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+339	800203	102310	2	16200	{"x":-126, "y":440}	1	10020903			orbit_2-9_4		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+340	800203	102310	2	16600	{"x":-126, "y":440}	1	10020903			orbit_2-9_4		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+341	800203	102310	2	17000	{"x":-126, "y":440}	1	10020903			orbit_2-9_4		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+342	800201	102310	10	19200	{"x":1500, "y":420}		10020904			orbit_2-9_5		2001006-2001016			20		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+343	800201	102310	10	19200	{"x":-314, "y":220}	1	10020904			orbit_2-9_6		2001006-2001016		{101001:10000}	20		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+344	800203	102310	2	23500	{"x":1250, "y":470}		10020903			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+345	800203	102310	2	23500	{"x":1250, "y":370}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+346	800203	102310	2	23500	{"x":1250, "y":270}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+347	800203	102310	2	23500	{"x":1250, "y":170}		10020903			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+348	800203	102310	2	25000	{"x":-64, "y":470}	1	10020903			orbit_2-9_8		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+349	800203	102310	2	25000	{"x":-64, "y":370}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+350	800203	102310	2	25000	{"x":-64, "y":270}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+351	800203	102310	2	25000	{"x":-64, "y":170}	1	10020903			orbit_2-9_9		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+352	800203	102310	2	26500	{"x":1250, "y":470}		10020903			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+353	800203	102310	2	26500	{"x":1250, "y":370}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+354	800203	102310	2	26500	{"x":1250, "y":270}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+355	800203	102310	2	26500	{"x":1250, "y":170}		10020903			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+356	800203	102310	2	26500	{"x":-64, "y":470}	1	10020903			orbit_2-9_8		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+357	800203	102310	2	26500	{"x":-64, "y":370}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+358	800203	102310	2	26500	{"x":-64, "y":270}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+359	800203	102310	2	26500	{"x":-64, "y":170}	1	10020903			orbit_2-9_9		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+360	800203	102310	2	28500	{"x":1250, "y":470}		10020903			horizontal_4_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+361	800203	102310	2	28500	{"x":1250, "y":370}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+362	800203	102310	2	28500	{"x":1250, "y":270}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+363	800203	102310	2	28500	{"x":1250, "y":170}		10020903			horizontal_5_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+364	800203	102310	2	28500	{"x":-64, "y":470}	1	10020903			orbit_2-9_8		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+365	800203	102310	2	28500	{"x":-64, "y":370}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+366	800203	102310	2	28500	{"x":-64, "y":270}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+367	800203	102310	2	28500	{"x":-64, "y":170}	1	10020903			orbit_2-9_9		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+368	800202	102310	2	30500	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005		{101001:10000}	5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+369	800202	102310	2	30900	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+370	800202	102310	2	31300	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+371	800202	102310	2	31700	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+372	800202	102310	2	32100	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+373	800202	102310	2	32500	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+374	800202	102310	2	32900	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+375	800202	102310	2	33300	{"x":993, "y":700}		10020903			orbit_2-9_1		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+376	800202	102310	2	30500	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+377	800202	102310	2	30900	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+378	800202	102310	2	31300	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+379	800202	102310	2	31700	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+380	800202	102310	2	32100	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+381	800202	102310	2	32500	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+382	800202	102310	2	32900	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+383	800202	102310	2	33300	{"x":193, "y":-60}	1	10020903			orbit_2-9_2		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+384	800203	102310	2	34500	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+385	800203	102310	2	34900	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+386	800203	102310	2	35300	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+387	800203	102310	2	35700	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+388	800203	102310	2	36100	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+389	800203	102310	2	36500	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+390	800203	102310	2	36900	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+391	800203	102310	2	37300	{"x":1250, "y":500}		10020903			horizontal_3_1-6		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+392	800203	102310	2	34500	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+393	800203	102310	2	34900	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+394	800203	102310	2	35300	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+395	800203	102310	2	35700	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+396	800203	102310	2	36100	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+397	800203	102310	2	36500	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+398	800203	102310	2	36900	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005			5		{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+399	800203	102310	2	37300	{"x":-64, "y":140}	1	10020903			orbit_2-9_7		2001005					{"effectName":"guaiwusiwang","scale":0.36,"actionName":["baozha","ASTsuipian"], "offset":{"x":0,"y":0}}
+																	
+400	10003	102205	1	3000	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+401	10003	102205	1	3200	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+402	10003	102205	1	3400	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+403	10003	102205	1	3600	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+404	10005	102205	1	4500	{"x":1400, "y":50}		10001			flyorbit_zhuangji							
+405	10003	102205	1	5500	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+406	10003	102205	1	5700	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+407	10003	102205	1	5900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+408	10003	102205	1	6100	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+409	10003	102205	1	8000	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+410	10003	102205	1	8200	{"x":1400, "y":70}		10001			flyorbit_zhuangji					4		
+411	10003	102205	1	8400	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+412	10003	102205	1	8600	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+413	10004	102205	1	7000	{"x":1400, "y":150}		10001			flyorbit_zhuangji							
+414	10005	102205	1	10000	{"x":1400, "y":50}		10001			flyorbit_zhuangji							
+415	10005	102205	1	11200	{"x":1400, "y":150}		10001			flyorbit_zhuangji							
+416	10004	102205	1	12500	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+417	10003	102205	1	14500	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+418	10003	102205	1	14500	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+419	10003	102205	1	14500	{"x":1480, "y":80}		10001			flyorbit_zhuangji					4		
+420	10003	102205	1	14500	{"x":1480, "y":40}		10001			flyorbit_zhuangji					4		
+421	10004	102205	1	15100	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+422	10003	102205	1	15500	{"x":1440, "y":40}		10001			flyorbit_zhuangji					4		
+423	10003	102205	1	15500	{"x":1440, "y":80}		10001			flyorbit_zhuangji					4		
+424	10003	102205	1	15500	{"x":1520, "y":120}		10001			flyorbit_zhuangji					4		
+425	10003	102205	1	15500	{"x":1520, "y":160}		10001			flyorbit_zhuangji					4		
+426	10005	102205	1	17200	{"x":1400, "y":150}		10001			flyorbit_zhuangji							
+427	10004	102205	1	18400	{"x":1400, "y":50}		10001			flyorbit_zhuangji							
+428	10005	102205	1	19600	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+429	10003	102205	1	20700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+430	10003	102205	1	21000	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+431	10003	102205	1	21000	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+432	10003	102205	1	21300	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+433	10003	102205	1	21300	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+434	10003	102205	1	21700	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+435	10003	102205	1	21700	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+436	10003	102205	1	22000	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+437	10004	102205	1	23000	{"x":1400, "y":150}		10001			flyorbit_zhuangji							
+438	10005	102205	1	24000	{"x":1400, "y":50}		10001			flyorbit_zhuangji							
+439	10003	102205	1	25000	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+440	10003	102205	1	25200	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+441	10003	102205	1	25400	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+442	10003	102205	1	25600	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+443	10003	102205	1	25800	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+444	10003	102205	1	26000	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+445	10003	102205	1	26200	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+446	10003	102205	1	26400	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+447	10004	102205	1	26400	{"x":1400, "y":130}		10001			flyorbit_zhuangji							
+448	10003	102205	1	26800	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+449	10003	102205	1	27000	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+450	10003	102205	1	27200	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+451	10003	102205	1	27400	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+452	10003	102205	1	27600	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+453	10003	102205	1	27800	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+454	10003	102205	1	28000	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+455	10005	102205	1	29000	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+456	10004	102205	1	30000	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+457	10003	102205	1	31000	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+458	10003	102205	1	31200	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+459	10003	102205	1	31400	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+460	10003	102205	1	31600	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+461	10003	102205	1	32000	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+462	10003	102205	1	32200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+463	10003	102205	1	32400	{"x":1400, "y":70}		10001			flyorbit_zhuangji					4		
+464	10003	102205	1	32600	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+465	10003	102205	1	33000	{"x":1400, "y":70}		10001			flyorbit_zhuangji					4		
+466	10003	102205	1	33200	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+467	10003	102205	1	33400	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+468	10003	102205	1	33600	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+469	10005	102205	1	31400	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+470	10004	102205	1	33600	{"x":1400, "y":130}		10001			flyorbit_zhuangji							
+471	10003	102205	1	34600	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+472	10003	102205	1	34800	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+473	10003	102205	1	35000	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+474	10003	102205	1	35200	{"x":1400, "y":70}		10001			flyorbit_zhuangji					4		
+475	10003	102205	1	35600	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+476	10003	102205	1	35800	{"x":1400, "y":70}		10001			flyorbit_zhuangji					4		
+477	10003	102205	1	36000	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+478	10003	102205	1	36200	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+479	10003	102205	1	36600	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+480	10003	102205	1	36800	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+481	10003	102205	1	37000	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+482	10003	102205	1	37200	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+483	10005	102205	1	35000	{"x":1400, "y":130}		10001			flyorbit_zhuangji							
+484	10004	102205	1	38000	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+																	
+485	10005	502001	1	3000	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+486	10004	502001	1	4000	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+487	10005	502001	1	5000	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+488	10004	502001	1	6000	{"x":1400, "y":60}		10001			flyorbit_zhuangji							
+489	10003	502001	1	7000	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+490	10003	502001	1	7200	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+491	10003	502001	1	7400	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+492	10003	502001	1	7600	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+493	10003	502001	1	7800	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+494	10003	502001	1	8000	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+495	10003	502001	1	8500	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+496	10003	502001	1	8700	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+497	10003	502001	1	8900	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+498	10003	502001	1	9100	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+499	10003	502001	1	9300	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+500	10003	502001	1	9500	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+501	10004	502001	1	10500	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+502	10005	502001	1	11500	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+503	10005	502001	1	12500	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+504	10003	502001	1	13500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+505	10003	502001	1	13700	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+506	10003	502001	1	13900	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+507	10003	502001	1	14100	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+508	10003	502001	1	14500	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+509	10003	502001	1	14700	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+510	10003	502001	1	14900	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+511	10003	502001	1	15100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+512	10003	502001	1	15500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+513	10003	502001	1	15700	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+514	10003	502001	1	15900	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+515	10003	502001	1	16100	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+516	10003	502001	1	16500	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+517	10003	502001	1	16700	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+518	10003	502001	1	16900	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+519	10003	502001	1	17100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+520	10004	502001	1	18100	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+521	10005	502001	1	18800	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+522	10005	502001	1	19500	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+523	10004	502001	1	20200	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+524	10005	502001	1	20900	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+525	10004	502001	1	21600	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+526	10005	502001	1	22300	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+527	10004	502001	1	23000	{"x":1400, "y":60}		10001			flyorbit_zhuangji							
+528	10004	502001	1	23700	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+529	10003	502001	1	24700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+530	10003	502001	1	24900	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+531	10003	502001	1	24900	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+532	10003	502001	1	25100	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+533	10003	502001	1	25100	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+534	10003	502001	1	25300	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+535	10003	502001	1	25300	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+536	10003	502001	1	25500	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+537	10003	502001	1	25500	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+538	10003	502001	1	25700	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+539	10003	502001	1	25700	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+540	10003	502001	1	24900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+541	10003	502001	1	25100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+542	10003	502001	1	25300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+543	10003	502001	1	25500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+544	10003	502001	1	25700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+545	10003	502001	1	25900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+546	10005	502001	1	26900	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+547	10005	502001	1	27700	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+548	10004	502001	1	28500	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+549	10003	502001	1	29300	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+550	10003	502001	1	29500	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+551	10003	502001	1	29700	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+552	10003	502001	1	30000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+553	10003	502001	1	30200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+554	10003	502001	1	30400	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+555	10003	502001	1	30700	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+556	10003	502001	1	30900	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+557	10003	502001	1	31100	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+558	10003	502001	1	31400	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+559	10003	502001	1	31600	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+560	10003	502001	1	31800	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+561	10003	502001	1	32100	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+562	10003	502001	1	32300	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+563	10003	502001	1	32500	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+564	10003	502001	1	32800	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+565	10003	502001	1	33000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+566	10003	502001	1	33200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+567	10005	502001	1	34200	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+568	10004	502001	1	34900	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+569	10005	502001	1	35600	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+570	10005	502001	1	36300	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+571	10004	502001	1	37000	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+572	10004	502001	1	37700	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+573	10005	502001	1	38400	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+574	10004	502001	1	39100	{"x":1400, "y":60}		10001			flyorbit_zhuangji							
+															5		
+575	10003	502002	1	3000	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+576	10003	502002	1	3400	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+577	10004	502002	1	4100	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+578	10005	502002	1	4800	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+579	10003	502002	1	5300	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+580	10003	502002	1	5600	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+581	10005	502002	1	6300	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+582	10005	502002	1	7000	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+583	10004	502002	1	7700	{"x":1400, "y":60}		10001			flyorbit_zhuangji							
+584	10003	502002	1	8500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+585	10003	502002	1	8900	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+586	10003	502002	1	8900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+587	10003	502002	1	8900	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+588	10003	502002	1	9300	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+589	10003	502002	1	9300	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+590	10003	502002	1	9300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+591	10003	502002	1	9300	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+592	10003	502002	1	9300	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+593	10003	502002	1	9700	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+594	10003	502002	1	9700	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+595	10003	502002	1	9700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+596	10003	502002	1	9700	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+597	10003	502002	1	9700	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+598	10003	502002	1	10100	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+599	10003	502002	1	10100	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+600	10003	502002	1	10100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+601	10003	502002	1	10100	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+602	10003	502002	1	10100	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+603	10003	502002	1	10500	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+604	10003	502002	1	10500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+605	10003	502002	1	10500	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+606	10003	502002	1	10900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+607	10005	502002	1	11700	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+608	10004	502002	1	12300	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+609	10005	502002	1	12900	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+610	10005	502002	1	13500	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+611	10004	502002	1	14100	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+612	10004	502002	1	14700	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+613	10005	502002	1	15300	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+614	10004	502002	1	15900	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+615	10005	502002	1	16500	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+616	10004	502002	1	17100	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+617	10005	502002	1	17700	{"x":1400, "y":160}		10001			flyorbit_zhuangji							
+618	10004	502002	1	18300	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+619	10004	502002	1	18900	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+620	10003	502002	1	19600	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+621	10003	502002	1	19800	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+622	10003	502002	1	20100	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+623	10003	502002	1	20300	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+624	10003	502002	1	20600	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+625	10003	502002	1	20800	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+626	10003	502002	1	21100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+627	10003	502002	1	21300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+628	10003	502002	1	21500	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+629	10003	502002	1	21700	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+630	10003	502002	1	22000	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+631	10003	502002	1	22200	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+632	10003	502002	1	22500	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+633	10003	502002	1	22700	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+634	10003	502002	1	23000	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+635	10003	502002	1	23200	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+636	10003	502002	1	23500	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+637	10003	502002	1	23700	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+638	10003	502002	1	24000	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+639	10003	502002	1	24200	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+640	10003	502002	1	24500	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+641	10003	502002	1	24700	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+642	10003	502002	1	25000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+643	10003	502002	1	25200	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+644	10003	502002	1	25500	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+645	10003	502002	1	25700	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+646	10005	502002	1	26400	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+647	10004	502002	1	26900	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+648	10005	502002	1	27400	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+649	10005	502002	1	27900	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+650	10004	502002	1	28400	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+651	10004	502002	1	28900	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+652	10005	502002	1	29400	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+653	10004	502002	1	29900	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+654	10005	502002	1	30400	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+655	10004	502002	1	30900	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+656	10005	502002	1	31400	{"x":1400, "y":160}		10001			flyorbit_zhuangji							
+657	10004	502002	1	31900	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+658	10004	502002	1	32400	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+659	10003	502002	1	26500	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+660	10003	502002	1	26700	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+661	10003	502002	1	27500	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+662	10003	502002	1	28000	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+663	10003	502002	1	29000	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+664	10003	502002	1	30000	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+665	10003	502002	1	30500	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+666	10003	502002	1	31000	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+667	10003	502002	1	33000	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+668	10003	502002	1	33200	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+669	10003	502002	1	33200	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+670	10003	502002	1	33500	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+671	10003	502002	1	33700	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+672	10003	502002	1	33700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+673	10003	502002	1	34000	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+674	10003	502002	1	34200	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+675	10003	502002	1	34200	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+676	10003	502002	1	34500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+677	10003	502002	1	34700	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+678	10003	502002	1	34700	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+679	10003	502002	1	35000	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+680	10003	502002	1	35200	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+681	10003	502002	1	35200	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+682	10003	502002	1	35500	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+683	10003	502002	1	35700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+684	10003	502002	1	35700	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+685	10003	502002	1	36300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+686	10003	502002	1	36500	{"x":1400, "y":105}		10001			flyorbit_zhuangji					4		
+687	10003	502002	1	36500	{"x":1400, "y":65}		10001			flyorbit_zhuangji					4		
+688	10003	502002	1	36700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+689	10003	502002	1	36700	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+690	10003	502002	1	36700	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+691	10003	502002	1	36900	{"x":1400, "y":155}		10001			flyorbit_zhuangji					4		
+692	10003	502002	1	36900	{"x":1400, "y":15}		10001			flyorbit_zhuangji					4		
+693	10003	502002	1	36900	{"x":1400, "y":65}		10001			flyorbit_zhuangji					4		
+694	10003	502002	1	36900	{"x":1400, "y":105}		10001			flyorbit_zhuangji					4		
+695	10003	502002	1	37100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+696	10003	502002	1	37100	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+697	10003	502002	1	37100	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+698	10003	502002	1	37300	{"x":1400, "y":105}		10001			flyorbit_zhuangji					4		
+699	10003	502002	1	37300	{"x":1400, "y":65}		10001			flyorbit_zhuangji					4		
+700	10003	502002	1	37500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+																	
+701	10003	502003	1	3000	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+702	10003	502003	1	3200	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+703	10003	502003	1	3400	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+704	10003	502003	1	3700	{"x":1400, "y":85}		10001			flyorbit_zhuangji					4		
+705	10003	502003	1	3900	{"x":1400, "y":85}		10001			flyorbit_zhuangji					4		
+706	10003	502003	1	4100	{"x":1400, "y":85}		10001			flyorbit_zhuangji					4		
+707	10003	502003	1	4400	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+708	10003	502003	1	4600	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+709	10003	502003	1	4800	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+710	10005	502003	1	5500	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+711	10004	502003	1	6200	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+712	10003	502003	1	6900	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+713	10003	502003	1	7100	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+714	10003	502003	1	7300	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+715	10003	502003	1	7600	{"x":1400, "y":85}		10001			flyorbit_zhuangji					4		
+716	10003	502003	1	7800	{"x":1400, "y":85}		10001			flyorbit_zhuangji					4		
+717	10003	502003	1	8000	{"x":1400, "y":85}		10001			flyorbit_zhuangji					4		
+718	10003	502003	1	8300	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+719	10003	502003	1	8500	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+720	10003	502003	1	8700	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+721	10005	502003	1	9400	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+722	10004	502003	1	10100	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+723	10005	502003	1	10800	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+724	10005	502003	1	11500	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+725	10004	502003	1	12200	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+726	10004	502003	1	12900	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+727	10005	502003	1	13600	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+728	10004	502003	1	14300	{"x":1400, "y":60}		10001			flyorbit_zhuangji							
+729	10003	502003	1	15000	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+730	10003	502003	1	15200	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+731	10003	502003	1	15200	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+732	10003	502003	1	15200	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+733	10003	502003	1	15400	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+734	10003	502003	1	16000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+735	10003	502003	1	16200	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+736	10003	502003	1	16200	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+737	10003	502003	1	16200	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+738	10003	502003	1	16400	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+739	10003	502003	1	17000	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+740	10003	502003	1	17200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+741	10003	502003	1	17200	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+742	10003	502003	1	17200	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+743	10003	502003	1	17400	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+744	10003	502003	1	18000	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+745	10003	502003	1	18200	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+746	10003	502003	1	18200	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+747	10003	502003	1	18200	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+748	10003	502003	1	18400	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+749	10003	502003	1	19000	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+750	10003	502003	1	19200	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+751	10003	502003	1	19400	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+752	10003	502003	1	19600	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+753	10003	502003	1	19800	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+754	10003	502003	1	20000	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+755	10003	502003	1	20200	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+756	10003	502003	1	20400	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+757	10003	502003	1	20600	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+758	10003	502003	1	20800	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+759	10003	502003	1	21000	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+760	10003	502003	1	21200	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+761	10003	502003	1	21400	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+762	10005	502003	1	22000	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+763	10004	502003	1	22500	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+764	10005	502003	1	23000	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+765	10005	502003	1	23500	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+766	10004	502003	1	24000	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+767	10004	502003	1	24500	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+768	10005	502003	1	25000	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+769	10004	502003	1	25500	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+770	10005	502003	1	26000	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+771	10004	502003	1	26500	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+772	10005	502003	1	27000	{"x":1400, "y":160}		10001			flyorbit_zhuangji							
+773	10004	502003	1	27500	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+774	10004	502003	1	28000	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+775	10003	502003	1	28600	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+776	10003	502003	1	28600	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+777	10003	502003	1	28800	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+778	10003	502003	1	29000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+779	10003	502003	1	29000	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+780	10003	502003	1	29500	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+781	10003	502003	1	29500	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+782	10003	502003	1	29700	{"x":1400, "y":115}		10001			flyorbit_zhuangji					4		
+783	10003	502003	1	29700	{"x":1400, "y":45}		10001			flyorbit_zhuangji					4		
+784	10003	502003	1	29900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+785	10003	502003	1	30100	{"x":1400, "y":115}		10001			flyorbit_zhuangji					4		
+786	10003	502003	1	30100	{"x":1400, "y":45}		10001			flyorbit_zhuangji					4		
+787	10003	502003	1	30300	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+788	10003	502003	1	30300	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+789	10003	502003	1	30800	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+790	10003	502003	1	30800	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+791	10003	502003	1	31000	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+792	10003	502003	1	31200	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+793	10003	502003	1	31200	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+794	10003	502003	1	31800	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+795	10003	502003	1	31800	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+796	10003	502003	1	32000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+797	10003	502003	1	32000	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+798	10003	502003	1	32200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+799	10003	502003	1	32200	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+800	10003	502003	1	32400	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+801	10003	502003	1	32400	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+802	10003	502003	1	32600	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+803	10003	502003	1	32600	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+804	10003	502003	1	32800	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+805	10003	502003	1	32800	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+806	10003	502003	1	33000	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+807	10003	502003	1	33000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+808	10003	502003	1	33200	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+809	10003	502003	1	33200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+810	10003	502003	1	33400	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+811	10003	502003	1	33400	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+812	10003	502003	1	33600	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+813	10003	502003	1	33600	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+814	10003	502003	1	33800	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+815	10003	502003	1	33800	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+816	10003	502003	1	34000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+817	10003	502003	1	34000	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+818	10003	502003	1	34200	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+819	10003	502003	1	34200	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+820	10003	502003	1	34800	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+821	10003	502003	1	35000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+822	10003	502003	1	35200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+823	10003	502003	1	35500	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+824	10003	502003	1	35700	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+825	10003	502003	1	35900	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+826	10003	502003	1	36200	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+827	10003	502003	1	36400	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+828	10003	502003	1	36600	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+829	10003	502003	1	36900	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+830	10003	502003	1	37100	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+831	10003	502003	1	37300	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+832	10003	502003	1	37600	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+833	10003	502003	1	37800	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+834	10003	502003	1	38000	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+835	10003	502003	1	38300	{"x":1400, "y":150}		10001			flyorbit_zhuangji					4		
+836	10003	502003	1	38500	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+837	10003	502003	1	38700	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+																	
+837	10003	502004	1	3000	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+838	10003	502004	1	3200	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+839	10003	502004	1	3400	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+840	10003	502004	1	3000	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+841	10003	502004	1	3200	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+842	10003	502004	1	3400	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+843	10004	502004	1	4000	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+844	10003	502004	1	4600	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+845	10003	502004	1	4800	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+846	10003	502004	1	5000	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+847	10003	502004	1	4600	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+848	10003	502004	1	4800	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+849	10003	502004	1	5000	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+850	10005	502004	1	5800	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+851	10004	502004	1	6500	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+852	10005	502004	1	7200	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+853	10005	502004	1	7900	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+854	10004	502004	1	8600	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+855	10004	502004	1	9300	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+856	10005	502004	1	10000	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+857	10004	502004	1	10700	{"x":1400, "y":60}		10001			flyorbit_zhuangji							
+858	10003	502004	1	11500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+859	10003	502004	1	11700	{"x":1400, "y":105}		10001			flyorbit_zhuangji					4		
+860	10003	502004	1	11700	{"x":1400, "y":65}		10001			flyorbit_zhuangji					4		
+861	10003	502004	1	11900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+862	10003	502004	1	11900	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+863	10003	502004	1	11900	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+864	10003	502004	1	12100	{"x":1400, "y":155}		10001			flyorbit_zhuangji					4		
+865	10003	502004	1	12100	{"x":1400, "y":15}		10001			flyorbit_zhuangji					4		
+866	10003	502004	1	12100	{"x":1400, "y":65}		10001			flyorbit_zhuangji					4		
+867	10003	502004	1	12100	{"x":1400, "y":105}		10001			flyorbit_zhuangji					4		
+868	10003	502004	1	12300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+869	10003	502004	1	12300	{"x":1400, "y":130}		10001			flyorbit_zhuangji					4		
+870	10003	502004	1	12300	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+871	10003	502004	1	12500	{"x":1400, "y":105}		10001			flyorbit_zhuangji					4		
+872	10003	502004	1	12500	{"x":1400, "y":65}		10001			flyorbit_zhuangji					4		
+873	10003	502004	1	12700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+874	10003	502004	1	13300	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+875	10003	502004	1	13300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+876	10003	502004	1	13300	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+877	10003	502004	1	13500	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+878	10003	502004	1	13500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+879	10003	502004	1	13500	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+880	10003	502004	1	13700	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+881	10003	502004	1	13700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+882	10003	502004	1	13700	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+883	10003	502004	1	14300	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+884	10003	502004	1	14300	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+885	10003	502004	1	14300	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+886	10003	502004	1	14500	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+887	10003	502004	1	14500	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+888	10003	502004	1	14500	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+889	10003	502004	1	14700	{"x":1400, "y":90}		10001			flyorbit_zhuangji					4		
+890	10003	502004	1	14700	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+891	10003	502004	1	14700	{"x":1400, "y":10}		10001			flyorbit_zhuangji					4		
+892	10003	502004	1	15300	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+893	10003	502004	1	15300	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+894	10003	502004	1	15300	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+895	10003	502004	1	15500	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+896	10003	502004	1	15500	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+897	10003	502004	1	15500	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+898	10003	502004	1	15700	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+899	10003	502004	1	15700	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+900	10003	502004	1	15700	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+901	10005	502004	1	16400	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+902	10004	502004	1	16900	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+903	10005	502004	1	17400	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+904	10005	502004	1	17900	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+905	10004	502004	1	18400	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+906	10004	502004	1	18900	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+907	10005	502004	1	19400	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+908	10004	502004	1	19900	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+909	10005	502004	1	20400	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+910	10004	502004	1	20900	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+911	10005	502004	1	21400	{"x":1400, "y":160}		10001			flyorbit_zhuangji							
+912	10004	502004	1	21900	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+913	10004	502004	1	22400	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+914	10003	502004	1	23000	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+915	10003	502004	1	23200	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+916	10003	502004	1	23400	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+917	10003	502004	1	23600	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+918	10003	502004	1	23800	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+919	10003	502004	1	24400	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+920	10003	502004	1	24600	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+921	10003	502004	1	24800	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+922	10003	502004	1	25000	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+923	10003	502004	1	25200	{"x":1400, "y":40}		10001			flyorbit_zhuangji					4		
+924	10003	502004	1	25800	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+925	10003	502004	1	26000	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		
+926	10003	502004	1	26200	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+927	10003	502004	1	26400	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+928	10003	502004	1	26600	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+929	10003	502004	1	27300	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+930	10003	502004	1	27500	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+931	10003	502004	1	27700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+932	10003	502004	1	27900	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+933	10003	502004	1	28100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+934	10003	502004	1	28300	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+935	10003	502004	1	28500	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+936	10003	502004	1	28700	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+937	10003	502004	1	28900	{"x":1400, "y":140}		10001			flyorbit_zhuangji					4		
+938	10003	502004	1	29100	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+939	10003	502004	1	29300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+940	10003	502004	1	29500	{"x":1400, "y":110}		10001			flyorbit_zhuangji					4		
+941	10003	502004	1	29700	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+942	10003	502004	1	29900	{"x":1400, "y":50}		10001			flyorbit_zhuangji					4		
+943	10003	502004	1	30100	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+944	10005	502004	1	30800	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+945	10004	502004	1	31400	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+946	10005	502004	1	32000	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+947	10005	502004	1	32600	{"x":1400, "y":100}		10001			flyorbit_zhuangji							
+948	10004	502004	1	33200	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+949	10004	502004	1	33800	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+950	10005	502004	1	34400	{"x":1400, "y":140}		10001			flyorbit_zhuangji							
+951	10004	502004	1	35000	{"x":1400, "y":40}		10001			flyorbit_zhuangji							
+952	10005	502004	1	35600	{"x":1400, "y":120}		10001			flyorbit_zhuangji							
+953	10004	502004	1	36200	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+954	10005	502004	1	36800	{"x":1400, "y":160}		10001			flyorbit_zhuangji							
+955	10004	502004	1	37400	{"x":1400, "y":80}		10001			flyorbit_zhuangji							
+956	10004	502004	1	38000	{"x":1400, "y":20}		10001			flyorbit_zhuangji							
+957	10003	502004	1	31100	{"x":1400, "y":30}		10001			flyorbit_zhuangji					4		
+958	10003	502004	1	31700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+959	10003	502004	1	31900	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+960	10003	502004	1	32300	{"x":1400, "y":160}		10001			flyorbit_zhuangji					4		
+961	10003	502004	1	32900	{"x":1400, "y":20}		10001			flyorbit_zhuangji					4		
+962	10003	502004	1	33500	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+963	10003	502004	1	33700	{"x":1400, "y":120}		10001			flyorbit_zhuangji					4		
+964	10003	502004	1	34100	{"x":1400, "y":70}		10001			flyorbit_zhuangji					4		
+965	10003	502004	1	34700	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+966	10003	502004	1	35300	{"x":1400, "y":80}		10001			flyorbit_zhuangji					4		
+967	10003	502004	1	35900	{"x":1400, "y":60}		10001			flyorbit_zhuangji					4		
+968	10003	502004	1	36500	{"x":1400, "y":100}		10001			flyorbit_zhuangji					4		

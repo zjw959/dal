@@ -1,0 +1,7 @@
+package org.game.protobuf.c2s;
+
+//获取所有图鉴
+//code = 4865
+message GetAllElement {
+	enum MsgID{eMsgID = 4865;}; //注意：消息id放最后,以免客户端解析异常
+}

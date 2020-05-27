@@ -1,0 +1,59 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SDatingMsg";
+enum ScriptType {
+    MAIN_SCRIPT = 1; // 主线剧本
+    DAY_SCRIPT = 2; // 日常剧本
+    RESERVE_SCRIPT = 3; // 预约约会剧本
+    TRIGGER_SCRIPT = 4; // 触发约会剧本
+    WORK_SCRIPT = 5; // 打工约会剧本
+    OUT_SCRIPT = 6; // 出游约会剧本
+    DUNGEON_SCRIPT = 7; // 出游约会剧本
+    PHONE_SCRIPT=10; //手机约会
+}
+
+// 获取剧本
+//code = 1537
+message GetScriptMsg {
+    required ScriptType scriptType = 1; // 剧本类型
+    required int32 roleId = 2;//精灵id
+    optional int32 buildId = 3; // 建筑id
+    optional int32 scriptId = 4; //剧本id
+    optional int32 cityId = 5; // 区域id
+    optional string cityDatingId = 6; // 城市约会id
+	enum MsgID{eMsgID = 1537;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//对话
+//code = 1538
+message DialogueMsg {
+    optional int32 branchNodeId = 1; // 分支节点id
+    required int32 selectedNodeId = 2; //选择的节点id
+    required bool isLastNode = 3; //是否结束节点
+    required int32 datingType = 4; //约会类型
+    required int32 roleId = 5;//精灵id
+    required string datingId = 6; // 约会唯一ID
+	enum MsgID{eMsgID = 1538;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//登录约会消息
+//code = 1539
+message GetDatingInfo {
+	enum MsgID{eMsgID = 1539;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//接受约会邀请
+//code = 1544
+message AnswerDatingInvitationMsg {
+    required string datingId = 1; //约会id
+    required int32 answer = 2; //回答
+	enum MsgID{eMsgID = 1544;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//继续约会
+//code = 1552
+message ContinueDating{
+    required int32 datingType = 1; //约会类型
+    required int32 datingRuleCid = 2;// 约会id
+	enum MsgID{eMsgID = 1552;}; //注意：消息id放最后,以免客户端解析异常
+}

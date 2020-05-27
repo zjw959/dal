@@ -1,0 +1,123 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CExtraDatingMsg";
+import "S2C/S2CShareMsg.proto";
+
+// 取得外传激活信息
+// code = 5639
+message RespOutsideActiveInfo{
+	repeated int32 activeOutsideIds = 1;//可用的外传id
+	repeated int32 newOutsideIds = 2;//新激活的外传id,用于界面显示如无需求不处理
+	enum MsgID{eMsgID = 5639;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 返回建筑事件选择id
+// code = 5634
+message RespEntranceEventChoices {
+    required int32 datingType = 1; //1
+    required bool first = 2; //是否首次进入本段剧本
+	enum MsgID{eMsgID = 5634;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 返回建筑事件选择后的信息
+// code = 5635
+message RespEntranceEventChoosed {
+    required int32 datingType = 1; //约会类型1 外传 2 主线
+	required int32 datingValue = 2; //当类型为外传时,值传外传ID,主线则为主线章节
+	repeated RewardsMsg items = 3;//获取的剧本/信息物品,使用时判定列表长度
+	repeated RewardsMsg endItems = 4;//外传结局信息,使用时判定字段是否存在
+	repeated RewardsMsg costItems = 5;//扣除的剧本/信息物品,使用时判定列表长度
+	repeated QualityInfo quality = 6;//用于主线约会属性显示
+	optional int32 stepEnd = 7 ;//1 如果值为1 则是阶段结局 
+	enum MsgID{eMsgID = 5635;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 返回可用选择信息
+// code = 5640
+message RespChoices {
+    required int32 datingType = 1; //约会类型1 外传 2 主线
+	required int32 datingValue = 2; //当类型为外传时,值传外传ID,主线则为主线章节
+	repeated int32 eventId = 3;//id列表
+	enum MsgID{eMsgID = 5640;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 约会主界面信息
+// code = 5633
+message RespMainInfo {
+	required DatingInfo info = 1;//主要信息
+	enum MsgID{eMsgID = 5633;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 主界面信息刷新
+// code = 5637
+message SettleInfo {
+	required DatingInfo info = 1;//主要信息
+	enum MsgID{eMsgID = 5637;}; //注意：消息id放最后,以免客户端解析异常
+}
+//主界面引导信息回复
+//code = 5650
+message ResFavorDatingPanel{
+    required int32 roleId = 1; //精灵Id
+    repeated FavorStatueInfo info = 2;
+    enum MsgID{eMsgID = 5650;}; //注意：消息id放最后,以免客户端解析异常
+}
+//code = 5651
+message ResFavorReward{
+    required int32 favorDatingId = 1; //Favor表对应id
+    required int32 statue = 2; // 1领取成功
+    enum MsgID{eMsgID = 5651;}; //注意：消息id放最后,以免客户端解析异常
+}
+//触发约会章节激活提示
+//code = 5652
+message ResTiggerRoleNotice{
+    required int32 favorDatingId = 1; //Favor表对应id
+    required int32 statue = 2; //0表示章节状态取消显示 1显示
+    enum MsgID{eMsgID = 5652;}; //注意：消息id放最后,以免客户端解析异常
+}
+//返回获取精灵章节提示
+//code = 5653
+message ResFavorDatingNotices{
+    repeated ResTiggerRoleNotice favorRoleStatue = 1; //Favor表对应id
+    enum MsgID{eMsgID = 5653;}; //注意：消息id放最后,以免客户端解析异常
+}
+//返回获取精灵对应主线约会相关信息(测试用)
+//code = 5660
+message ResFavorDatingTestInfo{
+    repeated QualityInfo qualityInfo = 1; //属性信息
+    repeated int32 signList = 2;//拥有标记列表
+    repeated RewardsMsg items = 3;//拥有的物品信息
+    enum MsgID{eMsgID = 5660;}; //注意：消息id放最后,以免客户端解析异常
+}
+//主线约会点击精灵头像更新状态
+//code = 5661
+message ResFreshRoleNotice{
+    enum MsgID{eMsgID = 5661;}; //注意：消息id放最后,以免客户端解析异常
+}
+// 约会主要信息
+message DatingInfo {
+    required int32 datingType = 1; //约会类型1 外传 2 主线
+	required int32 datingValue = 2; //当类型为外传时,值传外传ID,主线则为主线章节
+	repeated RewardsMsg bag = 3;//背包
+	repeated int32 endings = 4;//结局
+	required int32 stepTime = 5;// 阶段时间
+	repeated EntranceInfo entrances = 6;// 入口
+	repeated QualityInfo quality = 7;//用于主线约会属性显示
+}
+//事件入口状态信息
+message EntranceInfo{
+   required int32 entranceId = 1; //入口id
+   required bool guide = 2;//值 
+}
+
+//主线约会属性信息
+message QualityInfo{
+   required int32 qualityId = 1; //对应DatingVariable表id
+   required int32 value = 2;//值 
+}
+//主线约会引导界面状态信息
+message FavorStatueInfo{
+   required int32 favorId = 1; //对应FavorDating表Id
+   required int32 statue = 2;//0未激活,1激活 2已领(奖励状态)
+   required int32 firstPass = 3;//0还未通关过 1已经通关过
+   optional int32 energy = 4; //消耗精力
+}

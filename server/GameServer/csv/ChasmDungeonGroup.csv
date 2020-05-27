@@ -1,0 +1,5 @@
+ID	背景地图图片	关卡列表	关卡位点
+id	mapPic	levelList	levelPosList
+number	string	numbers	json
+int			
+10010	level_map_1.png	410001-410002-410003	[[217,305],[384,195],[536,362]]

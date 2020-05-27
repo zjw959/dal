@@ -1,0 +1,5 @@
+id	奖励	广告图	活动名称
+id	gifts	adIcon	name
+number	json	string	string
+int	map	string	string
+1	{110501:1}	scene/summon/006.png	1800004

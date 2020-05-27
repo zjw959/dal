@@ -1,0 +1,12 @@
+顺序ID	效果描述	名称（播放动画，替换图片，触发剧情...）	类型（1,动画 2,背景音乐 3,音效 4,看板娘动作 5,看板娘表情,6,触发约会）
+id	des	name	type
+number	string	string	number
+int	string	string	int
+10001	点击播放闪光动画	ui_dating_score	1
+10002	点击播放背景音乐	sound/bgm/date_001.mp3	2
+10003	播放看板娘动作	id_send_food	4
+10004	播放看板娘语音	sound/role/yuyin_shixiang_7.mp3	3
+10005	播放看板娘动作	id_send_gift	4
+10006	播放看板娘动作	id_send_gift_1	4
+10007	播放看板娘动作	id_send_gift_2	4
+10008	播放看板娘表情	modle/bust/bust_101_eff-bust_101_eff.model.json-id1_1_gas	5

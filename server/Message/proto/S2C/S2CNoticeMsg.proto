@@ -1,0 +1,31 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CNoticeMsg";
+
+
+//获取公告牌通知
+//code = 3585
+message GetBillBoardNotice {
+	repeated BillBoardNotice billBoardNotice = 1;
+	enum MsgID{eMsgID = 3585;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//跑马灯
+//code = 3586
+message MarqueeNotice{
+	required string content = 1;
+	enum MsgID{eMsgID = 3586;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message BillBoardNotice{
+	required int32 type = 1;//公告类型（1-活动公告 2-游戏公告）
+	required int32 index = 2;//顺序
+	required int32 tag = 3;//标签（0-无 1-hot 2-new 3-限时）
+	required string title = 4;//标题
+	required string content = 5;//内容
+	optional string contextImg = 6;//图片
+	optional string param = 7;//附加参数（json串格式）
+}
+
+
+

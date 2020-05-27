@@ -1,0 +1,45 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SActivityMsg";
+
+// 取得所有活动信息
+// code = 5121
+message ReqActivitys{
+	enum MsgID{eMsgID = 5121;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 提交活动
+// code = 5122
+message SubmitActivity{
+	required int32 activitId = 1;			// 活动ID
+	repeated int32 activitEntryId = 2;		// 活动条目ID
+	optional string extendData = 3;		// 扩展数据
+	enum MsgID{eMsgID = 5122;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得所有活动信息
+// code = 5124
+message NewReqActivitys{
+	enum MsgID{eMsgID = 5124;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 提交活动
+// code = 5125
+message NewSubmitActivity{
+	required int32 activitId = 1;			// 活动ID
+	required int32 activitEntryId = 2;		// 活动条目ID
+	optional string extendData = 3;		// 扩展数据
+	enum MsgID{eMsgID = 5125;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得所有活动条目信息
+// code = 5127
+message NewReqActivityItems{
+	enum MsgID{eMsgID = 5127;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得所有活动条目进度信息
+// code = 5128
+message NewReqActivityProgress{
+	enum MsgID{eMsgID = 5128;}; //注意：消息id放最后,以免客户端解析异常
+}

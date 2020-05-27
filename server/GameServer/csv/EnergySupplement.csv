@@ -1,0 +1,6 @@
+id	领取时间	奖励	广告图	活动名称	活动icon
+id	time	gifts	adIcon	name	icon
+number	json	json	string	string	string
+int	map	map	string	string	string
+1	{43200:50400}	{500004:30}	scene/summon/008.png	1800002	ui/fuli/icon2.png
+2	{64800:72000}	{500004:30}			

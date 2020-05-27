@@ -1,0 +1,34 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SRechargeMsg";
+
+//获取订单号
+//code = 4353
+message GetOrderNo {
+	required int32 goodsId = 1; //商品id
+	enum MsgID{eMsgID = 4353;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//领月卡物品
+//code = 4354
+message GainMonthCardItem{
+	enum MsgID{eMsgID = 4354;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取月卡信息
+//code = 4356
+message GetMonthCardInfo{
+	enum MsgID{eMsgID = 4356;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取购买记录
+//code = 4357
+message GetBuyRecordInfo{
+	enum MsgID{eMsgID = 4357;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取充值商品信息
+//code = 4360
+message GetRechargeCfg {
+	enum MsgID{eMsgID = 4360;}; //注意：消息id放最后,以免客户端解析异常
+}

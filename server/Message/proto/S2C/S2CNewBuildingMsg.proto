@@ -1,0 +1,222 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CNewBuildingMsg";
+import "S2C/S2CShareMsg.proto";
+
+
+//请求获取建筑数据
+// code = 2071
+message RespGetAllBuildingInfo{
+	repeated NewBuildingInfo buildinginfos = 1; //建筑信息
+	repeated RoleInRoom roleInRooms = 2; //精灵信息
+	repeated RemindEvent remindEvents = 3; //提醒信息
+	required int32 dayType = 4; //是白天还是黑夜
+	enum MsgID{eMsgID = 2071;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//新版建筑
+message NewBuildingInfo{
+	required int32 buildingId = 1; //配置id
+	repeated int32 buildingFuns = 2;
+}
+
+//新版角色
+message RoleInRoom{
+	required int64 dressId = 1; //配置功能模型id
+	required int32 buildingId = 2; //配置id;
+	required int32 lineId = 3; //台词id;
+	
+}
+
+//提醒事件
+message RemindEvent{
+	required int32 buildingId = 1; //建筑id
+	required int32 funId = 2; //功能id
+	required int32 exeId = 3; //执行Id
+	required int32 eventType = 4; //提醒类型
+}
+
+// 刷新(新增)数据
+// code = 2072
+message RespUpdateBuildingInfo{
+	repeated NewBuildingInfo buildinginfos = 1; //建筑信息
+	repeated RoleInRoom roleInRooms = 2; //精灵信息
+	repeated RemindEvent remindEvents = 3; //提醒信息
+	required int32 dayType = 4; //是白天还是黑夜
+	enum MsgID{eMsgID = 2072;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 提醒事件已经完成
+// code = 2073
+message RespRemindSuccess{
+	required bool isSuccess= 1;//是否成功
+	required int32 eventType = 2; //提醒类型
+	enum MsgID{eMsgID = 2073;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取兼职任务
+// code = 2076
+message RespPartTimeJobList{
+	optional JobInfo jobEvent = 1; //正在兼职
+	repeated JobInfoList jobLists = 2;//兼职列表
+	enum MsgID{eMsgID = 2076;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//兼职列表
+message JobInfoList{
+	required int32 buildingId = 1; //建筑ID
+	repeated JobInfo jobInfos = 2;//建筑的兼职列表
+	required int32 level = 3;//建筑兼职等级
+	required int64 exp = 4;//建筑兼职经验值
+
+}
+
+//兼职信息
+message JobInfo{
+	required int32 buildingId = 1; //建筑ID
+	required int32 type = 2; //白天还是黑夜
+	repeated RewardsMsg rewards = 3;//奖励信息
+	repeated RewardsMsg extraRewards = 4;//额外奖励
+	required int32 jobId = 5; //兼职ID
+	required int32 jobType = 6; //兼职任务状态
+	optional int32 etime = 7; //兼职任务结束时间
+}
+
+//请求兼职任务
+// code = 2077
+message RespDoPartTimeJob{
+	required JobInfo jobInfo = 1; //兼职信息
+	enum MsgID{eMsgID = 2077;};
+}
+
+//请求获取兼职奖励
+// code = 2078
+message RespPartTimeJobAward{
+	optional JobInfoList jobList = 1;//建筑兼职列表
+	repeated RewardsMsg rewards = 2;//奖励信息
+	repeated RewardsMsg extraRewards = 3;//额外奖励
+	required int64 addExp = 4;//兼职任务获得的兼职经验
+	enum MsgID{eMsgID = 2078;};
+}
+
+//请求放弃兼职
+// code = 2079
+message RespGiveUpJob{
+	optional JobInfo jobEvent = 1; //正在兼职
+	optional JobInfoList jobList = 2;//建筑兼职列表
+	enum MsgID{eMsgID = 2079;};
+}
+
+// 返回抓娃娃信息
+// code = 2062
+message GetGashaponInfo{
+	required string eggPool = 1; //抓娃娃蛋池
+	required int64 pollRefreshCdEndTime = 2; //蛋池刷新cd结束时间
+	required int64 catchEndTime = 3; //本次抓娃娃结束时间
+	required int32 eggPoolId = 4; //蛋池id
+	enum MsgID{eMsgID = 2062;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 响应抓娃娃
+// code = 2063
+message RespStartGashapon{
+	required int64 catchEndTime = 1; //本次抓娃娃结束时间
+	enum MsgID{eMsgID = 2063;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 响应抓娃娃结果验证
+// code = 2064
+message RespCheckGashaponResult{
+	required string eggPool = 1; //抓娃娃蛋池
+	repeated int32 eggIds = 2; //抓到的蛋id（可能一次抓到多个）
+	repeated RewardsMsg rewards = 3;//奖励物品
+	enum MsgID{eMsgID = 2064;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 响应刷新抓娃娃蛋池
+// code = 2065
+message RespRefreshGashaponPool{
+	required string eggPool = 1; //抓娃娃蛋池
+	required int64 pollRefreshCdEndTime = 2; //蛋池刷新cd结束时间
+	required int32 eggPoolId = 3; //蛋池id
+	enum MsgID{eMsgID = 2065;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+//返回料理数据
+// code = 2066
+message RespgetFoodbaseInfo{
+	optional FoodbaseInfo foodbaseInfo=1;
+	enum MsgID{eMsgID = 2066;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//返回制作料理
+// code = 2067
+message RespCookFoodbase{
+	required int32 foodId=1;
+	required int32 endTime=2;
+	enum MsgID{eMsgID = 2067;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+//验证QTE完成上传积分
+// code = 2068
+message RespUploadQteIntegral{
+	required int32 foodId = 1;
+	required int32 qteId = 2;
+	required int32 integral = 3;
+	required int32 qteIntegral = 4;
+	enum MsgID{eMsgID = 2068;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//返回料理奖励
+// code = 2069
+message RespGetFoodBaseAward{
+	required int32 foodId = 1;
+	repeated RewardsMsg rewards = 2;//奖励物品
+	enum MsgID{eMsgID = 2069;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//料理信息
+message FoodbaseInfo{
+	required int32 foodId=1;			
+	required int32 endTime=2;
+	required int32 integral=3;
+}
+
+//手工信息
+message HandWorkInfo{
+	required int32 manualId=1;			
+	required int32 endTime=2;
+	required int32 integral=3;
+}
+
+//返回手工数据
+// code = 2080
+message RespGetHandWorkInfo{
+	optional HandWorkInfo handWorkInfo=1;
+	enum MsgID{eMsgID = 2080;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//返回制作手工数据
+// code = 2081
+message RespDoHandWork{
+	required int32 manualId=1;
+	required int32 endTime=2;
+	enum MsgID{eMsgID = 2081;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//验证手工操作完成上传积分
+// code = 2082
+message RespUploadHandIntegral{
+	enum MsgID{eMsgID = 2082;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//返回手工奖励
+// code = 2083
+message RespGetHandWorkAward{
+	required int32 manualId = 1;
+	repeated RewardsMsg rewards = 2;//奖励物品
+	enum MsgID{eMsgID = 2083;}; //注意：消息id放最后,以免客户端解析异常
+}
+

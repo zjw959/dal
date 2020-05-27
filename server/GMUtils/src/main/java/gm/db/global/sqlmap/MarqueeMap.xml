@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_marquee">
+    <resultMap id="MarqueeDBBean" type="gm.db.global.bean.MarqueeDBBean">
+        <result column="id" property="id" jdbcType="BIGINT"/>
+        <result column="body" property="body" jdbcType="VARCHAR"/>
+        <result column="weight" property="weight" jdbcType="INTEGER"/>
+        <result column="loop_count" property="loop_count" jdbcType="INTEGER"/>
+        <result column="interval_time" property="interval_time" jdbcType="INTEGER"/>
+        <result column="create_date" property="create_date" jdbcType="TIMESTAMP"/>
+        <result column="begin_date" property="begin_date" jdbcType="TIMESTAMP"/>
+        <result column="end_date" property="end_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    
+    <select id="selectExistMarquees" parameterType="HashMap" resultMap="MarqueeDBBean">
+        SELECT * 
+        FROM t_marquee
+        WHERE begin_date &lt;= #{time,jdbcType=TIMESTAMP} and end_date &gt; #{time,jdbcType=TIMESTAMP}
+        order by weight desc;
+    </select>
+    
+    <select id="selectSameTimeMarquees" parameterType="HashMap" resultMap="MarqueeDBBean">
+        SELECT * 
+        FROM t_marquee
+        WHERE (begin_date between #{bengin_date,jdbcType=TIMESTAMP} and #{end_date,jdbcType=TIMESTAMP}) 
+        or (end_date between #{bengin_date,jdbcType=TIMESTAMP} and #{end_date,jdbcType=TIMESTAMP});
+    </select>
+    
+    <select id="selectById" parameterType="Long" resultMap="MarqueeDBBean">
+        SELECT * 
+        FROM t_marquee where id = #{id,jdbcType=BIGINT};
+    </select>
+    
+    <select id="selectAll" resultMap="MarqueeDBBean">
+        SELECT * 
+        FROM t_marquee;
+    </select>
+
+    <insert id="insertMarquee" parameterType="gm.db.global.bean.MarqueeDBBean">
+    	insert into t_marquee (
+		id,
+		body,
+		weight,
+		loop_count,
+		interval_time,
+		create_date,
+		begin_date,
+		end_date
+		)values(
+		#{id, jdbcType=BIGINT},
+		#{body, jdbcType=VARCHAR},
+		#{weight, jdbcType=INTEGER},
+		#{loop_count, jdbcType=INTEGER},
+		#{interval_time, jdbcType=INTEGER},
+		#{create_date, jdbcType=TIMESTAMP},
+		#{begin_date, jdbcType=TIMESTAMP},
+		#{end_date, jdbcType=TIMESTAMP}
+		)
+    </insert>
+  
+    <update id="updateMarquee" parameterType="gm.db.global.bean.MarqueeDBBean">
+    	update t_marquee 
+		set 
+		body = #{body, jdbcType=VARCHAR},
+		weight = #{weight, jdbcType=INTEGER},
+		loop_count = #{loop_count, jdbcType=INTEGER},
+		interval_time = #{interval_time, jdbcType=INTEGER},
+		begin_date = #{begin_date, jdbcType=TIMESTAMP},
+		end_date = #{end_date, jdbcType=TIMESTAMP}
+		where id = #{id, jdbcType=BIGINT};
+    </update>
+    
+    <delete id="deleteMarqueesById" parameterType="java.util.List">
+    	delete from t_marquee where id  IN
+		<foreach collection="list" item="marqueeId" index="index" open="(" separator="," close=")">
+		    #{marqueeId,jdbcType=BIGINT}
+		</foreach>
+    </delete>
+    
+</mapper>

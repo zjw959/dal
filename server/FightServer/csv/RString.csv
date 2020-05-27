@@ -1,0 +1,99 @@
+ID	分类（策划看）	对齐方式（left  center right）	文本内容1	点击Id1	字号1	RGB颜色1	字体名1	文本内容2	点击Id2	字号2	RGB颜色2	字体名2	文本内容3	点击Id3	字号3	RGB颜色3	字体名3	文本内容4	点击Id4	字号4	RGB颜色4	字体名4	文本内容5	点击Id5	字号5	RGB颜色5	字体名5				
+id	class	align	text1	clickId1	size1	color1	name1	text2	clickId2	size2	color2	name2	text3	clickId3	size3	color3	name3	text4	clickId4	size4	color4	name4	text5	clickId5	size5	color5	name5				
+number	comment	string	string	string	number	string	string	string	string	number	string	string	string	string	number	string	string	string	string	number	string	string	string	string	number	string	string				
+int	comment	string	string	string	int	string	string	string	string	int	string	string	string	string	int	string	string	string	string	int	string	string	string	string	int	string	string				
+1001	功能按钮	center	公告		18	#0000FF	font/common.ttf																								
+2002	商店	center	今日剩余 		24	#101117	font/MFYueHei_Noncommercial.ttf	%s		24	#eb3569	font/MFYueHei_Noncommercial.ttf	 次		24	#101117	font/MFYueHei_Noncommercial.ttf														
+2003	商店	center	剩余 		24	#101117	font/MFYueHei_Noncommercial.ttf	%s		24	#eb3569	font/MFYueHei_Noncommercial.ttf	 次		24	#101117	font/MFYueHei_Noncommercial.ttf														
+2004	商店	center	只能购买 		24	#101117	font/MFYueHei_Noncommercial.ttf	%s		24	#eb3569	font/MFYueHei_Noncommercial.ttf	 次		24	#101117	font/MFYueHei_Noncommercial.ttf														
+2005	商店	center	全服剩余 		24	#101117	font/MFYueHei_Noncommercial.ttf	%s		24	#eb3569	font/MFYueHei_Noncommercial.ttf	 次		24	#101117	font/MFYueHei_Noncommercial.ttf														
+3001	建筑升级	left	可派遣打工人数提升至		20	#FF6347	font/siyuansongtiBold.ttf	【2】		23	#FE3F9E	font/siyuansongtiBold.ttf	人		23	#FF6347	font/siyuansongtiBold.ttf														
+3002	建筑升级	left	可派遣打工人数提升至		20	#FF6347	font/siyuansongtiBold.ttf	【3】		23	#FE3F9E	font/siyuansongtiBold.ttf	人		23	#FF6347	font/siyuansongtiBold.ttf														
+3003	建筑升级	left	有几率产出		20	#FF6347	font/siyuansongtiBold.ttf	【3星食物】		23	#FE3F9E	font/siyuansongtiBold.ttf																			
+3004	建筑升级	left	有几率产出		20	#FF6347	font/siyuansongtiBold.ttf	【4星食物】		23	#FE3F9E	font/siyuansongtiBold.ttf																			
+3005	建筑升级	left	有几率产出		20	#FF6347	font/siyuansongtiBold.ttf	【3星礼物】		23	#FE3F9E	font/siyuansongtiBold.ttf																			
+3006	建筑升级	left	有几率产出		20	#FF6347	font/siyuansongtiBold.ttf	【4星礼物】		23	#FE3F9E	font/siyuansongtiBold.ttf																			
+3007	建筑升级	left	开启特殊商店		20	#FF6347	font/siyuansongtiBold.ttf																								
+3008	建筑升级	left	有几率产出		20	#FF6347	font/siyuansongtiBold.ttf	【3星特殊道具】		23	#FE3F9E	font/siyuansongtiBold.ttf																			
+3009	建筑升级	left	有几率产出		20	#FF6347	font/siyuansongtiBold.ttf	【4星特殊道具】		23	#FE3F9E	font/siyuansongtiBold.ttf																			
+3010	建筑升级	left	有几率产出		20	#FF6347	font/siyuansongtiBold.ttf	【5星特殊道具】		23	#FE3F9E	font/siyuansongtiBold.ttf																			
+3011	建筑升级	left	开启寄售功能，开启		20	#FF6347	font/siyuansongtiBold.ttf	【2】		23	#FE3F9E	font/siyuansongtiBold.ttf	个寄售摊位		23	#FF6347	font/siyuansongtiBold.ttf														
+3012	建筑升级	left	寄售摊位增加到		20	#FF6347	font/siyuansongtiBold.ttf	【3】		23	#FE3F9E	font/siyuansongtiBold.ttf	个		23	#FF6347	font/siyuansongtiBold.ttf														
+3013	建筑升级	left	寄售摊位增加到		20	#FF6347	font/siyuansongtiBold.ttf	【4】		23	#FE3F9E	font/siyuansongtiBold.ttf	个		23	#FF6347	font/siyuansongtiBold.ttf														
+3014	建筑升级	left	寄售摊位增加到		20	#FF6347	font/siyuansongtiBold.ttf	【5】		23	#FE3F9E	font/siyuansongtiBold.ttf	个		23	#FF6347	font/siyuansongtiBold.ttf														
+3015	建筑升级	left	刷新倒计时		18	#FFFFFF	font/siyuansongtiBold.ttf	%s		18	#FCBD4F	font/siyuansongtiBold.ttf	时		18	#FFFFFF	font/siyuansongtiBold.ttf	%s		18	#FCBD4F	font/siyuansongtiBold.ttf	分		18	#FFFFFF	font/siyuansongtiBold.ttf				
+3016	建筑升级	left	打工开始		23	#000000	font/siyuansongtiBlack.ttf																								
+3017	建筑升级	left	打工结束		23	#000000	font/siyuansongtiBlack.ttf																								
+3018	建筑升级	left	打工获得食物的几率提升		20	#FF6347	font/siyuansongtiBold.ttf																								
+3019	建筑升级	left	打工获得礼物的几率提升		20	#FF6347	font/siyuansongtiBold.ttf																								
+4001	灵装	left	是否将		23	#000000	font/common.ttf	%s		23	#FE3F9E	font/common.ttf	替换为		23	#000000	font/common.ttf	 %s 		23	#FE3F9E	font/common.ttf	\n放弃更换不会返还洗练材料		23	#000000	font/common.ttf				
+6001	背包	center	还可以选择  		26	#000000	font/common.ttf	%s		26	#64BCEE	font/common.ttf	  件		26	#000000	font/common.ttf														
+7001	充值	left	月卡剩余		20	#000000	font/siyuansongtiBlack.ttf	%s		28	#FF4A7E	font/siyuansongtiBlack.ttf	天		20	#000000	font/siyuansongtiBlack.ttf														
+7002	充值	center	%s		20	#FF4A7E	font/siyuansongtiBlack.ttf	时		20	#877F81	font/siyuansongtiBlack.ttf	%s		20	#FF4A7E	font/siyuansongtiBlack.ttf	分结束		20	#877F81	font/siyuansongtiBlack.ttf									
+10001	打工-金币奖励	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	在打工中表现很好，赚取		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10002	打工-钻石奖励	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	打工中热情接待顾客，被打赏小费		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10101	打工-一星奖励1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	工作期间态度良好，老板奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10102	打工-一星奖励2	left	由于天气炎热，店长给		20	#000000	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf									
+10103	打工-一星奖励3	left	为了更好的培养		20	#000000	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	对店里的了解，老板奖励了她		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf									
+10104	打工-一星奖励4	left	为了更好招揽顾客，老板送给		20	#000000	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	店里的		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf									
+10105	打工-一星奖励5	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	打工第一天就为店里招揽了很多的客人，老板犒赏		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10201	打工-二星奖励1	left	周年大酬宾		20	#000000	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	作为促销员得到了很多的		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf									
+10202	打工-二星奖励2	left	在		20	#FE3F9E	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	打工期间，一位很喜欢她的客人买了		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf	送给她		20	#FFC125 	font/common.ttf				
+10203	打工-二星奖励3	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	干劲十足，老板很是高兴，为了激励奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10204	打工-二星奖励4	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	捡到了客人钱包后，找到主人并归还，老板奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10205	打工-二星奖励5	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	单独完成了一币金额很高的订单，店长奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10301	打工-三星奖励1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	努力学习新技能，店长决定把她制作好的		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf	奖励给她		20	#000000	font/siyuansongtiBold.ttf									
+10302	打工-三星奖励2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	向顾客推荐出很多店里的新品，店长奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10303	打工-三星奖励3	left	打工过程中		20	#000000	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	给出了很好的建议，老板为了鼓励，特奖励了		20	#000000	font/siyuansongtiBold.ttf														
+10304	打工-三星奖励4	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	打工期间，营业额明显增长，老板奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10305	打工-三星奖励5	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	把自己赚取的工钱捐赠给福利院得到了奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10401	打工-四星奖励1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	打工期间帮助落单的小朋友找到了妈妈，老板奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10402	打工-四星奖励2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	捡到了客人钱包后，找到主人并归还，老板奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10403	打工-四星奖励3	left	发工资啦，		20	#000000	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	用第一份工资买了自己喜欢了很久的		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf									
+10404	打工-四星奖励4	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	打工期间凭着矫健的身手抓到了小偷，使店里没有丢失任何物品，老板奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10405	打工-四星奖励5	left	领班临时请假，		20	#000000	font/siyuansongtiBold.ttf	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	被任命代理领班期间表现出色，老板奖励		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf									
+10501	面包店-特殊事件1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	在打扫时，发现了客人落下的		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10502	面包店-特殊事件2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	在收拾桌子的时候，发现了遗失在角落的		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10601	饮品店-特殊事件1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	饮品店特殊事件描述1		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10602	饮品店-特殊事件2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	饮品店特殊事件描述2		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10701	豪华餐厅-特殊事件1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	豪华餐厅特殊事件描述1		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10702	豪华餐厅-特殊事件2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	豪华餐厅特殊事件描述2		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10801	玩偶店-特殊事件1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	玩偶店特殊事件描述1		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10802	玩偶店-特殊事件2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	玩偶店特殊事件描述2		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10901	饰品店-特殊事件1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	饰品店特殊事件描述1		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+10902	饰品店-特殊事件2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	饰品店特殊事件描述2		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+11001	鲜花店-特殊事件1	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	鲜花店特殊事件描述1		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+11002	鲜花店-特殊事件2	left	%s		20	#FE3F9E	font/siyuansongtiBlack.ttf	鲜花店特殊事件描述2		20	#000000	font/siyuansongtiBold.ttf	%s		20	#000000	font/siyuansongtiBlack.ttf														
+20001	副本收集挑战星	left	收集		20	#FFFFFF	font/siyuanheitiBold.ttf	%s		24	#F0376C	font/siyuansongtiBold.ttf	个		20	#FFFFFF	font/siyuanheitiBold.ttf														
+20002	活动副本次数文字	left	剩余次数		24	#FFFFFF	font/siyuansongtiBold.ttf	%s		35	#F43B70	font/siyuansongtiBold.ttf	次		24	#FFFFFF	font/siyuansongtiBold.ttf														
+20003	副本次数购买文字	center	兑换副本次数(今日可兑换		18	#30454a	font/MFYueHei_Noncommercial.ttf	%s		18	#e37393	font/siyuansongtiBold.ttf	次)		18	#30454a	font/MFYueHei_Noncommercial.ttf														
+20004	剩余副本次数	center	剩余副本次数		26	#30454a	font/MFYueHei_Noncommercial.ttf	    %s/%s    		26	#e37393	font/MFYueHei_Noncommercial.ttf	次		26	#30454a	font/MFYueHei_Noncommercial.ttf														
+30001	购买次数	center	兑换%s次数(今日可兑换		20	#3E4868	font/MFYueHei_Noncommercial.ttf	%s		20	#F43B70	font/MFYueHei_Noncommercial.ttf	次)		20	#3E4868	font/MFYueHei_Noncommercial.ttf														
+40001	福利-体力补给	center	每天		26	#FFFFFF	font/siyuansongtiBold.ttf	%s		26	#ffe96e	font/siyuansongtiBold.ttf	和		26	#FFFFFF	font/siyuansongtiBold.ttf	%s		26	#ffe96e	font/siyuansongtiBold.ttf	可领取		26	#FFFFFF	font/siyuansongtiBold.ttf				
+41001	活动-结束倒计时（天-时）	left	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	天		20	#000000	font/MFYueHei_Noncommercial.ttf	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	时后结束		20	#000000	font/MFYueHei_Noncommercial.ttf									
+41002	活动-结束倒计时（时-分）	left	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	时		20	#000000	font/MFYueHei_Noncommercial.ttf	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	分后结束		20	#000000	font/MFYueHei_Noncommercial.ttf									
+41003	活动-关闭倒计时（天-时）	left	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	天		20	#000000	font/MFYueHei_Noncommercial.ttf	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	时后关闭		20	#000000	font/MFYueHei_Noncommercial.ttf									
+41004	活动-关闭倒计时（时-分）	left	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	时		20	#000000	font/MFYueHei_Noncommercial.ttf	%s		20	#fd3870	font/MFYueHei_Noncommercial.ttf	分后关闭		20	#000000	font/MFYueHei_Noncommercial.ttf									
+50001	购买日常约会次数	center	使用%s换取%s（今日剩余可兑换		26	#B2BBC3	font/siyuansongtiBold.ttf	 %s 		30	#F43B70	font/siyuansongtiBold.ttf	 次） 		26	#B2BBC3	font/siyuansongtiBold.ttf														
+50002	剩余约会次数	center	剩余约会次数		26	#FFFFFF	font/siyuansongtiBold.ttf	 %s		30	#F43B70	font/siyuansongtiBold.ttf	 次		26	#FFFFFF	font/siyuansongtiBold.ttf														
+50003	约会结局好感度值提示	right	%s		18	#FFFFFF	font/siyuansongtiBold.ttf	 %s		18	#F43B70	font/siyuansongtiBold.ttf	 %s		18	#FFFFFF	font/siyuansongtiBold.ttf														
+50004	约会结局心情值提示	right	%s		18	#FFFFFF	font/siyuansongtiBold.ttf	 %s		18	#0000FF	font/siyuansongtiBold.ttf	 %s		18	#FFFFFF	font/siyuansongtiBold.ttf														
+50005	更换房间	left	该房间已被		20	#FFFFFF	font/siyuansongtiBold.ttf	%s		20	#eb3569	font/siyuansongtiBold.ttf	使用，继续更换将会换下原始人物的房间是否继续更换？		20	#FFFFFF	font/siyuansongtiBold.ttf														
+60001	邀请信息	left	Lv.		20	#FFFFFF	font/siyuansongtiBold.ttf	%s		20	#fad52b	font/siyuansongtiBold.ttf	 %s		20	#e9406e	font/siyuansongtiBold.ttf	已开启，寻求一起战斗的小伙伴，快点击加入吧！		20	#FFFFFF	font/siyuansongtiBold.ttf	接受邀请	1001	20	#fad52b	font/siyuansongtiBlack.ttf	进入副本	20	#FFFFFF	font/siyuansongtiBlack.ttf
+70001	章节	left	第		30	#000000	font/siyuansongtiBold.ttf	一		30	#F43B70	font/siyuansongtiBold.ttf	章		30	#000000	font/siyuansongtiBold.ttf														
+70002	章节	left	第		30	#000000	font/siyuansongtiBold.ttf	二		30	#F43B70	font/siyuansongtiBold.ttf	章		30	#000000	font/siyuansongtiBold.ttf														
+70003	章节	left	第		30	#000000	font/siyuansongtiBold.ttf	三		30	#F43B70	font/siyuansongtiBold.ttf	章		30	#000000	font/siyuansongtiBold.ttf														
+70004	章节	left	第		30	#000000	font/siyuansongtiBold.ttf	四		30	#F43B70	font/siyuansongtiBold.ttf	章		30	#000000	font/siyuansongtiBold.ttf														
+70005	章节	left	第		30	#000000	font/siyuansongtiBold.ttf	五		30	#F43B70	font/siyuansongtiBold.ttf	章		30	#000000	font/siyuansongtiBold.ttf														
+80001	副本周期展示	left	剩余		20	#FFFFFF	font/MFLiHei_Noncommercial.ttf	%s时%s分		20	#fd4a38	font/MFLiHei_Noncommercial.ttf	关闭		20	#FFFFFF	font/MFLiHei_Noncommercial.ttf														
+80002	副本周期展示	left	剩余		20	#FFFFFF	font/MFLiHei_Noncommercial.ttf	%s天%s时		20	#fd4a38	font/MFLiHei_Noncommercial.ttf	关闭		20	#FFFFFF	font/MFLiHei_Noncommercial.ttf														
+80003	副本周期展示	left	%s时%s分		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf	后开启		20	#7bd2f3	font/MFYueHei_Noncommercial.ttf																			
+80004	副本周期展示	left	%s天%s时		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf	后开启		20	#7bd2f3	font/MFYueHei_Noncommercial.ttf																			
+80005	副本前置条件提示	left	关卡		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf	%s		20	#fd4a38	font/MFYueHei_Noncommercial.ttf	通关解锁		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf														
+80006	副本前置条件提示	left	%s		20	#fd4a38	font/MFYueHei_Noncommercial.ttf	级解锁		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf																			
+80007	副本周期展示	left	%s		26	#ffd83a	font/MFYueHei_Noncommercial.ttf	时		18	#FFFFFF	font/MFYueHei_Noncommercial.ttf	%s		26	#ffd83a	font/MFYueHei_Noncommercial.ttf	分		18	#FFFFFF	font/MFYueHei_Noncommercial.ttf									
+80008	副本周期展示	left	%s		26	#ffd83a	font/MFYueHei_Noncommercial.ttf	天		18	#FFFFFF	font/MFYueHei_Noncommercial.ttf	%s		26	#ffd83a	font/MFYueHei_Noncommercial.ttf	时		18	#FFFFFF	font/MFYueHei_Noncommercial.ttf									
+80009	副本周期展示	left	结算期		20	#FFFFFF	font/MFLiHei_Noncommercial.ttf	%s时%s分		20	#fd4a38	font/MFLiHei_Noncommercial.ttf																			
+90001	兼职提示	left	所需时间		22	#000000	font/siyuansongtiBlack.ttf	 %s 		26	#fd3870	font/siyuansongtiBlack.ttf	小时		22	#000000	font/siyuansongtiBlack.ttf														
+90002	兼职提示	left	距离兼职结束：		22	#000000	font/siyuansongtiBlack.ttf	 %s 		26	#f9db47	font/siyuansongtiBlack.ttf	小时		22	#000000	font/siyuansongtiBlack.ttf	 %s 		26	#f9db47	font/siyuansongtiBlack.ttf	分钟		22	#000000	font/siyuansongtiBlack.ttf				
+100001	登录排队提示	left	登录排队中，前方还有		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf	 %s 		20	#eb3569	font/MFYueHei_Noncommercial.ttf	个玩家，预计登录时间		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf	 %s 		20	#eb3569	font/MFYueHei_Noncommercial.ttf	分钟		20	#FFFFFF	font/MFYueHei_Noncommercial.ttf				

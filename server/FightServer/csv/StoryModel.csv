@@ -1,0 +1,70 @@
+模型名称（策划用）	模型ID	模型	模型大小
+modelname	id	model	modelSize
+	number	string	number
+	int		int
+AST小兵1	2001	fight_20101_Story_battle4	1
+AST小兵2	2002	fight_20101_Story_battle4	1
+十香(教师关)	2003	fight_10101_Story_battle4	1
+教室关1镜头	20001	fight_Story_battle4_jingtou	1
+教师关墙壁碎裂	20002	bg	1
+小怪出生特效前1	20003	born_Story_battle4	1
+小怪出生特效前2	20004	born_Story_battle4	1
+小怪出生特效后1	20011	born_Story_battle4	1
+小怪出生特效后2	20012	born_Story_battle4	1
+教室特效-墙碎裂1	20005	fight_story_story_battle4	1
+教室特效-墙碎裂2	20006	fight_story_story_battle4	1
+教室特效-冲撞	20007	fight_story_story_battle4	1
+教室特效-战斗	20008	fight_story_story_battle4_texiao2	1
+破碎后前景墙	20009	bg_qian	1
+特效线	20010	texiao1_Story_battle4	1
+折纸	2004	fight_10201	1
+			
+十香第一关	1002	shixiang_qian	0.75
+折纸第一关	1101	zhezhi	0.75
+暗场	90001	heiping	1
+第一场镜头	10002	jingtou	0.75
+第一场特效	10003	texiao	0.75
+第一场黑底	10005	heidi	0.75
+			
+第一场2特效	11001	story_battle2_texiao	0.75
+第一场2镜头	11002	jingtou	1
+第一场2特效2	11003	story_battle2_texiao2	0.75
+第一场2黑底	11004	battle_story2_heidi	0.75
+第二场特效	11005	battle_story2_texiao	0.75
+第二场特效2	11006	battle_story2_texiao2	0.75
+			
+第一场3黑底	13001	story_battle3_heidi	0.75
+第一场3镜头	13002	story_battle3_jingtou	0.7
+第一场3镜头	13003	story_battle3_texiao	0.75
+第一场3镜头	13004	story_battle3_baiping	0.75
+			
+			
+			
+			
+			
+墙壁碎裂	21001	bg_Story_battle5	1
+折纸出生特效	21002	born	1
+十香动作	2101	fight_10101_Story_battle5	1
+折纸动作	2102	fight_10201_Story_battle5	1
+镜头	21003	fight_Story_battle5_jingtou	1
+特效	21004	fight_Story_battle5_texiao2	1
+速度线	21005	texiao1_Story_battle5	1
+日下不撩子	2103	fight_20601_Story_battle5	0.9
+小兵	2104	fight_20101_Story_battle5	0.9
+			
+十香飞行	5001	fight_10101_Story_battle2	0.8
+镜头	50001	fight_Story_battle6_jingtou	1
+特效	50002	texiao_Story_battle6	0.8
+折纸	5002	zhezhi__Story_battle2	0.8
+战斗特效	50003	fight_10101_Story_battle2_texiao	0.8
+白屏特效	50004	fight_10101_Story_battle2_baiping	0.8
+			
+小兵1	6001	fight_20101_story_battle9	1
+小兵2	6002	fight_20101_story_battle9	1
+小兵3	6003	fight_20101_story_battle9	1
+小兵4	6004	fight_20101_story_battle9	1
+四系乃	6005	fight_10301_story_battle9	1
+冰球爆炸特效	60001	battle_story10_01	1
+四系乃手机	60002	battle_story10_01_2	1
+镜头	60003	jingtou_story_battle9	1
+冰球爆炸特效	60004	battle_story10_01	1

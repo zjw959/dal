@@ -1,0 +1,54 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SRoleMsg";
+
+
+// 取得所有的精灵信息
+// code = 1281
+message GetRole{
+	enum MsgID{eMsgID = 1281;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 精灵赠送
+// code = 1282
+message Donate {
+	required string roleId = 1;	// 精灵ID
+	required int32 itemCid = 2;	// 赠送道具ID
+	required int32 num = 3;		// 赠送数量
+	enum MsgID{eMsgID = 1282;}; //注意：消息id放最后,以免客户端解析异常
+}
+// 精灵换装
+// code = 1284
+message Dress{
+	required string roleId = 1;	// 精灵ID
+	required string itemId = 2;		// 装备
+	enum MsgID{eMsgID = 1284;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 切换精灵
+// code = 1285
+message SwitchRole{
+	required string roleId = 1;	// 精灵id
+	enum MsgID{eMsgID = 1285;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 触摸精灵
+// code = 1287
+message TouchRole{
+	enum MsgID{eMsgID = 1287;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 更换房间
+// code = 1288
+message ChangeRoom{
+	required int32 roleCid = 1;		// 看板娘id
+	required int32 roomCid = 2;		// 房间cid
+	enum MsgID{eMsgID = 1288;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 解锁房间
+// code = 1289
+message UnlockRoom{
+	required int32 roomCid = 1;		// 房间cid
+	enum MsgID{eMsgID = 1289;}; //注意：消息id放最后,以免客户端解析异常
+}

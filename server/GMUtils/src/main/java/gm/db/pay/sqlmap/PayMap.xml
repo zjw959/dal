@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_pay">
+    <resultMap id="PayDBBean" type="gm.db.pay.bean.PayDBBean">
+        <result column="order_id" property="order_id" jdbcType="VARCHAR"/>
+        <result column="channel_order_id" property="channel_order_id" jdbcType="VARCHAR"/>
+        <result column="channel_id" property="channel_id" jdbcType="VARCHAR"/>
+        <result column="channel_appid" property="channel_appid" jdbcType="VARCHAR"/>
+        <result column="user_name" property="user_name" jdbcType="VARCHAR"/>
+        <result column="player_id" property="player_id" jdbcType="BIGINT"/>
+        <result column="item_id" property="item_id" jdbcType="INTEGER"/>
+        <result column="sell_amount" property="sell_amount" jdbcType="INTEGER"/>
+        <result column="pay_amount" property="pay_amount" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="extinfo" property="extinfo" jdbcType="VARCHAR"/>
+        <result column="create_time" property="create_time" jdbcType="TIMESTAMP"/>
+        <result column="callback_time" property="callback_time" jdbcType="TIMESTAMP"/>  
+        <result column="modify_time" property="modify_time" jdbcType="TIMESTAMP"/>
+        <result column="htnonce" property="htnonce" jdbcType="VARCHAR"/>
+        <result column="httoken" property="httoken" jdbcType="VARCHAR"/>
+        <result column="is_count" property="is_count" jdbcType="BOOLEAN"/>
+    </resultMap>
+    
+    <select id="selectPaysByPlayerIdAndStatus" parameterType="HashMap" resultMap="PayDBBean">
+        SELECT * 
+        FROM ${table} 
+        WHERE player_id = #{playerId}
+        and status = #{status,jdbcType=INTEGER};    
+    </select>
+    
+    <select id="selectPaysByTimeAndStatus" parameterType="HashMap" resultMap="PayDBBean" >
+        SELECT * 
+        FROM ${table} 
+        WHERE status = #{status,jdbcType=INTEGER} 
+        and (modify_time between #{startTime,jdbcType=TIMESTAMP} and #{endTime,jdbcType=TIMESTAMP} )
+        ;
+    </select>
+    
+    <select id="selectPayByOrderId" parameterType="HashMap" resultMap="PayDBBean">
+        SELECT * 
+        FROM  ${table}  
+        WHERE order_id = #{orderId,jdbcType=VARCHAR};
+    </select>
+    
+   	<select id="selectPayByChannelOrderId" parameterType="HashMap" resultMap="PayDBBean">
+        SELECT * 
+        FROM  ${table}       
+        WHERE channel_order_id = #{channelOrderId,jdbcType=VARCHAR};
+    </select>
+    
+    <select id="selectPaysByStatus" parameterType="HashMap" resultMap="PayDBBean">
+        SELECT * 
+        FROM  ${table}  
+        WHERE status = #{status,jdbcType=INTEGER};
+    </select>
+
+    <insert id="insertPay" parameterType="HashMap">
+		insert into ${table}  
+		(
+		order_id,
+		channel_order_id,
+		channel_id,
+		channel_appid,
+		user_name,
+		player_id,
+		item_id,
+		sell_amount,
+		pay_amount,
+		status,
+		extinfo,
+		create_time,
+		callback_time,
+		modify_time,
+		is_count
+		)values(
+		#{pay.order_id, jdbcType=VARCHAR},
+		#{pay.channel_order_id, jdbcType=VARCHAR},
+		#{pay.channel_id, jdbcType=VARCHAR},
+		#{pay.channel_appid, jdbcType=VARCHAR},
+		#{pay.user_name, jdbcType=VARCHAR},
+		#{pay.player_id, jdbcType=BIGINT},
+		#{pay.item_id, jdbcType=INTEGER},
+		#{pay.sell_amount, jdbcType=INTEGER},
+		#{pay.pay_amount, jdbcType=INTEGER},
+		#{pay.status, jdbcType=INTEGER},
+		#{pay.extinfo, jdbcType=VARCHAR},
+		#{pay.create_time, jdbcType=TIMESTAMP},
+		#{pay.callback_time, jdbcType=TIMESTAMP},
+		#{pay.modify_time, jdbcType=TIMESTAMP},
+		#{pay.is_count, jdbcType=BOOLEAN}
+		)
+    </insert>
+    
+    <update id="updatePay" parameterType="HashMap">
+		update ${table}  set 
+		channel_order_id = #{pay.channel_order_id, jdbcType=VARCHAR},
+		pay_amount = #{pay.pay_amount, jdbcType=INTEGER},
+		status = #{pay.status, jdbcType=INTEGER},
+		extinfo = #{pay.extinfo, jdbcType=VARCHAR},
+		callback_time = #{pay.callback_time, jdbcType=TIMESTAMP},
+		modify_time = #{pay.modify_time, jdbcType=TIMESTAMP},
+		htnonce = #{pay.htnonce, jdbcType=VARCHAR},
+		httoken = #{pay.httoken, jdbcType=VARCHAR}
+		where order_id = #{pay.order_id, jdbcType=VARCHAR};
+    </update>
+
+</mapper>

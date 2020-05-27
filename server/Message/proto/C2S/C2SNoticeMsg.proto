@@ -1,0 +1,9 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SNoticeMsg";
+
+//获取公告牌通知
+//code = 3585
+message GetBillboardNotice {
+	enum MsgID{eMsgID = 3585;}; //注意：消息id放最后,以免客户端解析异常
+}

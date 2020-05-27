@@ -1,0 +1,84 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CFightMsg";
+
+import "S2C/S2CShareMsg.proto";
+
+// 网络帧
+message NetFrame {
+	required int32 index = 1; // 帧序
+	repeated OperateFrame operateFrame = 2; // 操作帧
+	repeated DataFrame dataFrame = 3; // 数据帧
+}
+
+// 数据帧
+message DataFrame {
+	required int32 pid = 1;
+	required int32 action = 2;		//1:复活 2:离开
+}
+
+// 操作帧
+message OperateFrame {
+	required int32 pid = 1; // 玩家ID
+	required int32 keyCode = 2; // 按键键值 （摇杆、按键）
+	required int32 keyEvent = 3; // 按键状态  down/doing/up/摇杆角度
+	required int32 keyEventEx = 4; //按键状态扩展  
+}
+
+// 进入战斗
+// code = 25601
+message RespEnterFight {
+	required int32 excessTime = 1;	//剩余多少时间后开始战斗
+	enum MsgID{eMsgID = 25601;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 推送开始战斗
+// code = 25602
+message NotifyStartFight {
+	repeated int32 pids = 1;	 // 进入的玩家
+	enum MsgID{eMsgID = 25602;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 战斗操作
+// code = 25603
+message RespOperateFight {
+	enum MsgID{eMsgID = 25603;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 推送战斗帧
+// code = 25604
+message NotifyNetFrame {
+	required NetFrame netFrame = 1;
+	enum MsgID{eMsgID = 25604;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 战斗结束
+// code = 25605
+message RespEndFight {
+	required bool win = 1; 							// 是否胜利
+	repeated FightResultdetails results = 2;		// 战斗结果
+	repeated RewardsMsg rewards = 3;				// 奖励信息
+	required int32 fightTime = 4;					// 战斗时间
+	enum MsgID{eMsgID = 25605;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 拉取网络帧
+// code = 25606
+message RespPullNetFrame {
+	repeated NetFrame netFrames = 1;
+	enum MsgID{eMsgID = 25606;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 战斗结果详情
+message FightResultdetails {
+	required int32 pid = 1;				// 玩家ID
+	required int32 hurt = 2;				// 累计伤害
+	required bool mvp = 3;					// 是否是MVP
+}
+
+// 拉取网络帧
+// code = 25609
+message RespFightPong {
+	required int32 time = 1;				// 时间
+	enum MsgID{eMsgID = 25609;}; //注意：消息id放最后,以免客户端解析异常
+}

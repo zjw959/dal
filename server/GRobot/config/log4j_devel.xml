@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+    <appender name="stdoutErr" class="org.apache.log4j.ConsoleAppender">
+		<param name="target" value="System.err" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-4r %-5p %-d{yyyy-MM-dd HH:mm:ss} %l - %m%n"></param>
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="warn" />
+			<param name="LevelMax" value="fatal" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+	</appender>
+
+	<appender name="stdoutOut" class="org.apache.log4j.ConsoleAppender">
+		<param name="target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-4r %-5p %-d{yyyy-MM-dd HH:mm:ss} %l - %m%n"></param>
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="debug" />
+			<param name="LevelMax" value="info" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+	</appender>
+	
+	<appender name="FileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="logs/robot.log" />
+		<param name="Threshold" value="ALL" />
+		<param name="DatePattern" value="'.'yyyyMMddHH" />
+		<layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss:SSS} %p](%F:%L)%m%n" />
+		</layout>
+    </appender>
+	
+	<appender name="client" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="Threshold" value="debug"></param>
+		<param name="ImmediateFlush" value="true"></param>
+		<param name="File" value="./logs/log"></param>
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'"></param>
+		<param name="Append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-4r %-5p %-d{yyyy-MM-dd HH:mm:ss}  %l - %m%n"></param>
+		</layout>
+	</appender>
+	
+	<!-- 文件输出用异步 -->
+    <appender name="AsyncFileAppender" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="2048" />
+		<param name="LocationInfo" value="true" />
+		<appender-ref ref="FileAppender" />
+    </appender>
+	
+	<appender name="RollingFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<appender-ref ref="FileAppender" />
+    </appender>
+	
+	<logger name="io.netty" additivity="false">
+		<level value="error" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="AsyncFileAppender" />
+	</logger>
+		
+	<logger name="Client" additivity="false">
+	    <appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="client" />
+	</logger>
+		
+    <root>
+		<level value="debug" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="AsyncFileAppender" />
+    </root>
+</log4j:configuration>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_item_shop">
+	<resultMap id="bean" type="gm.db.global.bean.ActivityShopItem">
+		<result column="id" property="id" jdbcType="INTEGER" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="rank" property="rank" jdbcType="INTEGER" />
+		<result column="limitType" property="limitType" jdbcType="INTEGER" />
+		<result column="limitVal" property="limitVal" jdbcType="INTEGER" />
+		<result column="serLimit" property="serLimit" jdbcType="INTEGER" />
+		<result column="limitDes" property="limitDes" jdbcType="VARCHAR" />
+		<result column="goods" property="goods" jdbcType="VARCHAR" />
+		<result column="price" property="price" jdbcType="VARCHAR" />
+		<result column="tag" property="tag" jdbcType="VARCHAR" />
+		<result column="batchBuy" property="batchBuy" jdbcType="INTEGER" />
+		<result column="open" property="open" jdbcType="INTEGER" />
+	</resultMap>
+
+	<select id="selectAll" resultMap="bean">
+		select * from t_item_shop
+	</select>
+	
+	<select id="selectById" parameterType="HashMap" resultMap="bean">
+        select * from  t_item_shop
+        WHERE id = #{id,jdbcType=INTEGER};
+    </select>
+    
+    <insert id="insertConfig" parameterType="HashMap">
+		insert into t_item_shop
+		(
+		id,
+		name,
+		rank,
+		limitType,
+		limitVal,
+		serLimit,
+		limitDes,
+		goods,
+		price,
+		tag,
+		batchBuy,
+		open
+		)values(
+		#{config.id, jdbcType=INTEGER},
+		#{config.name, jdbcType=VARCHAR},
+		#{config.rank, jdbcType=INTEGER},
+		#{config.limitType, jdbcType=INTEGER},
+		#{config.limitVal, jdbcType=INTEGER},
+		#{config.serLimit, jdbcType=INTEGER},
+		#{config.limitDes, jdbcType=VARCHAR},
+		#{config.goods, jdbcType=VARCHAR},
+		#{config.price, jdbcType=VARCHAR},
+		#{config.tag, jdbcType=VARCHAR},
+		#{config.batchBuy, jdbcType=INTEGER},
+		#{config.open, jdbcType=INTEGER}
+		)
+    </insert>
+    
+    <update id="updateConfig" parameterType="HashMap">
+		update t_item_shop set
+		name = #{config.name, jdbcType=VARCHAR},
+		rank = #{config.rank, jdbcType=INTEGER},
+		limitType = #{config.limitType, jdbcType=INTEGER},
+		limitVal = #{config.limitVal, jdbcType=INTEGER},
+		serLimit = #{config.serLimit, jdbcType=INTEGER},
+		limitDes = #{config.limitDes, jdbcType=VARCHAR},
+		goods = #{config.goods, jdbcType=VARCHAR},
+		price = #{config.price, jdbcType=VARCHAR},
+		tag = #{config.tag, jdbcType=VARCHAR},
+		batchBuy = #{config.batchBuy, jdbcType=INTEGER},
+		open = #{config.open, jdbcType=INTEGER}
+		where id = #{config.id, jdbcType=INTEGER};
+    </update>
+    
+    <delete id="deleteById" parameterType="HashMap">
+    	delete from t_item_shop 
+    	WHERE id = #{id,jdbcType=INTEGER};
+    </delete>
+</mapper>

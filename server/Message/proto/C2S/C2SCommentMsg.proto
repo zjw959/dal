@@ -1,0 +1,31 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SCommentMsg";
+
+// 请求获取评论信息
+// code = 4001
+message ReqComment{
+	required int32 type = 1;	//装备:1,英雄:2
+	required int32 itemId = 2;//请求的对象(装备/英雄)id
+	enum MsgID{eMsgID = 4001;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 评论
+// code = 4002
+message ReqSingleComment{
+	required int32 type = 1;	//装备:1,英雄:2
+	required int32 itemId = 2;//请求的对象(装备/英雄)id
+	required string comment = 3;//评论
+	enum MsgID{eMsgID = 4002;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 点赞
+// code = 4003
+message ReqPrise{
+	required int32 playerId = 1;//请求对象的玩家id
+	required int32 type = 2;	//装备:1,英雄:2
+	required int32 itemId = 3;//请求的对象(装备/英雄)id
+	required int32 commentDate = 4;//评论日期
+	enum MsgID{eMsgID = 4003;}; //注意：消息id放最后,以免客户端解析异常
+}
+

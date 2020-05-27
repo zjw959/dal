@@ -1,0 +1,114 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CLoginMsg";
+import "S2C/S2CPlayerMsg.proto";
+import "S2C/S2CShareMsg.proto";
+enum LogoutType {
+	COMMON = 0;
+	KICK_OUT = 1;
+	OTHER_PLACES_ON = 2;
+}
+
+// 进入游戏
+// code = 257
+message EnterSuc {
+	required int32 serverTime = 1; //服务器时间
+	optional PlayerInfo playerinfo = 2; // 玩家信息
+	optional int32 queue = 3; //当前排队序号
+	optional int32 queueTime = 4; //预计排队时间（分钟）
+	enum MsgID{eMsgID = 257;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 退出游戏
+// code = 258
+message LogoutSuc {
+	required LogoutType type = 1; // 类型
+	enum MsgID{eMsgID = 258;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 断线重连
+// code = 261
+message RespReconnect {
+	enum MsgID{eMsgID = 261;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 心跳回执
+// code = 262
+message Pong {
+	enum MsgID{eMsgID = 262;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 推送公告
+// code = 263
+message NoticeList {
+	repeated NoticeInfo info = 1;
+	enum MsgID{eMsgID = 263;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 获取服务器时间
+// code = 268
+message RespServerTime {
+	required int32 serverTime = 1; //服务器时间
+	enum MsgID{eMsgID = 268;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 礼包码
+// code = 270
+message GiftCodeRps {
+	repeated RewardsMsg rewards = 1;
+	enum MsgID{eMsgID = 270;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//登录约会消息
+//code = 274
+message RespTestMsg{
+    repeated NotMsg notMsgs = 1; //未完成约会
+    repeated int32 scriptIds = 2 [packed=true]; //已经通过的剧本id
+    repeated int32 endings = 3 [packed=true]; //剧本结束节点
+    repeated string xxxx = 4; //邀请约会信息列表
+	enum MsgID{eMsgID = 274;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+// 取得服务器开关
+// code = 280
+message RespFunctionSwitch{
+	repeated FunctionSwitch switchs = 1;
+	enum MsgID{eMsgID = 280;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 服务器开关信息
+message FunctionSwitch {
+	required ChangeType ct = 1;
+	required int32 switchType = 2;
+	required bool open  = 3;
+}
+
+// 公告信息
+message NoticeInfo {
+	required int32 id = 1; // 公告ID
+	required int32 inx = 2; // 排序序号
+	required int32 type = 3; // 公告类型
+	required string tag = 4; // 公告标签
+	required string title = 5; // 公告标题
+	required string context = 6; // 公告内容
+	required string contextImg = 7; // 内容图片
+}
+
+message NotMsg{
+ 	required int32 score = 1; //积分
+    required int32 datingType = 2; //约会类型
+    required int32 currentNodeId = 3; //当前进行到的节点
+    optional Notes notes = 4; //分支节点
+    optional int32 selectedNode = 5; //被选择节点
+}
+
+message Notes{
+ 	repeated Node nodes = 1; //分支节点
+}
+
+//分支节点
+message Node {
+    required int32 datingId = 1; //约会配置id
+    repeated int32 nextNodeIds = 2 [packed=true]; //下级节点id
+}

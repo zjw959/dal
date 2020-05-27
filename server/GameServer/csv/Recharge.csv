@@ -1,0 +1,15 @@
+id	价格	类型（1：月卡 2：钻石和礼包）	商品id(对应RechargeGiftBag和MonthCard中的id)	商品内容备注	平台商品id	平台id	平台appid
+id	price	type	goodsId	nameComment	channelGoodsId	channelId	channelAppId
+number	number	number	number	comment	number	number	number
+int	float	int	int		int	int	int
+1	30	1	1001	月卡			
+2	18	1	1002	月卡续费			
+4	6	2	2001	6￥60钻			
+5	30	2	2002	30￥330钻			
+6	88	2	2003	88￥1012钻			
+7	168	2	2004	168￥2016钻			
+8	328	2	2005	328￥4100钻			
+9	648	2	2006	648￥8424钻			
+10	1	2	3001	给大凉山送温暖			
+11	3	2	3002	给大凉山送泡面			
+12	18	2	3003	给大凉山送红牛			

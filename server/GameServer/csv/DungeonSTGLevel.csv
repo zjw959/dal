@@ -1,0 +1,17 @@
+id	关卡ID	策划看	初始触发	下个阶段ID	地图移动方式（1向右飞2向左飞3向下飞4向上飞）	移动贴图ID	循环次数	移动速度（像素/秒）	初速度	末速度	速度变化时间（毫秒）	暂停事件
+id	levelId	Note	isFirst	nextStepID	mapMoveType	mapID	cycleTimes 	moveSpeed 	Fspeed	Espeed	time	stopTime
+number	string	string	boolean	number	number	number	number	number	number	number	number	number
+int	string		boolean	int	int	int	int	int	int	int	int	int
+1	3_S1L4	1-4远景	1		1	4001	10	10				
+2	3_S1L4	1-4远景	1		1	3001	10	10				
+3	3_S1L4	1-4近景	1		1	1014	999	400				
+4	3_S2L3	2-3近景	1		1	901	999	600				
+5	3_S2L3	2-3中景	1		1	902	999	100				
+6	3_S2L3	2-3远景	1		1	903	999	25				
+7	3_S2L3	2-3护栏1	1		1	904	999	600				
+8	3_S2L3	2-3护栏2	1		1	905	999	600				
+9	3_S2L6	2-6大楼	1		4	901	999	200				
+10	3_S2L6	2-6远景	1		4	902	999	25				
+11	4_richang_feixing1	1-4远景	1		1	4001	10	10				
+12	4_richang_feixing1	1-4远景	1		1	3001	10	10				
+13	4_richang_feixing1	1-4近景	1		1	1014	999	400				

@@ -1,0 +1,17 @@
+ID	区域名称	区域名称	区域类型（1打工区域2非打工3特殊）	城建排序	建筑图标	建筑图标背景	区域壁纸	区域介绍	建筑列表	开放类型（1常驻2每日时间3每周时间4特定时间段）	开放时间	需求道具（1拥有道具2消耗道具）
+id	name	nameId	buildType	order	icon	iconbg	wallPaper	describe	build	timeType	openTime	needItem
+number	comment	string	number	number	string	string	string	string	numbers	number	string	json
+int			int						int[]	int	string	map
+1	美食街	12001	1	1	icon/system/119.png	ui/295.png	scene/bg/bg_meishijie.png	12002	1-2-3	1		{}
+2	购物中心	12003	1	5	icon/system/116.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png	12004	4-5-6	1		{}
+3	学校	12005	2	3	icon/system/115.png	ui/295.png	scene/bg/bg_xuexiao.png	12006	7	1		{}
+4	公园	12007	2	4	icon/system/117.png	ui/295.png	scene/bg/bg_gongyuan.png	12008	8	1		{}
+5	游乐场	12009	2	7	icon/system/118.png	ui/295.png	scene/bg/bg_youlechang.png	12010	9	1		{}
+6	交易所	12011	2	6	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png	12012	12	1		{}
+7	水上乐园	900324	3	8	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png					{}
+8	图书馆	900325	3	9	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png					{}
+9	森林	900326	3	10	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png					{}
+10	超市	900327	3	12	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png					{}
+11	小岛	900328	3	13	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png					{}
+12	水族馆	900329	3	14	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png					{}
+13	沙滩	900330	3	2	icon/system/114.png	ui/295.png	scene/bg/bg_gouwuzhongxin.png					{}

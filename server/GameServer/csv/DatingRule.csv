@@ -1,0 +1,114 @@
+id	约会类型（主1日2预3事4工5游6）	调用剧情表格文件名	对应手机角色	对应手机剧本ID	进入条件	手机剧本第一句	节点处理（手机）	结局结算（手机）	城市台词	失败条件（主线约会）	其他信息（预定约会）	建筑	背景图	道具约会道具类型	乱入约会主人物	奖励发放对应角色(副本约会关卡)	开始节点id	其它剧本id	人物路径	人物待机动作	选择后动作1	选择后动作2	选择后动作3	人物台词	结算类型	结算人物模型ID	结算人物模型动作	结算badend动作	道具（道具约会）	约会标题	约会内容	主线挑战目标	挑战目标描述
+id	type	callTableName	phoneRole	phoneScript	enter_condition	startID	phoneType	phoneEnd	cityLines	fail_condition	other_info	buildingId	backGround	item_type	roleId	dungeonRoleId	start_node_id	other_script_ids	roleModelId	idle	action1	action2	action3	lines	finallyType	modelId	endAction	endAction2	item	datingTitle	datingContent	dungeonDateHeart	dungeonDateDes
+number	number	string	number	number	json	number	json	json	number	json	json	number	string	number	number	number	number	json	number	string	string	string	string	numbers	number	number	string	string	string	number	number	json	numbers
+int	int	string	int	int	map	int	map	map	int	map	map	int		int	int	int	int	list	int						int				string	int	int	list	
+2101001	2	Dating101			{"roleCids":[101],"buildingCid":106,"favor":0,"weight":100,"pass":101101,"time":0}										101		1002100001								1	10107	id_favor2	id_favor2				[]	
+2101002	2	Dating101			{"roleCids":[101],"buildingCid":103,"favor":0,"weight":300,"pass":101101,"time":1}										101		1009100001								1	210104	Id_happy	Id_angry				[]	
+2102001	2	Dating102			{"roleCids":[102],"buildingCid":106,"favor":0,"weight":300,"pass":101101,"time":0}										102		1030100001								1	210204	Id_happy	Id_angry				[]	
+2102004	2	Dating102			{"roleCids":[102],"buildingCid":104,"favor":0,"weight":100,"pass":101101,"time":1}										102		120100001								1	210204	Id_happy	Id_angry				[]	
+2103001	2	Dating103			{"roleCids":[103],"buildingCid":106,"favor":0,"weight":300,"pass":101101,"time":0}										103		1010100001								1	10303	id_favor3	id_favor3				[]	
+2103002	2	Dating103			{"roleCids":[103],"buildingCid":103,"favor":0,"weight":100,"pass":101101,"time":1}										103		1025100001								1	10303	id_favor3	id_favor3				[]	
+2104001	2	Dating104			{"roleCids":[104],"buildingCid":106,"favor":0,"weight":300,"pass":101101,"time":0}										104		1028100001								1	10404	id_favor2	id_favor2				[]	
+2104002	2	Dating104			{"roleCids":[104],"buildingCid":103,"favor":0,"weight":100,"pass":101101,"time":1}										104		1029100001								1	10404	id_favor2	id_favor2				[]	
+2105001	2	Dating105			{"roleCids":[105],"buildingCid":106,"favor":0,"weight":100,"pass":101101,"time":0}										105		1065100001								1	10504	id_favor1	id_favor1				[]	
+2105002	2	Dating105			{"roleCids":[105],"buildingCid":103,"favor":0,"weight":300,"pass":101101,"time":1}										105		1071101001								1	10504	id_favor1	id_favor1				[]	
+2201001	3	Dating													101		1005100001								0							[]	
+2301001	3	Dating	101	8101001	{"roleCids":[101],"buildingCid":106}	150000001			2301001		{"answer":{1: { "type": 1,"word": "900001","mood": 10,"favor": 5},2: {"type": 0,"word": "900002","mood": -10,"favor": -10},3: {"type": 0,"word": "900003","mood": -30,"favor": -30}},"failReward":{"mood": -30,"favor": -30}}	1	scene/bg/bg_jiaoshi.png		101		1006100001	[2201001,2401001]	210104	Idle	Id_happy	Id_angry	Id_angry	900063-900064-900065-900066-900067-900068-900069-900070-900071	0							[]	
+2401001	3	Dating													101		1007100001								0							[]	
+2201002	3	Dating													101		1054100001								0							[]	
+2301002	3	Dating	101	8101002	{"roleCids":[101],"buildingCid":103}	151000001			2301002		{"answer":{1: { "type": 0,"word": "900135","mood": -10,"favor": -10},2: {"type": 1,"word": "900136","mood": 10,"favor": 5},3: {"type": 0,"word": "900137","mood": -30,"favor": -30}},"failReward":{"mood": -30,"favor": -30}}	16	scene/bg/bg_jiaoshi.png		101		1055100001	[2201002,2401001]	210104	Idle	Id_angry	Id_happy	Id_angry	900072-900073-900074-900075-900076-900077-900078-900079-900080	0							[]	
+2202001	3	Dating													102		1038100001								0							[]	
+2302001	3	Dating	102	8102001	{"roleCids":[102],"buildingCid":106}	152000001			2302001		{"answer":{1: { "type": 0,"word": "900144","mood": -10,"favor": -10},2: {"type": 0,"word": "900145","mood": -30,"favor": -30},3: {"type": 1,"word": "900146","mood": 10,"favor": 5}},"failReward":{"mood": -30,"favor": -30}}	1	scene/bg/bg_gongyuan.png		102		1039100001	[2202001,2402001]	210204	Idle	Id_angry	Id_angry	Id_happy	900081-900082-900083-900084-900085-900086-900087-900088-900089	0							[]	
+2402001	3	Dating													102		1040100001								0							[]	
+2202002	3	Dating													102		1042100001								0							[]	
+2302002	3	Dating	102	8102002	{"roleCids":[102],"buildingCid":103}	153000001			2302002		{"answer":{1: { "type": 1,"word": "900147","mood": 10,"favor": 5},2: {"type": 0,"word": "900148","mood": -10,"favor": -10},3: {"type": 0,"word": "900149","mood": -30,"favor": -30}},"failReward":{"mood": -30,"favor": -30}}	16	scene/bg/bg_jiejiao.png		102		1043100001	[2202002,2402002]	210204	Idle	Id_happy	Id_angry	Id_angry	900090-900091-900092-900093-900094-900095-900096-900097-900098	0							[]	
+2402002	3	Dating													102		1044100001								0							[]	
+2203001	3	Dating													103		1056100001								0							[]	
+2303001	3	Dating	103	8103001	{"roleCids":[103],"buildingCid":106}	154000001			2303001		{"answer":{1: { "type": 0,"word": "900138","mood": -10,"favor": -10},2: {"type": 1,"word": "900139","mood": 10,"favor": 5},3: {"type": 0,"word": "900140","mood": -30,"favor": -30}},"failReward":{"mood": -30,"favor": -30}}	1	scene/bg/bg_keting.png		103		1057100001	[2203001,2403001]	210303	Idle	Id_angry	Id_happy	Id_angry	900099-900100-900101-900102-900103-900104-900105-900106-900107	0							[]	
+2403001	3	Dating													103		1058100001								0							[]	
+2203002	3	Dating													103		1059100001								0							[]	
+2303002	3	Dating	103	8103002	{"roleCids":[103],"buildingCid":103}	155000001			2303002		{"answer":{1: { "type": 0,"word": "900141","mood": -10,"favor": -10},2: {"type": 1,"word": "900142","mood": 10,"favor": 5},3: {"type": 0,"word": "900143","mood": -30,"favor": -30}},"failReward":{"mood": -30,"favor": -30}}	16	scene/bg/bg_wanoudian1.png		103		1060100001	[2203002,2403001]	210303	Idle	Id_angry	Id_happy	Id_angry	900108-900109-900110-900111-900112-900113-900114-900115-900116	0							[]	
+2204001	3	Dating													104		1046100001								0							[]	
+2304001	3	Dating	104	8104001	{"roleCids":[104],"buildingCid":106}	156000001			2304001		{"answer":{1: { "type": 0,"word": "900151","mood": -10,"favor": -10},2: {"type": 1,"word": "900150","mood": 10,"favor": 5},3: {"type": 0,"word": "900152","mood": -30,"favor": -30}},"failReward":{"mood": -30,"favor": -30}}	1	scene/bg/bg_gongyuan.png		104		1047100001	[2204001,2404001]	10404	id3	id3_5	id3_6	id3_6	900117-900118-900119-900120-900121-900122-900123-900124-900125	0							[]	
+2404001	3	Dating													104		1048100001								0							[]	
+2204002	3	Dating													104		1050100001								0							[]	
+2304002	3	Dating	104	8104002	{"roleCids":[104],"buildingCid":103}	157000001			2304002		{"answer":{1: { "type": 1,"word": "900154","mood": 10,"favor": 5},2: {"type": 1,"word": "900153","mood": 10,"favor": 5},3: {"type": 0,"word": "900155","mood": -30,"favor": -30}},"failReward":{"mood": -30,"favor": -30}}	16	scene/bg/bg_jiejiao.png		104		1051100001	[2204002,2404002]	10404	id3	id3_5	id3_6	id3_6	900126-900127-900128-900129-900130-900131-900132-900133-900134	0							[]	
+2404002	3	Dating													104		1052100001								0							[]	
+2305001	3	Dating													105		1092101101								0							[]	
+2405001	3	Dating	105	8105001	{"roleCids":[105],"buildingCid":106}	158000001			2405001		{"answer":{1: { "type": 1,"word": "900401","mood": -10,"favor": -10},2: {"type": 1,"word": "900402","mood": -30,"favor": -30},3: {"type": 0,"word": "900403","mood": 10,"favor": 5}},"failReward":{"mood": -30,"favor": -30}}	1	scene/bg/bg_wuding.png		105		1093101101	[2305001,2505001]	10504	id_pose_1	id_pose_3	id_pose_4	id_pose_6	900063-900064-900065-900066-900067-900068-900069-900070-900071	0	10504						[]	
+2505001	3	Dating													105		1094101101								0							[]	
+2305002	3	Dating													105		1095101101								0							[]	
+2405002	3	Dating	105	8105002	{"roleCids":[105],"buildingCid":206}	159000001			2405002		{"answer":{1: { "type": 1,"word": "900404","mood": -30,"favor": -30},2: {"type": 1,"word": "900405","mood": 10,"favor": 5},3: {"type": 0,"word": "900406","mood": -10,"favor": -10}},"failReward":{"mood": -30,"favor": -30}}	16	scene/bg/bg_keting.png		105		1096101101	[2305002,2505002]	10504	id_pose_1	id_pose_11	id_pose_13	id_pose_5	900108-900109-900110-900111-900112-900113-900114-900115-900116	0	10504						[]	
+2505002	3	Dating													105		1097101101								0							[]	
+3101001	4	Dating			{"roleCids":[101]}									1	101		1099000001								0				icon/item/gift/531031.png	19061	19062	[]	
+3101002	4	Dating			{"roleCids":[101]}									1	101		1100000001								0				icon/item/gift/531001.png	19001	19002	[]	
+3102001	4	Dating			{"roleCids":[102]}									1	102		1101000001								0				icon/item/gift/531033.png	19065	19066	[]	
+3103001	4	Dating			{"roleCids":[103]}									1	103		1086000001								0				icon/item/gift/531005.png	19013	19014	[]	
+3103002	4	Dating			{"roleCids":[103]}									1	103		1087000001								0				icon/item/gift/531035.png	19069	19070	[]	
+3104001	4	Dating			{"roleCids":[104]}									1	104		1103000001								0				icon/item/gift/531007.png	19009	19010	[]	
+3104002	4	Dating			{"roleCids":[104]}									1	104		1104000001								0				icon/item/gift/531037.png	19073	19074	[]	
+4101002	4	Dating			{"roleCids":[101]}									2	101		1035100001								0				icon/role/dress/10107.png	900294	900295	[]	
+4103001	4	Dating			{"roleCids":[103]}									2	103		1036100001								0				icon/role/dress/10303.png	900296	900297	[]	
+4103002	4	Dating			{"roleCids":[103]}									2	103		1006710001								0							[]	
+4104001	4	Dating			{"roleCids":[104]}									2	104		1037100001								0				icon/role/dress/10104.png	900298	900299	[]	
+4105001	4	Dating			{"roleCids":[105]}									2	105		1008810001								0				icon/role/dress/10504.png	900342	900343	[]	
+4105002	4	Dating			{"roleCids":[105]}									2	105		1008910001								0				icon/role/dress/10505.png	900344	900345	[]	
+6101001	6	Dating			{"roleCids":[101],"buildingCid":203}				6101001						101		1072101101								0	10107						[]	
+6101002	6	Dating			{"roleCids":[101],"buildingCid":206}				6101002						101		1073101101								0	10107						[]	
+6102001	6	Dating			{"roleCids":[102],"buildingCid":208}				6102001						102		1075101101								0	10203						[]	
+6102002	6	Dating			{"roleCids":[102],"buildingCid":207}				6102002						102		1076101101								0	10203						[]	
+6102003	6	Dating			{"roleCids":[102],"buildingCid":208}				6102003						102		1077101101								0	10203						[]	
+6102004	6	Dating			{"roleCids":[102],"buildingCid":203}				6102004						102		1091111001								0	10203						[]	
+6102005	6	Dating			{"roleCids":[102],"buildingCid":206}				6102005						102		110111001								0	10203						[]	
+6102006	6	Dating			{"roleCids":[102],"buildingCid":207}				6102006						102		111111001								0	10203						[]	
+6103001	6	Dating			{"roleCids":[103],"buildingCid":208}				6103001						103		1009000001								0	10303						[]	
+6103002	6	Dating			{"roleCids":[103],"buildingCid":103}				6103002						103		160111001								0	10303						[]	
+6103003	6	Dating			{"roleCids":[103],"buildingCid":104}				6103003						103		161111001								0	10303						[]	
+6103004	6	Dating			{"roleCids":[103],"buildingCid":203}				6103004						103		162111001								0	10303						[]	
+6104001	6	Dating			{"roleCids":[104],"buildingCid":207}				6104001						104		163111001								0	10403						[]	
+6104002	6	Dating			{"roleCids":[104],"buildingCid":105}				6104002						104		164111001								0	10403						[]	
+6104003	6	Dating			{"roleCids":[104],"buildingCid":107}				6104003						104		165111001								0	10403						[]	
+6104004	6	Dating			{"roleCids":[104],"buildingCid":201}				6104004						104		166111001								0	10403						[]	
+6105001	6	Dating			{"roleCids":[105],"buildingCid":207}				6105001						105		1078101101								0	10504						[]	
+6105002	6	Dating			{"roleCids":[105],"buildingCid":112}				6105002						105		1079101101								0	10504						[]	
+6105003	6	Dating			{"roleCids":[105],"buildingCid":208}				6105003						105		1080101101								0	10504						[]	
+6105004	6	Dating			{"roleCids":[105],"buildingCid":203}				6105004						105		112111001								0	10504						[]	
+6105005	6	Dating			{"roleCids":[105],"buildingCid":206}				6105005						105		113111001								0	10504						[]	
+6105006	6	Dating			{"roleCids":[105],"buildingCid":207}				6105006						105		114111001								0	10504						[]	
+6105007	6	Dating			{"roleCids":[105],"buildingCid":208}				6105007						105		115111001								0	10504						[]	
+6105008	6	Dating			{"roleCids":[105],"buildingCid":203}				6105008						105		116111001								0	10504						[]	
+6105009	6	Dating			{"roleCids":[105],"buildingCid":207}				6105009						105		117111001								0	10504						[]	
+1001	7	MainDialogue														105	1011001								1	10505	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950027
+1002	7	MainDialogue														101	1021001								1	210101	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950003
+1003	7	MainDialogue														102	1031001								1	210204	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950013
+1004	7	MainDialogue														105	1041001								1	10503	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950018
+2001	7	MainDialogue														103	2011001								1	210301	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950032
+2002	7	MainDialogue														103	2021001								1	210301	Id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950037
+2003	7	MainDialogue														103	2031001								1	210301	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950042
+2004	7	MainDialogue														102	2041001								1	210204	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950047
+2005	7	MainDialogue														103	2051001								1	210301	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950052
+3001	7	MainDialogue														104	3001001								1	210401	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950062
+3002	7	MainDialogue														106	3002001								1	10601	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950067
+3009	7	MainDialogue														104	3009001								1	210401	Id_angry					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950077
+4001	7	MainDialogue														105	4001001								1	10504	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950082
+4002	7	MainDialogue														105	4002001								1	10504	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950087
+4003	7	MainDialogue														105	4003001								1	10501	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950092
+5001	7	MainDialogue														107	5001001								1	10701	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950097
+5002	7	MainDialogue														108	5002001								1	10803	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950102
+5003	7	MainDialogue														107	5003001								1	10703	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950107
+5004	7	MainDialogue														108	5004001								1	10701	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950112
+5005	7	MainDialogue														107	5005001								1	10801	id_favor1_1					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950117
+5006	7	MainDialogue														101	5006001								1	210101	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950122
+5007	7	MainDialogue														102	5007001								1	210205	Id_happy					[{"tag":"relation","tag_data":{"operator":"mte","operator_data":{"right":{"score":50}}}}]	950112
+101	7	NovelDating														101	1022001								1	210104	Id_happy					[]	950112
+301	7	NovelDating														101	1022001								1	210104	Id_happy					[]	
+8101001	10	Dating					{1:150010001}	{1:{150010001:{500007:30,500008:10},150010002:{500007:-30,500008:-10},150010003:{500007:-20,500008:-5}}}									150000001								0							[]	
+8101002	10	Dating					{1:151010001}	{1:{151010001:{500007:30,500008:10},151010002:{500007:-30,500008:-10},151010003:{500007:-20,500008:-5}}}									151000001															[]	
+8102001	10	Dating					{1:152010001}	{1:{152010001:{500007:30,500008:10},152010002:{500007:-30,500008:-10},152010003:{500007:-20,500008:-5}}}									152000001															[]	
+8102002	10	Dating					{1:153010001}	{1:{153010001:{500007:30,500008:10},153010002:{500007:-30,500008:-10},153010003:{500007:-20,500008:-5}}}									153000001															[]	
+8103001	10	Dating					{1:154010001}	{1:{154010001:{500007:30,500008:10},154010002:{500007:-30,500008:-10},154010003:{500007:-20,500008:-5}}}									154000001															[]	
+8103002	10	Dating					{1:155010001}	{1:{155010001:{500007:30,500008:10},155010002:{500007:-30,500008:-10},155010003:{500007:-20,500008:-5}}}									155000001															[]	
+8104001	10	Dating					{1:156010001}	{1:{156010001:{500007:30,500008:10},156010002:{500007:-30,500008:-10},156010003:{500007:-20,500008:-5}}}									156000001															[]	
+8104002	10	Dating					{1:157010001}	{1:{157010001:{500007:30,500008:10},157010002:{500007:-30,500008:-10},157010003:{500007:-20,500008:-5}}}									157000001															[]	
+8105001	10	Dating					{1:158010001}	{1:{158010001:{500007:30,500008:10},158010002:{500007:-30,500008:-10},158010003:{500007:-20,500008:-5}}}									158000001															[]	
+8105002	10	Dating					{1:159010001}	{1:{159010001:{500007:30,500008:10},159010002:{500007:-30,500008:-10},159010003:{500007:-20,500008:-5}}}									159000001															[]	

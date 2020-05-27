@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="t_function_switch">
+    <resultMap id="FunctionSwitchDBBean" type="gm.db.global.bean.FunctionSwitchDBBean">
+        <result column="type" property="type" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+    </resultMap>
+        
+    <select id="selectByType" parameterType="INTEGER" resultMap="FunctionSwitchDBBean">
+        SELECT * 
+        FROM t_function_switch where type = #{type,jdbcType=INTEGER};
+    </select>
+    
+    <select id="selectAll" resultMap="FunctionSwitchDBBean">
+        SELECT * 
+        FROM t_function_switch;
+    </select>
+
+    <insert id="insert" parameterType="gm.db.global.bean.FunctionSwitchDBBean">
+    	insert into t_function_switch (
+		type,
+		status
+		)values(
+		#{type, jdbcType=INTEGER},
+		#{status, jdbcType=INTEGER}
+		)
+		ON DUPLICATE KEY UPDATE
+        status = VALUES(status)
+    </insert>
+    
+    <delete id="deleteByTypes" parameterType="java.util.List">
+    	delete from t_function_switch where type  IN
+		<foreach collection="list" item="type" index="index" open="(" separator="," close=")">
+		    #{type,jdbcType=INTEGER}
+		</foreach>
+    </delete>
+    
+</mapper>

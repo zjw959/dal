@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans classpath:/org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context classpath:/org/springframework/context/config/spring-context-3.0.xsd
+   http://www.springframework.org/schema/aop classpath:/org/springframework/aop/config/spring-aop-3.0.xsd
+   http://www.springframework.org/schema/tx classpath:/org/springframework/transaction/config/spring-tx-3.0.xsd">
+
+
+	<!-- ioc -->
+	<!-- 声明包扫描驱动，它的作用是Spring容器在启动时会启动注解驱动去扫描对应包下的bean对象并将创建它们的实例，这样我们就无法一个个地进行bean配置声明了 -->
+	<context:component-scan base-package="db.game"
+		use-default-filters="false">
+		<!-- <context:include-filter type="regex" expression="db.game.daoimp.PlayerDaoImp" 
+			/> <context:include-filter type="regex" expression="db.game.daoimp.PlayerDaoService" 
+			/> -->
+		<!-- 扫描符合@Service @Repository的类 -->
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Service" />
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Repository" />
+	</context:component-scan>
+
+	<bean id="redisConfigurer" class="redis.RedisPropertyConfigurer">
+		<property name="locations">
+			<list>
+				<value>file:./config/properties/redis_server.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- Jedis 连接池配置 -->
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="${jedis_pool.maxTotal}" />
+		<property name="maxIdle" value="${jedis_pool.maxIdle}" />
+		<property name="minIdle" value="${jedis_pool.minIdle}" />
+		<property name="maxWaitMillis" value="1000" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+		<property name="testWhileIdle" value="false" />
+	</bean>
+
+	<bean id="jedisPoolView" class="redis.clients.jedis.JedisPool">
+		<constructor-arg ref="jedisPoolConfig" />
+		<constructor-arg name="host" value="${redis_view.host}" />
+		<constructor-arg name="port" value="${redis_view.port}"
+			type="int" />
+		<constructor-arg name="timeout" value="2000" />
+		<constructor-arg name="password" value="${redis_view.pass}" />
+	</bean>
+
+	<bean id="jedisPoolSnap" class="redis.clients.jedis.JedisPool">
+		<constructor-arg ref="jedisPoolConfig" />
+		<constructor-arg name="host" value="${redis_snap.host}" />
+		<constructor-arg name="port" value="${redis_snap.port}"
+			type="int" />
+		<constructor-arg name="timeout" value="2000" />
+		<constructor-arg name="password" value="${redis_snap.pass}" />
+	</bean>
+
+	<bean id="autoLoadConfig" class="com.jarvis.cache.to.AutoLoadConfig">
+		<property name="threadCnt" value="2" />
+		<property name="maxElement" value="1000" />
+		<property name="maxMemeryRate" value="20" />
+		<property name="oneCacheCapacity" value="51200" />
+		<property name="sortType" value="1" />
+		<property name="checkFromCacheBeforeLoad" value="true" />
+		<property name="autoLoadPeriod" value="50" />
+		<property name="functions">
+			<map>
+				<entry key="isEmpty" value="com.jarvis.cache.CacheUtil" />
+			</map>
+		</property>
+		<property name="printSlowLog" value="true" />
+		<property name="slowLoadTime" value="1000" />
+	</bean>
+
+	<!-- 游戏内自定义的Serializer -->
+	<bean id="externalSerializer" class="redis.ExternalRedisSerializer" />
+	<bean id="dbViewLoadHandler" class="redis.DBViewLoadHandler" />
+
+	<bean id="scriptParser" class="com.jarvis.cache.script.SpringELParser" />
+
+	<bean id="localCacheManager" class="com.jarvis.cache.map.MapCacheManager"
+		init-method="start" destroy-method="destroy">
+		<constructor-arg ref="autoLoadConfig" />
+		<constructor-arg ref="externalSerializer" />
+		<property name="maxElement" value="1000" />
+		<property name="maxMemeryRate" value="30" />
+		<property name="oneCacheCapacity" value="51200" />
+		<property name="needPersist" value="false" />
+		<property name="copyValueOnGet" value="false" />
+		<property name="copyValueOnSet" value="false" />
+	</bean>
+
+	<bean id="jedisLock" class="com.jarvis.cache.lock.JedisLock">
+		<constructor-arg ref="jedisPoolView" />
+	</bean>
+
+	<bean id="jedisCacheManager" class="com.jarvis.cache.redis.JedisCacheManager">
+		<constructor-arg ref="jedisPoolView" />
+		<constructor-arg ref="jedisPoolSnap" />
+		<constructor-arg ref="externalSerializer" />
+	</bean>
+
+	<bean id="cacheManager" class="com.jarvis.cache.ComboCacheManager">
+		<constructor-arg ref="localCacheManager" />
+		<constructor-arg ref="jedisCacheManager" />
+		<constructor-arg ref="scriptParser" />
+	</bean>
+
+	<bean id="cacheHandler" class="com.jarvis.cache.CacheHandler"
+		destroy-method="destroy">
+		<constructor-arg ref="cacheManager" />
+		<constructor-arg ref="scriptParser" />
+		<constructor-arg ref="autoLoadConfig" />
+		<constructor-arg ref="externalSerializer" />
+		<constructor-arg ref="dbViewLoadHandler" />
+		<property name="lock" ref="jedisLock" />
+	</bean>
+
+	<!-- aop 拦截容器 -->
+	<bean id="cacheInterceptor" class="com.jarvis.cache.aop.aspectj.AspectjAopInterceptor">
+		<constructor-arg ref="cacheHandler" />
+	</bean>
+
+	<!-- aop -->
+	<!-- 接口方式的切点类会优先使用JDK代理,但无法从接口方法上获取实现类中的注解(localCache),必须显示的使用cglib -->
+	<!-- 既想使用localcache注解,又想使用jdk,则切点需要在对应的接口上也添加localCache注解 -->
+	<aop:config proxy-target-class="true">
+		<!-- 拦截@Cache -->
+		<aop:aspect ref="cacheInterceptor">
+			<aop:pointcut id="playerDaoPointcut"
+				expression="execution(public !void db.game.daoimp..*.*(..)) &amp;&amp; @annotation(cache)" />
+			<aop:around pointcut-ref="playerDaoPointcut" method="proceed" />
+		</aop:aspect>
+	</aop:config>
+</beans>

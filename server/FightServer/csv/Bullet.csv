@@ -1,0 +1,48 @@
+bulletid	名称	弹幕等级（怪物弹幕该字段不填）	弹幕脚本	碰撞框名字	开火特效{"effectName":"必须有，没有不播放","scale":默认1,"actionName":"如果只有一个动画可不填", "launchPointName":"发射点名称，默认0,0", "offset":偏移坐标默认0,0},玩家、僚机别填	击中特效:{"effectName":"必须有，没有不播放","scale":默认1,"actionName":"如果只有一个动画可不填", "offset":偏移坐标默认0,0}	弹幕是否循环	弹幕是否删除(怪物死亡后有的弹幕需要删除，有的不需要)	按键（怪物该字段不填）
+id	name	level	bullet	colliderName	fireEffect	hitEffect	isLoop	isDelete	keyName
+number	comment	number	string	string	json	json	boolean	boolean	string
+int		int	string	string	map	map	boolean	boolean	string
+1001001	十香1级子弹	1	shixiang_bullet_Lv1	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001002	十香2级子弹	2	shixiang_bullet_Lv2	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001003	十香3级子弹	3	shixiang_bullet_Lv3	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001004	十香4级子弹	4	shixiang_bullet_Lv4	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001005	十香5级子弹	5	shixiang_bullet_Lv5	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001101	十香僚机形态1等级1	1	liaoji_form1_Lv1	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001102	十香僚机形态1等级2	2	liaoji_form1_Lv2	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001103	十香僚机形态1等级3	3	liaoji_form1_Lv3	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001104	十香僚机形态1等级4	4	liaoji_form1_Lv4	bdbox		{"effectName":"shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1001201	十香僚机形态2等级1	1							
+1001202	十香僚机形态2等级2	2							
+1001203	十香僚机形态2等级3	3							
+1001204	十香僚机形态2等级4	4							
+1001301	十香僚机形态3等级1	1							
+1001302	十香僚机形态3等级2	2							
+1001303	十香僚机形态3等级3	3							
+1001304	十香僚机形态3等级4	4							
+1003001	四系乃1级子弹	1	sixinai_bullet_Lv1	bdbox		{"effectName":"effects_10301F_shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1003002	四系乃2级子弹	2	sixinai_bullet_Lv2	bdbox		{"effectName":"effects_10301F_shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+1003003	四系乃3级子弹	3	sixinai_bullet_Lv3	bdbox		{"effectName":"effects_10301F_shouji","scale":0.36,"actionName":"shouji", "offset":{"x":0,"y":0}}	1	1	
+2001101	1-6Boss弹幕1		bullet_Boss_1_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_21101_skillA2","scale":0.36}	0	0	
+2001102	1-6Boss弹幕2		bullet_Boss_2_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_21101_skillA2","scale":0.36}	0	0	
+2001103	1-6Boss弹幕3		bullet_Boss_3_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_21101_skillA2","scale":0.36}	0	1	
+2001104	1-6Boss弹幕4		bullet_Boss_4_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_21101_skillA2","scale":0.36}	0	1	
+2001001	1-6低阶弹幕1		bullet_2_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36}	0	0	
+2001002	1-6高阶弹幕1		bullet_1_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001003	1-6高阶弹幕2		bullet_3_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001004	1-6高阶弹幕3		bullet_4_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001005	1-6低阶弹幕2		bullet_5_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001006	1-6高阶弹幕4		bullet_6_1-6	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001007	日常2高阶弹幕1		bullet_rc_2_1	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001008	日常2高阶弹幕2		bullet_rc_2_2	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001009	日常3低阶弹幕1		bullet_rc_3_1	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001010	日常3低阶弹幕2		bullet_rc_3_2	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001011	日常3高阶弹幕1		bullet_rc_3_3	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001012	日常3低阶弹幕1		bullet_rc_4_1	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001013	日常4高阶弹幕1		bullet_rc_4_2	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001014	日常4高阶弹幕2		bullet_rc_4_3	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001015	日常4高阶弹幕3		bullet_rc_4_4	bdbox_eff	{"effectName":"effects_20301_skillA2","scale":0.20, "launchPointName":"weapon_R", "offset":{"x":0,"y":0}, "flipX":1}	{"effectName":"effects_20201_skillA2","scale":0.36} 	0	0	
+2001016									
+2001017									
+2001018									
+2001019									
+2001020									

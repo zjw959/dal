@@ -1,0 +1,14 @@
+id	注释(名称)	名称文字ID	获取途径	道具类型	子类型	小类型	图标	背包类型	排序索引	星级	品质	总上限	是否支持叠加	单格上限	达总上限转换	单次使用上限	出售收益	交易收益	描述	描述文字ID	价值(策划查看)	自动使用	使用消耗	失效时间	使用收益	是否播放出场效果	购买ID（ItemRecover表ID）	删除
+id	name	nameTextId	accessId	superType	subType	smallType	icon	bagType	order	star	quality	totalMax	pileUp	gridMax	convertMax	onceUseLimit	sellProfit	dealProfit	des	desTextId	cost	autoUse	useCast	outTime	useProfit	bornEffect	buyItemRecover	delete
+number	comment	number	numbers	number	number	number	string	number	number	number	number	number	boolean	number	json	number	vjson	json	string	number	string	boolean	json	number	json	boolean	number	boolean
+int	comment	int	int[]	int	int	int	string	int	int	int	int	int	boolean	int	map	int	map	map	string	int	string	boolean	map	int	map	boolean	int	boolean
+542001	道具1	900219		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具1	900219		0		0		0		0
+542002	道具2	900220		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具2	900220		0		0		0		0
+542003	道具3	900221		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具3	900221		0		0		0		0
+542004	道具4	900222		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具4	900222		0		0		0		0
+542005	道具5	900223		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具5	900223		0		0		0		0
+542006	道具6	900224		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具6	900224		0		0		0		0
+542007	道具7	900225		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具7	900225		0		0		0		0
+542008	道具8	900226		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具8	900226		0		0		0		0
+542009	道具9	900227		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具9	900227		0		0		0		0
+542010	道具10	900228		14	0	0	icon/item/gift/530121.png	0	1		1	99999999	1						道具10	900228		0		0		0		1

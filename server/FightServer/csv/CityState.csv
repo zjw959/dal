@@ -1,0 +1,12 @@
+id	状态名称（策划看）	状态图标	状态权重	对应约会类型	状态持续时间	状态触发	备注	状态处理
+id	nameDes	stateIcon	weight	datingType	lateTime	trigger	triggerDes	effect
+number	comment	string	number	number	number	json	comment	json
+int		string	int	int	int	Map		Map
+1	主线约会		400	1				
+2	预定约会邀请		300	3	60			
+3	预定约会		300	3	60			
+4	出游约会		300	6	60			
+5	日常约会（未完成）		200	2				
+6	饥饿		100		30	{"condition1":24,"condition2":30,"condition3":1,"condition4":1,"condition5":1,"condition6":1}	【1】24小时未赠送精灵食物,【2】30/100概率触发饥饿状态,【3】24小时之后每增加1个小时,【4】触发概率增加1/100,【5】看板娘每增加1（默认1）,【6】概率减少1/100	{500007:20,500008:50}
+7	生气		100		30	{"condition1":50,"condition2":30,"condition3":1,"condition4":1}	【1】精灵心情值低于50,【2】30/100概率触发生气状态,【3】心情值在50的基础上每减少1,【4】概率增加1/100	{500007:20,500008:50}
+8	无聊		100		30	{"condition1":24,"condition2":30,"condition3":1,"condition4":1,"condition5":1,"condition6":1}	【1】24小时未和精灵日常约会,【2】30/100概率触发无聊状态,【3】24小时之后每增加1个小时,【4】触发概率增加1/100,【5】看板娘每增加1（默认1）,【6】概率减少1/100	{500007:20,500008:50}

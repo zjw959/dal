@@ -1,0 +1,131 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CDatingMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CItemMsg.proto";
+
+// 获取剧本
+//code = 1537
+message GetScriptMsg {
+	enum MsgID{eMsgID = 1537;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//剧本对话消息
+//code = 1538
+message DialogueMsg {
+    required int32 score = 1; //积分
+	enum MsgID{eMsgID = 1538;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//登录约会消息
+//code = 1539
+message GetDatingInfo {
+    repeated NotFinishDating notFinishDating = 1; //未完成约会
+    repeated int32 datingRuleCid = 2 [packed=true]; //已经通过的剧本id
+    repeated int32 endings = 3 [packed=true]; //剧本结束节点
+    repeated CityDatingInfo cityDatingInfoList = 4; //城市约会信息列表（原预定约会列表）
+    repeated UpdateTriggerDating triggerDating = 5; //触发约会
+	enum MsgID{eMsgID = 1539;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//剧本结算消息
+//code = 1540
+message DatingSettlementMsg {
+    required int32 score = 1; //积分
+    required int32 favor = 2; //好感度
+    repeated RewardsMsg rewards = 3; //奖励
+    optional int32 scriptId = 4; //剧本id
+    repeated bool starList = 5; // 星级等级
+    required bool obsolete = 6; //剧本是否过时(预定约会和出游约会,系统定时清除)
+	enum MsgID{eMsgID = 1540;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取剧本
+//code = 1542
+message DatingScriptMsg {//通用剧本
+    required int32 datingRuleCid = 1; //剧本cid
+    repeated BranchNode branchNodes = 2;
+    required bool isFirst = 3; //是否是第一次进入该剧本
+    required string datingId = 4;
+	enum MsgID{eMsgID = 1542;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//接受约会邀请
+//code = 1544
+message AcceptDatingInvitationMsg {
+	enum MsgID{eMsgID = 1544;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//未完成约会
+message NotFinishDating {
+    required int32 score = 1; //积分
+    required int32 datingType = 2; //约会类型
+    required int32 currentNodeId = 3; //当前进行到的节点
+    repeated BranchNode branchNodes = 4; //分支节点
+    optional int32 selectedNode = 5; //被选择节点
+    repeated int32 roleCid = 6;//看板娘id
+    required int32 datingRuleCid = 7; //约会id
+    required bool isFirst = 8;//是否是第一次约会
+}
+
+//分子节点列表
+message BranchNodes {
+    repeated BranchNode branchNodes = 1; //分支节点
+}
+
+//分支节点
+message BranchNode {
+    required int32 datingId = 1; //约会配置id
+    repeated int32 nextNodeIds = 2 [packed=true]; //下级节点id
+}
+
+//城市约会信息列表
+//code = 1548
+message CityDatingInfoList{
+    repeated CityDatingInfo cityDatingInfo = 1;
+	enum MsgID{eMsgID = 1548;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//城市约会信息（原预定约会信息）
+//code = 1549
+message CityDatingInfo{
+    required ChangeType ct = 1;
+    required string cityDatingId = 2; //城市约会id
+    repeated int32 datingTimeFrame = 3 [packed=true]; //约会时段
+    required int32 datingRuleCid = 4; //约会cid
+    required int32 date = 5; //约会日期
+    optional int32 state = 6; //预定约会状态 0：无约会 1：有邀请，未接受 2：已接受邀请 3：正常约会时间 4：约会时间已过
+    required bool inDating = 7;// 是否在剧情中 true   false
+	enum MsgID{eMsgID = 1549;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+
+//更新触发约会
+//code = 1550
+message UpdateTriggerDating{
+    required int32 roleId = 1;//
+    repeated int32 datingRuleCid = 2;
+	enum MsgID{eMsgID = 1550;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//约会失败
+//code = 1551
+message DatingFail{
+    required int32 datingRuleCid = 1;
+	enum MsgID{eMsgID = 1551;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//继续约会
+//code = 1552
+message ContinueDating{
+	enum MsgID{eMsgID = 1552;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//手机约会返回接受还是拒绝
+//code = 1553
+message PhoneDatingAccept{
+    required bool accept = 1; //预定约会返回接受还是拒绝
+    enum MsgID{eMsgID = 1553;}; //注意：消息id放最后,以免客户端解析异常
+}
+

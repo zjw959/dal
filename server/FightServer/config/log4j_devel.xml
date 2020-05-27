@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- ===================================================================== -->
+	<!-- 以下是appender的定义，定义日志输出的目的地、输出方式及过滤级别 -->
+	<!-- ===================================================================== -->
+
+	<appender name="stdoutErr" class="org.apache.log4j.ConsoleAppender">
+		<param name="target" value="System.err" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %-d{HH:mm:ss} %l - %m%n"></param>
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="error" />
+			<param name="LevelMax" value="fatal" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+	</appender>
+
+	<appender name="stdoutOut" class="org.apache.log4j.ConsoleAppender">
+		<param name="target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %-d{HH:mm:ss} %l - %m%n"></param>
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="debug" />
+			<param name="LevelMax" value="warn"/>
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+	</appender>
+
+	<appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- <param name="Threshold" value="info"></param> -->
+		<param name="ImmediateFlush" value="true" />
+		<param name="File" value="./logs/FightServer.log" />
+		<param name="DatePattern" value="'.'yyyyMMddHH'.log'" />
+		<param name="Append" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-4r %-5p %-d{yyyy-MM-dd HH:mm:ss}  %l - %m%n"></param>
+		</layout>
+		<!-- <filter class="org.apache.log4j.varia.LevelRangeFilter"> <param name="LevelMin" 
+			value="warn" /> <param name="LevelMax" value="error" /> <param name="AcceptOnMatch" 
+			value="false" /> </filter> -->
+	</appender>
+
+	<appender name="asyncFile" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="2048" />
+		<param name="LocationInfo" value="true" />
+		<appender-ref ref="file" />
+	</appender>
+
+	<!-- ===================================================================== -->
+	<!-- 日志写出器：每一个logger可以有多个输出目的地和输出方式 -->
+	<!-- ===================================================================== -->
+	<logger name="org.apache.ibatis" additivity="false">
+		<level value="error" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</logger>
+
+	<logger name="org.springframework"  additivity="false">
+		<level value="error"/>
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</logger>
+
+	<logger name="org.apache.ibatis.logPrefix" additivity="false">
+		<level value="error" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</logger>
+	
+	<logger name="io.netty" additivity="false">
+		<level value="error" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</logger>
+	
+	<logger name="org.apache.http" additivity="false">
+		<level value="error" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</logger>
+	
+	<logger name="org.apache.kafka" additivity="false">
+		<level value="info" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</logger>
+		
+	<!-- <logger name="org.apache.kafka.common" additivity="false">
+		<level value="error" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</logger> -->
+	
+	
+	<!-- ===================================================================== -->
+	<!-- Root 所有logger的基类，没有定义的logger将会使用root 其他logger都会继承root -->
+	<!-- ===================================================================== -->
+	<root>
+		<level value="debug" />
+		<appender-ref ref="stdoutOut" />
+		<appender-ref ref="stdoutErr" />
+		<appender-ref ref="asyncFile" />
+	</root>
+</log4j:configuration>

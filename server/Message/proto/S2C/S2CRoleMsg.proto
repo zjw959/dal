@@ -1,0 +1,84 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CRoleMsg";
+import "S2C/S2CShareMsg.proto";
+import "S2C/S2CItemMsg.proto";
+// 精灵列表
+// code = 1281
+message RoleInfoList {
+	repeated RoleInfo roles = 1;
+	enum MsgID{eMsgID = 1281;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 精灵信息
+// code = 1283
+message RoleInfo {
+	optional ChangeType ct = 1;
+	optional string id = 2; // 实例ID
+	optional int32 cid = 3; // 配置ID
+	optional int32 favor = 4; //好感度
+	optional int32 mood = 5; // 心情
+	optional int32 status = 6; // 状态 0：未使用 1：使用
+	repeated int32 unlockGift = 7 [packed=true]; // 解锁的礼品
+	repeated int32 unlockHobby = 8 [packed=true]; // 解锁的爱好
+	optional DressInfo dress = 9;	 //穿戴的时装
+	optional int32 roomId = 10; //房间id
+	optional bool favorCriticalPoint = 11;//好感度临界点
+	optional int32 roleState = 12;//精灵3状态
+    repeated int32 favoriteIds = 13;// 精灵喜欢的食物或者礼物  
+	enum MsgID{eMsgID = 1283;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 精灵赠送
+// code = 1282
+message Donate {
+	optional int32 favoriteId=1;//精灵喜欢的食物或者礼物
+	enum MsgID{eMsgID = 1282;}; //注意：消息id放最后,以免客户端解析异常
+}
+// 精灵换装
+// code = 1284
+message Dress{
+	enum MsgID{eMsgID = 1284;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 切换精灵
+// code = 1285
+message SwitchRoleResult{
+	repeated RoleStatusInfo Rolestatus = 1;
+	enum MsgID{eMsgID = 1285;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 更新精灵心情值
+// code = 1286
+message UpdateRoleMood{
+	repeated RoleMoodInfo infos =1;
+	enum MsgID{eMsgID = 1286;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 触摸精灵
+// code = 1287
+message TouchRole{
+	enum MsgID{eMsgID = 1287;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+message RoleStatusInfo{
+	required string roleId = 1;
+	required int32 status = 2;
+}
+
+message RoleMoodInfo{
+	required string roleId = 1;
+	required int32 mood = 2;
+}
+
+// 更换房间
+// code = 1288
+message ChangeRoom{
+	enum MsgID{eMsgID = 1288;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 解锁房间
+// code = 1289
+message UnlockRoom{
+	enum MsgID{eMsgID = 1289;}; //注意：消息id放最后,以免客户端解析异常
+}

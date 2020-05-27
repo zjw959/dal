@@ -1,0 +1,120 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SDungeonMsg";
+
+//副本：战斗开始
+//code = 1793
+message FightStartMsg {
+	required int32 levelCid = 1; //关卡cid
+	optional int32 helpPlayerId = 2; //助战玩家id
+	optional int32 helpHeroCid = 3; //助战英雄id
+	repeated LimitedHeroInfo limitHeros = 4; //限定英雄信息
+	optional int32 quickCount = 5;// 快速战斗次数
+	optional bool isDuelMod = 6;// 决斗模式
+	enum MsgID{eMsgID = 1793;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//限定英雄信息
+message LimitedHeroInfo {
+	required int32 limitType = 1;//限定类型,1:玩家英雄类型,2:限定英雄类型
+	required int32 limitCid = 2;//限定英雄id
+}
+
+//副本：战斗结束
+//code = 1794
+message FightOverMsg {
+	required int32 levelCid = 1; //关卡cid
+	required bool isWin = 2; //是否胜利
+	repeated int32 goals = 3; //达成目标的下标
+	required int32 batter = 4;//最大连击数
+	required int32 pickUpTypeCount = 5;//拾取道具种类个数
+	required int32 pickUpCount = 6;//拾取道具个数
+	enum MsgID{eMsgID = 1794;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//副本：通知服务器记录主线进度
+//code = 1795
+message ProgressMsg {
+	required int32 mainLineCid = 1; //主线cid
+	enum MsgID{eMsgID = 1795;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//请求获取关卡及章节信息
+//code = 1796
+message GetLevelInfo {
+	enum MsgID{eMsgID = 1796;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取主线进度
+//code = 1798
+message GetMainLineProgress {
+	enum MsgID{eMsgID = 1798;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//购买副本组战斗次数
+//code = 1800
+message BuyFightCount {
+	required int32 cid = 1; //副本组cid
+	enum MsgID{eMsgID = 1800;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//领取副本组奖励
+//code = 1802
+message GetLevelGroupReward {
+	required int32 cid = 1; //副本组cid
+	required int32 difficulty = 2; //难度
+	required string starNum = 3; //星数
+	enum MsgID{eMsgID = 1802;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//创建队伍
+//code = 1803
+message CreateTeam {
+	required int32 dungeonLevelCid = 1;
+	required bool matching = 2;
+	enum MsgID{eMsgID = 1803;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//匹配
+//code = 1804
+message MatchingTeam {
+	required int32 dungeonLevelCid = 1;
+	enum MsgID{eMsgID = 1804;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//匹配可邀请的好友
+//code = 1805
+message MatchingTeamFriend {
+	enum MsgID{eMsgID = 1805;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//退出
+//code = 1806
+message Quit {
+	required int32 teamId = 1; //队伍id
+	enum MsgID{eMsgID = 1806;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+//踢人
+//code = 1807
+message Kick {
+	required int32 teamId = 1; //队伍id
+	required int32 pid = 2;//被踢队员pid
+	enum MsgID{eMsgID = 1807;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+//获取限定英雄
+//code = 1808
+message LimitHeroDungeonMsg {
+	required int32 levelId = 1; //关卡cid
+	enum MsgID{eMsgID = 1808;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+//获取关卡组多倍收益
+//code = 1809
+message GroupMultipleRewardMsg {
+	enum MsgID{eMsgID = 1809;}; //注意：消息id放最后,以免客户端解析异常
+}
+

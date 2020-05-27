@@ -1,0 +1,50 @@
+package org.game.protobuf.c2s;
+
+option java_outer_classname = "C2SStoreMsg";
+
+// 取得商店信息
+// code = 2561
+message GetStoreInfo {
+	repeated int32 cid = 1;
+	enum MsgID{eMsgID = 2561;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 购买道具
+// code = 2562
+message BuyGoods {
+	required int32 cid = 1; // 商品ID
+	required int32 num = 2; // 购买数量
+	enum MsgID{eMsgID = 2562;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 刷新商店
+// code = 2563
+message RefreshStore {
+	required int32 cid = 1; // 商店类型
+	enum MsgID{eMsgID = 2563;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 取得商店购买记录
+// code = 2564
+message GetCommodityBuyLog {
+	enum MsgID{eMsgID = 2564;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 出售道具
+// code = 2565
+message SellInfo{
+	repeated SellGoods goods = 1;
+	enum MsgID{eMsgID = 2565;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+// 请求动态商品配置
+// code = 2566
+message ReqDynamicCommodity{
+	enum MsgID{eMsgID = 2566;}; //注意：消息id放最后,以免客户端解析异常
+}
+
+
+message SellGoods{
+	required string id = 1; // 物品id
+	required int32 num = 2;//出售数量
+}

@@ -1,0 +1,771 @@
+音效ID	动画类型（1角色，2特效）	动画资源	动画ID	动作名字	音效事件	音效类型(0或不填为普通音效。1为语音)	音量	音效资源
+id	cartoonType	cartoonResource	action	name	triggerEvents	musicType	volume	resource
+number	number	string	string	string	strings	number	number	string
+int	int	string	string	string	strings	int	int	string
+1	1	fight_10101	skillA_3	十香灵装-普攻3-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_83.mp3
+2	1	fight_10101	skillA_5	十香灵装-普攻5-语音	music1	1	80	sound/battle_sound/10101/voice/TOUKA_42.mp3
+3	1	fight_10101	skillA_1	十香灵装-普攻1	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_1.mp3
+4	1	fight_10101	skillA_2	十香灵装-普攻2	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_2.mp3
+5	1	fight_10101	skillA_3	十香灵装-普攻3	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_3.mp3
+6	1	fight_10101	skillA_4	十香灵装-普攻4	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_4.mp3
+7	1	fight_10101	skillA_5	十香灵装-普攻5	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_5.mp3
+8	1	fight_10101	skillB_1	十香灵装-剑刃乱舞-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_45.mp3
+9	1	fight_10101	skillB_1	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_1.mp3
+10	1	fight_10101	skillB_2	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+11	1	fight_10101	skillB_3	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_3.mp3
+12	1	fight_10101	skillB_4	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_4.mp3
+13	1	fight_10101	skillB_5	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+14	1	fight_10101	skillB_6	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_3.mp3
+15	1	fight_10101	skillB_7	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_4.mp3
+16	1	fight_10101	skillB_11	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+17	1	fight_10101	skillB_8	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_5.mp3
+18	1	fight_10101	skillD11	十香灵装-最终之剑-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_48.mp3
+19	1	fight_10101	skillD11	十香灵装-觉醒-语音	music2	1	100	sound/battle_sound/10101/voice/TOUKA_84_B.mp3
+20	1	fight_10101	skillD11	十香灵装-觉醒-语音	music3	1	100	sound/battle_sound/10101/voice/TOUKA_84_A.mp3
+21	1	fight_10101	skillD11	十香灵装-觉醒-语音	music4	1	100	sound/battle_sound/10101/voice/TOUKA_83.mp3
+22	1	fight_10101	skillD11	十香灵装-觉醒-语音	music5	1	100	sound/battle_sound/10101/voice/TOUKA_86.mp3
+23	1	fight_10101	skillD11	十香灵装-觉醒-语音	music6	1	100	sound/battle_sound/10101/voice/TOUKA_82.mp3
+24	1	fight_10101	skillD11	十香灵装-最终之剑	music1		100	sound/battle_sound/10101/skillmusic/10101_skillD_1.mp3
+25	1	fight_10101	skillD11	十香灵装-最终之剑	music1		100	sound/battle_sound/10101/skillmusic/10101_skillD_2.mp3
+26	1	fight_10101	skillD11	十香灵装-最终之剑	music2		100	sound/battle_sound/10101/skillmusic/10101_skillD_3_1.mp3
+27	1	fight_10101	skillD11	十香灵装-最终之剑	music3		100	sound/battle_sound/10101/skillmusic/10101_skillD_3_2.mp3
+28	1	fight_10101	skillD11	十香灵装-最终之剑	music4		100	sound/battle_sound/10101/skillmusic/10101_skillD_3_3.mp3
+29	1	fight_10101	skillD11	十香灵装-最终之剑	music6		80	sound/battle_sound/10101/skillmusic/10101_skillD_3_4.mp3
+30	1	fight_10101	dodge	十香灵装-闪避	music1		100	sound/battle_sound/10101/skillmusic/10101_dodge.mp3
+31	1	fight_10101	skillF	十香灵装-出场	music1		100	sound/battle_sound/10101/skillmusic/10101_chuchang.mp3
+32	1	fight_10101	extra_skillB5	十香灵装-蓄力剑气3段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_012.mp3
+33	1	fight_10101	extra_skillB5	十香灵装-蓄力剑气3段	music2		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+34	1	fight_10101	extra_skillB5	十香灵装-蓄力剑气3段	music3		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_014.mp3
+35	1	fight_10101	extra_skillB5	十香灵装-蓄力剑气3段	music3	1	100	sound/battle_sound/10101/voice/TOUKA_82.mp3
+36	1	fight_10101	extra_skillB6	十香灵装-蓄力剑气2段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_012.mp3
+37	1	fight_10101	extra_skillB6	十香灵装-蓄力剑气2段	music2		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+38	1	fight_10101	extra_skillB6	十香灵装-蓄力剑气2段	music2	1	100	sound/battle_sound/10101/voice/TOUKA_83.mp3
+39	1	fight_10101	extra_skillB_3	十香灵装-蓄力剑气1段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+40	1	fight_10101	extra_skillB_3	十香灵装-蓄力剑气1段	music1	1	100	sound/battle_sound/10101/voice/TOUKA_84_B.mp3
+41	1	fight_10101	extra_skillB_1	十香灵装-蓄力	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_011.mp3
+42	1	fight_10101	extra_skillB_1	十香灵装-蓄力	music1		100	
+43	1	fight_10101	extra_skillC_1	十香灵装-连斩1	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_1.mp3
+44	1	fight_10101	extra_skillC_2	十香灵装-连斩2	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_2.mp3
+45	1	fight_10101	extra_skillC_3	十香灵装-连斩3	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_3.mp3
+46	1	fight_10101	extra_skillC_3	十香灵装-连斩3	music1	1	100	sound/battle_sound/10101/voice/TOUKA_80.mp3
+47	1	fight_10104	skillA_3	十香灵装-普攻3-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_83.mp3
+48	1	fight_10104	skillA_5	十香灵装-普攻5-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_42.mp3
+49	1	fight_10104	skillA_1	十香灵装-普攻1	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_1.mp3
+50	1	fight_10104	skillA_2	十香灵装-普攻2	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_2.mp3
+51	1	fight_10104	skillA_3	十香灵装-普攻3	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_3.mp3
+52	1	fight_10104	skillA_4	十香灵装-普攻4	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_4.mp3
+53	1	fight_10104	skillA_5	十香灵装-普攻5	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_5.mp3
+54	1	fight_10104	skillB_1	十香灵装-剑刃乱舞-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_74.mp3
+55	1	fight_10104	skillB_1	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_1.mp3
+56	1	fight_10104	skillB_2	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+57	1	fight_10104	skillB_3	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_3.mp3
+58	1	fight_10104	skillB_4	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_4.mp3
+59	1	fight_10104	skillB_5	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+60	1	fight_10104	skillB_6	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_3.mp3
+61	1	fight_10104	skillB_7	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_4.mp3
+62	1	fight_10104	skillB_11	十香灵装-剑刃乱舞	music1		80	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+63	1	fight_10104	skillB_8	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_5.mp3
+64	1	fight_10104	skillD11	十香灵装-最终之剑-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_48.mp3
+65	1	fight_10104	skillD11	十香灵装-觉醒-语音	music2	1	80	sound/battle_sound/10101/voice/TOUKA_84_B.mp3
+66	1	fight_10104	skillD11	十香灵装-觉醒-语音	music3	1	100	sound/battle_sound/10101/voice/TOUKA_84_A.mp3
+67	1	fight_10104	skillD11	十香灵装-觉醒-语音	music4	1	80	sound/battle_sound/10101/voice/TOUKA_83.mp3
+68	1	fight_10104	skillD11	十香灵装-觉醒-语音	music5	1	100	sound/battle_sound/10101/voice/TOUKA_86.mp3
+69	1	fight_10104	skillD11	十香灵装-觉醒-语音	music6	1	80	sound/battle_sound/10101/voice/TOUKA_82.mp3
+70	1	fight_10104	skillD11	十香灵装-最终之剑	music1		100	sound/battle_sound/10101/skillmusic/10101_skillD_1.mp3
+71	1	fight_10104	skillD11	十香灵装-最终之剑	music1		100	sound/battle_sound/10101/skillmusic/10101_skillD_2.mp3
+72	1	fight_10104	skillD11	十香灵装-最终之剑	music2		100	sound/battle_sound/10101/skillmusic/10101_skillD_3_1.mp3
+73	1	fight_10104	skillD11	十香灵装-最终之剑	music3		80	sound/battle_sound/10101/skillmusic/10101_skillD_3_2.mp3
+74	1	fight_10104	skillD11	十香灵装-最终之剑	music4		100	sound/battle_sound/10101/skillmusic/10101_skillD_3_3.mp3
+75	1	fight_10104	skillD11	十香灵装-最终之剑	music6		80	sound/battle_sound/10101/skillmusic/10101_skillD_3_4.mp3
+76	1	fight_10104	dodge	十香灵装-闪避	music1		100	sound/battle_sound/10101/skillmusic/10101_dodge.mp3
+77	1	fight_10104	skillF	十香灵装-出场	music1		100	sound/battle_sound/10101/skillmusic/10101_chuchang.mp3
+78	1	fight_10104	extra_skillB5	十香灵装-蓄力剑气3段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_012.mp3
+79	1	fight_10104	extra_skillB5	十香灵装-蓄力剑气3段	music2		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+80	1	fight_10104	extra_skillB5	十香灵装-蓄力剑气3段	music3		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_014.mp3
+81	1	fight_10104	extra_skillB5	十香灵装-蓄力剑气3段	music3	1	100	sound/battle_sound/10101/voice/TOUKA_82.mp3
+82	1	fight_10104	extra_skillB6	十香灵装-蓄力剑气2段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_012.mp3
+83	1	fight_10104	extra_skillB6	十香灵装-蓄力剑气2段	music2		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+84	1	fight_10104	extra_skillB6	十香灵装-蓄力剑气2段	music2	1	100	sound/battle_sound/10101/voice/TOUKA_83.mp3
+85	1	fight_10104	extra_skillB_3	十香灵装-蓄力剑气1段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+86	1	fight_10104	extra_skillB_3	十香灵装-蓄力剑气1段	music1	1	100	sound/battle_sound/10101/voice/TOUKA_84_B.mp3
+87	1	fight_10104	extra_skillB_1	十香灵装-蓄力	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_011.mp3
+88	1	fight_10104	extra_skillB_1	十香灵装-蓄力	music1		100	
+89	1	fight_10104	extra_skillC_1	十香灵装-连斩1	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_1.mp3
+90	1	fight_10104	extra_skillC_2	十香灵装-连斩2	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_2.mp3
+91	1	fight_10104	extra_skillC_3	十香灵装-连斩3	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_3.mp3
+92	1	fight_10104	extra_skillC_3	十香灵装-连斩3	music1	1	100	sound/battle_sound/10101/voice/TOUKA_80.mp3
+93	1	fight_10108	skillA_3	十香灵装-普攻3-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_83.mp3
+94	1	fight_10108	skillA_5	十香灵装-普攻5-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_42.mp3
+95	1	fight_10108	skillA_1	十香灵装-普攻1	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_1.mp3
+96	1	fight_10108	skillA_2	十香灵装-普攻2	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_2.mp3
+97	1	fight_10108	skillA_3	十香灵装-普攻3	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_3.mp3
+98	1	fight_10108	skillA_4	十香灵装-普攻4	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_4.mp3
+99	1	fight_10108	skillA_5	十香灵装-普攻5	music1		100	sound/battle_sound/10101/skillmusic/10101_skillA_5.mp3
+100	1	fight_10108	skillB_1	十香灵装-剑刃乱舞-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_45.mp3
+101	1	fight_10108	skillB_1	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_1.mp3
+102	1	fight_10108	skillB_2	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+103	1	fight_10108	skillB_3	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_3.mp3
+104	1	fight_10108	skillB_4	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_4.mp3
+105	1	fight_10108	skillB_5	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+106	1	fight_10108	skillB_6	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_3.mp3
+107	1	fight_10108	skillB_7	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_4.mp3
+108	1	fight_10108	skillB_11	十香灵装-剑刃乱舞	music1		80	sound/battle_sound/10101/skillmusic/10101_skillB_2.mp3
+109	1	fight_10108	skillB_8	十香灵装-剑刃乱舞	music1		100	sound/battle_sound/10101/skillmusic/10101_skillB_5.mp3
+110	1	fight_10108	skillD11	十香灵装-最终之剑-语音	music1	1	100	sound/battle_sound/10101/voice/TOUKA_48.mp3
+111	1	fight_10108	skillD11	十香灵装-觉醒-语音	music2	1	80	sound/battle_sound/10101/voice/TOUKA_84_B.mp3
+112	1	fight_10108	skillD11	十香灵装-觉醒-语音	music3	1	100	sound/battle_sound/10101/voice/TOUKA_84_A.mp3
+113	1	fight_10108	skillD11	十香灵装-觉醒-语音	music4	1	80	sound/battle_sound/10101/voice/TOUKA_83.mp3
+114	1	fight_10108	skillD11	十香灵装-觉醒-语音	music5	1	100	sound/battle_sound/10101/voice/TOUKA_86.mp3
+115	1	fight_10108	skillD11	十香灵装-觉醒-语音	music6	1	80	sound/battle_sound/10101/voice/TOUKA_82.mp3
+116	1	fight_10108	skillD11	十香灵装-最终之剑	music1		100	sound/battle_sound/10101/skillmusic/10101_skillD_1.mp3
+117	1	fight_10108	skillD11	十香灵装-最终之剑	music1		100	sound/battle_sound/10101/skillmusic/10101_skillD_2.mp3
+118	1	fight_10108	skillD11	十香灵装-最终之剑	music2		100	sound/battle_sound/10101/skillmusic/10101_skillD_3_1.mp3
+119	1	fight_10108	skillD11	十香灵装-最终之剑	music3		80	sound/battle_sound/10101/skillmusic/10101_skillD_3_2.mp3
+120	1	fight_10108	skillD11	十香灵装-最终之剑	music4		100	sound/battle_sound/10101/skillmusic/10101_skillD_3_3.mp3
+121	1	fight_10108	skillD11	十香灵装-最终之剑	music6		80	sound/battle_sound/10101/skillmusic/10101_skillD_3_4.mp3
+122	1	fight_10108	dodge	十香灵装-闪避	music1		100	sound/battle_sound/10101/skillmusic/10101_dodge.mp3
+123	1	fight_10108	skillF	十香灵装-出场	music1		100	sound/battle_sound/10101/skillmusic/10101_chuchang.mp3
+124	1	fight_10108	extra_skillB5	十香灵装-蓄力剑气3段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_012.mp3
+125	1	fight_10108	extra_skillB5	十香灵装-蓄力剑气3段	music2		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+126	1	fight_10108	extra_skillB5	十香灵装-蓄力剑气3段	music3		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_014.mp3
+127	1	fight_10108	extra_skillB5	十香灵装-蓄力剑气3段	music3	1	100	sound/battle_sound/10101/voice/TOUKA_82.mp3
+128	1	fight_10108	extra_skillB6	十香灵装-蓄力剑气2段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_012.mp3
+129	1	fight_10108	extra_skillB6	十香灵装-蓄力剑气2段	music2		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+130	1	fight_10108	extra_skillB6	十香灵装-蓄力剑气2段	music2	1	100	sound/battle_sound/10101/voice/TOUKA_83.mp3
+131	1	fight_10108	extra_skillB_3	十香灵装-蓄力剑气1段	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_013.mp3
+132	1	fight_10108	extra_skillB_3	十香灵装-蓄力剑气1段	music1	1	100	sound/battle_sound/10101/voice/TOUKA_84_B.mp3
+133	1	fight_10108	extra_skillB_1	十香灵装-蓄力	music1		100	sound/battle_sound/10101/skillmusic/roleMusic_10101_011.mp3
+134	1	fight_10108	extra_skillB_1	十香灵装-蓄力	music1		100	
+135	1	fight_10108	extra_skillC_1	十香灵装-连斩1	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_1.mp3
+136	1	fight_10108	extra_skillC_2	十香灵装-连斩2	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_2.mp3
+137	1	fight_10108	extra_skillC_3	十香灵装-连斩3	music1		100	sound/battle_sound/10101/skillmusic/10101_extra_skillC_3.mp3
+138	1	fight_10108	extra_skillC_3	十香灵装-连斩3	music1	1	100	sound/battle_sound/10101/voice/TOUKA_80.mp3
+139	1	fight_10103	skillA_1	反转十香-普攻1	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_001.mp3
+140	1	fight_10103	skillA_2	反转十香-普攻2	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_002.mp3
+141	1	fight_10103	skillA_3	反转十香-普攻3	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_003.mp3
+142	1	fight_10103	skillA_4	反转十香-普攻4	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_004.mp3
+143	1	fight_10103	skillA_5	反转十香-普攻5	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_005.mp3
+144	1	fight_10103	skillA_3	反转十香-普攻3	music1	1	100	sound/battle_sound/10103/voice/TOUKA_260_A.mp3
+145	1	fight_10103	skillA_5	反转十香-普攻5	music1	1	100	sound/battle_sound/10103/voice/TOUKA_260_C.mp3
+146	2	effects_10103_skillB	skillB012_2_up	反转十香-跃起瞬斩-3连	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_006.mp3
+147	2	effects_10103_skillB	skillB012_2_up	反转十香-跃起瞬斩-3连	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_007.mp3
+148	2	effects_10103_skillB	skillB012_2_up	反转十香-跃起瞬斩-3连	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_008.mp3
+149	2	effects_10103_skillB	skillB012_4_up	反转十香-跃起瞬斩-2连瞬	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_009.mp3
+150	2	effects_10103_skillB	skillB012_4_up	反转十香-跃起瞬斩-2连瞬	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_010.mp3
+151	2	effects_10103_skillB	skillB012_4_up	反转十香-跃起瞬斩-2连瞬	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_011.mp3
+152	2	effects_10103_skillB	skillB1_5_up	反转十香-跃起瞬斩-重劈	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_012.mp3
+153	2	effects_10103_skillB	skillB2_5_up	反转十香-跃起瞬斩-重劈	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_012.mp3
+154	2	effects_10103_skillB	skillB3_5_up	反转十香-跃起瞬斩-重劈	music1		80	sound/battle_sound/10103/skillmusic/roleMusic_10103_012.mp3
+155	2	effects_10103_skillB	skillB1_5_up	反转十香-跃起瞬斩-重劈	music1	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+156	2	effects_10103_skillB	skillB2_5_up	反转十香-跃起瞬斩-重劈	music1	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+157	2	effects_10103_skillB	skillB3_5_up	反转十香-跃起瞬斩-重劈	music1	1	80	sound/battle_sound/10103/voice/TOUKA_259.mp3
+158	2	effects_10103_skillB	skillB3_2_up	反转十香-跃起瞬斩-3连	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_006.mp3
+159	2	effects_10103_skillB	skillB3_2_up	反转十香-跃起瞬斩-3连	music2		80	sound/battle_sound/10103/skillmusic/roleMusic_10103_007.mp3
+160	2	effects_10103_skillB	skillB3_2_up	反转十香-跃起瞬斩-3连	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_008.mp3
+161	2	effects_10103_skillB	skillB3_4_up	反转十香-跃起瞬斩-2连瞬	music1		80	sound/battle_sound/10103/skillmusic/roleMusic_10103_009.mp3
+162	2	effects_10103_skillB	skillB3_4_up	反转十香-跃起瞬斩-2连瞬	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_010.mp3
+163	2	effects_10103_skillB	skillB3_4_up	反转十香-跃起瞬斩-2连瞬	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_011.mp3
+164	1	fight_10103	extra_skillB_1	反转十香-技能2-1刀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_013.mp3
+165	1	fight_10103	extra_skillB_2	反转十香-技能2-2刀	music1		80	sound/battle_sound/10103/skillmusic/roleMusic_10103_014.mp3
+166	1	fight_10103	extra_skillB_3	反转十香-技能2-3刀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_015.mp3
+167	1	fight_10103	extra_skillB_4	反转十香-技能2-4刀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_016.mp3
+168	1	fight_10103	extra_skillB_4	反转十香-技能2-4刀	music1	1	100	sound/battle_sound/10103/voice/TOUKA_257.mp3
+169	1	fight_10103	skillC_1	反转十香-必杀	music1	1	100	sound/battle_sound/10103/voice/TOUKA_HENTEN_11.mp3
+170	1	fight_10103	skillC_1	反转十香-必杀出+1招	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_017.mp3
+171	2	effects_10103_skillC	skillC0_2_up	反转十香-必杀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_018.mp3
+172	2	effects_10103_skillC	skillC0_2_up	反转十香-必杀	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_019.mp3
+173	2	effects_10103_skillC	skillC0_2_up	反转十香-必杀蓄力	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_024.mp3
+174	2	effects_10103_skillC	skillC0_2_up	反转十香-必杀重劈	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_025.mp3
+175	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_018.mp3
+176	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_019.mp3
+177	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_020.mp3
+178	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀	music4		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_021.mp3
+179	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀蓄力	music5		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_024.mp3
+180	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀重劈	music6		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_025.mp3
+181	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_018.mp3
+182	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_019.mp3
+183	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_020.mp3
+184	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀	music4		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_021.mp3
+185	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀	music5		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_022.mp3
+186	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀	music6		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_023.mp3
+187	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀蓄力	music7		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_024.mp3
+188	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀重劈	music8		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_025.mp3
+189	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_018.mp3
+190	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_019.mp3
+191	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_020.mp3
+192	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀	music4		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_021.mp3
+193	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀	music5		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_022.mp3
+194	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀	music6		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_023.mp3
+195	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀蓄力	music7		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_024.mp3
+196	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀重劈	music8		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_025.mp3
+197	2	effects_10103_skillC	skillC0_2_up	反转十香-必杀蓄力	music3		100	
+198	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀蓄力	music5		100	
+199	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀蓄力	music7		100	
+200	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀蓄力	music7		100	
+201	2	effects_10103_skillC	skillC0_2_up	反转十香-必杀重劈	music3	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+202	2	effects_10103_skillC	skillC1_3_up	反转十香-必杀重劈	music6	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+203	2	effects_10103_skillC	skillC2_4_up	反转十香-必杀重劈	music8	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+204	2	effects_10103_skillC	skillC3_4_up	反转十香-必杀重劈	music8	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+205	2	effects_10103_skillF	skillF_up	反转十香-登场技	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_026.mp3
+206	1	fight_10103	born	反转十香-出生	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_027.mp3
+207	1	fight_10103	PskillA_1	反转十香-觉醒-普攻1	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_028.mp3
+208	1	fight_10103	PskillA_2	反转十香-觉醒-普攻2	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_029.mp3
+209	1	fight_10103	PskillA_3	反转十香-觉醒-普攻3	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_030.mp3
+210	1	fight_10103	PskillA_4	反转十香-觉醒-普攻4	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_031.mp3
+211	2	effects_10103_PskillA	PskillA_daoguang	反转十香-觉醒-普攻4剑气	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_032.mp3
+212	1	fight_10103	PskillA_1	反转十香-觉醒-普攻1	music1	1	100	sound/battle_sound/10103/voice/TOUKA_260_A.mp3
+213	1	fight_10103	PskillA_2	反转十香-觉醒-普攻2	music1	1	100	sound/battle_sound/10103/voice/TOUKA_260_B.mp3
+214	1	fight_10103	PskillA_3	反转十香-觉醒-普攻3	music1	1	100	sound/battle_sound/10103/voice/TOUKA_261_B.mp3
+215	1	fight_10103	PskillA_4	反转十香-觉醒-普攻4	music1	1	100	sound/battle_sound/10103/voice/TOUKA_260_C.mp3
+216	1	fight_10103	PskillB_1	反转十香-觉醒-技能1	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_033.mp3
+217	1	fight_10103	PskillB_1	反转十香-觉醒-技能1	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_034.mp3
+218	1	fight_10103	PskillB_1	反转十香-觉醒-技能1	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_035.mp3
+219	1	fight_10103	PskillB_1	反转十香-觉醒-技能1	music1	1	100	sound/battle_sound/10103/voice/TOUKA_261_A.mp3
+220	1	fight_10103	PskillB_1	反转十香-觉醒-技能1	music2	1	100	sound/battle_sound/10103/voice/TOUKA_260_C.mp3
+221	1	fight_10103	PskillB_1	反转十香-觉醒-技能1	music3	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+222	1	fight_10103	Pextra_skillB_1	反转十香-觉醒-技能2-蓄力	music1-music2-music3-music4-music5		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_036.mp3
+223	1	fight_10103	Pextra_skillB_2	反转十香-觉醒-技能2-旋转	music1-music2-music3-music4-music5		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_039.mp3
+224	1	fight_10103	Pextra_skillB_3	反转十香-觉醒-技能2-收招	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_040.mp3
+225	1	fight_10103	Pextra_skillB_1	反转十香-觉醒-技能2-蓄力	music1		100	
+226	1	fight_10103	Pextra_skillB_3	反转十香-觉醒-技能2-收招	music1	1	100	sound/battle_sound/10103/voice/TOUKA_261_C.mp3
+227	1	fight_10103	PskillC_1	反转十香-觉醒-必杀	music1	1	100	sound/battle_sound/10103/voice/TOUKA_254.mp3
+228	1	fight_10103	PskillC_1	反转十香-觉醒-必杀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_041_1.mp3
+229	1	fight_10103	PskillC_3	反转十香-觉醒-必杀	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_042.mp3
+230	1	fight_10103	PskillC_3	反转十香-觉醒-必杀	music1	1	100	sound/battle_sound/10103/voice/TOUKA_258.mp3
+231	1	fight_10103	PskillD	反转十香-觉醒-解除变身	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_043.mp3
+232	1	fight_10103	PskillD	反转十香-觉醒-解除变身	music1	1	100	sound/battle_sound/10103/voice/TOUKA_259.mp3
+233	1	fight_10103	dodge	反转十香-觉醒-闪避	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_045.mp3
+234	1	fight_10103	Pdodge	反转十香-觉醒-闪避	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_046.mp3
+235	1	fight_10103	skillD_1	反转十香-觉醒技能	music1	1	100	sound/battle_sound/10103/voice/TOUKA_255.mp3
+236	1	fight_10103	skillD_1	反转十香-觉醒技能-挥剑	music1		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_047_1.mp3
+237	1	fight_10103	skillD_1	反转十香-觉醒技能-碎石	music2		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_047_2.mp3
+238	1	fight_10103	skillD_1	反转十香-觉醒技能-蓄力	music3		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_047_3.mp3
+239	1	fight_10103	skillD_1	反转十香-觉醒技能-蓄力	music4		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_047_4.mp3
+240	1	fight_10103	skillD_1	反转十香-觉醒技能-挥砍	music5		100	sound/battle_sound/10103/skillmusic/roleMusic_10103_047_5.mp3
+241	1	fight_10103	skillD_1	反转十香-觉醒技能-挥砍	music5	1	100	sound/battle_sound/10103/voice/TOUKA_257.mp3
+242	1	fight_10201	skillA_1	折纸—普攻1-语音	music1		100	
+243	1	fight_10201	skillA_2	折纸—普攻2-语音	music1		100	
+244	1	fight_10201	skillA_3	折纸—普攻3-语音	music1	1	80	sound/battle_sound/10201/voice/ORIGAMI_62.mp3
+245	1	fight_10201	skillA_4	折纸—普攻4-语音	music1		100	
+246	1	fight_10201	skillA_5	折纸—普攻5-语音	music1	1	100	sound/battle_sound/10201/voice/ORIGAMI_AST_18.mp3
+247	1	fight_10201	skillA_1	折纸—普攻1	music1		100	sound/battle_sound/10201/skillmusic/10201_skillA_1.mp3
+248	1	fight_10201	skillA_2	折纸—普攻2	music1		100	sound/battle_sound/10201/skillmusic/10201_skillA_2.mp3
+249	1	fight_10201	skillA_3	折纸—普攻3	music1		100	sound/battle_sound/10201/skillmusic/10201_skillA_3.mp3
+250	1	fight_10201	skillA_4	折纸—普攻4	music1		100	sound/battle_sound/10201/skillmusic/10201_skillA_4.mp3
+251	1	fight_10201	skillA_5	折纸—普攻5	music1		100	sound/battle_sound/10201/skillmusic/10201_skillA_5.mp3
+252	1	fight_10201	skillB_1	折纸—分支—连斩	music1		100	sound/battle_sound/10201/skillmusic/10201_skillB1.mp3
+253	1	fight_10201	skillB_2	折纸—分支—连斩	music1		100	sound/battle_sound/10201/skillmusic/10201_skillB1.mp3
+254	1	fight_10201	skillB_3	折纸—分支—连斩	music1		100	sound/battle_sound/10201/skillmusic/10201_skillB3.mp3
+255	1	fight_10201	skillB_3	折纸—分支—连斩	music9	1	80	sound/battle_sound/10201/voice/ORIGAMI_59.mp3
+256	1	fight_10201	skillF	折纸—出场—连斩	music1		100	sound/battle_sound/10201/skillmusic/10201_skillB2.mp3
+257	1	fight_10201	skillC_1	折纸—大招-语音	music1	1	80	sound/battle_sound/10201/voice/ORIGAMI_57.mp3
+258	1	fight_10201	skillC_1	折纸—大招	music1		100	sound/battle_sound/10201/skillmusic/10201_skillC3.mp3
+259	1	fight_10201	skillC_2	折纸—大招-语音	music1	1	80	sound/battle_sound/10201/voice/ORIGAMI_57.mp3
+260	1	fight_10201	skillC_2	折纸—大招	music1		100	sound/battle_sound/10201/skillmusic/10201_skillC3.mp3
+261	1	fight_10201	skillC_3	折纸—大招-语音	music1	1	80	sound/battle_sound/10201/voice/ORIGAMI_57.mp3
+262	1	fight_10201	skillC_3	折纸—大招	music1		100	sound/battle_sound/10201/skillmusic/10201_skillC3.mp3
+263	1	fight_10201	skillC_4	折纸—大招-语音	music1	1	80	sound/battle_sound/10201/voice/ORIGAMI_57.mp3
+264	1	fight_10201	skillC_4	折纸—大招	music2		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_014.mp3
+265	1	fight_10201	skillC_4_1	折纸—大招	music1		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_015.mp3
+266	1	fight_10201	skillC_4_1	折纸—大招	music2		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_016.mp3
+267	1	fight_10201	skillC_4_1	折纸—大招	music1	1	80	sound/battle_sound/10201/voice/ORIGAMI_66.mp3
+268	1	fight_10201	skillC_4_1	折纸—大招	music2	1	80	sound/battle_sound/10201/voice/ORIGAMI_59.mp3
+269	1	fight_10201	extra_skillB1	折纸—技能2-格林枪	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_011.mp3
+270	1	fight_10201	extra_skillB2	折纸—技能2-格林枪	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_011.mp3
+271	1	fight_10201	extra_skillB3	折纸—技能2-格林枪	music1		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_012.mp3
+272	1	fight_10201	extra_skillB6	折纸—技能2-格林枪	music1		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_012.mp3
+273	1	fight_10201	extra_skillB4	折纸—技能2-格林枪激光炮	music1		100	sound/battle_sound/10201/skillmusic/roleMusic_10201_013.mp3
+274	1	fight_10201	dodge	折纸—闪避	music1		100	sound/battle_sound/10201/skillmusic/10201_dodge.mp3
+275	1	fight_10201	skillD	折纸—觉醒-语音	music1	1	80	sound/battle_sound/10201/voice/ORIGAMI_58.mp3
+276	1	fight_10201	skillD	折纸—觉醒	music2		100	sound/battle_sound/10201/skillmusic/10201_skillD.mp3
+277	1	fight_10301	skillA_1	四糸乃—普攻1-语音	music1		100	
+278	1	fight_10301	skillA_2	四糸乃—普攻2-语音	music1		100	
+279	1	fight_10301	skillA_3	四糸乃—普攻3-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_72_B.mp3
+280	1	fight_10301	skillA_4	四糸乃—普攻4-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_72_C.mp3
+281	1	fight_10301	skillA_1	四糸乃—普攻1	music1		100	sound/battle_sound/10301/skillmusic/10301_skillA_1.mp3
+282	1	fight_10301	skillA_2	四糸乃—普攻2	music1		100	sound/battle_sound/10301/skillmusic/10301_skillA_2.mp3
+283	1	fight_10301	skillA_3	四糸乃—普攻3	music1		100	sound/battle_sound/10301/skillmusic/10301_skillA_3.mp3
+284	1	fight_10301	skillA_4	四糸乃—普攻4	music1		100	sound/battle_sound/10301/skillmusic/10301_skillA_4.mp3
+285	1	fight_10301	skillC1	四糸乃—大招-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_44.mp3
+286	1	fight_10301	skillC1	四糸乃—大招	music2		100	sound/battle_sound/10301/skillmusic/10301_skillC.mp3
+287	1	fight_10301	skillC2	四糸乃—大招-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_44.mp3
+288	1	fight_10301	skillC2	四糸乃—大招	music2		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_016.mp3
+289	1	fight_10301	dodge	四糸乃—闪避	music1		100	sound/battle_sound/10301/skillmusic/10401_dodge.mp3
+290	1	fight_10301	skillD	四糸乃—觉醒-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_46.mp3
+291	1	fight_10301	skillD	四糸乃—觉醒	music1		100	sound/battle_sound/10301/skillmusic/10301_skillD_1.mp3
+292	1	fight_10301	skillD	四糸乃—觉醒	music10		100	sound/battle_sound/10301/skillmusic/10301_skillD_2.mp3
+293	2	effects_10301_skillD	effects_10301_skillD_up	四糸乃—觉醒	music1		100	sound/battle_sound/10301/skillmusic/10501_skillD_2.mp3
+294	1	fight_10301	skillF	四糸乃—出场	music1		100	sound/battle_sound/10301/skillmusic/10301_chuchang.mp3
+295	1	fight_10301	skillB_1	四糸乃—冰刺-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_45.mp3
+296	1	fight_10301	skillB_2	四糸乃—冰刺-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_45.mp3
+297	1	fight_10301	skillB_3	四糸乃—冰刺-语音	music1	1	100	sound/battle_sound/10301/voice/YOSHINO_45.mp3
+298	2	effects_10301_skillB0	effects_10301_skillB0_1	四糸乃—冰刺	music1		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+299	2	effects_10301_skillB0	effects_10301_skillB0_1	四糸乃—冰刺	music2		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+300	2	effects_10301_skillB0	effects_10301_skillB0_2	四糸乃—冰刺	music1		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+301	2	effects_10301_skillB0	effects_10301_skillB0_2	四糸乃—冰刺	music2		80	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+302	2	effects_10301_skillB0	effects_10301_skillB0_2	四糸乃—冰刺	music3		80	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+303	2	effects_10301_skillB0	effects_10301_skillB0_2	四糸乃—冰刺	music4		80	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+304	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music1		80	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+305	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music2		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+306	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music3		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+307	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music4		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+308	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music5		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_018.mp3
+309	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music6		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_018.mp3
+310	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music7		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_018.mp3
+311	2	effects_10301_skillB0	effects_10301_skillB0_3	四糸乃—冰刺	music8		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_018.mp3
+312	2	effects_10301_skillB	effects_10301_skillB	四糸乃—冰刺	music1		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+313	2	effects_10301_skillB	effects_10301_skillB	四糸乃—冰刺	music2		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+314	2	effects_10301_skillB	effects_10301_skillB	四糸乃—冰刺	music2		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_017.mp3
+315	1	fight_10301	extra_skillB	四糸乃—极寒冰圈-发出	music1	1	100	sound/battle_sound/10301/voice/YOSHINON_06.mp3
+316	2	effects_10301_extra_skillB0	effects_10301_extra_skillB1	四糸乃—极寒冰圈-环境	music1		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_019.mp3
+317	2	effects_10301_extra_skillB1	effects_10301_extra_skillB1	四糸乃—极寒冰圈-环境	music1		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_020.mp3
+318	2	effects_10301_extra_skillB2	effects_10301_extra_skillB1	四糸乃—极寒冰圈-环境	music1		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_021.mp3
+319	2	effects_10301_extra_skillB3	effects_10301_extra_skillB1	四糸乃—极寒冰圈-环境	music1		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_019.mp3
+320	2	effects_10301_extra_skillB3	effects_10301_extra_skillB1	四糸乃—极寒冰圈-冰陨石	music2		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_022.mp3
+321	2	effects_10301_extra_skillB3	effects_10301_extra_skillB2	四糸乃—极寒冰圈-冰陨石	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14-music15-music16-music17-music18-music19-music20		100	sound/battle_sound/10301/skillmusic/roleMusic_10301_022.mp3
+322	1	fight_10401	skillA_3	狂三—普攻3-语音	music1	1	80	sound/battle_sound/10401/voice/KURUMI_48.mp3
+323	1	fight_10401	skillA_5	狂三—普攻5-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_84.mp3
+324	1	fight_10401	skillA_1	狂三—普攻1	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_011.mp3
+325	1	fight_10401	skillA_2	狂三—普攻2	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_012.mp3
+326	1	fight_10401	skillA_3	狂三—普攻3	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_013.mp3
+327	1	fight_10401	skillA_4	狂三—普攻4	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_014.mp3
+328	1	fight_10401	skillA_5	狂三—普攻5	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_015.mp3
+329	1	fight_10401	skillB0	狂三—0级滑铲-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_85.mp3
+330	1	fight_10401	skillB1	狂三—1级滑铲-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_85.mp3
+331	1	fight_10401	skillB2_1	狂三—2级滑铲-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_85.mp3
+332	1	fight_10401	skillB0	狂三—0级滑铲	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_016.mp3
+333	1	fight_10401	skillB1	狂三—1级滑铲	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_016.mp3
+334	1	fight_10401	skillB1	狂三—1级滑铲-转圈	music2		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_017_1.mp3
+335	1	fight_10401	skillB1	狂三—1级滑铲-转圈-收招	music3		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_018.mp3
+336	1	fight_10401	skillB2_1	狂三—2级滑铲	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_016.mp3
+337	1	fight_10401	skillB2_1	狂三—2级滑铲-转圈	music2		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_017_2.mp3
+338	1	fight_10401	skillB2_2	狂三—2级滑铲-转圈-循环	music1-music2-music3-music4-music5		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_017_3.mp3
+339	1	fight_10401	skillB2_3	狂三—2级滑铲-转圈-收招	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_018.mp3
+340	1	fight_10401	extra_skillB0	狂三—0级空中射击	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_020_1.mp3
+341	1	fight_10401	extra_skillB1	狂三—1级空中射击	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_020_2.mp3
+342	1	fight_10401	extra_skillB3_1	狂三—2级空中射击-旋转	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_019.mp3
+343	1	fight_10401	extra_skillB3_2	狂三—2级空中射击	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_020.mp3
+344	1	fight_10401	extra_skillB3_1	狂三—2级空中射击-旋转-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_50.mp3
+345	1	fight_10401	skillC0_2	狂三—0级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021_1.mp3
+346	1	fight_10401	skillC1_2	狂三—1级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021_2.mp3
+347	1	fight_10401	skillC2_2	狂三—2级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021.mp3
+348	1	fight_10401	skillC3_2	狂三—3级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021.mp3
+349	1	fight_10401	skillC_3_2	狂三—3级-必杀爆炸	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_022.mp3
+350	1	fight_10401	skillC0_2	狂三—0级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+351	1	fight_10401	skillC1_2	狂三—1级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+352	1	fight_10401	skillC2_2	狂三—2级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+353	1	fight_10401	skillC3_2	狂三—3级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+354	1	fight_10401	skillC_3_2	狂三—3级-必杀爆炸语音	music1	1	80	sound/battle_sound/10401/voice/KURUMI_81.mp3
+355	2	effects_10401_skillC	skillC0_2	狂三—0级-必杀	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		70	sound/battle_sound/10401/skillmusic/roleMusic_10401_011.mp3
+356	2	effects_10401_skillC	skillC1_2	狂三—0级-必杀	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		70	sound/battle_sound/10401/skillmusic/roleMusic_10401_011.mp3
+357	2	effects_10401_skillC	skillC2_2	狂三—0级-必杀	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		70	sound/battle_sound/10401/skillmusic/roleMusic_10401_011.mp3
+358	2	effects_10401_skillC	skillC3_2	狂三—0级-必杀	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		70	sound/battle_sound/10401/skillmusic/roleMusic_10401_011.mp3
+359	1	fight_10401	skillC	狂三-食之领域	music1	1	100	sound/battle_sound/10401/skillmusic/10401_skillC.mp3
+360	1	fight_10401	skillD	狂三-觉醒-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_82.mp3
+361	1	fight_10401	skillD	狂三-觉醒	music1		100	sound/battle_sound/10401/skillmusic/10401_skillD_1.mp3
+362	1	fight_10401	skillD	狂三-觉醒	music2		100	sound/battle_sound/10401/skillmusic/10401_skillD_2.mp3
+363	1	fight_10401	dodge	狂三-闪避	music1		100	sound/battle_sound/10401/skillmusic/10401_dodge.mp3
+364	1	fight_10401	dodge2	狂三-闪避分身-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_48.mp3
+365	1	fight_10401	dodge2	狂三-闪避分身	music1		80	sound/battle_sound/10401/skillmusic/10401_dodge2.mp3
+366	1	fight_10401	skillF	狂三-出场技能	music2		80	sound/battle_sound/10401/skillmusic/10401_skillB.mp3
+367	1	fight_10403	skillA_3	狂三—普攻3-语音	music1	1	80	sound/battle_sound/10401/voice/KURUMI_48.mp3
+368	1	fight_10403	skillA_5	狂三—普攻5-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_84.mp3
+369	1	fight_10403	skillA_1	狂三—普攻1	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_011.mp3
+370	1	fight_10403	skillA_2	狂三—普攻2	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_012.mp3
+371	1	fight_10403	skillA_3	狂三—普攻3	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_013.mp3
+372	1	fight_10403	skillA_4	狂三—普攻4	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_014.mp3
+373	1	fight_10403	skillA_5	狂三—普攻5	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_015.mp3
+374	1	fight_10403	skillB0	狂三—0级滑铲-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_85.mp3
+375	1	fight_10403	skillB1	狂三—1级滑铲-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_85.mp3
+376	1	fight_10403	skillB2_1	狂三—2级滑铲-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_85.mp3
+377	1	fight_10403	skillB0	狂三—0级滑铲	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_016.mp3
+378	1	fight_10403	skillB1	狂三—1级滑铲	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_016.mp3
+379	1	fight_10403	skillB1	狂三—1级滑铲-转圈	music2		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_017_1.mp3
+380	1	fight_10403	skillB1	狂三—1级滑铲-转圈-收招	music3		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_018.mp3
+381	1	fight_10403	skillB2_1	狂三—2级滑铲	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_016.mp3
+382	1	fight_10403	skillB2_1	狂三—2级滑铲-转圈	music2		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_017_2.mp3
+383	1	fight_10403	skillB2_2	狂三—2级滑铲-转圈-循环	music1-music2-music3-music4-music5		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_017_3.mp3
+384	1	fight_10403	skillB2_3	狂三—2级滑铲-转圈-收招	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_018.mp3
+385	1	fight_10403	extra_skillB0	狂三—0级空中射击	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_020_1.mp3
+386	1	fight_10403	extra_skillB1	狂三—1级空中射击	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_020_2.mp3
+387	1	fight_10403	extra_skillB3_1	狂三—2级空中射击-旋转	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_019.mp3
+388	1	fight_10403	extra_skillB3_2	狂三—2级空中射击	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_020.mp3
+389	1	fight_10403	extra_skillB3_1	狂三—2级空中射击-旋转-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_50.mp3
+390	1	fight_10403	skillC0_2	狂三—0级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021_1.mp3
+391	1	fight_10403	skillC1_2	狂三—1级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021_2.mp3
+392	1	fight_10403	skillC2_2	狂三—2级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021.mp3
+393	1	fight_10403	skillC3_2	狂三—3级-必杀	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_021.mp3
+394	1	fight_10403	skillC_3_2	狂三—3级-必杀爆炸	music1		100	sound/battle_sound/10401/skillmusic/roleMusic_10401_022.mp3
+395	1	fight_10403	skillC0_2	狂三—0级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+396	1	fight_10403	skillC1_2	狂三—1级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+397	1	fight_10403	skillC2_2	狂三—2级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+398	1	fight_10403	skillC3_2	狂三—3级-必杀语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_54.mp3
+399	1	fight_10403	skillC_3_2	狂三—3级-必杀爆炸语音	music1	1	80	sound/battle_sound/10401/voice/KURUMI_81.mp3
+400	1	fight_10403	skillC	狂三-食之领域	music1	1	100	sound/battle_sound/10401/skillmusic/10401_skillC.mp3
+401	1	fight_10403	skillD	狂三-觉醒-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_82.mp3
+402	1	fight_10403	skillD	狂三-觉醒	music1		100	sound/battle_sound/10401/skillmusic/10401_skillD_1.mp3
+403	1	fight_10403	skillD	狂三-觉醒	music2		100	sound/battle_sound/10401/skillmusic/10401_skillD_2.mp3
+404	1	fight_10403	dodge	狂三-闪避	music1		100	sound/battle_sound/10401/skillmusic/10401_dodge.mp3
+405	1	fight_10403	dodge2	狂三-闪避分身-语音	music1	1	100	sound/battle_sound/10401/voice/KURUMI_48.mp3
+406	1	fight_10403	dodge2	狂三-闪避分身	music1		80	sound/battle_sound/10401/skillmusic/10401_dodge2.mp3
+407	1	fight_10403	skillF	狂三-出场技能	music2		80	sound/battle_sound/10401/skillmusic/10401_skillB.mp3
+408	1	fight_10501	skillA_3	琴里-普攻3-语音	music1	1	80	sound/battle_sound/10501/voice/KOTORI_38_A.mp3
+409	1	fight_10501	skillA_5	琴里-普攻5-语音	music2	1	80	sound/battle_sound/10501/voice/KOTORI_78.mp3
+410	1	fight_10501	skillA_1	琴里-普攻1	music1		100	sound/battle_sound/10501/skillmusic/10501_skillA_1.mp3
+411	1	fight_10501	skillA_2	琴里-普攻2	music1		100	sound/battle_sound/10501/skillmusic/10501_skillA_2.mp3
+412	1	fight_10501	skillA_3	琴里-普攻3	music1		100	sound/battle_sound/10501/skillmusic/10501_skillA_3.mp3
+413	1	fight_10501	skillA_4	琴里-普攻4	music1		100	sound/battle_sound/10501/skillmusic/10501_skillA_4.mp3
+414	1	fight_10501	skillA_5	琴里-普攻5	music1		100	sound/battle_sound/10501/skillmusic/10501_skillA_5.mp3
+415	1	fight_10501	skillB	琴里-技能1-跳跃重劈-语音	music1	1	80	sound/battle_sound/10501/voice/KOTORI_73.mp3
+416	1	fight_10501	skillB	琴里-技能1-跳跃重劈	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_011_1.mp3
+417	1	fight_10501	skillB	琴里-技能1-跳跃重劈	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_011_2.mp3
+418	2	effects_10501_skillB	skillB_1_1	琴里-技能1-跳跃重劈-火浪	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_012.mp3
+419	2	effects_10501_skillB	skillB_2_1	琴里-技能1-跳跃重劈-火浪	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_012.mp3
+420	1	fight_10501	extra_skillB_1	琴里-技能2-旋转斧-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_77.mp3
+421	1	fight_10501	extra_skillB_2	琴里-技能2-旋转斧-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_77.mp3
+422	1	fight_10501	extra_skillB_1	琴里-技能2-旋转斧	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_013_1.mp3
+423	1	fight_10501	extra_skillB_1	琴里-技能2-旋转斧	music3		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_013_2.mp3
+424	1	fight_10501	extra_skillB_2	琴里-技能2-旋转斧	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_013_1.mp3
+425	1	fight_10501	extra_skillB_2	琴里-技能2-旋转斧	music3		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_013_2.mp3
+426	1	fight_10501	extra_skillB_3	琴里-技能2-旋转斧-横斩2	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_014.mp3
+427	1	fight_10501	extra_skillB_4	琴里-技能2-旋转斧-横斩2	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_014.mp3
+428	1	fight_10501	extra_skillB_5	琴里-技能2-旋转斧-重劈	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_015.mp3
+429	1	fight_10501	extra_skillB_5	琴里-技能2-旋转斧-重劈	music1	1	100	sound/battle_sound/10501/voice/KOTORI_78.mp3
+430	1	fight_10501	skillC_1	琴里-大招-语音	music1	1	80	sound/battle_sound/10501/voice/KOTORI_41.mp3
+431	1	fight_10501	skillC_1	琴里-大招-踩	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_016_1.mp3
+432	1	fight_10501	skillC_2	琴里-大招-横斩	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_016_2.mp3
+433	1	fight_10501	skillC_2	琴里-大招-重劈	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_017.mp3
+434	1	fight_10501	skillC_3	琴里-大招-重劈	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_016_2.mp3
+435	1	fight_10501	skillC_3	琴里-大招-重劈	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_017.mp3
+436	1	fight_10501	skillC_4	琴里-大招-重劈	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_017.mp3
+437	1	fight_10501	skillC_4	琴里-大招-重劈	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_018.mp3
+438	1	fight_10501	skillC_5	琴里-大招-重劈	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_017.mp3
+439	1	fight_10501	skillC_5	琴里-大招-重劈	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_017.mp3
+440	1	fight_10501	skillC_5	琴里-大招-重劈	music3		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_017.mp3
+441	1	fight_10501	skillC_5	琴里-大招-重劈	music4		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_018.mp3
+442	2	effects_10501_skillC	skillC_5_up	琴里-大招-火柱	music4		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_019.mp3
+443	1	fight_10501	skillC_5	琴里-大招-重劈	music4	1	100	sound/battle_sound/10501/voice/KOTORI_74.mp3
+444	1	fight_10501	skillDshow	琴里-觉醒-语音	music1	1	80	sound/battle_sound/10501/voice/KOTORI_84.mp3
+445	1	fight_10501	skillDshow	琴里-觉醒	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_020_1.mp3
+446	1	fight_10501	skillDshow	琴里-觉醒	music1		100	
+447	1	fight_10501	skillDshow	琴里-觉醒	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_022.mp3
+448	1	fight_10501	dodge	琴里-闪避	music1		100	sound/battle_sound/10501/skillmusic/10501_dodge.mp3
+449	1	fight_10501	skillF	琴里-出场-旋风斩	music1		100	sound/battle_sound/10501/skillmusic/10501_chuchang.mp3
+450	1	fight_10501	PskillA_3	琴里-炮击3-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_78.mp3
+451	1	fight_10501	PskillA_1	琴里-炮击1	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_023.mp3
+452	1	fight_10501	PskillA_2	琴里-炮击2	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_024.mp3
+453	1	fight_10501	PskillA_3	琴里-炮击3	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_025.mp3
+454	1	fight_10501	PskillB_1	琴里-炮-激光-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_38_C.mp3
+455	1	fight_10501	PskillB_2	琴里-炮-激光-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_38_C.mp3
+456	1	fight_10501	PskillB_3	琴里-炮-激光-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_38_C.mp3
+457	2	effects_10501_PskillB	PskillB_1	琴里-炮-激光	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_026.mp3
+458	2	effects_10501_PskillB	PskillB_2	琴里-炮-激光持续1	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_027_1.mp3
+459	2	effects_10501_PskillB	PskillB_3	琴里-炮-激光持续1	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_027.mp3
+460	2	effects_10501_PskillB	PskillB_4	琴里-炮-激光持续1	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_027.mp3
+461	2	effects_10501_PskillB	PskillB_4	琴里-炮-激光持续1	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_028.mp3
+462	1	fight_10501	extra_PskillB_1	琴里-炮-黑球-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_77.mp3
+463	1	fight_10501	extra_PskillB_2	琴里-炮-黑球-语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_77.mp3
+464	1	fight_10501	extra_PskillB_1	琴里-炮-黑球发射	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_029.mp3
+465	1	fight_10501	extra_PskillB_2	琴里-炮-黑球发射	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_029.mp3
+466	2	effects_10501_extra_PskillB	PskillB_1_1	琴里-炮-黑球-出现	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_030.mp3
+467	2	effects_10501_extra_PskillB	PskillB_3	琴里-炮-黑球-爆炸	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_031.mp3
+468	2	effects_10501_extra_PskillB	PskillB_1_3	琴里-炮-黑球-爆炸	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_031.mp3
+469	1	fight_10501	Pdodge	琴里-炮后跃	music1		100	sound/battle_sound/10501/skillmusic/10501_dodge.mp3
+470	1	fight_10501	PskillC_1	琴里-炮-必杀语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_40_1.mp3
+471	1	fight_10501	PskillC_2	琴里-炮-必杀语音	music1	1	100	sound/battle_sound/10501/voice/KOTORI_40_1.mp3
+472	1	fight_10501	PskillC_1	琴里-炮-必杀	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_032.mp3
+473	1	fight_10501	PskillC_2	琴里-炮-必杀	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_032.mp3
+474	1	fight_10501	PskillC_2	琴里-炮-必杀	music3		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_033.mp3
+475	2	effects_10501_PskillC	PskillC_1	琴里-炮-必杀-爆炸	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_034.mp3
+476	2	effects_10501_PskillC	PskillC_2	琴里-炮-必杀-爆炸	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_034.mp3
+477	2	effects_10501_PskillC	PskillC_3	琴里-炮-必杀-爆炸	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_034.mp3
+478	2	effects_10501_PskillC	PskillC_3	琴里-炮-必杀-爆炸	music2		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_035.mp3
+479	1	fight_10501	PskillD	琴里-炮-变身回斧	music1		100	sound/battle_sound/10501/skillmusic/roleMusic_10501_036.mp3
+480	1	fight_10501	PskillD	琴里-炮-变身回斧	music1	1	100	sound/battle_sound/10501/voice/KOTORI_41.mp3
+481	1	fight_10601	skillA_1	崇宫真那-普攻1	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_1.mp3
+482	1	fight_10601	skillA_2	崇宫真那-普攻2	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_2.mp3
+483	1	fight_10601	skillA_3	崇宫真那-普攻3	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_3.mp3
+484	1	fight_10601	skillA_4	崇宫真那-普攻4	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_4.mp3
+485	1	fight_10601	skillA_6	崇宫真那-普攻5	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_5.mp3
+486	1	fight_10601	skillA_3	崇宫真那-普攻3	music1	1	80	sound/battle_sound/10601/voice/MANA_115.mp3
+487	1	fight_10601	skillA_6	崇宫真那-普攻5	music1	1	80	sound/battle_sound/10601/voice/MANA_113.mp3
+488	1	fight_10601	skillC	崇宫真那-大招-语音	music1	1	100	sound/battle_sound/10601/voice/MANA_109.mp3
+489	1	fight_10601	skillC	崇宫真那-大招	music1		100	sound/battle_sound/10601/skillmusic/10601_skillC.mp3
+490	1	fight_10601	skillC_1	崇宫真那-大招-语音	music1	1	100	sound/battle_sound/10601/voice/MANA_109.mp3
+491	1	fight_10601	skillC_1	崇宫真那-大招	music1		100	sound/battle_sound/10601/skillmusic/10601_skillC.mp3
+492	1	fight_10601	skillD	崇宫真那-觉醒-语音	music1	1	100	sound/battle_sound/10601/voice/MANA_110.mp3
+493	2	effects_10601_skillD	skillD	崇宫真那-觉醒	music1		100	sound/battle_sound/10601/skillmusic/10601_skillD_1.mp3
+494	2	effects_10601_skillD	skillD	崇宫真那-觉醒	music2		100	sound/battle_sound/10601/skillmusic/10601_skillD_2.mp3
+495	2	effects_10601_skillD	skillDshow	崇宫真那-觉醒	music1		100	sound/battle_sound/10601/skillmusic/10601_skillD_3.mp3
+496	2	effects_10601_skillD	skillD2	崇宫真那-觉醒	music1		100	sound/battle_sound/10601/skillmusic/10601_skillD_4.mp3
+497	1	fight_10601	dodge	崇宫真那-闪避	music1		100	sound/battle_sound/10601/skillmusic/10601_dodge2.mp3
+498	1	fight_10601	dodge2	崇宫真那-闪避2	music1		100	sound/battle_sound/10601/skillmusic/10601_dodge2.mp3
+499	1	fight_10601	skillF	崇宫真那-出场	music1		100	sound/battle_sound/10601/skillmusic/10601_chuchang.mp3
+500	1	fight_10601	extra_skillB_0	崇宫真那-小技能2-0级穿刺1	music1		100	
+501	1	fight_10601	extra_skillB_1	崇宫真那-小技能2-1级穿刺1	music1		100	
+502	1	fight_10601	extra_skillB_0	崇宫真那-小技能2-0级穿刺1	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+503	1	fight_10601	extra_skillB_0_1	崇宫真那-小技能2-0级穿刺2	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_012.mp3
+504	1	fight_10601	extra_skillB_1	崇宫真那-小技能2-1级穿刺1	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+505	1	fight_10601	extra_skillB_1_1	崇宫真那-小技能2-1级穿刺2	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+506	1	fight_10601	extra_skillB_1_2	崇宫真那-小技能2-1级穿刺3	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+507	1	fight_10601	extra_skillB_1_3	崇宫真那-小技能2-1级穿刺4	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_012.mp3
+508	1	fight_10601	extra_skillB_2	崇宫真那-小技能2-2级激光	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_013.mp3
+509	1	fight_10601	extra_skillB_3	崇宫真那-小技能2-3级激光	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_014.mp3
+510	1	fight_10601	extra_skillB_2	崇宫真那-小技能2-2级激光	music1	1	100	sound/battle_sound/10601/voice/MANA_116.mp3
+511	1	fight_10601	extra_skillB_3	崇宫真那-小技能2-3级激光	music1	1	100	sound/battle_sound/10601/voice/MANA_116.mp3
+512	2	effects_10601_skillB	skillB0	崇宫真那-小技能1-5连斩	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_015.mp3
+513	2	effects_10601_skillB	skillB0	崇宫真那-小技能1-5连斩	music2		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_016.mp3
+514	2	effects_10601_skillB	skillB0	崇宫真那-小技能1-5连斩	music3		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_017.mp3
+515	2	effects_10601_skillB	skillB0	崇宫真那-小技能1-5连斩	music4		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_018.mp3
+516	2	effects_10601_skillB	skillB0	崇宫真那-小技能1-5连斩	music5		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_019.mp3
+517	2	effects_10601_skillB	skillB1	崇宫真那-小技能1-1级-上挑	music2	1	100	sound/battle_sound/10601/voice/MANA_115.mp3
+518	2	effects_10601_skillB	skillB1	崇宫真那-小技能1-1级-上挑	music2		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_020.mp3
+519	1	fight_10601	skillB3	崇宫真那-小技能1-1级-剑气	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_022.mp3
+520	1	fight_10601	skillB3	崇宫真那-小技能1-1级-剑气	music2		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_021.mp3
+521	1	fight_10603	skillA_1	崇宫真那-普攻1	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_1.mp3
+522	1	fight_10603	skillA_2	崇宫真那-普攻2	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_2.mp3
+523	1	fight_10603	skillA_3	崇宫真那-普攻3	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_3.mp3
+524	1	fight_10603	skillA_4	崇宫真那-普攻4	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_4.mp3
+525	1	fight_10603	skillA_6	崇宫真那-普攻5	music1		100	sound/battle_sound/10601/skillmusic/10601_skillA_5.mp3
+526	1	fight_10603	skillA_3	崇宫真那-普攻3	music1	1	80	sound/battle_sound/10601/voice/MANA_115.mp3
+527	1	fight_10603	skillA_6	崇宫真那-普攻5	music1	1	80	sound/battle_sound/10601/voice/MANA_113.mp3
+528	1	fight_10603	skillC	崇宫真那-大招-语音	music1	1	100	sound/battle_sound/10601/voice/MANA_109.mp3
+529	1	fight_10603	skillC	崇宫真那-大招	music1		100	sound/battle_sound/10601/skillmusic/10601_skillC.mp3
+530	1	fight_10603	skillC_1	崇宫真那-大招-语音	music1	1	100	sound/battle_sound/10601/voice/MANA_109.mp3
+531	1	fight_10603	skillC_1	崇宫真那-大招	music1		100	sound/battle_sound/10601/skillmusic/10601_skillC.mp3
+532	1	fight_10603	skillD	崇宫真那-觉醒-语音	music1	1	100	sound/battle_sound/10601/voice/MANA_110.mp3
+533	1	fight_10603	dodge	崇宫真那-闪避	music1		100	sound/battle_sound/10601/skillmusic/10601_dodge2.mp3
+534	1	fight_10603	dodge2	崇宫真那-闪避2	music1		100	sound/battle_sound/10601/skillmusic/10601_dodge2.mp3
+535	1	fight_10603	skillF	崇宫真那-出场	music1		100	sound/battle_sound/10601/skillmusic/10601_chuchang.mp3
+536	1	fight_10603	extra_skillB_0	崇宫真那-小技能2-0级穿刺1	music1		100	
+537	1	fight_10603	extra_skillB_1	崇宫真那-小技能2-1级穿刺1	music1		100	
+538	1	fight_10603	extra_skillB_0	崇宫真那-小技能2-0级穿刺1	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+539	1	fight_10603	extra_skillB_0_1	崇宫真那-小技能2-0级穿刺2	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_012.mp3
+540	1	fight_10603	extra_skillB_1	崇宫真那-小技能2-1级穿刺1	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+541	1	fight_10603	extra_skillB_1_1	崇宫真那-小技能2-1级穿刺2	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+542	1	fight_10603	extra_skillB_1_2	崇宫真那-小技能2-1级穿刺3	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_011.mp3
+543	1	fight_10603	extra_skillB_1_3	崇宫真那-小技能2-1级穿刺4	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_012.mp3
+544	1	fight_10603	extra_skillB_2	崇宫真那-小技能2-2级激光	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_013.mp3
+545	1	fight_10603	extra_skillB_3	崇宫真那-小技能2-3级激光	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_014.mp3
+546	1	fight_10603	extra_skillB_2	崇宫真那-小技能2-2级激光	music1	1	100	sound/battle_sound/10601/voice/MANA_116.mp3
+547	1	fight_10603	extra_skillB_3	崇宫真那-小技能2-3级激光	music1	1	100	sound/battle_sound/10601/voice/MANA_116.mp3
+548	1	fight_10603	skillB3	崇宫真那-小技能1-1级-剑气	music1		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_022.mp3
+549	1	fight_10603	skillB3	崇宫真那-小技能1-1级-剑气	music2		100	sound/battle_sound/10601/skillmusic/roleMusic_10601_021.mp3
+550	1	fight_10701	skillA_1a	耶俱矢-普攻1	music1		100	sound/battle_sound/10701/skillmusic/10701_skillA_1.mp3
+551	1	fight_10701	skillA_2a	耶俱矢-普攻2	music1		100	sound/battle_sound/10701/skillmusic/10701_skillA_2.mp3
+552	1	fight_10701	skillA_3a	耶俱矢-普攻3	music1		100	sound/battle_sound/10701/skillmusic/10701_skillA_3.mp3
+553	1	fight_10701	skillA_4a	耶俱矢-普攻4	music1		100	sound/battle_sound/10701/skillmusic/10701_skillA_4.mp3
+554	1	fight_10701	skillA_5a	耶俱矢-普攻5	music1		100	sound/battle_sound/10701/skillmusic/10701_skillA_5.mp3
+555	1	fight_10701	skillA_3a	耶俱矢-普攻3	music1	1	100	sound/battle_sound/10701/voice/KAGUYA_65_D.mp3
+556	1	fight_10701	skillA_5a	耶俱矢-普攻5	music1	1	100	sound/battle_sound/10701/voice/KAGUYA_66.mp3
+557	1	fight_10701	skillC_4_1	耶俱矢-大招1	music2		100	sound/battle_sound/10701/skillmusic/10701_skillC_3.mp3
+558	1	fight_10701	skillC_3_2	耶俱矢-大招2	music1		100	sound/battle_sound/10701/skillmusic/10701_skillC_2.mp3
+559	1	fight_10701	skillC_3_2	耶俱矢-大招3	music3		100	sound/battle_sound/10701/skillmusic/10701_skillC_3.mp3
+560	1	fight_10701	skillC_4_1	耶俱矢-大招-语音1	music2	1	100	sound/battle_sound/10701/voice/KAGUYA_22.mp3
+561	1	fight_10701	skillC_3_2	耶俱矢-大招-语音1	music1	1	100	sound/battle_sound/10701/voice/KAGUYA_22.mp3
+562	1	fight_10701	skillC_3_2	耶俱矢-大招-语音1	music3	1	100	sound/battle_sound/10701/voice/KAGUYA_22.mp3
+563	1	fight_10701	skillD	耶俱矢-觉醒-语音	music1	1	100	sound/battle_sound/10701/voice/KAGUYA_60.mp3
+564	1	fight_10701	skillD	耶俱矢-觉醒-语气音	music2	1	100	sound/battle_sound/10701/voice/KAGUYA_67.mp3
+565	1	fight_10701	skillD	耶俱矢-觉醒	music1		100	sound/battle_sound/10701/skillmusic/10701_skillD.mp3
+566	1	fight_10701	skillD	耶俱矢-觉醒2	music2		100	sound/battle_sound/10701/skillmusic/10701_skillD1.mp3
+567	1	fight_10701	skillF	耶俱矢-换人	music1		100	sound/battle_sound/10701/skillmusic/10701_skillF.mp3
+568	1	fight_10701	born	耶俱矢-出场	music1		100	sound/battle_sound/10701/skillmusic/10701_born.mp3
+569	1	fight_10701	dodge_1	耶俱矢-闪避	music1		100	sound/battle_sound/10701/skillmusic/10701_dodge.mp3
+570	1	fight_10701	extra_skillB	耶俱矢-旋风	music2		100	sound/battle_sound/10701/skillmusic/roleMusic_10701_011.mp3
+571	1	fight_10701	extra_skillB	耶俱矢-旋风	music2	1	100	sound/battle_sound/10701/voice/KAGUYA_65_B.mp3
+572	1	fight_10701	skillB_2	耶俱矢-风炮	music1		100	sound/battle_sound/10701/skillmusic/roleMusic_10701_013.mp3
+573	1	fight_10701	skillB_2+c	耶俱矢-风炮	music1		100	sound/battle_sound/10701/skillmusic/roleMusic_10701_013.mp3
+574	1	fight_10701	skillB_2+d	耶俱矢-风炮	music1		100	sound/battle_sound/10701/skillmusic/roleMusic_10701_013.mp3
+575	1	effects_10701_extra_skillB	extra_skillB_baokai	耶俱矢-旋风爆炸	music1		100	sound/battle_sound/10701/skillmusic/roleMusic_10701_012.mp3
+576	1	fight_10701	skillB_2	耶俱矢-风炮	music1	1	100	sound/battle_sound/10701/voice/KAGUYA_62_A.mp3
+577	1	fight_10701	skillB_2+c	耶俱矢-风炮	music1	1	100	sound/battle_sound/10701/voice/KAGUYA_62_A.mp3
+578	1	fight_10701	skillB_2+d	耶俱矢-风炮	music1	1	100	sound/battle_sound/10701/voice/KAGUYA_62_A.mp3
+579	1	fight_10801	skillD	夕弦-觉醒	music1	1	100	sound/battle_sound/10801/voice/YUZURU_61_1.mp3
+580	1	fight_10801	skillD	夕弦-觉醒	music1		100	sound/battle_sound/10801/skillmusic/10801_skillD_1.mp3
+581	1	fight_10801	skillD	夕弦-觉醒	music3		100	sound/battle_sound/10801/skillmusic/10801_skillD_2.mp3
+582	1	fight_10801	skillC_new_1	夕弦-大招	music1	1	100	sound/battle_sound/10801/voice/YUZURU_20.mp3
+583	1	fight_10801	skillC_new_1	夕弦-大招	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_022.mp3
+584	2	effects_10801_skillc4_1	effects_10801_skillc4_1	夕弦-大招	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_023.mp3
+585	1	fight_10801	skillA_new_1	夕弦-普攻1	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_014.mp3
+586	1	fight_10801	skillA_new_2	夕弦-普攻2	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_015.mp3
+587	1	fight_10801	skillA_new_3	夕弦-普攻3	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_016.mp3
+588	1	fight_10801	skillA_new_4	夕弦-普攻4	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_017.mp3
+589	1	fight_10801	skillA_new_5	夕弦-普攻5	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_018.mp3
+590	1	fight_10801	skillA_new_3	夕弦-普攻3	music1	1	100	sound/battle_sound/10801/voice/YUZURU_66.mp3
+591	1	fight_10801	skillA_new_5	夕弦-普攻5	music1	1	100	sound/battle_sound/10801/voice/YUZURU_65.mp3
+592	1	fight_10801	dodge	夕弦-闪避	music1		100	sound/battle_sound/10801/skillmusic/10801_dodge.mp3
+593	1	fight_10801	skillF	夕弦-出场技	music1		100	sound/battle_sound/10801/skillmusic/10801_skillF.mp3
+594	2	effects_10801_skillb	effects_10801_skillb1	夕弦-锁链	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_011.mp3
+595	2	effects_10801_skillb	effects_10801_skillb2	夕弦-锁链	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_011.mp3
+596	2	effects_10801_skillb	effects_10801_skillb1	夕弦-锁链	music1	1	100	sound/battle_sound/10801/voice/YUZURU_64.mp3
+597	2	effects_10801_skillb	effects_10801_skillb2	夕弦-锁链	music1	1	100	sound/battle_sound/10801/voice/YUZURU_64.mp3
+598	2	effects_10801_skillb	effects_10801_skillb3	夕弦-锁链天降	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_012.mp3
+599	2	effects_10801_skillb	effects_10801_skillb3	夕弦-锁链爆炸	music2		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_014.mp3
+600	1	fight_10801	extra_skillB	夕弦-技能2-风	music1	1	100	sound/battle_sound/10801/voice/YUZURU_66.mp3
+601	2	effects_10801_extra_skillb	effects_10801_extra_skillb2_01	夕弦-技能2-风	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_019.mp3
+602	2	effects_10801_extra_skillb	effects_10801_extra_skillb3_01	夕弦-技能2-雷	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_020.mp3
+603	2	effects_10801_extra_skillb	effects_10801_extra_skillb4_01	夕弦-技能2-雷	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_020.mp3
+604	2	effects_10801_extra_skillb	effects_10801_extra_skillb3_03	夕弦-技能2-雷暴	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_021.mp3
+605	2	effects_10801_extra_skillb	effects_10801_extra_skillb4_03	夕弦-技能2-雷暴	music1		100	sound/battle_sound/10801/skillmusic/roleMusic_10801_021.mp3
+606	1	fight_10801	born	夕弦-出生	music1		100	sound/battle_sound/10801/skillmusic/10801_xiaoxuanfeng.mp3
+607	1	fight_10901	skillA_1	艾伦-普攻1	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_001.mp3
+608	1	fight_10901	skillA_2	艾伦-普攻2	music1		80	sound/battle_sound/10901/skillmusic/roleMusic_10901_002.mp3
+609	1	fight_10901	skillA_3	艾伦-普攻3	music1		80	sound/battle_sound/10901/skillmusic/roleMusic_10901_003.mp3
+610	1	fight_10901	skillA_4	艾伦-普攻4	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_004.mp3
+611	1	fight_10901	skillA_5	艾伦-普攻5	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_005.mp3
+612	1	fight_10901	skillA_3	艾伦-普攻3	music1	1	80	sound/battle_sound/10901/voice/EREN_67.mp3
+613	1	fight_10901	skillA_5	艾伦-普攻5	music1	1	100	sound/battle_sound/10901/voice/EREN_65.mp3
+614	1	fight_10901	skillG_a	艾伦-技能1-护盾	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_006.mp3
+615	2	effects_10901_skillG	skillG_0_3	艾伦-技能1-一闪	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_007.mp3
+616	2	effects_10901_skillG	skillG_0_3	艾伦-技能1-一闪	music1	1	100	sound/battle_sound/10901/voice/EREN_64.mp3
+617	2	effects_10901_skillG	skillG_1	艾伦-技能1-连斩	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_008.mp3
+618	1	fight_10901	skillG_b4	艾伦-技能1-收招爆	music2		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_009.mp3
+619	1	fight_10901	skillG_b4	艾伦-技能1-收招爆	music2	1	100	sound/battle_sound/10901/voice/EREN_66.mp3
+620	1	fight_10901	skillF_2	艾伦-技能2-连斩	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_011.mp3
+621	1	fight_10901	skillF_4	艾伦-技能2-连斩	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_011.mp3
+622	1	fight_10901	skillF_3	艾伦-技能2-上挑	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_012.mp3
+623	1	fight_10901	skillF_3	艾伦-技能2-上挑	music1	1	100	sound/battle_sound/10901/voice/EREN_68.mp3
+624	1	fight_10901	skillC_1	艾伦-必杀	music1	1	100	sound/battle_sound/10901/voice/EREN_61.mp3
+625	1	fight_10901	skillC_1_1	艾伦-必杀	music1	1	100	sound/battle_sound/10901/voice/EREN_61.mp3
+626	2	effects_10901_skillC	skillC_1	艾伦-必杀-穿刺	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_013.mp3
+627	2	effects_10901_skillC	skillC_2	艾伦-必杀-穿刺	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_013.mp3
+628	2	effects_10901_skillC	skillC_3	艾伦-必杀-穿刺	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_013.mp3
+629	2	effects_10901_skillC	skillC_1_1	艾伦-必杀-穿刺	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_013.mp3
+630	2	effects_10901_skillC	skillC_2_1	艾伦-必杀-穿刺	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_013.mp3
+631	2	effects_10901_skillC	skillC_3_1	艾伦-必杀-穿刺	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_013.mp3
+632	2	effects_10901_skillC	skillC_4	艾伦-必杀-终结	music1		80	sound/battle_sound/10901/skillmusic/roleMusic_10901_014.mp3
+633	2	effects_10901_skillC	skillC_4_1	艾伦-必杀-终结	music1		80	sound/battle_sound/10901/skillmusic/roleMusic_10901_014.mp3
+634	2	effects_10901_skillC	skillC_4_1	艾伦-必杀-终结	music2		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_014.mp3
+635	2	effects_10901_skillC	skillC_4_1	艾伦-必杀-终结	music3		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_014.mp3
+636	1	fight_10901	skillD_1	艾伦-觉醒	music1	1	100	sound/battle_sound/10901/voice/EREN_62.mp3
+637	1	fight_10901	skillD_1	艾伦-觉醒-能量炮	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_015.mp3
+638	1	fight_10901	skillD_1	艾伦-觉醒-向上飞	music2		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_016_017.mp3
+639	1	fight_10901	skillD_2-2	艾伦-觉醒-炮击	music2		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_018.mp3
+640	1	fight_10901	born	艾伦-出生	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_019.mp3
+641	1	fight_10901	skillH	艾伦-登场技	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_020.mp3
+642	1	fight_10901	skillH	艾伦-登场技	music2		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_021.mp3
+643	1	fight_10901	quickmove	艾伦-闪避	music1		100	sound/battle_sound/10901/skillmusic/roleMusic_10901_022.mp3
+644	1	fight_11001	skillA1	美九-普攻1	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_001.mp3
+645	1	fight_11001	skillA2	美九-普攻2	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_002.mp3
+646	1	fight_11001	skillA3	美九-普攻3	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_003.mp3
+647	1	fight_11001	skillA4	美九-普攻4	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_004.mp3
+648	1	fight_11001	skillA3	美九-普攻3	music1		100	
+649	1	fight_11001	skillA4	美九-普攻4	music1	1	100	sound/battle_sound/11001/voice/MIKU_89_B.mp3
+650	1	fight_11001	skillB	美九-音波球	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_005.mp3
+651	1	fight_11001	skillB	美九-音波球	music1	1	100	sound/battle_sound/11001/voice/MIKU_88_A.mp3
+652	2	effects_11001_skillB	effects_11001_skillB3_1_2	美九-音波球	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_006.mp3
+653	2	effects_11001_skillB	effects_11001_skillB3_4_2	美九-音波球	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_006.mp3
+654	2	effects_11001_skillB	effects_11001_skillB3_4_3	美九-音波球	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_007.mp3
+655	2	effects_11001_skillB	effects_11001_skillB3_3	美九-音波球	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_007.mp3
+656	2	effects_11001_skillB	effects_11001_skillB3_2	美九-音波球	music1-music2-music3-music4-music5-music-music7-music8-music9-music10-music11-music12-music13-music14		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_007.mp3
+657	2	effects_11001_extra_skillB	effects_11001_extra_skillB_1	美九-舞蹈	music1-music2-music3	1	100	sound/battle_sound/11001/voice/MIKU_88_B.mp3
+658	2	effects_11001_extra_skillB	effects_11001_extra_skillB_2	美九-舞蹈	music1-music2-music3	1	100	sound/battle_sound/11001/voice/MIKU_88_B.mp3
+659	2	effects_11001_extra_skillB	effects_11001_extra_skillB_1	美九-舞蹈	music1-music2-music3		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_008.mp3
+660	2	effects_11001_extra_skillB	effects_11001_extra_skillB_1	美九-舞蹈	music4		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_009.mp3
+661	2	effects_11001_extra_skillB	effects_11001_extra_skillB_2	美九-舞蹈	music1-music2-music3		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_008.mp3
+662	2	effects_11001_extra_skillB	effects_11001_extra_skillB_2	美九-舞蹈	music4		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_009.mp3
+663	2	effects_11001_extra_skillB2	effects_11001_extra_skillB_3	美九-舞蹈	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_010.mp3
+664	1	fight_11001	skillC	美九-大招	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_011.mp3
+665	1	fight_11001	skillC	美九-大招	music1	1	100	sound/battle_sound/11001/voice/MIKU_83.mp3
+666	2	effects_11001_skillC	effects_11001_skillC_loop_1_1	美九-大招	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_012.mp3
+667	2	effects_11001_skillC	effects_11001_skillC_loop_1_1	美九-大招	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_012.mp3
+668	2	effects_11001_skillC	effects_11001_skillC_loop_3	美九-大招	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_013.mp3
+669	2	effects_11001_skillD_role	skillD	美九-觉醒	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_014_1.mp3
+670	2	effects_11001_skillD_role	skillD	美九-觉醒音乐	music2		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_014_2.mp3
+671	1	fight_11001	skillD	美九-觉醒爆	music2		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_018.mp3
+672	1	fight_11001	skillD	美九-觉醒开始	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_014.mp3
+673	1	fight_11001	skillD	美九-觉醒开始	music1	1	100	sound/battle_sound/11001/voice/MIKU_81.mp3
+674	1	fight_11001	skillF	美九-出场	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_019.mp3
+675	1	fight_11001	born	美九-出生	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_020.mp3
+676	1	fight_11001	dodge	美九-闪避	music1		100	sound/battle_sound/11001/skillmusic/roleMusic_11001_021.mp3
+677	1	fight_20101	skillA	近战AST—平砍	music1		100	sound/battle_sound/monster/xiaoguai_dianji.mp3
+678	1	fight_20101	skillA	近战AST—平砍	music2		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+679	1	fight_20101	skillB	近战AST—蓄力斩	music2		100	sound/battle_sound/monster/xiaoguai_xulizhan.mp3
+680	1	fight_20201	skillA	远程AST—机枪	music1		100	sound/battle_sound/monster/xiaoguai_jiqiang.mp3
+681	1	fight_20201	skillA	远程AST—机枪	music2		100	sound/battle_sound/monster/xiaoguai_jiqiang.mp3
+682	1	fight_20201	skillA	远程AST—机枪	music3		100	sound/battle_sound/monster/xiaoguai_jiqiang.mp3
+683	1	fight_20201	skillB	远程AST—导弹	music2		100	sound/battle_sound/monster/xiaoguai_daodan.mp3
+684	1	fight_20301	skillA	综合AST—狙击枪	music1		100	sound/battle_sound/monster/xiaoguai_jujiqiang.mp3
+685	1	fight_20401	skillA	高阶近战AST—平砍	music1		100	sound/battle_sound/monster/xiaoguai_dianji.mp3
+686	1	fight_20401	skillA	高阶近战AST—平砍	music2		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+687	1	fight_20401	skillB	高阶近战AST—蓄力斩	music2		100	sound/battle_sound/monster/xiaoguai_xulizhan.mp3
+688	1	fight_20501	skillA	高阶远程AST—机枪	music1		100	sound/battle_sound/monster/xiaoguai_jiqiang.mp3
+689	1	fight_20501	skillA	高阶远程AST—机枪	music2		100	sound/battle_sound/monster/xiaoguai_jiqiang.mp3
+690	1	fight_20501	skillA	高阶远程AST—机枪	music3		100	sound/battle_sound/monster/xiaoguai_jiqiang.mp3
+691	1	fight_20501	skillB	高阶远程AST—导弹	music2		100	sound/battle_sound/monster/xiaoguai_daodan.mp3
+692	1	fight_20601	skillA	高阶综合AST—狙击枪	music2		100	sound/battle_sound/monster/xiaoguai_jujiqiang.mp3
+693	1	fight_20601	skillB	高阶综合AST—随意领域			100	
+694	1	fight_30201	skillA	日下部燎子（敌人）—格林枪	music1		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+695	1	fight_30201	skillA	日下部燎子（敌人）—格林枪	music1		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+696	1	fight_30201	skillA	日下部燎子（敌人）—格林枪	music1		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+697	1	fight_30201	skillA	日下部燎子（敌人）—格林枪	music2		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+698	1	fight_30201	skillA	日下部燎子（敌人）—格林枪	music3		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+699	1	fight_30201	skillC	日下部燎子（敌人）—飞弹	music1		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+700	1	fight_30201	skillC	日下部燎子（敌人）—飞弹	music2		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+701	1	fight_30201	skillC	日下部燎子（敌人）—飞弹	music3		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+702	1	fight_30201	skillC	日下部燎子（敌人）—飞弹	music1		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+703	1	fight_30201	skillC	日下部燎子（敌人）—飞弹	music2		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+704	1	fight_30201	skillC	日下部燎子（敌人）—飞弹	music3		100	sound/battle_sound/monster/xiaoguai_dianji2.mp3
+705	2	effects_20201_skillB2	effects_skillB3	AST导弹爆炸	music1		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+706	2	effects_20201_skillB2	effects_skillB2	高阶AST导弹爆炸	music1		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+707	2	effects_30201_skillC	effects_30201_skillC_up	高阶综合AST—定点导弹	music1		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+708	2	effects_21301_skillAB	skillB_up	机械文字-自爆	music1		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+709	2	effects_21501	skillC_up	机械远程—后跃炮	music1		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+710	2	effects_21701_skillAB	skillB_up	高阶机械文字-自爆	music1		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+711	2	effects_fight_21901	skillC	高阶机械远程—后跃炮	music2		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+712	2	effects_fight_21901	skillB3	高阶机械远程—导弹爆炸	music1		100	sound/battle_sound/monster/xiaoguai_baozha.mp3
+713	1	fight_20801	skillA	低阶DEM远程激光1	music2		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+714	1	fight_20801	skillA	低阶DEM远程激光2	music3		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+715	1	fight_20801	skillA	低阶DEM远程激光3	music4		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+716	1	fight_20901	skillA	低阶DEM综合激光1	music1		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+717	1	fight_20901	skillA	低阶DEM综合激光2	music2		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+718	1	fight_21501	skillA	低阶机械远程激光1	music2		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+719	1	fight_21501	skillA	低阶机械远程激光2	music3		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+720	1	fight_21501	skillA	低阶机械远程激光3	music4		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+721	1	fight_21901	skillA	高阶机械远程激光1	music1		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+722	1	fight_21901	skillA	高阶机械远程激光2	music2		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+723	1	fight_21901	skillA	高阶机械远程激光3	music3		100	sound/battle_sound/monster/xiaoguai_jiguangfashe.mp3
+724	1	fight_21601	skillA	猩猩砸地1	music1		100	sound/battle_sound/monster/jixie_xingxing_chuidi.mp3
+725	1	fight_21601	skillB	猩猩砸地2	music1		100	sound/battle_sound/monster/jixie_xingxing_zhongchui.mp3
+726	1	fight_21601	skillC	猩猩冲锋	music1		100	sound/battle_sound/monster/jixie_xingxing_chongzhuang.mp3
+727	1	fight_21801	skillA	高阶机械盾攻击	music1		100	sound/battle_sound/monster/jixie_dunbing_chuanci.mp3
+728	1	fight_21801	skillB	高阶机械盾防御	music1		100	sound/battle_sound/monster/jixie_dunbing_fangyu.mp3
+729	1	fight_21801	skillC	高阶机械盾冲锋	music1		100	sound/battle_sound/monster/jixie_dunbing_chonngfeng.mp3
+730	1	fight_21301	skillA	低阶蚊子冲锋	music1		100	
+731	1	fight_21301	die1	低阶蚊子自爆前	music1		100	sound/battle_sound/monster/jixie_wenzi_zibao.mp3
+732	1	fight_21301	die3	低阶蚊子自爆前	music1		100	sound/battle_sound/monster/jixie_wenzi_zibao.mp3
+733	1	fight_21701	skillA	高阶蚊子冲锋	music1		100	
+734	1	fight_21701	die1	高阶蚊子自爆前	music1		100	sound/battle_sound/monster/jixie_wenzi_zibao.mp3
+735	1	fight_21701	die3	高阶蚊子自爆前	music1		100	sound/battle_sound/monster/jixie_wenzi_zibao.mp3
+736	3	shixiang_qian	battle_story1_shixiang_01	首次撞剑音效。武器对碰持续音效	music1		100	
+737	3	shixiang_qian	battle_story1_shixiang_01	俩人分开。	music2		100	
+738	3	shixiang_qian	battle_story1_shixiang_01	十香横向挥剑普攻	music3		100	sound/battle_story/10101_skillA_5.mp3
+739	3	shixiang_qian	battle_story1_shixiang_01	劈砍剑气	music4		100	sound/battle_story/roleMusic_10101_015.mp3
+740	3	shixiang_qian	battle_story1_shixiang_01	剑气和能量炮相撞的爆炸音效	music5		100	sound/battle_story/pengzhuang_da1.mp3
+741	3	shixiang_qian	battle_story1_shixiang_01	落地摆pose	music6		100	sound/battle_story/roleMusic_move.mp3
+742	3	shixiang_qian	battle_story1_shixiang_01	十香举剑，格挡折纸攻击。武器对碰音效	music7		100	sound/battle_story/pengzhuang2.mp3
+743	3	shixiang_qian	battle_story1_shixiang_01	十香举剑，格挡折纸攻击。武器对碰音效	music8		100	sound/battle_story/pengzhuang2.mp3
+744	3	shixiang_qian	battle_story1_shixiang_01	十香举剑，格挡折纸攻击。武器对碰音效。折纸被击飞	music9		100	sound/battle_story/10101_skillD_3_2.mp3
+745	3	shixiang_qian	battle_story1_shixiang_01	十香举剑，格挡折纸攻击。武器对碰音效	music10		100	sound/battle_story/pengzhuang2.mp3
+746	3	shixiang_qian	battle_story1_shixiang_01	十香举剑，格挡折纸攻击。武器对碰音效。折纸被击飞	music11		100	sound/battle_story/10101_skillD_3_4.mp3
+747	3	shixiang_qian	battle_story1_shixiang_01	落地音效	music12		100	
+748	3	zhezhi	battle_story1_zhezhi_01	俩人分开。折纸后空翻	music1		100	
+749	3	zhezhi	battle_story1_zhezhi_01	落地	music2		100	sound/battle_story/roleMusic_move.mp3
+750	3	zhezhi	battle_story1_zhezhi_01	蓄力。准备发射能量炮	music3		100	sound/battle_story/10201_extra_skillB2.mp3
+751	3	zhezhi	battle_story1_zhezhi_01	能量炮发射	music4		100	sound/battle_story/10201_extra_skillB2.mp3
+752	3	zhezhi	battle_story1_zhezhi_01	折纸重新向前飞出	music5		100	sound/battle_story/10201_dodge.mp3
+753	3	shixiang_qian	557	十香举剑，剑上出现发光	music1		100	sound/battle_story/roleMusic_10101_011.mp3
+754	3	shixiang_qian	557	十香挥剑姿势	music2		100	sound/battle_story/10101_skillA_1.mp3
+755	3	shixiang_qian	557	起步向前冲	music3		100	sound/battle_story/10101_dodge.mp3
+756	3	zhezhi	557	折纸挥剑姿势	music1		100	sound/battle_story/10201_skillA_2.mp3
+757	3	zhezhi	557	起步向前冲	music2		100	sound/battle_story/10201_dodge.mp3
+758	3	shixiang_qian	battle_story2_shixiang_01	疑问。头上感叹号	music1		100	sound/battle_story/done.mp3
+759	3	shixiang_qian	battle_story2_shixiang_01	武器对碰音效	music2		100	sound/battle_story/pengzhuang2.mp3
+760	3	shixiang_qian	battle_story2_shixiang_01	十香开启护盾	music3		100	sound/battle_story/kaidun.mp3
+761	3	shixiang_qian	battle_story2_shixiang_01	护盾结束	music4		100	
+762	3	shixiang_qian	battle_story2_shixiang_01	十香挥剑姿势	music5		100	sound/battle_story/10101_skillA_1.mp3
+763	3	zhezhi	battle_story2_zhezhi_01	折纸从场外飞入的音效。逐渐提高的音量	music1		100	sound/battle_story/AweBombFall.mp3
+764	3	zhezhi	battle_story2_zhezhi_01	武器对碰音效	music2		100	sound/battle_story/pengzhuang3.mp3
+765	3	zhezhi	battle_story2_zhezhi_01	折纸发射导弹。匹配导弹未爆炸，而是碰到护盾的音效（80~130帧）	music3		100	sound/battle_story/10201_skillC3.mp3
+766	3	zhezhi	battle_story2_zhezhi_01	落地音效	music4		100	sound/battle_story/roleMusic_move.mp3
+767	3	zhezhi	battle_story2_zhezhi_01	折纸挥剑姿势	music5		100	sound/battle_story/10201_skillA_2.mp3

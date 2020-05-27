@@ -1,0 +1,54 @@
+id	离散数据	描述
+id	data	describle
+number	json	comment
+int	Map	
+1001	{"ui_clickSound":"sound/ui/ui_click.mp3"}	通用点击音效
+1002	{"ui_closeSound":"sound/ui/ui_close.mp3"}	通用关闭窗口音效
+1003	{"ui_flipSound":"sound/ui/ui_flip.mp3"}	通用滑动条音效
+1004	{"ui_returnSound":"sound/ui/ui_return.mp3"}	通用返回音效
+2001	{"date_optionSound":"sound/ui/ui_option.mp3"}	约会功能，文字选项弹出音效
+2002	{"date_confirmSound":"sound/ui/ui_confirm.mp3"}	约会功能，点击确认选项音效
+2003	{"list":[{"ceiling":100,"floor":90,"min":-30,"max":-20},{"ceiling":90,"floor":80,"min":-25,"max":-10},{"ceiling":80,"floor":60,"min":-20,"max":5},{"ceiling":60,"floor":40,"min":-10,"max":10},{"ceiling":40,"floor":0,"min":-5,"max":20}]}	精灵心情值规则
+2005	{"ceiling":{"mood":100,"ratio":0},"floor":{"mood":40,"ratio":0}}	心情-对好感度影响规则
+3001	{"Hero":{"min":100000,"max":199999},"Dress":{"min":400000,"max":499999},"Item":{"min":500000,"max":699999},"Equipment":{"min":200000,"max":299999},"ItemTime":{"min":2000000,"max":2999999},"HeroSkin":{"min":1100000,"max":1200000},"Room":{"min":710000,"max":799999}}	资源表ID分段配置
+3002	{1:0,2:999,3:999,4:0,5:0,6:0,7:0,8:0,9:0,10:0,11:0}	背包分类及上限配置
+3003	{"playerLevel":1,"playerExp":0,"playerVipLevel":0,"playerVipExp":0,"mainLine":0,"goods":{500001:1000,500002:500,110101:1,710001:1}}	玩家初始化数据
+3004	{"max":200,"autoEnterPercent":80}	聊天房间大小和自动进入的最大限制
+3005	{"rarityzl":[180,240,320,420,540,680,800],"herolvlzl":[1,2,3,4,5,6,7],"growupzl":[0,40,80,120,160,200,240,280,320,360,400],"equipzl":[30,60,90,120,150],"equiplvlzl":[1,1,2,2,3],"angelzl":[0,50,100,150,200,300],"angelpoint":2,"passivezl":[0,200,400,600,800]}	战力参数
+4001	{"price":{2:{500001:100},3:{500001:500},4:{500001:2000},5:{500001:10000}}}	灵装洗练消耗基数
+4002	{"ratio":30000}	质点强化金币消耗系数（1经验=1.5金币）
+5001	{"datingOutTime":{3:60,5:60,6:60},"triggerFrame":[[8,0,11,0],[13,0,17,0],[19,0,21,0]],"datingTimeFrame":[[12,0,13,0],[18,0,19,0],[22,0,23,0]],"decreaseRate":[100,70,50,0],"triggerOrder":[5,3,6],"refreshHour":[12,18,21,22],"day":[5,0,18,0],"favorRule":{95:120,80:100,60:80,0:60},"mood":60,"reentryType":[3,4,5,6],"triggerRate":50}	timeFrame:时间段；invitationTimeFrame：邀请时间段；datingTimeFrame：约会时间段；maxDatingCount：最大约会次数（最大能接受约会次数）；roleDayDatingCount：每个看板娘能每日能约会的次数；dailyDatingCount：每天最大日常约会次数；buyDailyDatingCount：每天能购买的日常约会次数；datingOutTime：约会过期时间{约会类型:时间}；triggerFrame：约会触发时间段[[开始小时,开始分支,结束小时,结束分钟]。。。]；datingTimeFrame：预定约会时间段：[[预定约会开始小时,预定约会开始分钟,预定约会结束小时,预定约会结束分钟]...]；decreaseRate:衰减率；"refreshHour"刷新预定约会状态"triggerRate城市约会触发概率
+5003	{"defaultRoom":710001}	
+6001	{"friend":10,"passer":5,"cd":10}	助战数据参数，助战友情点（fiend好友，passer路人）、助战冷却时间
+6002	{500002:500013}	（实际使用的ID，服务器记录的替换ID，用于区分玩家充值所得钻石和赠送所得钻石）
+7001	{"maxFriendsNum":100,"maxBlacklistNum":100,"receiveFriendshipTimes":60,"friendship":10,"friendRecommendation":10,"refreshCd":2000,"maxRequest":100,"friendRecommendMaxDelta":50}	好友上限、黑名单上限、友情点每日领取次数、每次领取/赠送友情点数量、推荐好友人数、推荐好友刷新cd、好友申请上限、推荐好友取值范围
+8001	{"resetPlv":30,"freeResetCount":3,"resetCost":{500002:100}}	天使免费重置等级，高于免费重置等会后每日免费次数，超过免费次数后每次重置消耗
+9001	{"maxActivity":120,"activityReward":[{"activeValue1":30,"reward1":{510101:1}},{"activeValue2":50,"reward2":{510102:1}},{"activeValue3":80,"reward3":{510103:1}},{"activeValue4":100,"reward4":{510104:1}},{"activeValue5":120,"reward5":{510105:1}}]}	每日任务的活跃度奖励刻度
+9002	{"pmaxlvl":60,"hmaxlvl":60}	玩家等级上限，精灵等级上限
+9003	{"itemType":[2,4,8,10]}	图鉴物品类型
+10001	{"eggs":[1,2,3],"ticket":500017,"cd":24,"time":20}	
+11001	{"skipLevels":["0-60000:4","61000-90000:3","91000-120000:2","121000-150000:1","151000-180000:0"],"duration":[{"opentime":[1,300],"balancetime":[3,1290],"resettingtime":[3,1320]},{"opentime":[4,300],"balancetime":[6,1290],"resettingtime":[6,1320]}]}	skiplevels-层数跳跃检测，用时60秒，跳跃4层；用时90秒，跳跃3层；用时120秒，跳跃2层；用时150秒，跳跃1层；用时180秒，跳跃0层；opentime进行期(周1~周3，周4~周6)；balancetime结算期；resettingtime进度重置/奖励发放时间
+11002	{"maxLevel":100}	无尽副本最高层数
+11003	{"nameSet":1001011022}	主线剧情取名出现的ID
+12001	{"maxMatchTime":120000,"maxLoadTime":15000,"maxSubmitTime":10000}	
+13001	{"stime":"2018-4-30 00:00:00","etime":"2020-5-30 00:00:00"}	
+14001	{"summonHistory":30}	召唤历史记录的条目
+14002	{"rareProbability":30}	祈愿稀有产出初始概率（万分比）
+14003	{1:4000,2:6000,3:10000}	祈愿配方书对应获得分数(需要除10000）
+15001	{"time":6}	服务器跨天时刻（0-23）
+16001	{"overdueDay":7,"maxEmail":100}	邮件过期时间和上限数量（超过后均自动删除）
+17001	{"time":300,"delayTime":10}	
+18001	{"refreshTime":300}	
+19001	{"oilRecover":{"value":5,"time":600},"pollutionRecover":{"value":5,"time":3600},"duration":{"opentime":"2018-08-20 15:00:00","endtime":"2018-08-31 23:00:00"},"oilValue":{"origin":500,"max":500},"shopRefresh":{"time":360},"pollutionLimit":{"max":100,"fighting":80}}	卡巴拉质点世界能量点数恢复速率(点数，时间：秒)，精灵感染度恢复速率(点数，时间：秒)，活动周期(开放时间，结束时间)，能源值（初始值，最大值），商店刷新数据(每天6点刷新，6x60)，精灵感染度（最大值，战斗禁止值）
+19002	{"radarDis":{3:4,2:3,1:2,0:1}}	雷达监测，格子距离与转速变化
+20001	{"newRankCount":20,"hotRankCount":20}	评价系统显示的条目数量
+20002	{"unitEnergy":30,"base":0.845,"day":7}	体力返回为暴走模式消耗道具相关配置：x体力返还1个、衰减系数的底数、返还截止天数
+20003	{"hours":4}	防沉迷强制下线时间（小时）
+20004	{1:10,2:30,3:50,4:100}	主线约会体力消耗
+20005	{1:20}	日常约会体力消耗
+20006	{"minText":4,"maxText":40}	评价文本长度限制
+21001	{"hpRange":["0-0.3:0.2","0.3-0.5:0.3","0.5-0.7:0.4","0.7-1:0.5"]}	日常副本积分关卡，根据剩余HP计算最后积分
+21002	{"time":30}	联机副本等待时间1
+21003	{"time":20}	联机副本等待时间2
+21004	{"time":1200}	联机副本等待时间2
+21005	{"time":15}	联机副本创建房间等待时间

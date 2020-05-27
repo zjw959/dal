@@ -1,0 +1,5 @@
+id	邮件名称	邮件本文内容	包含奖励	发送对象类型（1.全服。2.个人）	对象id
+id	name	des	gifts	type	playerId
+number	string	string	vjson	number	numbers
+int	string	string	map	int	int[]
+1	1		{500001:2,500002:2}	1	10001-10002-10003

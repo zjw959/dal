@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="defaultStatementTimeout" value="60"/>
+        <!-- lgnore log -->
+       	<setting name="logPrefix" value="org.apache.ibatis.logPrefix" />
+    </settings>
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="${url_mail}" />
+				<property name="username" value="${username_mail}" />
+				<property name="password" value="${password_mail}" />
+				<!-- 发送到数据库的侦测查询，用来检验连接是否处在正常工作秩序中并准备接受请求 -->
+				<property name="poolPingQuery" value="select 1" />
+				<!-- 是否启用侦测查询。若开启，也必须使用一个可执行的 SQL 语句设置 poolPingQuery 属性 -->
+				<property name="poolPingEnabled" value="true" />
+				<!-- 配置 poolPingQuery 的使用频度。这可以被设置成匹配具体的数据库连接超时时间，来避免不必要的侦测 单位:毫秒 -->
+				<property name="poolPingConnectionsNotUsedFor" value="300000" />
+				<property name="poolMaximumActiveConnections" value="8" />
+				<property name="poolMaximumIdleConnections" value="5" />
+				<property name="poolMaximumCheckoutTime" value="60000" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="gm/db/mail/sqlmap/MailMap.xml" />
+	</mappers>
+
+</configuration> 

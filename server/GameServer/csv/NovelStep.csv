@@ -1,0 +1,12 @@
+id	当前主线副本约会的ID	初始时间	气温	天气	湿度	时间描述（策划看）	事件	基础城市调用	天数	提示
+id	mainId	stepTime	weather1	weather2	weather3	stepTimeDes	event	basicCity	day	prompt
+number	number	string	number	string	number		numbers	number	number	number
+int	int	string					int[]	int	int	int
+1000	101	08:40:00	12198	ui/newCity/city_main/duoyun.png	12199		100001	1000	1	
+1001	101	12:00:00	12198	ui/newCity/city_main/duoyun.png	12199		100101	1000	1	950022
+1002	101	15:20:00	12198	ui/newCity/city_main/duoyun.png	12199		100201	1000	1	950023
+1003	101	18:05:00	12198	ui/newCity/city_main/duoyun.png	12199		100301	1000	1	950024
+										
+3000	301	12:30:00	12198	ui/newCity/city_main/duoyun.png	12199		300001	3000	1	
+3001	301	13:00:00	12198	ui/newCity/city_main/duoyun.png	12199		300101-300102-300103-300104	3001	1	900824
+3002	301	15:00:00	12198	ui/newCity/city_main/duoyun.png	12199		300105	3002	1	900825

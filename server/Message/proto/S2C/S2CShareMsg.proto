@@ -1,0 +1,50 @@
+package org.game.protobuf.s2c;
+
+option java_outer_classname = "S2CShareMsg";
+enum ChangeType {
+	DEFAULT = 0;
+	ADD = 1;
+	DELETE = 2;
+	UPDATE = 3;
+}
+
+// 属性
+message AttributeInfo {
+	required int32 type = 1; // 属性类型
+	required int32 val = 2; // 属性值
+}
+
+//英雄经验
+message HeroExpMsg {
+	required int32 cid = 1; //英雄cid
+	required int32 addExp = 2; //新增经验
+}
+
+
+// 奖励信息
+message RewardsMsg{
+	required int32 id = 1;
+	required int32 num = 2;
+}
+
+//成对出现
+message Pair{
+	required int32 key = 1;
+	required int32 value = 2;
+}
+
+//数据结构为：Map<Integer,List<Integer>>
+message ListMap{
+	required int32 key = 1;
+	repeated int32 list = 2 [packed=true];
+}
+
+// 玩家简介
+message PlayerSynopsis{
+	optional int32 pid = 1;	// 玩家ID
+	optional string name = 2; // 玩家名称
+	optional int32 lvl = 3; // 玩家等级
+	optional int32 helpHeroCid = 4; // 帮助英雄ID
+	optional int32 coldDownTime = 5;//助战冷却时间
+}
+
